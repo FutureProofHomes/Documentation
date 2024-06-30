@@ -60,15 +60,17 @@
   </ol>
 </details>
 
+
+<!-- ABOUT THE PROJECT -->
+## About Documentation
+FutureProofHomes focuses on building hardware and software for the [Home Assistant platform](https://www.home-assistant.io/).  We specifically enjoy focusing on voice control so that you can control your home without the need for a user-interface.
+
+
 ### Built With
 
 * [![Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ABOUT THE PROJECT -->
-## About Documentation
-FutureProofHomes focuses on building hardware and software for the [Home Assistant platform](https://www.home-assistant.io/).  We specifically enjoy focusing on voice control so that you can control your home without the need for a user-interface.
 
 
 <!-- CONTRIBUTING -->
@@ -86,7 +88,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
