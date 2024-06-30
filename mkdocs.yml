@@ -1,0 +1,53 @@
+site_name: FutureProofHomes Documentation
+site_url: https://docs.futureproofhomes.net
+repo_url: https://github.com/FutureProofHomes/Documentation
+theme:
+  logo: assets/square_transparent_black_logo_vector_300x300.svg
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - header.autohide
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: custom
+      accent: custom
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: custom
+      accent: custom
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    # - icon: fontawesome/icon/home
+    #   link: https://futureproofhomes.net
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/FutureProofHomes
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@futureproofhomes
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+copyright: |
+  &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProof Homes LLC</a>
