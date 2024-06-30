@@ -4,9 +4,9 @@ This is the product documentation site for [FutureProofHomes.net](https://future
 
 Please click the buttons below if you'd like more interactive help:
 
-[Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Internal-Satellite1/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+[Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1/issues/new?labels=bug&template=bug-report---.md){ .md-button }
 
-[Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Internal-Satellite1/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+[Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1/issues/new?labels=bug&template=bug-report---.md){ .md-button }
 
 [Start a Discussion on Github :fontawesome-solid-comments:](https://github.com/orgs/FutureProofHomes/discussions){ .md-button }
 
