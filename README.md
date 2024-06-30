@@ -1,2 +1,2 @@
-# docs
-docs.FutureProofHomes.net documentation 
+# FutureProofHomes Public Documentation
+Hosted @ [docs.FutureProofHomes.net](https://docs.futureproofhomes.net)
