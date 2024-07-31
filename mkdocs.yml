@@ -51,7 +51,7 @@ markdown_extensions:
 
 plugins:
     - encryptcontent:
-        global_password: 'your_password'
+        global_password: 'diff_password'
 
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProof Homes LLC</a>
