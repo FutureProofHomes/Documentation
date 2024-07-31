@@ -51,7 +51,7 @@ markdown_extensions:
 
 plugins:
     - encryptcontent:
-        password_file: 'mkdocs_passwords.yaml'
+        global_password: !ENV ${MKDOCS_PW}
 
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProof Homes LLC</a>
