@@ -27,4 +27,9 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-encryptcontent-plugin
+      - name: Create MKdocs Password
+        run: |
+          echo "global_password: ${{ secrets.MKDOCS_PW }}" > mkdocs_passwords.yaml
+      - name: Verify MKdocs Password
+        run: cat mkdocs_passwords.yaml
       - run: mkdocs gh-deploy --force
