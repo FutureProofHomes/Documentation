@@ -49,5 +49,9 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 
+plugins:
+    - encryptcontent:
+        global_password: 'your_password'
+
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProof Homes LLC</a>
