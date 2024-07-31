@@ -51,7 +51,10 @@ markdown_extensions:
 
 plugins:
     - encryptcontent:
-        global_password: !ENV ${MKDOCS_PW}
+        global_password: !ENV MKDOCS_PW
+
+extra_javascript:
+  - https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module
 
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProof Homes LLC</a>
