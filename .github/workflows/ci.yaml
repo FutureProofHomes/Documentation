@@ -28,5 +28,7 @@ jobs:
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-encryptcontent-plugin
       - name: Set MKDOCS_PW environment variable
-        run: echo "MKDOCS_PW=${{ secrets.MKDOCS_PW }}" >> $GITHUB_ENV
+        run: echo "MKDOCS_PW=$MKDOCS_PW" >> $GITHUB_ENV
+        env:
+          MKDOCS_PW: ${{ secrets.MKDOCS_PW }}
       - run: mkdocs gh-deploy --force
