@@ -1,0 +1,58 @@
+name: Download and Commit Release from XMOS and ESPHome Repos
+
+on:
+  workflow_dispatch:  # Allows manual trigger of the workflow
+    inputs:
+      xmos_release_tag:
+        description: 'Tag of the XMOS release firmware to download'
+        required: true
+      esphome_release_tag:
+        description: 'Tag of the ESPHome release firmware to download'
+        required: true
+env:
+  esphome_repo: FutureProofHomes/Satellite1-ESPHome
+  xmos_repo: FutureProofHomes/Satellite1-XMOS
+jobs:
+  download-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+
+    - name: Authenticate with GitHub CLI
+      run: |
+        echo "${{ secrets.PAT_TOKEN }}" | gh auth login --with-token
+
+    - name: Download ESPHome release asset
+      run: |
+        mkdir -p ./assets/firmware/esphome/${{ github.event.inputs.esphome_release_tag }}
+        gh release download ${{ github.event.inputs.esphome_release_tag }} \
+        --repo ${{ env.esphome_repo }}  \
+        --dir ./assets/firmware/esphome/${{ github.event.inputs.esphome_release_tag }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Download XMOS release asset
+      run: |
+        mkdir -p ./assets/firmware/xmos/${{ github.event.inputs.xmos_release_tag }}
+        gh release download ${{ github.event.inputs.xmos_release_tag }} \
+        --repo ${{ env.xmos_repo }} \
+        --dir ./assets/firmware/xmos/${{ github.event.inputs.xmos_release_tag }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Create manifest files for each hardware revision
+      run: |
+        chmod +x ./create_manifest.sh
+        ./create_manifest.sh ${{ github.event.inputs.esphome_release_tag }} ${{ env.esphome_repo }}
+
+    - name: Add and commit release assets to the current repository
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        git add ./assets/*
+        git commit -m "Add XMOS (Tag: ${{ github.event.inputs.xmos_release_tag }}) and ESPHome (Tag: ${{ github.event.inputs.esphome_release_tag }}) firmware"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
