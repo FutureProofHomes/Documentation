@@ -12,7 +12,8 @@ env:
 jobs:
   download-release:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
     - name: Checkout current repository
       uses: actions/checkout@v4
@@ -39,4 +40,5 @@ jobs:
         git commit -m "Add XMOS Firmware: ${{ github.event.inputs.xmos_release_tag }}"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

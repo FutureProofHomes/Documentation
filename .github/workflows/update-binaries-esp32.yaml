@@ -47,4 +47,4 @@ jobs:
         git commit -m "Add ESPHome Firmware: ${{ github.event.inputs.esphome_release_tag }}"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
