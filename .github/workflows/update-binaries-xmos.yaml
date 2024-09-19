@@ -1,5 +1,4 @@
-name: Download and Commit Release from XMOS and ESPHome Repos
-
+name: Download and Commit Release from XMOS Repo
 on:
   workflow_dispatch:  # Allows manual trigger of the workflow
     inputs:
