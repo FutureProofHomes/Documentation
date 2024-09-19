@@ -1,11 +1,8 @@
-name: Download and Commit Release from XMOS and ESPHome Repos
+name: Download and Commit Release from ESPHome Repos
 
 on:
   workflow_dispatch:  # Allows manual trigger of the workflow
     inputs:
-      xmos_release_tag:
-        description: 'Tag of the XMOS release firmware to download'
-        required: true
       esphome_release_tag:
         description: 'Tag of the ESPHome release firmware to download'
         required: true
