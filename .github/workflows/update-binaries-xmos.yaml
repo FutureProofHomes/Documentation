@@ -30,12 +30,18 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
+    - name: unzip the XMOS release asset
+      run: |
+          cd ./assets/firmware/xmos/${{ github.event.inputs.xmos_release_tag }}
+          unzip *.zip
+          rm *.zip
+          tree
+
     - name: Add and commit release assets to the current repository
       run: |
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
         git add ./assets/*
-        git add ./manifests/*
         git commit -m "Add XMOS Firmware: ${{ github.event.inputs.xmos_release_tag }}"
         git push
       env:
