@@ -23,7 +23,7 @@ FIRMWARE_DIR="./assets/firmware/esphome/$release_tag"
 if [ ! -d "$FIRMWARE_DIR" ]; then
   error_exit "Firmware directory '$FIRMWARE_DIR' does not exist."
 fi
-
+tree ./assets/firmware/esphome/$release_tag
 # Create the manifest directory if it doesn't exist
 mkdir -p ./manifests/$release_tag
 
@@ -33,7 +33,7 @@ for OTA_FILE in $(ls $FIRMWARE_DIR/*.ota.bin 2>/dev/null); do
   BASE_NAME=$(basename "$OTA_FILE" .ota.bin)
 
   # Find the corresponding full .bin file
-  BIN_FILE="$FIRMWARE_DIR/${BASE_NAME}.bin"
+  BIN_FILE="$FIRMWARE_DIR/${BASE_NAME}.factory.bin"
 
   # Check if both files exist
   if [ -f "$OTA_FILE" ] && [ -f "$BIN_FILE" ]; then
