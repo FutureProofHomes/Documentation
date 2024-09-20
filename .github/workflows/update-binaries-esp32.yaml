@@ -35,6 +35,7 @@ jobs:
         cd ./assets/firmware/esphome/${{ github.event.inputs.esphome_release_tag }}
         unzip *.zip
         rm *.zip
+        tree
 
     - name: Create manifest files for each hardware revision
       run: |
