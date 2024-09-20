@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Firmware for satellite-va-rev2-esp32s3",
+  "version": "v2.0.0-alpha.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+      {
+        "chipFamily": "esp32",
+        "ota": {
+          "path": "satellite-va-rev2-esp32s3.ota.bin",
+          "md5": "9d20dfd4458e7c66bf0e6ba0f3cd68dc",
+          "summary": "ESPHome Firmware for satellite-va-rev2-esp32s3",
+          "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v2.0.0-alpha.0/"
+        },
+        "parts": [
+          {
+            "path": "satellite-va-rev2-esp32s3.factory.bin",
+            "offset": 0
+          }
+        ]
+      }
+    ]
+}
