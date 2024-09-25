@@ -67,10 +67,12 @@ function updateManifestURL() {
 
 // Initialize the form
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Fetching versions');
   fetchVersions();
+
   // Add event listeners
   document.querySelectorAll('input[name="revision"]').forEach(radio => {
     radio.addEventListener('change', updateManifestURL);
   });
-  document.getElementById('version-select').addEventListener('ch
+  document.getElementById('version-select').addEventListener('change', updateManifestURL);
+});
+</script>
