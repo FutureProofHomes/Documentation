@@ -52,8 +52,11 @@ markdown_extensions:
 plugins:
     - encryptcontent:
         global_password: !ENV MKDOCS_PW
+        reload_sripts:
+          - javascript/installer.js
 
 extra_javascript:
+  - javascript/installer.js
   - https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module
 
 copyright: |
