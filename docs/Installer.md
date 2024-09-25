@@ -16,5 +16,5 @@ Open the box. Magic!
 
   <br><br>
 
-  <esp-web-install-button id="install-button" manifest=""></esp-web-install-button>
+  <esp-web-install-button id="install-button" manifest="" install-supported></esp-web-install-button>
 </div>

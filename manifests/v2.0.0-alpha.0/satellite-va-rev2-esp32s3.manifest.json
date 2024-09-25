@@ -4,7 +4,7 @@
   "new_install_prompt_erase": true,
   "builds": [
       {
-        "chipFamily": "esp32",
+        "chipFamily": "ESP32-S3",
         "ota": {
           "path": "./../../assets/firmware/esphome/v2.0.0-alpha.0/satellite-va-rev2-esp32s3.ota.bin",
           "md5": "9d20dfd4458e7c66bf0e6ba0f3cd68dc",
