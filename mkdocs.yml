@@ -49,15 +49,16 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 
-plugins:
-    - encryptcontent:
-        global_password: !ENV MKDOCS_PW
-        reload_sripts:
-          - '#initAfterDecryption'
-          # - javascript/installer.js
+# plugins:
+#     - encryptcontent:
+#         global_password: 'password' #!ENV MKDOCS_PW
+#         reload_sripts:
+#           - '#autoexec'
+#           - javascript/installer.js
+#           # - '#initAfterDecryption'
 
 extra_javascript:
-  # - javascript/installer.js
+  - javascript/installer.js
   - https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module
 
 copyright: |
