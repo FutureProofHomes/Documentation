@@ -42,31 +42,13 @@ function updateManifestURL() {
   // Update the manifest attribute
   document.getElementById('install-button').setAttribute('manifest', manifestURL);
 }
-
-// TODO: Use this insead of #initAfterDecryption
 // Initialize the form
-// document.addEventListener('DOMContentLoaded', () => {
-//   fetchVersions();
-
-//   // Add event listeners
-//   document.querySelectorAll('input[name="revision"]').forEach(radio => {
-//     radio.addEventListener('change', updateManifestURL);
-//   });
-//   document.getElementById('version-select').addEventListener('change', updateManifestURL);
-// });
-
-function initAfterDecryption() {
-  console.log("Initializing after decryption");
+document.addEventListener('DOMContentLoaded', () => {
   fetchVersions();
-  // Your initialization code here
-  populateVersions();
-  updateManifestURL();
 
   // Add event listeners
   document.querySelectorAll('input[name="revision"]').forEach(radio => {
     radio.addEventListener('change', updateManifestURL);
   });
   document.getElementById('version-select').addEventListener('change', updateManifestURL);
-}
-
-initAfterDecryption();
+});
