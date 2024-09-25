@@ -47,7 +47,7 @@ for OTA_FILE in $(ls $FIRMWARE_DIR/*.ota.bin 2>/dev/null); do
   "new_install_prompt_erase": true,
   "builds": [
       {
-        "chipFamily": "esp32",
+        "chipFamily": "ESP32-S3",
         "ota": {
           "path": "./../../assets/firmware/esphome/$release_tag/$(basename $OTA_FILE)",
           "md5": "$(md5sum $OTA_FILE | cut -d' ' -f1)",
