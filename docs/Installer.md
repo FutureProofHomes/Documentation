@@ -28,7 +28,7 @@ async function fetchVersions() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
-
+    console.log('Fetched data:', data);
     // Filter directories only
     const versions = data
       .filter(item => item.type === 'dir')
@@ -67,8 +67,8 @@ function updateManifestURL() {
 
 // Initialize the form
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('Fetching versions');
   fetchVersions();
-
   // Add event listeners
   document.querySelectorAll('input[name="revision"]').forEach(radio => {
     radio.addEventListener('change', updateManifestURL);
