@@ -1,4 +1,4 @@
-# Satellite1
+# Installer
 
 ## Initial Setup
 
