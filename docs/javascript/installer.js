@@ -34,6 +34,13 @@ function populateVersions(versions) {
 function updateManifestURL() {
   const revision = document.querySelector('input[name="revision"]:checked').value;
   const version = document.getElementById('version-select').value;
+  if (version.includes("alpha") || version.includes("beta")) {
+    document.getElementById('warning').style.display = 'block';
+  }
+  else {
+    document.getElementById('warning').style.display = 'none';
+  }
+
   const manifestPath = `manifests/${version}/satellite-va-${revision}-esp32s3.manifest.json`;
 
   // Construct the full URL to your manifest file on GitHub
