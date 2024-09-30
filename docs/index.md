@@ -1,23 +1,30 @@
 # Welcome
 
-This is the product documentation site for [FutureProofHomes.net](https://futureproofhomes.net).  It is here that you will learn how to set up our products and configure them for the optimal user experience.
+This is the product documentation site for [FutureProofHomes.net](https://futureproofhomes.net).  Here you will learn how to assemble, set up and configure our products for the optimal user experience.
+
+This documentation is open source and we welcome your feedback or [contributions to the code](https://github.com/FutureProofHomes/Documentation).
+
+## Why Modular Hardware Design
+
+Most consumers think in terms of complete "products” -- and at FutureProofHomes we do sell products.  However, our products are made of modules.  And each module is made up of components. This means, when you purchase a FutureProofHomes product you will receive components and modules that you connect together to form the desired product.  Good modular hardware design allows us to quickly iterate our products and innovate faster than monolithic hardware companies, and it enables you to easily upgrade your products over time.  Pretty cool, huh?
 
 Please click the buttons below if you'd like more interactive help:
 
-[Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-Hardware/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+## Need Help?
 
-[Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-Hardware/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
 
-[Start a Discussion on Github :fontawesome-solid-comments:](https://github.com/orgs/FutureProofHomes/discussions){ .md-button }
+!!! question "Have a general question and need quick help from the community?"
 
-[Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.gg/BeBjWEPzMV){ .md-button }
+    [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.gg/BeBjWEPzMV){ .md-button }
 
-## Modular Hardware Design
+!!! tip "Discord too chatty and you want a record of your general question?"
 
-Most consumers think in terms of complete "products”.  So, at FutureProofHomes we will sell products.  However, our products are made of "modules".  And each module is made up of "components”. This means, when you purchase a FutureProofHomes product you will receive components and modules that you connect together to form the desired product.  Good modular hardware design allows us to quickly iterate our products and innovate faster than monolithic hardware companies, and it enables the customer to easily upgrade their products over time.
+    [Start a Discussion on Github :fontawesome-solid-comments:](https://github.com/orgs/FutureProofHomes/discussions){ .md-button }
 
-Example of Components:
-<figure markdown="span">
-  ![Image title](https://dummyimage.com/600x400/){ width="300", align=left }
-  <figcaption>Satellite1 HAT Component</figcaption>
-</figure>
+!!! success "Do you have a feature request you'd love to see?"
+    Look through our existing Feature Requests first, then open a new request if necessary: <br>
+    [Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-Hardware/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+
+!!! bug "Have you found a reproducable issue with the hardware or software? "
+    [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-Hardware/issues/new?labels=bug&template=bug-report---.md){ .md-button }
