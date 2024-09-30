@@ -43,6 +43,7 @@ extra:
       link: https://www.youtube.com/@futureproofhomes
 
 markdown_extensions:
+  - md_in_html
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
