@@ -114,7 +114,8 @@ FutureProofHomes  - [Website](https://futureproofhomes.net/) - hello@futureproof
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Your name here soon. :) 
+* @qulbnsl for getting our firmware CI/CD pipelines operational and dynamically updating ESP Web Tools documentation.
+* Your name here soon. :)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

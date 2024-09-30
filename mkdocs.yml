@@ -1,4 +1,4 @@
-site_name: FutureProofHomes Documentation
+site_name: FutureProofHomes Docs
 site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
 theme:
@@ -6,11 +6,13 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
     - header.autohide
     - toc.integrate
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
@@ -41,6 +43,10 @@ extra:
       link: https://github.com/FutureProofHomes
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@futureproofhomes
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/AIVoiceAssist
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/futureproofhome
 
 markdown_extensions:
   - md_in_html
@@ -51,6 +57,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 extra_javascript:
