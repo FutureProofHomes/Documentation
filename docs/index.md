@@ -2,15 +2,13 @@
 
 This is the product documentation site for [FutureProofHomes.net](https://futureproofhomes.net).  Here you will learn how to assemble, set up and configure our products for the optimal user experience.
 
-This documentation is open source and we welcome your feedback or [contributions to the code](https://github.com/FutureProofHomes/Documentation).
+This documentation is open source and we welcome your feedback or [contributions to the code](https://github.com/FutureProofHomes/Documentation?tab=readme-ov-file#contributing).
 
-## Why Modular Hardware Design
+## What is Modular Hardware Design?
 
-Most consumers think in terms of complete "products” -- and at FutureProofHomes we do sell products.  However, our products are made of modules.  And each module is made up of components. This means, when you purchase a FutureProofHomes product you will receive components and modules that you connect together to form the desired product.  Good modular hardware design allows us to quickly iterate our products and innovate faster than monolithic hardware companies, and it enables you to easily upgrade your products over time.  Pretty cool, huh?
+Most consumers think in terms of complete "products" — and at FutureProofHomes, we do sell products. However, our products are composed of modules, and each module is made up of components. This means that when you purchase a FutureProofHomes product, you will receive components and modules to connect and assemble into the desired product. Good modular hardware design allows us to iterate quickly and innovate faster than traditional hardware companies. It also enables you to easily upgrade your products over time. Pretty cool, right?
 
-Please click the buttons below if you'd like more interactive help:
-
-## Need Help?
+## Need Personalized Help?
 
 The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
 
