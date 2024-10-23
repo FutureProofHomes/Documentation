@@ -19,7 +19,8 @@ Once these steps are complete, you can then update your Satellite1 HAT wirelessl
 <div id="firmware-installer" markdown="1">
   <!-- <p><strong>Select Revision:</strong></p> -->
   <label style="display: none"><input type="radio" name="revision" value="rev1"> Revision 1</label>
-  <label style="display: none"><input type="radio" name="revision" value="rev2" checked> Revision 2</label>
+    <label style="display: none"><input type="radio" name="revision" value="rev2"> Revision 1</label>
+  <label style="display: none"><input type="radio" name="revision" value="rev3" checked> Revision 2</label>
 
   <p><strong>Select the ESPHome Firmware Version:</strong></p>
   <!-- <p id="warning" style="display: none" ><b>Warning:</b> <br> You have selected a development version. <br> Expect 🪲🪲🪲.</p> -->
