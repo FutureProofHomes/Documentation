@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Firmware for satellite1-voice-assistant-rev4-esp32s3",
+  "version": "v2.0.0-alpha.6",
+  "new_install_prompt_erase": true,
+  "builds": [
+      {
+        "chipFamily": "ESP32-S3",
+        "ota": {
+          "path": "./../../assets/firmware/esphome/v2.0.0-alpha.6/satellite1-voice-assistant-rev4-esp32s3.ota.bin",
+          "md5": "85e2698a2ab86647fbf1af8e3d2ed468",
+          "summary": "ESPHome Firmware for satellite1-voice-assistant-rev4-esp32s3",
+          "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v2.0.0-alpha.6/"
+        },
+        "parts": [
+          {
+            "path": "../../../assets/firmware/esphome/v2.0.0-alpha.6/satellite1-voice-assistant-rev4-esp32s3.factory.bin",
+            "offset": 0
+          }
+        ]
+      }
+    ]
+}
