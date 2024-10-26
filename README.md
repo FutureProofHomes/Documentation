@@ -62,7 +62,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About Documentation
-FutureProofHomes focuses on building hardware and software for the [Home Assistant platform](https://www.home-assistant.io/).  We specifically enjoy focusing on voice control so that you can control your home without the need for a user-interface.
+FutureProofHomes focuses on building hardware and software for the [Home Assistant platform](https://www.home-assistant.io/).  We specifically focus on AI-powered voice assistance so that you can control your home with intuitive voice conversations instead of interacting with a user interface.
 
 
 ### Built With
