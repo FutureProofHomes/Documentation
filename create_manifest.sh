@@ -49,18 +49,19 @@ for OTA_FILE in $(ls $FIRMWARE_DIR/*.ota.bin 2>/dev/null); do
       {
         "chipFamily": "ESP32-S3",
         "ota": {
-          "path": "./../../assets/firmware/esphome/$release_tag/$(basename $OTA_FILE)",
+          "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/$release_tag/$(basename $OTA_FILE)",
           "md5": "$(md5sum $OTA_FILE | cut -d' ' -f1)",
           "summary": "ESPHome Firmware for $BASE_NAME",
           "release_url": "https://github.com/$esphome_firmware_repository/releases/tag/$release_tag/"
         },
         "parts": [
           {
-            "path": "../../../assets/firmware/esphome/$release_tag/$(basename $BIN_FILE)",
+            "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/$release_tag/$(basename $BIN_FILE)",
             "offset": 0
           }
         ]
       }
+      
     ]
 }
 EOF
