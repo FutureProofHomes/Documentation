@@ -1,0 +1,23 @@
+{
+  "name": "ESPHome Firmware for satellite-va-rev3-esp32s3",
+  "version": "v2.0.0-alpha.8",
+  "new_install_prompt_erase": true,
+  "builds": [
+      {
+        "chipFamily": "ESP32-S3",
+        "ota": {
+          "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/v2.0.0-alpha.8/satellite-va-rev3-esp32s3.ota.bin",
+          "md5": "74e0429505373c43e66d2dadd09c1328",
+          "summary": "ESPHome Firmware for satellite-va-rev3-esp32s3",
+          "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v2.0.0-alpha.8/"
+        },
+        "parts": [
+          {
+            "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/v2.0.0-alpha.8/satellite-va-rev3-esp32s3.factory.bin",
+            "offset": 0
+          }
+        ]
+      }
+      
+    ]
+}
