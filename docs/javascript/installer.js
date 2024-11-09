@@ -1,39 +1,57 @@
 // GitHub API URL to list contents of the 'manifests' directory
 const apiUrl = 'https://api.github.com/repos/FutureProofHomes/Documentation/contents/manifests';
 
-// Function to fetch versions dynamically
-async function fetchVersions() {
+// Function to fetch releases dynamically
+async function fetchReleases() {
   try {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    console.log('Fetched data:', data);
-    // Filter directories only
-    const versions = data
-      .filter(item => item.type === 'dir')
-      .map(dir => dir.name);
+    const releasesResponse = await fetch(apiUrl);
+    const releases = await releasesResponse.json();
+    /* console.log('Fetched releases:', releases); */
 
-    populateVersions(versions);
-    updateManifestURL();
+    for (const release of releases) {
+      if (release.type === 'dir') { // Only process directories if needed
+        fetchManifestFromRelease(release);
+      }
+    }
+
   } catch (error) {
-    console.error('Error fetching versions:', error);
+    console.error('Error fetching Releases:', error);
   }
 }
 
-// Populate the versions dropdown
-function populateVersions(versions) {
-  const versionSelect = document.getElementById('version-select');
-  versions.forEach(version => {
+// Function to fetch all manifests associated with a release
+async function fetchManifestFromRelease(release) {
+	try {
+    const manifestResponse = await fetch(release.url); // Fetch using the 'url' from each item
+    const manifests = await manifestResponse.json();
+    console.log(`Manifests for ${release.name}:`, manifests);
+		
+    populateManifestVersions(release, manifests);
+    
+  } catch (error) {
+    console.error(`Error fetching manifest for ${release.name}:`, error);
+  }
+}
+
+// Function to add all manifest versions to drop down
+function populateManifestVersions(release, manifests) {
+	const versionSelect = document.getElementById('version-select');
+  
+  manifests.forEach(manifest => {
+  	console.log(manifest);
     const option = document.createElement('option');
-    option.value = version;
-    option.textContent = version;
+    option.value = manifest.download_url;
+    option.textContent = release.name;
     versionSelect.appendChild(option);
   });
 }
 
+
 // Update the manifest URL based on selections
 function updateManifestURL() {
-  const revision = document.querySelector('input[name="revision"]:checked').value;
   const version = document.getElementById('version-select').value;
+  console.log(version);
+
   if (version.includes("alpha") || version.includes("beta")) {
     document.getElementById('warning').style.display = 'block';
   }
@@ -41,17 +59,13 @@ function updateManifestURL() {
     document.getElementById('warning').style.display = 'none';
   }
 
-  const manifestPath = `manifests/${version}/satellite-va-${revision}-esp32s3.manifest.json`;
-
-  // Construct the full URL to your manifest file on GitHub
-  const manifestURL = `https://raw.githubusercontent.com/FutureProofHomes/Documentation/main/${manifestPath}`;
-
   // Update the manifest attribute
-  document.getElementById('install-button').setAttribute('manifest', manifestURL);
+  document.getElementById('install-button').setAttribute('manifest', version);
 }
+
 // Initialize the form
 document.addEventListener('DOMContentLoaded', () => {
-  fetchVersions();
+  fetchReleases();
 
   // Add event listeners
   document.querySelectorAll('input[name="revision"]').forEach(radio => {
