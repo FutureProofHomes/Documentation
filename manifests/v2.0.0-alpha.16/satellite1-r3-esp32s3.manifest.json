@@ -7,7 +7,7 @@
         "chipFamily": "ESP32-S3",
         "ota": {
           "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/v2.0.0-alpha.16/satellite1-r3-esp32s3.ota.bin",
-          "md5": "3fbc6f99621e27cd8aba04708a040d7b",
+          "md5": "54913eb139aa8dfef1fad50fc79af6e0",
           "summary": "ESPHome Firmware for satellite1-r3-esp32s3",
           "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v2.0.0-alpha.16/"
         },
