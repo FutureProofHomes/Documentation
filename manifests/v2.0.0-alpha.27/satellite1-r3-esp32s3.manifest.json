@@ -1,0 +1,23 @@
+{
+  "name": "ESPHome Firmware for satellite1-r3-esp32s3",
+  "version": "v2.0.0-alpha.27",
+  "new_install_prompt_erase": true,
+  "builds": [
+      {
+        "chipFamily": "ESP32-S3",
+        "ota": {
+          "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/v2.0.0-alpha.27/satellite1-r3-esp32s3.ota.bin",
+          "md5": "3df4e6f700e0ecc812527050087be553",
+          "summary": "ESPHome Firmware for satellite1-r3-esp32s3",
+          "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v2.0.0-alpha.27/"
+        },
+        "parts": [
+          {
+            "path": "https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/esphome/v2.0.0-alpha.27/satellite1-r3-esp32s3.factory.bin",
+            "offset": 0
+          }
+        ]
+      }
+      
+    ]
+}
