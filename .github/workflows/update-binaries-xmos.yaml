@@ -39,11 +39,10 @@ jobs:
 
     - name: Add and commit release assets to the current repository
       run: |
-        git config --global user.name 'GitHub Actions Bot'
-        git config --global user.email 'actions@github.com'
+        git config --global user.name 'fph-service-account'
+        git config --global user.email 'github-service-account-group@futureproofhomes.net'
         git add ./assets/*
         git commit -m "Add XMOS Firmware: ${{ github.event.inputs.xmos_release_tag }}"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
