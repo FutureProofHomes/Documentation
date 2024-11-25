@@ -1,6 +1,6 @@
 Congrats on your shiny new voice assistnat hardware!  In this opening section we will teach you how to assemble your Satellite1:
 
-## Assembling the Sat1 Module
+## Assembling the Sat1 Module:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
