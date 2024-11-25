@@ -17,28 +17,6 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
 
-    - name: Authenticate with GitHub CLI
-      run: |
-        echo "${{ secrets.PAT_TOKEN }}" | gh auth login --with-token
-
-    - name: Download ESPHome release asset
-      run: |
-        mkdir -p ./assets/firmware/esphome/${{ github.event.inputs.esphome_release_tag }}
-        gh release download ${{ github.event.inputs.esphome_release_tag }} \
-        --repo ${{ env.esphome_repo }}  \
-        --dir ./assets/firmware/esphome/${{ github.event.inputs.esphome_release_tag }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: unzip the ESPHome release asset
-      run: |
-        cd ./assets/firmware/esphome/${{ github.event.inputs.esphome_release_tag }}
-        unzip *.zip
-        cp ./build/* .
-        rm *.zip
-        rm -rf ./build
-        tree
-
     - name: Create manifest files for each hardware revision
       run: |
         chmod +x ./create_manifest.sh
@@ -49,7 +27,6 @@ jobs:
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
         git add ./assets/*
-        git add ./manifests/*
         git commit -m "Add ESPHome Firmware: ${{ github.event.inputs.esphome_release_tag }}"
         git push
       env:
