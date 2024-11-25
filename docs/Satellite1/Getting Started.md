@@ -17,24 +17,9 @@ To set up your Satellite1 HAT for the first time, follow these steps:
 Once these steps are complete, you can then update your Satellite1 HAT wirelessly (over-the-air) without needing a physical connection to your computer.
 
 <div id="firmware-installer" markdown="1">
-  <!-- <p><strong>Select Revision:</strong></p> -->
-  <label style="display: none"><input type="radio" name="revision" value="rev1"> Revision 1</label>
-    <label style="display: none"><input type="radio" name="revision" value="rev2"> Revision 1</label>
-  <label style="display: none"><input type="radio" name="revision" value="rev3" checked> Revision 2</label>
-
-  <p><strong>Select the ESPHome Firmware Version:</strong></p>
-  <!-- <p id="warning" style="display: none" ><b>Warning:</b> <br> You have selected a development version. <br> Expect 🪲🪲🪲.</p> -->
-
-  <select id="version-select"></select>
-  
-  <div id="warning" style="display: none" markdown="1">
-!!! warning "Firmware Under Development"
-
-    You have chosen a version of the firmware that is still under active development.  If you're not a developer we recommend running the stable firmware version.
-  </div>
-
-  <esp-web-install-button id="install-button" manifest="" install-supported></esp-web-install-button>
+  <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
 </div>
+
 
 ## Home Assistant Voice Integration
 
