@@ -1,13 +1,25 @@
-Congrats on your shiny new voice assistnat hardware!  In this opening section we will teach you how to assemble your Satellite1:
+<video width="250" height="250"class="video-js" loop="" autoplay="" preload="none" muted="" playsinline="" poster="https://futureproofhomes.net/cdn/shop/files/0001.jpg?v=1732152100"> <source src="https://cdn.shopify.com/videos/c/o/v/84cc43e4fb6a4d4bb303d9beab397b3f.mp4" type="video/mp4" >
+</video>>
 
-## Assembling the Sat1 Module:
+Congrats on your shiny new voice assistant hardware!  In this opening section we will teach you how to assemble your Satellite1 and get it fully functional
+
+## Assembling the Satellite1 Module (Hat board+ Core Board):
+Watch this video to see how easy it is to assemble your Satellite1 boards.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-## Flashing the Firmware
+## Configuring your Satellite1
+Your Satellite1 arrives pre-configured with all the necessary firmware to get you up and running quickly. Now you have 2 choices,  Install and configure it with the easy method, or install it with the more complicated method (advanced users).
 
 To set up your Satellite1 HAT for the first time, follow these steps:
+## Easy Method
+This is the method we recommend for most users. Watch this video to see how easy it is to get your Satellite1 operational right away.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Advanced Method
+
+NOTE: You **MUST** use a browser that supports serial communications such as Chrome, Microsoft Edge, Firefox, Opera, and Safari.
 
 1.  Connect the Satellite1 HAT to your computer using a USB-C cable.
 2.  Select your desired firmware version from the dropdown below and then click the "Connect" button.
