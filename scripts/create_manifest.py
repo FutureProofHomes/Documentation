@@ -62,6 +62,7 @@ def process_build(
         beta,
     )
 
+
 def main():
     # Check if at least two parameters are passed
     if len(sys.argv) < 3:
