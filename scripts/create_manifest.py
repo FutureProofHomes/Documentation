@@ -6,8 +6,13 @@ import json
 import hashlib
 import urllib.request
 import urllib.error
-from . import utils
-    
+
+# Set the path to the directory containing this script and add it to the system path
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(SCRIPT_DIR)
+
+from utils import utils    
+
 def process_build(BASE_NAME, factory_urls, ota_urls, release_tag, beta, release_repository):
         BROWSER_URL_FACTORY = factory_urls.get(BASE_NAME)
         BROWSER_URL_OTA = ota_urls.get(BASE_NAME)
