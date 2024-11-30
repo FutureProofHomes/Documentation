@@ -45,9 +45,9 @@ def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, BROWSER_U
 
     # Copy the manifest file to the appropriate filename
     if beta:
-        shutil.copyfile(MANIFEST_FILE, os.path.join(MANIFEST_FILE_DIR, 'manifest-beta.json'))
+        shutil.copyfile(MANIFEST_FILE, os.path.join("..", 'manifest-beta.json'))
     else:
-        shutil.copyfile(MANIFEST_FILE, os.path.join(MANIFEST_FILE_DIR, 'manifest.json'))
+        shutil.copyfile(MANIFEST_FILE, os.path.join("..", 'manifest.json'))
 
 def error_exit(message):
     print(message, file=sys.stderr)
