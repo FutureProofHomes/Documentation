@@ -18,4 +18,10 @@ fi
 version=$1
 release_repo=$2
 
-./script.py $version $release_repo
+# Get the directory where the script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Change the current working directory to the script directory
+cd "$SCRIPT_DIR"
+
+./create_manifest.py $version $release_repo
