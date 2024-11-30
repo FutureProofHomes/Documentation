@@ -16,18 +16,20 @@ from utils import utils
 
 def process_build(
     BASE_NAME,
-    factory_urls,
-    ota_urls,
+    build_assets_info,
     release_tag,
     beta,
     release_repository,
     GITHUB_TOKEN,
 ):
-    # Get the Asset ID for the factory and OTA binaries
+    # Get the Asset ID for the OTA binaries
     # Sample URL: https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210089213
-    BASE_URL=f"https://api.github.com/repos/{release_repository}/releases/assets/"
-    BROWSER_URL_FACTORY = f"{BASE_URL}{factory_urls.get(BASE_NAME)}"
-    BROWSER_URL_OTA = f"{BASE_URL}{ota_urls.get(BASE_NAME)}"
+    BASE_URL=f"https://api.github.com/repos/{release_repository}/releases/assets/"    
+    BROWSER_URL_FACTORY = build_assets_info.get('factory', {}).get('browser_download_url')
+    BROWSER_URL_OTA = build_assets_info.get('ota', {}).get('browser_download_url')
+
+    OTA_ASSET_ID = build_assets_info.get('ota', {}).get('asset_id')
+    DOWNLOAD_URL = f"{BASE_URL}{OTA_ASSET_ID}"
     print(f"Factory URL: {BROWSER_URL_FACTORY}")
     print(f"OTA URL: {BROWSER_URL_OTA}")
     # Compute OTA_MD5 if BROWSER_URL_OTA is available
@@ -39,7 +41,7 @@ def process_build(
             "Authorization": f"Bearer {GITHUB_TOKEN}",
             "X-GitHub-Api-Version": "2022-11-28",
         }
-        request = urllib.request.Request(BROWSER_URL_OTA, headers=headers)
+        request = urllib.request.Request(DOWNLOAD_URL, headers=headers)
         try:
             with urllib.request.urlopen(request) as response:
                 ota_data = response.read()
@@ -65,13 +67,15 @@ def process_build(
 
 def main():
     # Check if at least two parameters are passed
-    if len(sys.argv) < 3:
-        utils.error_exit(f"Usage: {sys.argv[0]} <release_tag> <release_repository>")
+    # if len(sys.argv) < 3:
+    #     utils.error_exit(f"Usage: {sys.argv[0]} <release_tag> <release_repository>")
 
     # Assign input parameters to variables
-    release_tag = sys.argv[1]
-    release_repository = sys.argv[2]
-
+    # release_tag = sys.argv[1]
+    # release_repository = sys.argv[2]
+    
+    release_tag = "v2.0.0-alpha.54"
+    release_repository = "FutureProofHomes/Satellite1-ESPHome"
     # Ensure GITHUB_TOKEN is set
     GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
     if not GITHUB_TOKEN:
@@ -101,22 +105,36 @@ def main():
         asset_id = asset.get("id") # Get the Asset ID
         # url = asset.get("browser_download_url")
 
-        if name.endswith(".factory.bin"):
-            build_name = name[: -len(".factory.bin")]
-            factory_urls[build_name] = asset_id
-        elif name.endswith(".ota.bin"):
-            build_name = name[: -len(".ota.bin")]
-            ota_urls[build_name] = asset_id
+        assets_info = {}
 
-    # Get the list of unique build names
-    build_names = set(factory_urls.keys()).union(set(ota_urls.keys()))
+        for asset in assets:
+            print(f"Processing asset: {asset.get('name')}")
+            name = asset.get("name")
+            asset_id = asset.get("id")
+            browser_download_url = asset.get("browser_download_url")
+
+            if name.endswith(".factory.bin"):
+                build_name = name[: -len(".factory.bin")]
+                if build_name not in assets_info:
+                    assets_info[build_name] = {}
+                assets_info[build_name]['factory'] = {
+                    'browser_download_url': browser_download_url,
+                    'asset_id': asset_id
+                }
+            elif name.endswith(".ota.bin"):
+                build_name = name[: -len(".ota.bin")]
+                if build_name not in assets_info:
+                    assets_info[build_name] = {}
+                assets_info[build_name]['ota'] = {
+                    'browser_download_url': browser_download_url,
+                    'asset_id': asset_id
+                }
 
     # Process each build
-    for BASE_NAME in build_names:
+    for BASE_NAME, build_assets_info in assets_info.items():
         process_build(
             BASE_NAME,
-            factory_urls,
-            ota_urls,
+            build_assets_info,
             release_tag,
             beta,
             release_repository,
