@@ -52,7 +52,7 @@ def process_build(
 
     # Check if the firmware directory exists
     MANIFEST_FILE_DIR = os.path.join("..", "assets", "manifests", BASE_NAME, release_tag)
-
+    FIRMWARE_FILE_DIR = os.path.join("..", "assets", "firmware", "esphome")
     # Call the make_manifest function
     utils.make_manifest(
         BASE_NAME,
@@ -64,6 +64,9 @@ def process_build(
         MANIFEST_FILE_DIR=MANIFEST_FILE_DIR,
         beta=beta,
     )
+    utils.download_release(BROWSER_URL_OTA, beta, FIRMWARE_FILE_DIR)
+    utils.download_release(BROWSER_URL_FACTORY, beta, FIRMWARE_FILE_DIR)
+
 
 
 def main():
