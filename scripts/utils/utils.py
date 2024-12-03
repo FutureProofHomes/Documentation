@@ -70,11 +70,11 @@ def get_release_info(release_tag, release_repository, GITHUB_TOKEN):
 def download_release(url, beta, FIRMWARE_FILE_DIR):
     # Download the release
     FILE_DIR = os.path.join(FIRMWARE_FILE_DIR, "beta") if beta else os.path.join(FIRMWARE_FILE_DIR, "production")
-    os.makedirs(FIRMWARE_FILE_DIR, exist_ok=True)
+    os.makedirs(FILE_DIR, exist_ok=True)
 
     # Determine the filename and file path
     filename = os.path.basename(url)
-    file_path = os.path.join(FIRMWARE_FILE_DIR, filename)
+    file_path = os.path.join(FILE_DIR, filename)
 
     # Download the release
     request = urllib.request.Request(url)
