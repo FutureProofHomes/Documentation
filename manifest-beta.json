@@ -6,14 +6,14 @@
     {
       "chipFamily": "ESP32-S3",
       "ota": {
-        "path": "https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210251113",
+        "path": "https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210787369",
         "md5": "11eb9ae1f881798c5db16b9e4ba3635d",
         "summary": "ESPHome Firmware for satellite1-esp32s3",
         "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.0.1-beta.0/"
       },
       "parts": [
         {
-          "path": "https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210251112",
+          "path": "https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210787368",
           "offset": 0
         }
       ]
