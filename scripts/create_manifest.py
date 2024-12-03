@@ -58,11 +58,10 @@ def process_build(
         BASE_NAME,
         release_tag,
         release_repository,
-        BROWSER_URL_OTA=BROWSER_URL_OTA,
         OTA_MD5=OTA_MD5,
-        BROWSER_URL_FACTORY=BROWSER_URL_FACTORY,
         MANIFEST_FILE_DIR=MANIFEST_FILE_DIR,
         beta=beta,
+        FIRMWARE_FILE_DIR=FIRMWARE_FILE_DIR.split("../")[-1],
     )
     utils.download_release(BROWSER_URL_OTA, beta, FIRMWARE_FILE_DIR)
     utils.download_release(BROWSER_URL_FACTORY, beta, FIRMWARE_FILE_DIR)
