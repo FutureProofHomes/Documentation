@@ -26,6 +26,7 @@ def process_build(
     # Sample URL: https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210089213
     BASE_URL=f"https://api.github.com/repos/{release_repository}/releases/assets/"
     BROWSER_URL_OTA = build_assets_info.get('ota', {}).get('browser_download_url')
+    BROWSER_URL_FACTORY = build_assets_info.get('factory', {}).get('browser_download_url')
 
     OTA_ASSET_ID = build_assets_info.get('ota', {}).get('asset_id')
     FACTORY_ASSET_ID = build_assets_info.get('factory', {}).get('asset_id')
@@ -57,11 +58,11 @@ def process_build(
         BASE_NAME,
         release_tag,
         release_repository,
-        OTA_DOWNLOAD_URL,
-        OTA_MD5,
-        FACTORY_DOWNLOAD_URL,
-        MANIFEST_FILE_DIR,
-        beta,
+        BROWSER_URL_OTA=BROWSER_URL_OTA,
+        OTA_MD5=OTA_MD5,
+        BROWSER_URL_FACTORY=BROWSER_URL_FACTORY,
+        MANIFEST_FILE_DIR=MANIFEST_FILE_DIR,
+        beta=beta,
     )
 
 
