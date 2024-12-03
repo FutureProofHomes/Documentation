@@ -71,11 +71,9 @@ def main():
     #     utils.error_exit(f"Usage: {sys.argv[0]} <release_tag> <release_repository>")
 
     # Assign input parameters to variables
-    # release_tag = sys.argv[1]
-    # release_repository = sys.argv[2]
-    
-    release_tag = "v2.0.0-alpha.54"
-    release_repository = "FutureProofHomes/Satellite1-ESPHome"
+    release_tag = sys.argv[1]
+    release_repository = sys.argv[2]
+
     # Ensure GITHUB_TOKEN is set
     GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
     if not GITHUB_TOKEN:
