@@ -24,26 +24,26 @@ def process_build(
 ):
     # Get the Asset ID for the OTA binaries
     # Sample URL: https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210089213
-    BASE_URL=f"https://api.github.com/repos/{release_repository}/releases/assets/"    
-    BROWSER_URL_FACTORY = build_assets_info.get('factory', {}).get('browser_download_url')
+    BASE_URL=f"https://api.github.com/repos/{release_repository}/releases/assets/"
     BROWSER_URL_OTA = build_assets_info.get('ota', {}).get('browser_download_url')
 
     OTA_ASSET_ID = build_assets_info.get('ota', {}).get('asset_id')
-    DOWNLOAD_URL = f"{BASE_URL}{OTA_ASSET_ID}"
-    print(f"Factory URL: {BROWSER_URL_FACTORY}")
-    print(f"OTA URL: {BROWSER_URL_OTA}")
+    FACTORY_ASSET_ID = build_assets_info.get('factory', {}).get('asset_id')
+
+    OTA_DOWNLOAD_URL = f"{BASE_URL}{OTA_ASSET_ID}"
+    FACTORY_DOWNLOAD_URL = f"{BASE_URL}{FACTORY_ASSET_ID}"
+
     # Compute OTA_MD5 if BROWSER_URL_OTA is available
     OTA_MD5 = ""
-    # Compute OTA_MD5 if BROWSER_URL_OTA is available
-    if BROWSER_URL_OTA:
-        headers = {
+    headers = {
             "Accept": "application/octet-stream",
             "Authorization": f"Bearer {GITHUB_TOKEN}",
             "X-GitHub-Api-Version": "2022-11-28",
         }
-        request = urllib.request.Request(DOWNLOAD_URL, headers=headers)
+    ota_request = urllib.request.Request(OTA_DOWNLOAD_URL, headers=headers)
+    if BROWSER_URL_OTA:
         try:
-            with urllib.request.urlopen(request) as response:
+            with urllib.request.urlopen(ota_request) as response:
                 ota_data = response.read()
             OTA_MD5 = hashlib.md5(ota_data).hexdigest()
         except urllib.error.HTTPError as e:
@@ -57,9 +57,9 @@ def process_build(
         BASE_NAME,
         release_tag,
         release_repository,
-        BROWSER_URL_OTA,
+        OTA_DOWNLOAD_URL,
         OTA_MD5,
-        BROWSER_URL_FACTORY,
+        FACTORY_DOWNLOAD_URL,
         MANIFEST_FILE_DIR,
         beta,
     )
@@ -67,8 +67,8 @@ def process_build(
 
 def main():
     # Check if at least two parameters are passed
-    # if len(sys.argv) < 3:
-    #     utils.error_exit(f"Usage: {sys.argv[0]} <release_tag> <release_repository>")
+    if len(sys.argv) < 3:
+        utils.error_exit(f"Usage: {sys.argv[0]} <release_tag> <release_repository>")
 
     # Assign input parameters to variables
     release_tag = sys.argv[1]
