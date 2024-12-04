@@ -13,7 +13,7 @@ def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, 
     DIR_NAME = os.path.join(FIRMWARE_FILE_DIR, "beta") if beta else os.path.join(FIRMWARE_FILE_DIR, "production")
     # Build the manifest data
     manifest_data = {
-        "name": f"ESPHome Firmware for {BASE_NAME}",
+        "name": f"ESPHome Firmware for Satellite1-Core-Board",
         "version": release_tag,
         "new_install_prompt_erase": True,
         "builds": [
