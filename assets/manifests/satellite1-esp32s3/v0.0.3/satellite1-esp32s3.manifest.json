@@ -1,5 +1,5 @@
 {
-  "name": "ESPHome Firmware for satellite1-esp32s3",
+  "name": "ESPHome Firmware for Satellite1-Core-Board",
   "version": "v0.0.3",
   "new_install_prompt_erase": true,
   "builds": [
