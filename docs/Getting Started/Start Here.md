@@ -12,10 +12,12 @@ Watch this video to see how easy it is to assemble your Satellite1 boards.
 Your Satellite1 arrives pre-configured with all the necessary firmware to get you up and running quickly. Now you have 2 choices,  Install and configure it with the easy method, or install it with the more complicated method (advanced users).
 
 To set up your Satellite1 HAT for the first time, follow these steps:
+
 ## Easy Method
 This is the method we recommend for most users. Watch this video to see how easy it is to get your Satellite1 operational right away.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Unbox your new Satellite1.  You'll see it comes in 2 pieces, the "Hat" or round board and the "Core" the rectangular board.  Lay the Hat on a flat surface with the buttons facing down.  
 
 <img width="271" alt="image" src="https://github.com/user-attachments/assets/ee2c9a4c-2ed6-48b1-87e0-aae0122690dd">
