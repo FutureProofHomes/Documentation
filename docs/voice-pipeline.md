@@ -7,7 +7,6 @@ Now that your device is recognized by Home Assistant, you'll want to breathe som
     
     <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank">Instructions for installing ESPHome</a>
 
-
 ## Set up a Voice Pipeline in Home Assistant
 
 The easiest method is simply to navigate Home Assistant as follows
