@@ -1,9 +1,3 @@
----
-title: Multi-Sensor Configs
-description: How to enable different mmWave sensors.  Use the off-sets to align your sensors.  Or enable bluetooth presence detection.
----
-Coming Soon...
-
 <!-- ## Bluetooth Room Presence Detection
 
 If you have multiple Satellite1's in each room of your home you can track your smart watch or phone to determine what room you're in:

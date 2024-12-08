@@ -1,8 +1,4 @@
----
-title: Accessories
-description: Useful Acceries for Satellite1
----
-## Powering your Satellite 1 board
+## Power Supply
 Specifications: 
 
 !!! note
@@ -50,7 +46,7 @@ For testing purposes, we've found that the plastic spray paint can tops are the 
 
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/0ea8e591-c685-4c60-8a53-3c913cc273ae">
 
-## mmWave Human Presence Sensing Radar
+## mmWave Human Presence
 
 Your Sat1 also has a provision for Human Presence Sensing Radar Module LD2410 Millimeter Wave.  You can get those here:
 

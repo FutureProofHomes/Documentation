@@ -3,8 +3,7 @@ site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
 
 nav:
-  # - Welcome: index.md
-  - Getting Started: getting-started.md
+  - Home: index.md
   - Voice Pipeline Setup: voice-pipeline.md
   - Streaming Music: streaming-music.md
   - Multi-Sensor Configs: multi-sensor-configs.md
