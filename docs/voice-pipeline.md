@@ -1,6 +1,6 @@
 ## Setting up your Satellite one to talk and listen
 
-Now that your device is recognized by Home Assistant, you'll want to breathe some life into in so it can hearwhat you say and respsond to your commands.  That involves a few steps to get it configured.
+Now that your device is recognized by Home Assistant, you'll want to breathe some life into in so it can hearwhat you say and respsond to your commands.  That involves a few steps to get a basic Voice Pipleline installed that can recognize basic Home Assistant command like "Turn on the bedroom light".  For more advanced interactions, see Advanced Pipelines.
 
 !!! note
     This guide assumes you already have the ESPHome Add-On installed.  If not, then install ESPHome first and come back to this guide and continue. Satellite1 uses ESPHome for all its configuration.
@@ -58,3 +58,9 @@ You should now be able to say "Hey Jarvis (or Ok Nabu), what time is it?" and Sa
 
 Congtatulations!  You've completed the basic setup of your new Satellite1 Voice Assistant and added a voice piple line that it can use to listen and speak.
 
+## Advanced Voice Pipeline Options
+
+You can add advanced features to your Voice Asistant quite easily!
+Controlling Home Assistant is done by providing the AI access to the Assist API of Home Assistant. You can control what devices and entities it can access from the <a href="https://my.home-assistant.io/redirect/voice_assistants" target="_blank">Exposed Entities page</a>. The AI is able to provide you information about your devices and control them.
+
+[Using Googles Generative AI Voice Pipeline ](voice-pipeline -googleGPT.md)
