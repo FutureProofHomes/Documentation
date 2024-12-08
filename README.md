@@ -88,9 +88,11 @@ Don't forget to give the project a star! Thanks again!
 
 ## Local Development Environment
 
-1. If you do not have `/venv` Python Virtual Environment in your local repo then you must set it up (`python -m venv venv`)
-2. Start the Python Environment (`source venv/bin/activate`)
-3. Serve MkDocs Locally (`mkdocs serve`)
+1. Ensure Python and pip are installed on your machine (`python --version`) and (`pip --version`)
+2. Create a Python Virtual Environment (`python -m venv venv`)
+3. Start the Python Environment (`source venv/bin/activate`)
+4. Install Material for MkDocs (`pip install mkdocs-material`)
+5. Serve MkDocs Locally (`mkdocs serve`)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

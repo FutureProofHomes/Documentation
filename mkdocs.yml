@@ -1,19 +1,30 @@
 site_name: FutureProofHomes Docs
 site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
+
+nav:
+  # - Welcome: index.md
+  - Getting Started: getting-started.md
+  - Recommended Accessories: recommended-accessories.md
+  - Voice Pipeline Configs: voice-pipeline-configs.md
+  - Streaming Music: streaming-music.md
+  - Multi-Sensor Configs: multi-sensor-configs.md
+  - Modifying the Firmware: modifying-the-firmware.md
+  - Troubleshooting: troubleshooting.md
+  - FAQs: faqs.md
+
 theme:
   logo: assets/square_transparent_black_logo_vector_300x300.svg
   name: material
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - header.autohide
-    - toc.integrate
-    - toc.follow
+    # - navigation.tabs
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.top
+    
+    - toc.integrate
+    
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -50,16 +61,22 @@ extra:
 
 markdown_extensions:
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.mark
   - attr_list
+  - pymdownx.magiclink
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
 
 
 extra_javascript:
