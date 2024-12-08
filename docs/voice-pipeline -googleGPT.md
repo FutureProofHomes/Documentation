@@ -20,6 +20,8 @@ Now give your assistant a name, and make sure you enable these options:
 
 <img width="60%" alt="image" src="/assets/googleGPT0.png">
 
+Turning on the "Prefer handling commands locally" option above is very important.  When you issue a command like "Turn on the light", it will be handled by Home Assistant.  Saying "Why is the sky blue" isn't understood by Home Assistant, and that gets shuttled off to Google's Generative AI server which formulates a response and sends it back to your Satellit1. How cool is that? 
+
 Lastly, click "Create"
 
 <img width="60%" alt="image" src="/assets/Pipeline2.png">
