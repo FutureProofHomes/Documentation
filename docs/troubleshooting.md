@@ -43,8 +43,8 @@ The FutureProofHomes team will do their best to keep up with support requests, b
 
 !!! success "Do you have a feature request you'd love to see?"
     Look through our existing Feature Requests first, then open a new request if necessary: <br>
-    [Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-Hardware/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+    [Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?labels=bug&template=bug-report---.md){ .md-button }
 
 !!! bug "Have you found a reproducable issue with the hardware or software? "
-    [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-Hardware/issues/new?labels=bug&template=bug-report---.md){ .md-button }
+    [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?labels=bug&template=bug-report---.md){ .md-button }
 
