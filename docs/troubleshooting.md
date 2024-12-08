@@ -2,7 +2,6 @@
 title: Troubleshooting
 description: Troubleshooting Guide for your new Satellite1
 ---
-## Troubleshooting your new Satellite1
 
 ## Resetting the Satellite1 to Factory Settings
 
@@ -16,20 +15,20 @@ description: Troubleshooting Guide for your new Satellite1
 
 ## Configuring using the Easy Method
 
-[Start over using the Easy Method ](Start%20Here.md#EasyMode)
+[Start over using the Easy Method](Start%20Here.md#EasyMode)
 
 ## Flashing from the Browser (Expert/Advanced)
 !!! note 
-    Note, you must use a browser that supports flashing like Chrome,, Brave or Safari
+    Note, you must use a browser that supports flashing like Chrome, Brave or Safari
 
-[Flash from your browser here ](Start%20Here.md#ExpertMode)
+[Flash from your browser here](Start%20Here.md#ExpertMode)
 
 ## <a name="Logs"/a> Using the logs to troubleshoot problems
 
 Connect your Satellite1 to your computer using a USB-C cable. Choose your serial port then click the connect button.
 
 !!! note 
-    Note, you must use a browser that supports flashing like Chrome,, Brave or Safari
+    Note, you must use a browser that supports flashing like Chrome, Brave or Safari
 
 <div id="firmware-installer" markdown="1">
   <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
@@ -37,12 +36,12 @@ Connect your Satellite1 to your computer using a USB-C cable. Choose your serial
 
 Choose Logs & Console:
 
-<img width="150" alt="image" src="/assets/TroubleshootingLogsConsole.png">
+<img width="60%" alt="image" src="/assets/TroubleshootingLogsConsole.png">
 
 If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll backup and take a look.  
 
-<img width="700" alt="image" src="/assets/TroubleshootingLogs.png">
+<img width="60%" alt="image" src="/assets/TroubleshootingLogs.png">
 
 Scroll to the bottom and issue a command "Hey Jarvis, what time is it?"
 
-<img width="700" alt="image" src="/assets/TroubleshootingHeyJarvis.png">
+<img width="60%" alt="image" src="/assets/TroubleshootingHeyJarvis.png">

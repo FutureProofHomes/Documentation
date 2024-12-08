@@ -15,18 +15,18 @@ A couple of tips:
 
 To add your Satellite1 to MA, do the following:
 
-<img width="450" alt="image" src="/assets/MA0.png">
+<img width="60%" alt="image" src="/assets/MA0.png">
 
-<img width="450" alt="image" src="/assets/MA1.png">
+<img width="60%" alt="image" src="/assets/MA1.png">
 
-<img width="150" alt="image" src="/assets/MA2.png">
+<img width="60%" alt="image" src="/assets/MA2.png">
 
-<img width="450" alt="image" src="/assets/MA3.png">
+<img width="60%" alt="image" src="/assets/MA3.png">
 
-<img width="450" alt="image" src="/assets/MA4.png">
+<img width="60%" alt="image" src="/assets/MA4.png">
 
 That's it!  then select Sattelite1 as your Player Provider
 
-<img width="450" alt="image" src="/assets/MA5.png">
+<img width="60%" alt="image" src="/assets/MA5.png">
 
-<img width="450" alt="image" src="/assets/MA6.png">
+<img width="60%" alt="image" src="/assets/MA6.png">

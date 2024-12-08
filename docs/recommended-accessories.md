@@ -2,8 +2,6 @@
 title: Accessories
 description: Useful Acceries for Satellite1
 ---
-## Useful Accessories for your Satellite 1 dev board
-
 ## Powering your Satellite 1 board
 Specifications: 
 

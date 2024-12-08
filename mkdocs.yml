@@ -5,17 +5,19 @@ repo_url: https://github.com/FutureProofHomes/Documentation
 nav:
   # - Welcome: index.md
   - Getting Started: getting-started.md
-  - Recommended Accessories: recommended-accessories.md
-  - Voice Pipeline Configs: voice-pipeline-configs.md
+  - Voice Pipeline Setup: voice-pipeline.md
   - Streaming Music: streaming-music.md
   - Multi-Sensor Configs: multi-sensor-configs.md
   - Modifying the Firmware: modifying-the-firmware.md
+  - Awesome Automations: awesome-automations.md
+  - Recommended Accessories: recommended-accessories.md
   - Troubleshooting: troubleshooting.md
   - FAQs: faqs.md
 
 theme:
   logo: assets/square_transparent_black_logo_vector_300x300.svg
   name: material
+  custom_dir: docs/overrides
   features:
     # - navigation.tabs
     - navigation.indexes
