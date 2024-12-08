@@ -77,6 +77,8 @@ ADD ESPHOME CORRECTED STUFF HEFRE.
 
 ![Advanced](../assets/label-expert.png)
 
+[If you want to look at the logs, click here ](Troubleshooting.md#Logs)
+
 ## <a name="ExpertMode"></a> Expert/Advanced Method
 
 !!! note
@@ -116,6 +118,8 @@ Now connect to your WiFi network and Connect
 <img width="350" alt="image" src="/assets/ConfigureWifi.png">
 
 <img width="350" alt="image" src="/assets/ESPHome-WiFiConnected.png">
+
+[If you want to look at the logs, click here ](Troubleshooting.md#Logs)
 
 ## Home Assistant Voice Integration
 

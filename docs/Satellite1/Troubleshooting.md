@@ -24,7 +24,7 @@ description: Troubleshooting Guide for your new Satellite1
 
 [Flash from your browser here ](Start%20Here.md#ExpertMode)
 
-## Using the logs to troubleshoot problems
+## <a name="Logs" /a>Using the logs to troubleshoot problems
 
 Connect your Satellite1 to your computer using a USB-C cable. Choose your serial port then click the connect button.
 
