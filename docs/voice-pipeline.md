@@ -1,28 +1,65 @@
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+## Setting up your Satellite one to talk and listen
 
-## Standard Voice Pipelines
+Now that your device is recognized by Home Assistant, you'll want to breathe some life into in so it can hearwhat you say and respsond to your commands.  That involves a few steps to get a basic Voice Pipleline installed that can recognize basic Home Assistant command like "Turn on the bedroom light".  For more advanced interactions, see Advanced Pipelines.
 
-There are two standard voice pipelines we recommend setting up & trying out:
+!!! note
+    This guide assumes you already have the ESPHome Add-On installed.  If not, then install ESPHome first and come back to this guide and continue. Satellite1 uses ESPHome for all its configuration.
+    
+    <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank">Instructions for installing ESPHome</a>
 
-???+ abstract "Home Assistant's 'Local Assist Pipeline' (Free and completely private, response times depend on your hardware)"
-    [Set up Local Assist Pipeline](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/){ .md-button .md-button--primary }
+## Set up a Voice Pipeline in Home Assistant
 
-???+ abstract "Home Assistant's 'Cloud Assist Pipeline' (Requires paid Home Assistant Cloud account, response times are fast!)"
-    [Set up Cloud Assist Pipeline](https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/){ .md-button .md-button--primary }
+The easiest method is simply to navigate Home Assistant as follows
 
-## Local Generative A.I. Conversation Agents
+**/Settings/Voice Assistants/Add Assistant**
 
-Once you have one of the standard pipelines above operational you can decide to upgrade the conversation agent to generative A.I.
+<img width="60%" alt="image" src="/assets/Pipeline0.png">
 
-???+ abstract "Ollama AI Powered Conversation Agent' (Free, requires a GPU, and can be hard to set up with proper function calling.)"
-    [Set up Ollama Conversation Agent](https://www.home-assistant.io/integrations/ollama/){ .md-button .md-button--primary }
+Now give your assistant a name, and choose your preferred option.  Most of the defaults should work fine.
 
-## Cloud-Based Generative A.I. Conversation Agents
+<img width="60%" alt="image" src="/assets/Pipeline1.png">
 
-???+ danger "Warning: You're giving a company with non-deterministic artificial intelligence ability control of your home and collect data on your usage.  Be cautious!"
+Lastly, click "Create"
 
-???+ abstract "Google A.I Powered Pipeline' (Free, but will collect your data)"
-    [Set up Google AI Conversation Agent](https://www.home-assistant.io/integrations/google_generative_ai_conversation/){ .md-button .md-button--primary }
+<img width="60%" alt="image" src="/assets/Pipeline2.png">
 
-???+ abstract "OpenAI ChatGPT Powered Pipeline' (Expensive, and not open at all, despite the marketing name.)"
-    [Set up OpenAI ChatGPT Conversation Agent](https://www.home-assistant.io/integrations/openai_conversation/){ .md-button .md-button--primary }
+You now have a "Voice Pipeline" that will soon be able to hear and speak.
+
+<img width="60%" alt="image" src="/assets/Pipeline3.png">
+
+Next you'll want to select that pipeline on your new Satellite1
+Navigate Home Assistant as follows
+
+**/Settings/Devices & Services/ESPHome/**   
+
+Click on "1 device" directly under the Satellite1 device
+
+<img width="60%" alt="image" src="/assets/Pipeline4.png">
+
+Scroll down to the Configuration section, and make sure your new Voice Pipeline you configured in the previous steps is selected
+
+<img width="60%" alt="image" src="/assets/Pipeline5.png">
+
+You should also set your preferred wake word
+
+<img width="60%" alt="image" src="/assets/Pipeline7.png">
+
+You'll also notice here that there are a few other things you can play with.  You can toggle the switches to turn on the LED Ring, and mute the Microphone.  You can also set the hue and brightness of the LED ring here.  Try it!
+
+<img width="60%" alt="image" src="/assets/Pipeline8.png">
+
+
+Each of these setting has an immediate effect.  No need to restart anything.
+
+## Finishing up
+
+You should now be able to say "Hey Jarvis (or Ok Nabu), what time is it?" and Satellite1 should answer!
+
+Congtatulations!  You've completed the basic setup of your new Satellite1 Voice Assistant and added a voice piple line that it can use to listen and speak.
+
+## Advanced Voice Pipeline Options
+
+You can add advanced features to your Voice Asistant quite easily!
+Controlling Home Assistant is done by providing the AI access to the Assist API of Home Assistant. You can control what devices and entities it can access from the <a href="https://my.home-assistant.io/redirect/voice_assistants" target="_blank">Exposed Entities page</a>. The AI is able to provide you information about your devices and control them.
+
+[Using Googles Generative AI Voice Pipeline ](voice-pipeline -googleGPT.md)
