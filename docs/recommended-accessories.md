@@ -1,4 +1,4 @@
-## Power Supply
+## Satellite1 Power Supply
 Specifications: 
 
 !!! note
@@ -59,3 +59,4 @@ Smart Human Presence Sensing Radar Module LD241**
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/a9aeae61-b55f-4532-b905-9bd7562ec404">
 
 
+[Back to top](./recommended-accessories.md/#satellite1-power-supply)

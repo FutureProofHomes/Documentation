@@ -1,4 +1,5 @@
 ## Introduction
+
 Congrats on your shiny new Satellite1 Voice Assistant & Multi-Sensor hardware!  In this opening section we will teach you how to assemble your Satellite1 and get it fully functional.   This guide is presented in several steps. Each step will bring more functionality to your new toy.
 
 Use the links in the naviation bar on the left of this screen to walk through each section to get your device up and running.  In this section, we'll get it assembled, powered on and recognized by Home Assistant.
@@ -100,3 +101,5 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
     <img width="60%" alt="image" src="/assets/ESPHome-WiFiConnected.png">
 
     [If you want to look at the logs, click here ](troubleshooting.md#inspecting-logs)
+
+<h1 id="Intrduction">[Back to the top]</h1>
