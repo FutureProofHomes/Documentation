@@ -77,3 +77,5 @@ Your home assistant likely has hundreds if not thousands of entities. If you wan
 
 2. Enable the "Assist" toggle switch and consider adding alias names that you might use when referring to the entity.
    <img width="60%" alt="image" src="/assets/Expose Settings.png">
+
+   [Back to Top](./voice-pipeline.md/#what-is-a-voice-pipeline)
