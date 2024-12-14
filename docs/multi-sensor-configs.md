@@ -10,10 +10,10 @@ If you have multiple Satellite1's in each room of your home you can track your s
 **Here are details on their usage and some useful tips.**
 ## LD2410(B)
 This is small, but powerful sensor. It can sense motion and still presence on distances up to 6 meters, detection angle +/-60 degrees, and can be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
-###Glossary
-1. **Gate** - this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
+### Glossary
+1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
 2. **Distance resolution**: the "thickness" of one gate. LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
-3. **Energy** - basically "amount of presence" in some gate. The more actively you're moving - the more will energy be.
+3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy be.
 ### Installation
 1. Uncomment line with `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in `OPTIONAL COMPONENTS` section of Satellite1 config file.
 2. Insert the sensor to the corresponding slot on Hat board.
