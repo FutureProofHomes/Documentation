@@ -41,7 +41,8 @@ Let's familarize ourselves with some useful entities:
   
 #### Calibration
 The idea is simple: 
-- Set sensor in place, where its 120 degrees will be most useful, and catch the least of unnecessary movement. 
+- Set sensor in place, where its 120 degrees will be most useful, and catch the least of unnecessary movement.
+- Turn on **Engineering mode** switch.
 
 *Hint: It works the best in the room corner, opposite to the table, or on the short wall of long room (e.g. bathroom). This is especially convenient, if you have shower with glass door on the opposite end.*
 
@@ -53,7 +54,11 @@ The idea is simple:
   **Voila, it works now!**
 
 #### Example calibration card to make it easier
-We built UI card, to make calibration process more intuitive. Here's how to use it:
+We built UI card, to make calibration process more intuitive. 
+
+<img width="100%" alt="image" src="assets/ld2410_calibration_card.png">
+
+Here's how to use it:
 
 1. Install [Mushroom cards](https://github.com/piitaya/lovelace-mushroom), [Auto-entities card](https://github.com/thomasloven/lovelace-auto-entities), [Decluttering card](https://github.com/custom-cards/decluttering-card) and [Bar card](https://github.com/custom-cards/bar-card) from HACS.
 2. Put this to the very bottom of dashboard YAML in raw edit mode (this should be done once per dashboard):
@@ -200,7 +205,7 @@ template: ld2410
 variables:
     - device: satellite1_9a72b3
 ```
-
+Blue bars are threshold sliders. Orange bars are energy indicators.
 That's it! Happy building!
 
 
