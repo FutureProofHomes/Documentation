@@ -1,6 +1,6 @@
 ## Set Up Music Assistant
 
-Your new Satellite1 can control your home now but what about streaming music? The good news is there's a giant 25 Watt amplifier built into Satellite1 and if you have a good speaker or headphones (and the appropriate [power supply](/recommended-accessories/#power-supply)) you'll be able to stream high-quality music to it with music assistant from Home Assistant.  Follow this excellent guide to get Music Assistant (MA) installed and configured to stream to your Satellite1.
+Your new Satellite1 can control your home now but what about streaming music? The good news is there's a giant 25 Watt amplifier built into Satellite1 and if you have a good speaker or headphones (and the appropriate [power supply](./recommended-accessories.md/) you'll be able to stream high-quality music to it with music assistant from Home Assistant.  Follow this excellent guide to get Music Assistant (MA) installed and configured to stream to your Satellite1.
 
 !!! tip "A Couple Tips:"
 
@@ -26,3 +26,5 @@ That's it!  then select Sattelite1 as your Player Provider
 <img width="60%" alt="image" src="/assets/MA5.png">
 
 <img width="60%" alt="image" src="/assets/MA6.png">
+
+[Back to top](./streaming-music.md/#set-up-music-assistant)

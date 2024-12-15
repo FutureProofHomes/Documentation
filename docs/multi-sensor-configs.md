@@ -1,3 +1,4 @@
+## Multi Sensor Configurations
 <!-- ## Bluetooth Room Presence Detection
 
 If you have multiple Satellite1's in each room of your home you can track your smart watch or phone to determine what room you're in:
@@ -209,4 +210,4 @@ Blue bars are threshold sliders. Orange bars are energy indicators.
 That's it! Happy building!
 
 
-
+[Back to the top](./multi-sensor-configs.md/#multi-sensor-configurations)

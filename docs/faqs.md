@@ -8,6 +8,10 @@
 
     [If you want to look at the logs, click here](/troubleshooting/#inspecting-logs){ .md-button .md-button--primary }
 
+<a id="faq_anchor_wake_words"></a>
+???+ note "What "wake Words" are supported?"
+    Satellite1 currently supports "hey Jarvis" and "OK Nabu" wake words.  This support is built directly into the Satellite1 firmware, so you do not need to install the "Open Wakeword" Add-On. We will be adding additions wake word options in the future.
+
 <a id="faq_anchor_report_issue"></a>
 ???+ note "How do I get help or report issues?"
 
