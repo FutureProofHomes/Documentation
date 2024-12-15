@@ -22,14 +22,14 @@ The Satellite1 comes in 2 pieces, the "Hat" or round board and the "Core" the re
 
 ## Powering on the Satellite1
 1. Take a USB-C cable and plug one end into the USB socket on the Hat labeled "CORE/ESP".
-2. Plug the other end into a standard USB power supply or a computer. ([Recommended power adapters](recommended-accessories.md#power-supply))
-3. Upon first boot you will see a series of blue LED's count down clockwise as the device flashes the XMOS audio processor chip.
+2. Plug the other end into a USB-C power supply, or a computer. ([Recommended power adapters](recommended-accessories.md#power-supply))
+3. Upon first boot you will see a the blue LED's count down clockwise as the device flashes the XMOS audio processor chip.
 4. Finally the LEDs will begin to sparkle a warm white color.  Congrats!  Move to the next step:
 
 ## Connecting to Home Assistant
 Your Satellite1 arrives pre-flashed with all the necessary firmware to get you up and running quickly. You have 2 choices: 
 
-??? abstract "I want to set up via my mobile device & Bluetooth. (Recommended)"
+??? abstract "I want to set up via my iPhone or Android device with Bluetooth. (Recommended)"
 
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
@@ -69,8 +69,7 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
 ??? abstract "I want to set up via my computer & USB-C cable. (Advanced)"
 
-    !!! note
-        You **MUST** use a browser that supports serial communications such as Chrome, Microsoft Edge, Firefox, Opera, and Safari.
+    Click the "Connect" button below and select the JTAG device in the browser's notification.
 
     <div id="firmware-installer" markdown="1">
       <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
@@ -78,29 +77,32 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     <img width="60%" alt="image" src="/assets/ESPHome-SerialConn.png">
 
-    And then:
+    Click Install.
 
     <img width="60%" alt="image" src="/assets/ESPHome-Install.png">
 
-    And then:
+    Optionally erase the device, then click "Next" and then "Install".
 
     <img width="60%" alt="image" src="/assets/ESPHome-Erase.png">
 
-    And then:
-
     <img width="60%" alt="image" src="/assets/ESPHome-ConfirmInstall.png">
 
-    And then after about 2 minutes:
+    After about 2 minutes:
 
     <img width="60%" alt="image" src="/assets/ESPHome-InstallationComplete.png">
 
-    Now connect to your WiFi network and Connect
+    Now connect to your 2.4ghz WiFi network and click "Connect".  Eventually your device will begin sparkling blue.  (**NOTE:** ESP32 devices cannot connect to 5ghz networks.)  
 
     <img width="60%" alt="image" src="/assets/ConfigureWifi.png">
 
+    Congrats you're now connected to your Wifi.  Your device will now begin sparkling red.  This means it needs to be connected to ESPHome in your Home Assistant instance.
+
     <img width="60%" alt="image" src="/assets/ESPHome-WiFiConnected.png">
 
-    [If you want to look at the logs, click here ](troubleshooting.md#inspecting-sat1-esp32-logs)
-    [If you want to look at the logs, click here ](troubleshooting.md#inspecting-logs)
+    Inside Home Assistant, go to `Settings` -> `Devices & Services` and notice you have a Discovered `Satellite1 xxxxxx' device.  Click add and follow the onboarding steps.
 
-<h1 id="Intrduction">[Back to the top]</h1>
+    <img width="60%" alt="image" src="/assets/discovered_sat1.png">
+
+    Welcome to your Sat1!
+
+[Back to Top](/#introduction)
