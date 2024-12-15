@@ -33,9 +33,7 @@
     7. If you have an accent it's going to be harder, but not impossible.
     8. If you have loud water running, wind blowing, kids screaming, oven hoods running... you're gonna have a bad time.
 
-    Still having issues? This will get better in time. We have lots of ideas to solve these problems. You can also read below to:
-
-    [Training Your Own Wake Word](#faq_anchor_custom_wake_word){ .md-button .md-button--primary }
+    Still having issues? This will get better in time. We have lots of ideas to solve these problems.
 
 <a id="faq_anchor_custom_wake_word"></a>
 ???+ note "How do I build my own custom wake word?"
