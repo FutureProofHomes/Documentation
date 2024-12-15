@@ -1,67 +1,71 @@
-## Multi Sensor Configurations
 <!-- ## Bluetooth Room Presence Detection
 
 If you have multiple Satellite1's in each room of your home you can track your smart watch or phone to determine what room you're in:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-# Millimeter-wave presence sensors.
-**The Satellite1 Hat board has two ports for connecting external mmWave presence sensors: LD2410 or LD2450.**
-**These sensors have different possibilities, and suit different needs.**
-**Here are details on their usage and some useful tips.**
+## Millimeter-wave presence sensors.
+The Satellite1 HAT has two ports for connecting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Please read below.
+
 ## LD2410(B)
-This is small, but powerful sensor. It can sense motion and still presence on distances up to 6 meters, detection angle +/-60 degrees, and can be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
+This is small, but powerful sensor. It can sense motion and still human presence for distances up to 6 meters. It has a detection angle +/-60 degrees, and should be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
+
+[Get it on Amazon](https://www.amazon.com/dp/B0BXDMT46Y/ref=pe_386300_440135490_TE_simp_item)
+
+<img width="60%" alt="image" src="/assets/Accessories-mmwave-HLK-LD2410.png">
+
 ### Glossary
 1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
-2. **Distance resolution**: the "thickness" of one gate. LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
-3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy be.
+2. **Distance Resolution**: the "thickness" of one gate. The LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
+3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
+
 ### Installation
-1. Uncomment line with `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in `OPTIONAL COMPONENTS` section of Satellite1 config file.
-2. Insert the sensor to the corresponding slot on Hat board.
-3. Install new configuration to the Core.
-4. Check device page in Home Assistant after device reboot.
+1. Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in `OPTIONAL COMPONENTS` section of Satellite1 config file.  Recompile the firmware and upload to the device.
+2. Unplug the Sat1 and mount the sensor to the corresponding slot on Satellite1 HAT
+4. Boot the Sat1 and check it's device page in Home Assistant after device reboot.  You should see a ton more entities in your Sat1 device page.
+
 ### Configuration
-Don't be confused with several dozens of new entities, that appeared after installation. They all are useful, and after fine-tuning the sensor you can disable those you not need.
+Don't be overwhelmed with several dozens new entities that appeared after installation. They all are useful, and after fine-tuning the sensor you can disable those you not need.
 Let's familarize ourselves with some useful entities:
-1. Binary sensors:
-   - **Moving target** - sensor of moving target presence.
-   - **Still target** - still presemce sensor. Mostly off, when moving target is present.
-   - **Presence** - main presence sensor. Populated by other two, with cooldown (see **Timeout** below).
+
+1.  Binary sensors:
+    1. **Moving target** - sensor of moving target presence.
+    2. **Still target** - still presemce sensor. Mostly off, when moving target is present.
+    3. **Presence** - main presence sensor. Populated by other two, with cooldown (see **Timeout** below).
 2. Sensors:
-   - **Moving/still distance** - sensors of the distance to corresponding target.
-   - **G(1-8) moving/still energy** - the value of energy for corresponding gate.
+    1. **Moving/still distance** - sensors of the distance to corresponding target.
+    2. **G(1-8) moving/still energy** - the value of energy for corresponding gate.
 3. Switches:
-   - **Engineering mode** - this switch will enable fine-tuning for sensor, and will report its readings to each gate in real time. Keep it off when not setting up your sensor, as it is pretty extensive operation.
-   - **Control Bluetooth** - enables built-in Bluetooth on sensor, so you could connect to it with HLK application and set it up from there. Useful, if you want to upgrade sensor firmware.
+    1. **Engineering mode** - this switch will enable fine-tuning for sensor, and will report its readings to each gate in real time. Keep it off when not setting up your sensor, as it is pretty extensive operation.
+    2. **Control Bluetooth** - enables built-in Bluetooth on sensor, so you could connect to it with HLK application and set it up from there. Useful, if you want to upgrade sensor firmware.
 4. Select:
-   - **Distance resolution** - you can choose gate length 0.75m or 0.2m
+    1. **Distance resolution** - you can choose gate length 0.75m or 0.2m
 5. Numbers:
-   - **Timeout** - will set the cooldown period for sensor (time from last presence detected to main presence sensor switching into "off" state).
-   - **Max moving/still distance gate** - will restrict sensor to certail distance. E.g. if it's set to 6, and distance resolution is 0.75 - max sensor triggering distance will be 4.5 meters.
-   - **G(1-8) moving/still threshold**  - this setting will set the threshold for presence detection for each gate (movement or still presence respectively). If amoung of energy for corresponding gate will be greater than this threshold - sensor will feel presence in that gate.
+    1. **Timeout** - will set the cooldown period for sensor (time from last presence detected to main presence sensor switching into "off" state).
+    2. **Max moving/still distance gate** - will restrict sensor to certail distance. E.g. if it's set to 6, and distance resolution is 0.75 - max sensor triggering distance will be 4.5 meters.
+    3. **G(1-8) moving/still threshold**  - this setting will set the threshold for presence detection for each gate (movement or still presence respectively). If amoung of energy for corresponding gate will be greater than this threshold - sensor will feel presence in that gate.
   
 #### Calibration
 The idea is simple: 
-- Set sensor in place, where its 120 degrees will be most useful, and catch the least of unnecessary movement.
-- Turn on **Engineering mode** switch.
 
-*Hint: It works the best in the room corner, opposite to the table, or on the short wall of long room (e.g. bathroom). This is especially convenient, if you have shower with glass door on the opposite end.*
+1. Set sensor in place, where its 120 degrees will be most useful, and catch the least of unnecessary movement.
+2. Turn on **Engineering mode** switch.
 
-*Hint 2: It won't work for rooms with fans, or when it has dishwasher, or even running water in sight.*
+???+ tip "Sensor Placement"
+    - It works the best in the room corner, opposite to a table, or on the short wall of long room (e.g. bathroom). This is especially convenient, if you have shower with glass door on the opposite end.
+    - It won't work in rooms with fans, or when it has dishwasher, or even running water in sight.
 
 - Set the maximum gate based on room length. If you struggle with correct number, just wave hands or jump in opposite corner, see which gate detects movement, and set that number to **Max moving/still distance gate**. (Don't hesitate, set threshold a bit higher - that energy values can jump!)
 - And finally, calibrate it for no presence: step out, let it set down for a bit (like a minute), and adjust moving and still thresholds, so they would be higher than energy levels for corresponding gates.
 
-  **Voila, it works now!**
+#### Helpful Calibration Card
+We built UI card, to make calibration process more intuitive.
 
-#### Example calibration card to make it easier
-We built UI card, to make calibration process more intuitive. 
-
-<img width="100%" alt="image" src="assets/ld2410_calibration_card.png">
+<img width="100%" alt="image" src="/assets/ld2410_calibration_card.png">
 
 Here's how to use it:
 
-1. Install [Mushroom cards](https://github.com/piitaya/lovelace-mushroom), [Auto-entities card](https://github.com/thomasloven/lovelace-auto-entities), [Decluttering card](https://github.com/custom-cards/decluttering-card) and [Bar card](https://github.com/custom-cards/bar-card) from HACS.
+1. Install [Mushroom cards](https://github.com/piitaya/lovelace-mushroom), [Auto-entities card](https://github.com/thomasloven/lovelace-auto-entities) and [Decluttering card](https://github.com/custom-cards/decluttering-card) and [Bar card](https://github.com/custom-cards/bar-card) from HACS.
 2. Put this to the very bottom of dashboard YAML in raw edit mode (this should be done once per dashboard):
 ```
 decluttering_templates:
@@ -208,6 +212,5 @@ variables:
 ```
 Blue bars are threshold sliders. Orange bars are energy indicators.
 That's it! Happy building!
-
 
 [Back to the top](./multi-sensor-configs.md/#multi-sensor-configurations)
