@@ -6,8 +6,8 @@ nav:
   - Home: index.md
   - Voice Pipeline Setup: voice-pipeline.md
   - Streaming Music: streaming-music.md
-  - Multi-Sensor Configs: multi-sensor-configs.md
   - Modifying the Firmware: modifying-the-firmware.md
+  - Multi-Sensor Configs: multi-sensor-configs.md
   - Awesome Automations: awesome-automations.md
   - Recommended Accessories: recommended-accessories.md
   - Troubleshooting: troubleshooting.md
