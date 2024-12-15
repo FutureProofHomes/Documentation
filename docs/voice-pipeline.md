@@ -37,12 +37,25 @@ Once you have one of the standard pipelines above operational, you can decide to
     [Set up Ollama Conversation Agent](https://www.home-assistant.io/integrations/ollama/){ .md-button .md-button--primary }
 
 ???+ abstract "Google A.I Powered Pipeline (Free, but will collect your data)"
-    ???+ danger "Warning: You're giving a company with non-deterministic artificial intelligence ability control of your home and collect data on your usage. Be cautious!"
+    ???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
     [Set up Google AI Conversation Agent](https://www.home-assistant.io/integrations/google_generative_ai_conversation/){ .md-button .md-button--primary }
 
 ???+ abstract "OpenAI ChatGPT Powered Pipeline (Expensive, and not open at all, despite the marketing name.)"
-    ???+ danger "Warning: You're giving a company with non-deterministic artificial intelligence ability control of your home and collect data on your usage. Be cautious!"
+    ???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
     [Set up OpenAI ChatGPT Conversation Agent](https://www.home-assistant.io/integrations/openai_conversation/){ .md-button .md-button--primary }
+
+## Prompt Template
+
+I have successfully used the following prompt template with the OpenAI and Google integrations:
+
+```
+Your name is Jarvis and you are a voice assistant for Home Assistant.
+Answer questions about the world truthfully.
+Answer in plain text without markdown language. 
+Keep responses simple and to the point.
+Always use 12hr time formats.
+```
+<img width="60%" alt="image" src="/assets/prompt.png">
 
 ## Magical "Fall back" Conversation Agent
 
