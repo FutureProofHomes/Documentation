@@ -1,4 +1,4 @@
-## Awesome Automations
+## Blueprints
 Coming Soon..
 
 <!-- Here are a handful of very popular automations and use cases for your new voice assistant and multi-sensor:
