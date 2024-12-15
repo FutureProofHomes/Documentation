@@ -1,4 +1,4 @@
-## Power Supply
+## Satellite1 Power Supply
 Specifications: 
 
 !!! note
@@ -15,10 +15,8 @@ You can power your Satellite board using several methods.  Each one has it's pro
 
 [Get it on Amazon](https://www.amazon.com/dp/B0B2MM1W65?ref=fed_asin_title&th=1/)    
  
+ <img width="30%" alt="image" src="/assets/Accessories-powerbrick.png">
 
-<img width="150" alt="image" src="https://github.com/user-attachments/assets/90a1720d-e7db-41b6-9f17-08b3412b34ce">
-
- 
 ## Speaker and connectors
 The Satellite 1 comes with all kinds of options you might wish to enable.  One of the most useful is an external speaker.  NOTE: to usse the external speaker, yYou MUST use a power supply with sufficient Voltage and Current.  Most USB phone chargers do not supply sufficient power for the Satllite1's amplifier to work. See above for specifications.
 
@@ -28,11 +26,11 @@ Specifications: **JST XH2.54-2P 2.54mm Pitch 2 Pin Male Connector**
 
 [Get it on Amazon](https://www.amazon.com/Hxchen-XH2-54-2P-2-54mm-Connectors-Expansion/dp/B07V2XSJZ6/ref=sr_1_4?sr=8-4)
 
-<img width="150" alt="image" src="https://github.com/user-attachments/assets/ba98f775-0c51-4ba2-890c-2b9ac43a0958">
+<img width="60%" alt="image" src="/assets/Accessories-jst.png">
 
 Your Satellite 1 has a 25 watt amplifier built into it. Using a high quality Speaker will make your music sound great!  These little speakers are full range (100hz-20khz) and pack a serious punch and are perfect size to fit into a small enclosure.
 
-<img width="150" alt="image" src="https://github.com/user-attachments/assets/406f83eb-ed59-4dbf-85d8-77f9605eae1c">
+<img width="60%" alt="image" src="/assets/Accessories-speaker0.png">
 
 [Manufacturer's Specifications](https://www.tectonicaudiolabs.com/product/tebm46c20n-4b/)
 
@@ -40,11 +38,11 @@ Your Satellite 1 has a 25 watt amplifier built into it. Using a high quality Spe
 
 Once you get a speaker and the JST connectors, solder one to your speaker. The smaller tab is (-) and goes to the BLACK  wire, and the bigger tab is (+)and goes to the RED wire.  Then plug it into you Sat1 like this:
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/4266952b-9f3e-47fe-8172-bc488a7b3846">
+<img width="60%" alt="image" src="/assets/Accessories-speaker.png">
 
 For testing purposes, we've found that the plastic spray paint can tops are the perfect size to drop the speaker into!  It protects it and gives it much better bass response.
 
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/0ea8e591-c685-4c60-8a53-3c913cc273ae">
+<img width="60%" alt="image" src="/assets/Accessories-speaker-paintcap.png">
 
 ## mmWave Human Presence
 
@@ -56,6 +54,6 @@ Smart Human Presence Sensing Radar Module LD241**
 
 [Get it on Amazon](https://www.amazon.com/dp/B0BXDMT46Y/ref=pe_386300_440135490_TE_simp_item)
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/a9aeae61-b55f-4532-b905-9bd7562ec404">
+<img width="60%" alt="image" src="/assets/Accessories-mmwave-HLK-LD2410.png">
 
-
+[Back to top](./recommended-accessories.md/#satellite1-power-supply)

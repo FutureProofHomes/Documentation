@@ -76,3 +76,4 @@ The FutureProofHomes team will do their best to keep up with support requests, b
 !!! bug "Have you found a reproducable issue with the hardware or software? "
     [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?labels=bug&template=bug-report---.md){ .md-button }
 
+[Back to Top](./troubleshooting.md/#inspecting-logs)
