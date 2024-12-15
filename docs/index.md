@@ -99,4 +99,4 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     <img width="60%" alt="image" src="/assets/ESPHome-WiFiConnected.png">
 
-    [If you want to look at the logs, click here ](troubleshooting.md#inspecting-logs)
+    [If you want to look at the logs, click here ](troubleshooting.md#inspecting-sat1-esp32-logs)

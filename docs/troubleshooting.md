@@ -1,25 +1,53 @@
-## Inspecting Logs
+## Inspecting Sat1 ESP32 Logs
 
-!!! note 
-    Note, you must use a browser that supports flashing like Chrome, Brave or Safari
+??? abstract "I want to see Sat1 ESP32 logs via a USB-C cable."
 
-Connect your Satellite1 to your computer using a USB-C cable. Choose your serial port then click the connect button below.
+    1. Connect the Sat1 to your computer using a USB-C cable. 
+    2. Click the connect button below and select the correct JTAG device.
+    3. Choose Logs & Console:
 
-<div id="firmware-installer" markdown="1">
-  <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
-</div>
+    <div id="firmware-installer" markdown="1">
+    <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
+    </div>
 
-Choose Logs & Console:
+    <img width="60%" alt="image" src="/assets/TroubleshootingLogsConsole.png">
 
-<img width="60%" alt="image" src="/assets/TroubleshootingLogsConsole.png">
+    If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll backup and take a look.  
 
-If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll backup and take a look.  
+    <img width="60%" alt="image" src="/assets/TroubleshootingLogs.png">
 
-<img width="60%" alt="image" src="/assets/TroubleshootingLogs.png">
+    Scroll to the bottom and issue a command "Hey Jarvis, what time is it?"
 
-Scroll to the bottom and issue a command "Hey Jarvis, what time is it?"
+    <img width="60%" alt="image" src="/assets/TroubleshootingHeyJarvis.png">
 
-<img width="60%" alt="image" src="/assets/TroubleshootingHeyJarvis.png">
+??? abstract "I want to see Sat1 ESP32 logs via my Wi-Fi network (Over the Air)"
+
+    These instructions will come soon.  It's complicated depending on your environment.  
+
+## Debugging your Voice Pipeline
+
+Curious why your Sat1 is doing something different than what you'd expect?  Use Home Assistant pipeline debugging tools.
+
+<img width="60%" alt="image" src="/assets/debug_assist.png">
+
+1. Determing what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/voice-pipeline/#assign-a-voice-pipeline-wake-word-to-your-satellite1)
+3. In Home Assitant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.
+4. Read here: [Debugging a Voice Pipeline](https://www.home-assistant.io/voice_control/troubleshooting/)
+
+
+## Inspect Sat1 Audio Recording Files
+
+Follow these steps to store a copy of your audio recordings in your Home Assistant server for inspection.
+
+1. Modify your `configuration.yaml` file and add the following:
+
+```yaml
+assist_pipeline:
+  debug_recording_dir: /share/assist_pipeline
+```
+
+2. Now go to that path in your Home Assistant (recommend using Studio Code Server) and listen to the files there.
+3. Don't leave this on forever, it will clog up your server with audio recordings.
 
 ## Resetting to Factory Settings
 
