@@ -106,3 +106,24 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
     Welcome to your Sat1!
 
 [Back to Top](/#introduction)
+
+## Comparing Sat1 to Voice PE
+
+The following table compares the main features of the Sat1 and Home Assistant Voice PE products.  Both products run the same ESP32-S3 and XMOS chip.  Our firmwares are also very similar.  In general, the Sat1 is more feature rich, but lacks the enclosure (hence why we're a Dev Kit).
+
+Enclosure is coming in Q1'25 so feel free to get your Dev Kit now!
+
+| Feature               | Satellite1                                                                                          | Home Assistant Voice PE                                                                 |
+|-----------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| **Microphones**       | Four high-performance microphones (XMOS firmware uses two microphones currently.  Future firmware upgrade will utalize all 4 microphones with beamforming). | Two microphones designed to hear voice commands in most environments.                 |
+| **Speaker Output**    | 25W speaker amplifier capable of 48 kHz audio streaming. Also allows 3.5mm jack for external speakers. | Built-in 3W speaker for 48 kHz playback; includes a 3.5mm stereo jack for external speakers. |
+| **Environmental Sensors** | Includes room temperature, humidity, and luminosity sensors; supports adding mmWave presence detection (LD2410 or LD2450). | Primarily focused on voice assistance; does not include additional environmental sensors. |
+| **Bluetooth Presence** | Planned but currently non-functional due to firmware/memory challenges.                                       | Not supported.                                                                         |
+| **Form Factor**       | Available as a development kit with 4 buit-in buttons and components for assembly; official enclosure planned for future release. | Comes in a ready-to-use injection-molded case with physical controls, including a mute switch and volume dial. |
+| **Price**             | $69.99 for the development kit.                                                                     | $59 for the Preview Edition.                                                           |
+| **Power**             | Powered by USB-C PD (Power Delivery), enabling the extra power needed for the 25W amplifier.       | Powered by USB-C.                                                                      |
+| **Expansion**         | Includes two 40-pin expansion connectors for powerful future accessories.                                   | Grove port for limited expansion.                                                               |
+| **LED Ring**          | 24 LEDs for visual feedback.                                                                       | 12 LEDs for visual feedback.                                                           |
+| **Software**          | [ESPHome Firmware very similar to Home Assistnat Voice](https://github.com/FutureProofHomes/Satellite1-ESPHome)  | [ESPhome firmware for Home Assistnat Voice](https://github.com/esphome/home-assistant-voice-pe)                                                           |
+
+
