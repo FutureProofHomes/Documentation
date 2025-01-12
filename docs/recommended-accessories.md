@@ -19,11 +19,11 @@ To power the Sat1 speaker using its built-in amplifier, you’ll need a 9V USB-C
 
 
 ## Speaker and Connectors
-You can get audio out of your Sat1 simply by plugging in a externally ampolified speakers or headphones to the 3.5mm headphone jack, or you can power a speaker directly off the Sat1 amplifier (if you have a 9V power supply).
+You can get audio out of your Sat1 by plugging in headphones, or externally amplified speakers to the 3.5mm headphone jack.  Or you can power a single mono speaker directly off the Sat1 amplifier (if you have a 9V power supply).
 
 <img width="60%" alt="image" src="/assets/Accessories-speaker.png">
 
-Here are the suppies to connect a speaker to your Sat1:
+Here are the supplies to connect a speaker to your Sat1:
 
 <br><img width="60%" alt="image" src="/assets/Accessories-jst.png">
 <br>JST XH2.54-2P 2.54mm Pitch 2 Pin Male Connector

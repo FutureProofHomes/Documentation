@@ -1,3 +1,10 @@
+In this section we will configure your Satellite1 so it can control smart devices in your home intuitively.  By the end of this section you should be able to say:
+
+- "Hey Jarvis, are any doors unlocked in the home?"
+- "Hey Jarvis, lock those doors please."
+- "Hey Jarvis, what is the difference between a black hole and white hole?"
+- "Hey Jarvis, close the garage door and turn on the TV then tell me a joke."
+
 ## What is a Voice Pipeline?
 
 Think about your interaction with any voice assistant:
@@ -9,9 +16,7 @@ Think about your interaction with any voice assistant:
 
 That's a voice pipeline. It's the backbone of any voice assistant. Each step in a voice pipeline can be modified and customized to fit your needs. What wake word do you want? What language are you speaking? Do you want a standard voice response or to hear Arnold Schwarzenegger speak back to you? Do you want Home Assistant, Google, or OpenAI to process and execute your command? Follow the steps below to set up a voice pipeline for your Satellite1.
 
-Please read all of the below. Then we highly recommend **[upgrading to a magical fallback conversation agent](/voice-pipeline/#magical-fall-back-conversation-agent)**. Also, don't forget to **[expose entities to your Satellite1 voice assistant!](/voice-pipeline/#exposing-entities)**
-
-## General Steps to Create a Voice Pipeline:
+## Create a Voice Pipeline:
 
 1. Go to **Settings -> Voice Assistants -> Add Assistant**
    <img width="60%" alt="image" src="/assets/Pipeline0.png">
@@ -19,7 +24,7 @@ Please read all of the below. Then we highly recommend **[upgrading to a magical
 2. Name your pipeline. Select your preferred Conversation Agent, Speech-to-Text, and Text-to-Speech engine.
    <img width="60%" alt="image" src="/assets/Pipeline1.png">
 
-## Standard Home Assistant Conversation Agents
+## Standard Conversation Agents
 
 There are two standard voice pipelines we recommend trying out to get your feet wet:
 
@@ -29,7 +34,7 @@ There are two standard voice pipelines we recommend trying out to get your feet 
 ???+ abstract "Home Assistant's Local Assist Pipeline (Free and completely private, response times depend on your hardware)"
     [Set up Local Assist Pipeline](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/){ .md-button .md-button--primary }
 
-## Generative A.I. Conversation Agents
+## A.I. Conversation Agents
 
 Once you have one of the standard pipelines above operational, you can decide to upgrade to a Generative AI conversation agent.
 
@@ -44,9 +49,7 @@ Once you have one of the standard pipelines above operational, you can decide to
     ???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
     [Set up OpenAI ChatGPT Conversation Agent](https://www.home-assistant.io/integrations/openai_conversation/){ .md-button .md-button--primary }
 
-## Prompt Template
-
-I have successfully used the following prompt template with the OpenAI and Google integrations:
+NOTE: The following prompt has perfomed well with both OpenAI and Google's conversation agents.
 
 ```
 Your name is Jarvis and you are a voice assistant for Home Assistant.
@@ -57,7 +60,7 @@ Always use 12hr time formats.
 ```
 <img width="60%" alt="image" src="/assets/prompt.png">
 
-## Magical "Fall back" Conversation Agent
+## Combine Conversation Agents
 
 ???+ abstract "Combine a standard conversation agent with an AI conversation agent (It's like magic!)"
     ???+ tip "Requires Home Assistant version 2024.12.1 or later"
@@ -68,7 +71,7 @@ Always use 12hr time formats.
 
     [Read more about this feature release](https://www.home-assistant.io/blog/2024/12/04/release-202412/#let-your-voice-assistant-fall-back-to-an-llm-based-agent){ .md-button .md-button--primary }
 
-## Assign a Voice Pipeline & Wake Word to your Satellite1
+## Assign a Voice Pipeline
 
 1. Go to **Settings -> Devices & Services -> ESPHome** and click "1 device" under your Satellite1 device.
    <img width="60%" alt="image" src="/assets/Pipeline4.png">
@@ -91,4 +94,4 @@ Your home assistant likely has hundreds if not thousands of entities. If you wan
 2. Enable the "Assist" toggle switch and consider adding alias names that you might use when referring to the entity.
    <img width="60%" alt="image" src="/assets/Expose Settings.png">
 
-   [Back to Top](./voice-pipeline.md/#what-is-a-voice-pipeline)
+   [Back to Top](./voice-assistant.md/#what-is-a-voice-assistant)

@@ -30,7 +30,7 @@ Curious why your Sat1 is doing something different than what you'd expect?  Use 
 
 <img width="60%" alt="image" src="/assets/debug_assist.png">
 
-1. Determing what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/voice-pipeline/#assign-a-voice-pipeline-wake-word-to-your-satellite1)
+1. Determing what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/voice-assistant/#assign-a-voice-assistant-wake-word-to-your-satellite1)
 3. In Home Assitant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.
 4. Read here: [Debugging a Voice Pipeline](https://www.home-assistant.io/voice_control/troubleshooting/)
 

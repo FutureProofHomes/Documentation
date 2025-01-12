@@ -2,6 +2,13 @@
 
 Congrats on your shiny new Satellite1 Voice Assistant & Multi-Sensor hardware!  In this opening section we will teach you how to assemble your Satellite1 and get it fully functional.
 
+<figure markdown="span">
+  <video width="100%" class="video-js" loop="" autoplay="" preload="none" muted="" playsinline="" poster="https://futureproofhomes.net/cdn/shop/files/0001.jpg?v=1732152100">
+    <source src="https://cdn.shopify.com/videos/c/o/v/84cc43e4fb6a4d4bb303d9beab397b3f.mp4" type="video/mp4"></source>
+  </video>
+  <figcaption>Animation shows how to attach the rectangular Core Board to the round Hat Board, with an optional mmWave sensor.</figcaption>
+</figure>
+
 ## Prerequisites
 
 The Satellite1 has a few requirements to get up and running.
@@ -12,17 +19,10 @@ The Satellite1 has a few requirements to get up and running.
 
 ## Assembling the Satellite1
 
-<figure markdown="span">
-  <video width="100%" class="video-js" loop="" autoplay="" preload="none" muted="" playsinline="" poster="https://futureproofhomes.net/cdn/shop/files/0001.jpg?v=1732152100">
-    <source src="https://cdn.shopify.com/videos/c/o/v/84cc43e4fb6a4d4bb303d9beab397b3f.mp4" type="video/mp4"></source>
-  </video>
-  <figcaption>Animation shows how to attach the rectangular Core Board to the round Hat Board, with an optional mmWave sensor.</figcaption>
-</figure>
-
 The Satellite1 comes in 2 pieces: 
 
 - The "Hat" (round board) 
-- The "Core" (rectangular board).  
+- The "Core" (rectangular board)
 
 You'll notice a standard Raspberry Pi 40-pin connector on the Hat board (marked in red).  Carefully align the Core board's 2 rows of pins with the Hat's 40 pin connector and press them together.
 
@@ -116,6 +116,16 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     Congrats.  You're done!
 
+## User Interface Control
+
+  1. <b>Inside your Home Assistnat, head over to "Settings -> Devices & Services -> ESPHome" and click on your Sat1 device:</b>
+  <br><img width="100%" alt="image" src="/assets/esphome/1_esphome_device_list.png">
+
+  2. <b>Understand all the features of your Sat1 device:</b>
+  <br><img width="100%" alt="image" src="/assets/esphome/2_esphome_top_page.png">
+  <br><img width="100%" alt="image" src="/assets/esphome/3_esphome_bottom_page.png">
+
+
 
 ## Comparing Sat1 to Voice PE
 
@@ -126,7 +136,6 @@ The following table compares the main features of the Sat1 and Home Assistant Vo
 | **Microphones**       | Four high-performance microphones (XMOS firmware uses two microphones currently.  Future firmware upgrade will utalize all 4 microphones with beamforming). | Two microphones designed to hear voice commands in most environments.                 |
 | **Speaker Output**    | 25W speaker amplifier capable of 48 kHz audio streaming. Also allows 3.5mm jack for external speakers. | Built-in 3W speaker for 48 kHz playback; includes a 3.5mm stereo jack for external speakers. |
 | **Environmental Sensors** | Includes room temperature, humidity, and luminosity sensors; supports adding mmWave presence detection (LD2410 or LD2450). | Primarily focused on voice assistance; does not include additional environmental sensors. |
-| **Bluetooth Presence** | Planned but currently non-functional due to firmware/memory challenges.                                       | Not supported.                                                                         |
 | **Form Factor**       | Available as a development kit with 4 buit-in buttons and components for assembly; official enclosure planned for future release. | Comes in a ready-to-use injection-molded case with physical controls, including a mute switch and volume dial. |
 | **Price**             | $69.99 for the development kit.                                                                     | $59 for the Preview Edition.                                                           |
 | **Power**             | Powered by USB-C PD (Power Delivery), enabling the extra power needed for the 25W amplifier.       | Powered by USB-C.                                                                      |
