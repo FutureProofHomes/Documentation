@@ -10,15 +10,15 @@
     <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
     </div>
 
-    <img width="60%" alt="image" src="/assets/TroubleshootingLogsConsole.png">
+    <br>![Logs Console](/assets/TroubleshootingLogsConsole.png){ width="60%" loading=lazy }</br>
 
     If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll backup and take a look.  
 
-    <img width="60%" alt="image" src="/assets/TroubleshootingLogs.png">
+    <br>![Troubleshooting Logs](/assets/TroubleshootingLogs.png){ width="60%" loading=lazy }</br>
 
     Scroll to the bottom and issue a command "Hey Jarvis, what time is it?"
 
-    <img width="60%" alt="image" src="/assets/TroubleshootingHeyJarvis.png">
+    <br>![Troubleshooting Hey Jarvis](/assets/TroubleshootingHeyJarvis.png){ width="60%" loading=lazy }</br>
 
 ??? abstract "I want to see Sat1 ESP32 logs via my Wi-Fi network (Over the Air)"
 
@@ -28,7 +28,7 @@
 
 Curious why your Sat1 is doing something different than what you'd expect?  Use Home Assistant pipeline debugging tools.
 
-<img width="60%" alt="image" src="/assets/debug_assist.png">
+<br>![Debugging a Voice Pipeline](/assets/debug_assist.png){ width="60%" loading=lazy }</br>
 
 1. Determing what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/voice-assistant/#assign-a-voice-assistant-wake-word-to-your-satellite1)
 3. In Home Assitant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.

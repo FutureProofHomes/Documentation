@@ -21,27 +21,20 @@ After installing Music Assistant you'll want to add a source for your Music:
 
 ## Add your Sat1 to Music Assistat
 
-After adding a music provider you'll want to add your Satellite1 to MA, go to setttings:
+1. <b>After adding a music provider you'll want to add your Satellite1 to MA, go to setttings:</b>
+<br>![Music Assistant](/assets/MA0.png){ width="60%" loading=lazy }</br>
 
-<img width="60%" alt="image" src="/assets/MA0.png">
+2. <b>Add Home Assistnat as Player Provider</b>
+<br>![Music Assistant](/assets/MA1.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA2.png){ width="60%" loading=lazy }</br>
 
-Add Home Assistnat as Player Provider
+3. <b>Add your Satellite1 to the list of players:</b>
+<br>![Music Assistant](/assets/MA3.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA4.png){ width="60%" loading=lazy }</br>
 
-<img width="60%" alt="image" src="/assets/MA1.png">
-
-<img width="60%" alt="image" src="/assets/MA2.png">
-
-Add your Satellite1 to the list of players:
-
-<img width="60%" alt="image" src="/assets/MA3.png">
-
-<img width="60%" alt="image" src="/assets/MA4.png">
-
-That's it!  Select your Sattelite1 as your Player Provider & play some music.
-
-<img width="60%" alt="image" src="/assets/MA5.png">
-
-<img width="60%" alt="image" src="/assets/MA6.png">
+4. <b>That's it!  Select your Sattelite1 as your Player Provider & play some music.</b>
+<br>![Music Assistant](/assets/MA5.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA6.png){ width="60%" loading=lazy }</br>
 
 ## Controlling Music with Your Voice
 
