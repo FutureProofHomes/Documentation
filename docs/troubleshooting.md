@@ -49,6 +49,7 @@ assist_pipeline:
 2. Now go to that path in your Home Assistant (recommend using Studio Code Server) and listen to the files there.
 3. Don't leave this on forever, it will clog up your server with audio recordings.
 
+
 ## Resetting to Factory Settings
 
 1. Press and hold the RIGHT (Action) button for approximately 15 seconds until the red LEDs start to make a clockwise circle. Keep holding the action button until all LEDs or extinguished.  The LEDs will glow blue, and you can then release the button. The blue LEDs will count down in a clockwise cirlce to wipe the ESP and XMOS chips.  This may take a few minutes.
@@ -56,6 +57,18 @@ assist_pipeline:
 2. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
 
 3. Follow the steps to [Add your Satellite1 to Home Assistant](/#connecting-to-home-assistant)
+
+
+## Start the Device in "Boot" mode:
+
+1. Unplug the Sat1 from power.
+
+2. Press and hold the Core board's "Boot" button.  <i>(NOTE: If the HAT is attached you can use the "Action" button.)</i>
+
+3. Apply power to the Sat1 and let go of the "Boot" button after 3 seconds.
+
+4. Follow the steps to [Add your Satellite1 to Home Assistant via a USB-C cable](/#connecting-to-home-assistant)
+
 
 ## Need More Help?
 
