@@ -26,7 +26,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-      - run: pip install mkdocs-encryptcontent-plugin
+      - run: pip install mkdocs-encryptcontent-plugin mkdocs-glightbox
       - run: mkdocs gh-deploy --force
         env:
           MKDOCS_PW: ${{ secrets.MKDOCS_PW }}

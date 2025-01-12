@@ -19,10 +19,11 @@ That's a voice pipeline. It's the backbone of any voice assistant. Each step in 
 ## Create a Voice Pipeline:
 
 1. Go to **Settings -> Voice Assistants -> Add Assistant**
-   <img width="60%" alt="image" src="/assets/Pipeline0.png">
+   <br>![Create Pipeline](/assets/Pipeline0.png){ width="60%" loading=lazy }</br>
+
 
 2. Name your pipeline. Select your preferred Conversation Agent, Speech-to-Text, and Text-to-Speech engine.
-   <img width="60%" alt="image" src="/assets/Pipeline1.png">
+   <br>![Configure Pipeline](/assets/Pipeline1.png){ width="60%" loading=lazy }</br>
 
 ## Standard Conversation Agents
 
@@ -58,7 +59,8 @@ Answer in plain text without markdown language.
 Keep responses simple and to the point.
 Always use 12hr time formats.
 ```
-<img width="60%" alt="image" src="/assets/prompt.png">
+
+<br>![Add Prompt](/assets/prompt.png){ width="60%" loading=lazy }</br>
 
 ## Combine Conversation Agents
 
@@ -67,20 +69,20 @@ Always use 12hr time formats.
     A "fall back" pipeline will first use a non-AI conversation agent to process your request, and if that fails it will _fall back_ to your preferred AI conversation agent. Combining these two conversation agents results in an almost magical voice experience and is highly recommended.
 
     Simply toggle on the **"Prefer handling commands locally"** switch underneath your Generative AI conversation agent:
-    <img width="60%" alt="image" src="/assets/googleGPT0.png">
+    <br>![Prefer handling commands locally](/assets/googleGPT0.png){ width="60%" loading=lazy }</br>
 
     [Read more about this feature release](https://www.home-assistant.io/blog/2024/12/04/release-202412/#let-your-voice-assistant-fall-back-to-an-llm-based-agent){ .md-button .md-button--primary }
 
 ## Assign a Voice Pipeline
 
-1. Go to **Settings -> Devices & Services -> ESPHome** and click "1 device" under your Satellite1 device.
-   <img width="60%" alt="image" src="/assets/Pipeline4.png">
+1. Go to **Settings -> Devices & Services -> ESPHome** and click **"1 device"** under your Satellite1 device.
+   <br>![Go to Device](/assets/Pipeline4.png){ width="60%" loading=lazy }</br>
 
-2. In the Configuration section, select your Voice Pipeline.
-   <img width="60%" alt="image" src="/assets/Pipeline5.png">
+2. <b>In the Configuration section, select your Voice Pipeline.</b>
+   <br>![Assistant Dropdown](/assets/Pipeline5.png){ width="60%" loading=lazy }</br>
 
-3. You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/faqs#faq_anchor_custom_wake_word))
-   <img width="60%" alt="image" src="/assets/Pipeline7.png">
+3. <b>You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/faqs#faq_anchor_custom_wake_word))</b>
+   <br>![Set Wake Word](/assets/Pipeline7.png){ width="60%" loading=lazy }</br>
 
 Congratulations! You've created your own voice pipeline for your Satellite1.
 
@@ -89,9 +91,9 @@ Congratulations! You've created your own voice pipeline for your Satellite1.
 Your home assistant likely has hundreds if not thousands of entities. If you want to use them in your voice assistant, then you need to expose them to your voice assistant. Here's how:
 
 1. Go to **Settings -> Voice Assistants -> Expose** and select the entities you want to control via your voice assistant.
-   <img width="60%" alt="image" src="/assets/Expose Entities.png">
+   <br>![Select entities to expose](/assets/Expose Entities.png){ width="60%" loading=lazy }</br>
 
 2. Enable the "Assist" toggle switch and consider adding alias names that you might use when referring to the entity.
-   <img width="60%" alt="image" src="/assets/Expose Settings.png">
+   <br>![Add aliases](/assets/Expose Settings.png){ width="60%" loading=lazy }</br>
 
    [Back to Top](./voice-assistant.md/#what-is-a-voice-assistant)

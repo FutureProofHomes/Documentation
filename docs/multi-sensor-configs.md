@@ -10,9 +10,8 @@ The Satellite1 HAT has two ports for connecting external mmWave presence sensors
 ## LD2410(B)
 This is small, but powerful sensor. It can sense motion and still human presence for distances up to 6 meters. It has a detection angle +/-60 degrees, and should be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
 
-[Get it on Amazon](https://www.amazon.com/dp/B0BXDMT46Y/ref=pe_386300_440135490_TE_simp_item)
-
-<img width="60%" alt="image" src="/assets/Accessories-mmwave-HLK-LD2410.png">
+<br>![LD2410 mmWave](/assets/Accessories-mmwave-HLK-LD2410.png){ width="60%" loading=lazy }</br>
+<br>[Get it on Amazon](https://amzn.to/3PtvWMu){ .md-button .md-button--primary }
 
 ### Glossary
 1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
@@ -60,8 +59,7 @@ The idea is simple:
 
 #### Helpful Calibration Card
 We built UI card, to make calibration process more intuitive.
-
-<img width="100%" alt="image" src="/assets/ld2410_calibration_card.png">
+<br>![LD2410 Dashboard](/assets/ld2410_calibration_card.png){ width="100%" loading=lazy }</br>
 
 Here's how to use it:
 
