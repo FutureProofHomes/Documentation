@@ -20,7 +20,7 @@ This is small, but powerful sensor. It can sense motion and still human presence
 3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
 
 ### Installation
-1. Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in `OPTIONAL COMPONENTS` section of Satellite1 config file.  Recompile the firmware and upload to the device.
+1. Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in `OPTIONAL COMPONENTS` section of [satellite1.base.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.base.yaml#L89) config file.  Recompile the firmware and upload to the device.
 2. Unplug the Sat1 and mount the sensor to the corresponding slot on Satellite1 HAT
 4. Boot the Sat1 and check it's device page in Home Assistant after device reboot.  You should see a ton more entities in your Sat1 device page.
 

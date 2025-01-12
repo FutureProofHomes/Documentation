@@ -1,8 +1,14 @@
 ## Introduction
 
-Congrats on your shiny new Satellite1 Voice Assistant & Multi-Sensor hardware!  In this opening section we will teach you how to assemble your Satellite1 and get it fully functional.   This guide is presented in several steps. Each step will bring more functionality to your new toy.
+Congrats on your shiny new Satellite1 Voice Assistant & Multi-Sensor hardware!  In this opening section we will teach you how to assemble your Satellite1 and get it fully functional.
 
-Use the links in the naviation bar on the left of this screen to walk through each section to get your device up and running.  In this section, we'll get it assembled, powered on and recognized by Home Assistant.
+## Prerequisites
+
+The Satellite1 has a few requirements to get up and running.
+
+1. An active installation of [Home Assistant](https://www.home-assistant.io/installation/)
+2. A 2.4ghz wifi network (internet is not required)
+3. The recommended Satellite1 accessories (see [Recommended Accessories](recommended-accessories.md))
 
 ## Assembling the Satellite1
 
@@ -13,7 +19,12 @@ Use the links in the naviation bar on the left of this screen to walk through ea
   <figcaption>Animation shows how to attach the rectangular Core Board to the round Hat Board, with an optional mmWave sensor.</figcaption>
 </figure>
 
-The Satellite1 comes in 2 pieces, the "Hat" or round board and the "Core" the rectangular board.  You'll notice a standard 40 pin connector on the Hat board (marked in red).  Carefully align the Core board's 2 rows of pins with the Hat's 40 pin connector and press them together.  It will snap together.  Make sure the Core's pins have fully seated into the Hat.
+The Satellite1 comes in 2 pieces: 
+
+- The "Hat" (round board) 
+- The "Core" (rectangular board).  
+
+You'll notice a standard Raspberry Pi 40-pin connector on the Hat board (marked in red).  Carefully align the Core board's 2 rows of pins with the Hat's 40 pin connector and press them together.
 
 <img width="60%" alt="image" src="/assets/mount_core_to_hat.png">
 
@@ -33,85 +44,82 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-    Open the Home Assistant Companion App on your Android or iPhone.  Make sure Bluetooth on your phone is on!  Click on settings:
+    Open the Home Assistant Companion App on your Android or iPhone.  Make sure Bluetooth on your phone is on and that you're nearby the Sat1!  
+    
+    1. <b>Tap "Settings":</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/1_go_to_settings.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/38cb8fb9-beae-42d5-8568-1eb682d93e41">
+    2. <b>Tap "Devices & Services":</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/2_go_to_devices.png">
 
-    Then click on Devices & Services:
+    3. <b>Tap "Add" next to your Sat1 device (contains last 6 of device MAC address):</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/3_improv_discovered_device.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/107a03d2-8dbe-4a9f-b05f-1f7a7fa6bfd0">
+    4. <b>Type in your 2.4ghz network credentials:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/4_improv_add_wifi_credentials.png">
 
-    You should now see a new device has been discovered.  Tap the notification:
+    5. <b>On the Sat1 HAT, press the right "Action button" to give authorization:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/5_improv_press_authorization_button.png">
+    <img width="50%" alt="image" src="/assets/ble_improv/6_click_action_button.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/42fe24c6-bddf-431e-b993-9190de732bd5">
+    6. <b>Tap "Continue" after successfull Wifi connection:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/8_improv_successful_wifi_connection.png">
 
-    Follow the prompts to set up the new device:
+    7. <b>Tap "Ok" to begin setting up ESPHome:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/9_esphome_setup_request.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/22b8d9c9-f182-44c4-bea6-9e2b6a78e41b">
+    8. <b>Tap the name if your Sat1 device and then tap the "Submit" button:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/10_esphome_select_device.png">
 
-    When you see the following screen, press the Action Button on the Hat labeled "RIGHT"
+    9. <b>The Wizard will pull down the most recent Sat1 Firmware:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/12_wizard_checking_for_updates.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/8ec83264-1fc1-447d-a571-3f22b8eb0e3a">
+    10. <b>The Wizard will ask you to say the Wake Word twice:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/13_wizard_first_wake_word_test.png">
 
-    Next you'll enter your WiFi credentials to get the Sat1 connected to your network:
+    11. <b>Type the Area this Sat1 falls in:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/15_wizard_assign_area.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/76800e3c-46c4-4644-ac42-9b9e81296550">
+    12. <b>Stick with the default or change the wake word, conversation agent, and voice:</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/16_wizard_quick_pipeline_config.png">
 
-    If all goes well you should see this:
+    13. <b>After completing the Wizard, do NOT click to add the Sat1 to ESPHome again.  Simply refresh and this will go away.</b>
+    <br><img width="50%" alt="image" src="/assets/ble_improv/17_ignore_device_discovered.png">
 
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/8e863aa9-e2b1-4387-ad0b-872ef44c270e">
-
-    Next it will ask you to set up ESPHome:
-
-    <img width="60%" alt="image" src="https://github.com/user-attachments/assets/b6b144b2-ca96-4729-8a7c-2fa860470265">
-
-    <!-- TODO: Finish these steps -->
+    Congrats.  You're done!
 
 ??? abstract "I want to set up via my computer & USB-C cable. (Advanced)"
 
-    Click the "Connect" button below and select the JTAG device in the browser's notification.
+    Plug your Sat1 directly into your computer with a USB-C cable that supports a data connection.
 
-    <div id="firmware-installer" markdown="1">
-      <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
-    </div>
+    1. <b>Click <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button> and select the JTAG device in the browser's notification:</b>
+    <br><img width="50%" alt="image" src="/assets/ESPHome-SerialConn.png">
 
-    <img width="60%" alt="image" src="/assets/ESPHome-SerialConn.png">
+    2. <b>Click "Install":</b>
+    <br><img width="50%" alt="image" src="/assets/ESPHome-Install.png">
+    
+    3. <b>Optionally erase the device, then click "Next" and then "Install":</b>
+    <br><img width="50%" alt="image" src="/assets/ESPHome-Erase.png">
+    <br><img width="50%" alt="image" src="/assets/ESPHome-ConfirmInstall.png">
 
-    Click Install.
+    4. <b>Installation will complete. Click "Next":</b>
+    <br><img width="50%" alt="image" src="/assets/ESPHome-InstallationComplete.png">
 
-    <img width="60%" alt="image" src="/assets/ESPHome-Install.png">
+    5. <b>Type in your2.4ghz WiFi network and click "Connect".  Your device will begin sparkling blue while attempting to connect.</b>
+    <br><img width="50%" alt="image" src="/assets/ConfigureWifi.png">
 
-    Optionally erase the device, then click "Next" and then "Install".
+    6. <b>Congrats you're now connected to your Wifi.  Your device will now begin sparkling red.  This means it needs to be connected to ESPHome in your Home Assistant instance.</b>
+    <br><img width="50%" alt="image" src="/assets/ESPHome-WiFiConnected.png">
 
-    <img width="60%" alt="image" src="/assets/ESPHome-Erase.png">
+    7. <b>Inside Home Assistant, go to "Settings -> Devices & Services" and notice you have a Discovered `Satellite1 xxxxxx' device.  Click add and follow the onboarding steps.</b>
+    <br><img width="50%" alt="image" src="/assets/discovered_sat1.png">
 
-    <img width="60%" alt="image" src="/assets/ESPHome-ConfirmInstall.png">
+    Congrats.  You're done!
 
-    After about 2 minutes:
-
-    <img width="60%" alt="image" src="/assets/ESPHome-InstallationComplete.png">
-
-    Now connect to your 2.4ghz WiFi network and click "Connect".  Eventually your device will begin sparkling blue.  (**NOTE:** ESP32 devices cannot connect to 5ghz networks.)  
-
-    <img width="60%" alt="image" src="/assets/ConfigureWifi.png">
-
-    Congrats you're now connected to your Wifi.  Your device will now begin sparkling red.  This means it needs to be connected to ESPHome in your Home Assistant instance.
-
-    <img width="60%" alt="image" src="/assets/ESPHome-WiFiConnected.png">
-
-    Inside Home Assistant, go to `Settings` -> `Devices & Services` and notice you have a Discovered `Satellite1 xxxxxx' device.  Click add and follow the onboarding steps.
-
-    <img width="60%" alt="image" src="/assets/discovered_sat1.png">
-
-    Welcome to your Sat1!
-
-[Back to Top](/#introduction)
 
 ## Comparing Sat1 to Voice PE
 
-The following table compares the main features of the Sat1 and Home Assistant Voice PE products.  Both products run the same ESP32-S3 and XMOS chip.  Our firmwares are also very similar.  In general, the Sat1 is more feature rich, but lacks the enclosure (hence why we're a Dev Kit).
-
-Enclosure is coming in Q1'25 so feel free to get your Dev Kit now!
+The following table compares the main features of the Sat1 and Home Assistant Voice PE products.  Both products run the same ESP32-S3 and XMOS chip.  Our firmwares are also very similar. In general, the Sat1 is more feature rich, but lacks the enclosure (hence why we're a Dev Kit).  Our enclosure is coming in Q1'25 so feel free to get your Dev Kit now!
 
 | Feature               | Satellite1                                                                                          | Home Assistant Voice PE                                                                 |
 |-----------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -124,6 +132,6 @@ Enclosure is coming in Q1'25 so feel free to get your Dev Kit now!
 | **Power**             | Powered by USB-C PD (Power Delivery), enabling the extra power needed for the 25W amplifier.       | Powered by USB-C.                                                                      |
 | **Expansion**         | Includes two 40-pin expansion connectors for powerful future accessories.                                   | Grove port for limited expansion.                                                               |
 | **LED Ring**          | 24 LEDs for visual feedback.                                                                       | 12 LEDs for visual feedback.                                                           |
-| **Software**          | [ESPHome Firmware very similar to Home Assistnat Voice](https://github.com/FutureProofHomes/Satellite1-ESPHome)  | [ESPhome firmware for Home Assistnat Voice](https://github.com/esphome/home-assistant-voice-pe)                                                           |
+| **Software**          | [ESPHome Firmware very similar to Home Assistant Voice](https://github.com/FutureProofHomes/Satellite1-ESPHome)  | [ESPhome firmware for Home Assistant Voice](https://github.com/esphome/home-assistant-voice-pe)                                                           |
 
-
+[Back to Top](/#introduction)
