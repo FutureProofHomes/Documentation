@@ -35,19 +35,25 @@ There are two standard voice pipelines we recommend trying out to get your feet 
 ???+ abstract "Home Assistant's Local Assist Pipeline (Free and completely private, response times depend on your hardware)"
     [Set up Local Assist Pipeline](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/){ .md-button .md-button--primary }
 
-## A.I. Conversation Agents
+## Local AI Conversation Agents
 
-Once you have one of the standard pipelines above operational, you can decide to upgrade to a Generative AI conversation agent.
+Once you have one of the standard pipelines above operational, you can decide to upgrade to a Generative AI conversation agent.  Doing this locally is not for the faint of heart.  Depending on the model you use (Llama, Qwen, etc.), the number of entities exposed, how those entities and their aliases are named, and the GPU hardware you have (more VRAM the better) you may have have slow or inaccurate performance.
+
+The FutureProofHomes team is working on a [Local AI Base Station](https://futureproofhomes.net/pages/ai-base-station).  So this documentation will not go into great detail and send you down a rabbit hole.  Stay tuned.
 
 ???+ abstract "Ollama AI Powered Conversation Agent (Free, requires a GPU, and can be hard to set up with proper function calling.)"
     [Set up Ollama Conversation Agent](https://www.home-assistant.io/integrations/ollama/){ .md-button .md-button--primary }
 
+
+
+## Cloud AI Conversation Agents
+
+???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
+
 ???+ abstract "Google A.I Powered Pipeline (Free, but will collect your data)"
-    ???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
     [Set up Google AI Conversation Agent](https://www.home-assistant.io/integrations/google_generative_ai_conversation/){ .md-button .md-button--primary }
 
 ???+ abstract "OpenAI ChatGPT Powered Pipeline (Expensive, and not open at all, despite the marketing name.)"
-    ???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
     [Set up OpenAI ChatGPT Conversation Agent](https://www.home-assistant.io/integrations/openai_conversation/){ .md-button .md-button--primary }
 
 NOTE: The following prompt has perfomed well with both OpenAI and Google's conversation agents.
