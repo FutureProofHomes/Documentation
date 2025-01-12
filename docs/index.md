@@ -117,6 +117,7 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
     Congrats.  You're done!
 
 ## User Interface Control
+Once your Sat1 is connected to Home Assistnat you should familiarize yourself with all the server-side settings you may want to change:
 
   1. <b>Inside your Home Assistnat, head over to "Settings -> Devices & Services -> ESPHome" and click on your Sat1 device:</b>
   <br><img width="100%" alt="image" src="/assets/esphome/1_esphome_device_list.png">
