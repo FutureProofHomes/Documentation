@@ -22,7 +22,7 @@ That's a voice pipeline. It's the backbone of any voice assistant. Each step in 
    <br>![Create Pipeline](/assets/Pipeline0.png){ width="60%" loading=lazy }</br>
 
 
-2. Name your pipeline. Select your preferred Conversation Agent, Speech-to-Text, and Text-to-Speech engine.
+2. **Name your pipeline. Select your preferred Conversation Agent, Speech-to-Text, and Text-to-Speech engine.**
    <br>![Configure Pipeline](/assets/Pipeline1.png){ width="60%" loading=lazy }</br>
 
 ## Standard Conversation Agents
@@ -37,23 +37,22 @@ There are two standard voice pipelines we recommend trying out to get your feet 
 
 ## Local AI Conversation Agents
 
-Once you have one of the standard pipelines above operational, you can decide to upgrade to a Generative AI conversation agent.  Doing this locally is not for the faint of heart.  Depending on the model you use (Llama, Qwen, etc.), the number of entities exposed, how those entities and their aliases are named, and the GPU hardware you have (more VRAM the better) you may have have slow or inaccurate performance.
+???+ tip " The FutureProofHomes team is working on a [Local AI Base Station](https://futureproofhomes.net/pages/ai-base-station) that "just works". Therefore, these docs will avoid sending you down a deep local AI rabbit hole. :) Thanks for your patience & stay tuned!"
 
-The FutureProofHomes team is working on a [Local AI Base Station](https://futureproofhomes.net/pages/ai-base-station).  So this documentation will not go into great detail and send you down a rabbit hole.  Stay tuned.
+Once you have one of the standard pipelines operational, you can upgrade to a Generative AI conversation agent. These agents allow the voice assistant to respond to more natural, conversational commands like, “It’s dark in here,” to turn on the lights, instead of requiring specific phrases like, “Turn on the living room lights.” Implementing completely local Generative AI LLMs, however, is not for the faint of heart. Your results may vary depending on factors such as the model you choose (e.g., Llama, Qwen, etc.), the number of entities exposed, how those entities and their aliases are named, the GPU’s capabilities (more VRAM is better), and many other variables. If you’re ready to take on this challenge, [here are some tutorial videos to help you get started](https://www.youtube.com/results?search_query=ollama+llama+home+assistant). Good luck!
 
-???+ abstract "Ollama AI Powered Conversation Agent (Free, requires a GPU, and can be hard to set up with proper function calling.)"
+???+ abstract "Ollama AI Powered Conversation Agent (Free, requires a GPU, and can be hard to set up with simi-reliable function calling.)"
     [Set up Ollama Conversation Agent](https://www.home-assistant.io/integrations/ollama/){ .md-button .md-button--primary }
-
 
 
 ## Cloud AI Conversation Agents
 
-???+ danger "Warning: You are granting a company with non-deterministic artificial intelligence control over your home and access to data on your usage. Proceed with caution!"
+???+ danger "Warning: You are entrusting a cloud-based artificial intelligence that does not protect your privacy with control over your home. Proceed with caution!"
 
-???+ abstract "Google A.I Powered Pipeline (Free, but will collect your data)"
+???+ abstract "Google AI Conversation Agent (Free, but will collect your data.)"
     [Set up Google AI Conversation Agent](https://www.home-assistant.io/integrations/google_generative_ai_conversation/){ .md-button .md-button--primary }
 
-???+ abstract "OpenAI ChatGPT Powered Pipeline (Expensive, and not open at all, despite the marketing name.)"
+???+ abstract "OpenAI ChatGPT Conversation Agent (Expensive, and not open at all, despite the marketing name, and will collect your data.)"
     [Set up OpenAI ChatGPT Conversation Agent](https://www.home-assistant.io/integrations/openai_conversation/){ .md-button .md-button--primary }
 
 NOTE: The following prompt has perfomed well with both OpenAI and Google's conversation agents.
@@ -102,4 +101,4 @@ Your home assistant likely has hundreds if not thousands of entities. If you wan
 2. Enable the "Assist" toggle switch and consider adding alias names that you might use when referring to the entity.
    <br>![Add aliases](/assets/Expose Settings.png){ width="60%" loading=lazy }</br>
 
-   [Back to Top](./voice-assistant.md/#what-is-a-voice-assistant)
+   [Back to Top](./set-up-voice-control/#what-is-a-voice-pipeline)

@@ -4,10 +4,10 @@ repo_url: https://github.com/FutureProofHomes/Documentation
 
 nav:
   - Home: index.md
-  - Set Up Voice Control: voice-assistant.md
+  - Set Up Voice Control: set-up-voice-control.md
   - Streaming Music: streaming-music.md
   - Modifying the Firmware: modifying-the-firmware.md
-  - Multi-Sensor Configs: multi-sensor-configs.md
+  - Presence Sensors: presence-sensors.md
   - Awesome Automations: awesome-automations.md
   - Recommended Accessories: recommended-accessories.md
   - Troubleshooting: troubleshooting.md
