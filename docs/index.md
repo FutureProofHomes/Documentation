@@ -32,10 +32,12 @@ You'll notice a standard Raspberry Pi 40-pin connector on the Hat board (marked 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 ## Powering on the Satellite1
+Please make sure you're using the [correct power supplies]((recommended-accessories.md#power-supply)) to power on your new Satellite1.
+
 1. Take a USB-C cable and plug one end into the USB socket on the Hat labeled "CORE/ESP".
-2. Plug the other end into a USB-C power supply, or a computer. ([Recommended power adapters](recommended-accessories.md#power-supply))
+2. Plug the other end into a USB-C power supply, or a computer.
 3. Upon first boot you will see a the blue LED's count down clockwise as the device flashes the XMOS audio processor chip.
-4. Finally the LEDs will begin to sparkle a warm white color.  Congrats!  Move to the next step:
+4. Finally the LEDs will begin to sparkle a warm white color.  Congrats!  Move to the next step.
 
 ## Connecting to Home Assistant
 Your Satellite1 arrives pre-flashed with all the necessary firmware to get you up and running quickly. You have 2 choices: 

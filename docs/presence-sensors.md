@@ -7,23 +7,60 @@ If you have multiple Satellite1's in each room of your home you can track your s
 ## Millimeter-wave presence sensors.
 The Satellite1 HAT has two ports for connecting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Please read below.
 
-## LD2410(B)
-This is small, but powerful sensor. It can sense motion and still human presence for distances up to 6 meters. It has a detection angle +/-60 degrees, and should be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
+<br>
+<figure markdown="span">
+  ![LD2410 mmWave](/assets/presence-sensors/sat1_ld2410.jpg){ width="60%" loading=lazy}
+  <figcaption>LD2410 Mounted on Sat1 HAT</figcaption>
+</figure>
 
-<br>![LD2410 mmWave](/assets/Accessories-mmwave-HLK-LD2410.png){ width="60%" loading=lazy }</br>
-<br>[Get it on Amazon](https://amzn.to/3PtvWMu){ .md-button .md-button--primary }
+<figure markdown="span">
+  ![LD2450 mmWave](/assets/presence-sensors/sat1_ld2450.jpg){ width="60%" loading=lazy}
+  <figcaption>LD2450 Mounted on Sat1 HAT</figcaption>
+</figure>
 
-### Glossary
+### Sensor Positioning
+When the sensor is directly mounted to the HAT it will point in the direction of the microphone and LEDs, which may work for your situation.  However, you can also use the sensors' included JST cable to position the sensor in any orientation you'd like so it is not directly mounted to the HAT.
+
+![Sensor JST cable](/assets/presence-sensors/sensor_jst_cable.jpg){ width="60%" loading=lazy}
+
+### Sensor Firmware
+Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over bluetooth.  Watch this quick video to see how to access the sensor and change the firmware version:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t8-JdVVVH34?si=3HRSFepdfceSfEtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<a href="https://apps.apple.com/us/app/hlkradartool/id1638651152">
+  <img style="width: 150px; height: 50px;" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"/>
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&hl=en_US&pli=1">
+  <img style="width: 170px; height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"/>
+</a>
+
+
+
+
+### mmWave Glossary
 1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
 2. **Distance Resolution**: the "thickness" of one gate. The LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
 3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
 
-### Installation
-1. Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in `OPTIONAL COMPONENTS` section of [satellite1.base.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.base.yaml#L89) config file.  Recompile the firmware and upload to the device.
-2. Unplug the Sat1 and mount the sensor to the corresponding slot on Satellite1 HAT
+### Firmware Installation
+???+ tip "The FutureProofHomes team is working on making this process seemless so you do not have to modify the firmware.  Please stay tuned."
+
+1. [Follow these steps to modify the Sat1 Firmware](/modifying-the-firmware)
+2. Add the correct code depening on your sensor and recompile then upload the firmware to your Sat1:
+    1. For the LD2410: Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in the `OPTIONAL COMPONENTS` section of [satellite1.base.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.base.yaml#L89).
+    1. For the LD2450: Uncomment the line `mmwave_ld2450: !include common/mmwave_ld2450.yaml` in `OPTIONAL COMPONENTS` section of [satellite1.base.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.base.yaml#L90).
 4. Boot the Sat1 and check it's device page in Home Assistant after device reboot.  You should see a ton more entities in your Sat1 device page.
 
-### Configuration
+
+
+### About the LD2410(B)
+This is small, but powerful sensor. It can sense motion and still human presence for distances up to 6 meters. It has a detection angle +/-60 degrees, and should be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
+
+<br>![LD2410 mmWave](/assets/Accessories-mmwave-HLK-LD2410.png){ width="60%" loading=lazy }</br>
+<br>[Get it on Amazon](https://amzn.to/3C6utsf){ .md-button .md-button--primary }
+
+#### Configuration
 Don't be overwhelmed with several dozens new entities that appeared after installation. They all are useful, and after fine-tuning the sensor you can disable those you not need.
 Let's familarize ourselves with some useful entities:
 
@@ -211,4 +248,17 @@ variables:
 Blue bars are threshold sliders. Orange bars are energy indicators.
 That's it! Happy building!
 
-[Back to the top](./multi-sensor-configs.md/#multi-sensor-configurations)
+
+### About the LD2450
+This is physically bigger and even more powerful presence sensor. It can track the motion for 3 moving occupants in the room while also detecting still human presence for distances up to 8 meters. It has a detection angle +/-60 degrees, and should be fine-tuned for best performance. Also it can see through glass walls, thin plywood etc.
+
+???+ warning "The LD2450 must be running firmware version V2.02.23090617 to work with ESPHome.  Learn how to [update the firmware by reading here](#sensor-firmware)."
+
+<br>![LD2450 mmWave](assets/accessory_mmwave_ld2450.jpg){ width="60%" loading=lazy }</br>
+<br>[Get it on Amazon](https://amzn.to/4hcKtrK){ .md-button .md-button--primary }
+
+#### More Information Soon
+- Calibration tips
+- Front-end Dashboard Card
+
+[Back to the top](./presence-sensors.md/#millimeter-wave-presence-sensors)

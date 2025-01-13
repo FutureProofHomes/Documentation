@@ -39,7 +39,7 @@ Your Sat1 also supports the Human Presence Sensing Radar Modules LD2410 or LD245
 
 <br>![LD2410 mmWave](/assets/Accessories-mmwave-HLK-LD2410.png){ width="60%" loading=lazy }</br>
 <br>HLK-LD2410 mmWave is smaller sensor that is good at presence detection if the occupant is still in the room.  Note that this sensor can only detect one person at a time and cannot determine exactly where the person is in the room.  If multiple people are in the room it will focus on the person with the most "energy" or motion.
-<br>[Get it on Amazon](https://amzn.to/3PtvWMu){ .md-button .md-button--primary }
+<br>[Get it on Amazon](https://amzn.to/3C6utsf){ .md-button .md-button--primary }
 
 <br>![LD2450 mmWave](assets/accessory_mmwave_ld2450.jpg){ width="60%" loading=lazy }</br>
 <br>HLK-LD2450 wwWave is a larger sensor that offers everything the ld2410 has, plus it can detect up to 3 moving persons and their position in the room.  NOTE: this sensor is not yet supported by ESPHome and we're dependent on a PR that we hope Home Assistant will soon merge.
