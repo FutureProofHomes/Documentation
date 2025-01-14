@@ -10,15 +10,15 @@
     <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
     </div>
 
-    <br>![Logs Console](/assets/TroubleshootingLogsConsole.png){ width="60%" loading=lazy }</br>
+    <br>![Logs Console](/assets/TroubleshootingLogsConsole.png){ width="100%" loading=lazy }</br>
 
     If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll backup and take a look.  
 
-    <br>![Troubleshooting Logs](/assets/TroubleshootingLogs.png){ width="60%" loading=lazy }</br>
+    <br>![Troubleshooting Logs](/assets/TroubleshootingLogs.png){ width="100%" loading=lazy }</br>
 
     Scroll to the bottom and issue a command "Hey Jarvis, what time is it?"
 
-    <br>![Troubleshooting Hey Jarvis](/assets/TroubleshootingHeyJarvis.png){ width="60%" loading=lazy }</br>
+    <br>![Troubleshooting Hey Jarvis](/assets/TroubleshootingHeyJarvis.png){ width="100%" loading=lazy }</br>
 
 ??? abstract "I want to see Sat1 ESP32 logs via my Wi-Fi network (Over the Air)"
 
@@ -28,7 +28,7 @@
 
 Curious why your Sat1 is doing something different than what you'd expect?  Use Home Assistant pipeline debugging tools.
 
-<br>![Debugging a Voice Pipeline](/assets/debug_assist.png){ width="60%" loading=lazy }</br>
+<br>![Debugging a Voice Pipeline](/assets/debug_assist.png){ width="100%" loading=lazy }</br>
 
 1. Determing what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/set-up-voice-control/#assign-a-voice-pipeline)
 3. In Home Assitant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.
@@ -69,10 +69,9 @@ assist_pipeline:
 
 4. Follow the steps to [Add your Satellite1 to Home Assistant via a USB-C cable](/#connecting-to-home-assistant)
 
-
 ## Need More Help?
 
-The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
+While we hope this documentation will answer all your questions, but we realize support is sometimes needed.  The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
 
 !!! question "Have a general question and need quick help from the community?"
 
@@ -88,5 +87,3 @@ The FutureProofHomes team will do their best to keep up with support requests, b
 
 !!! bug "Have you found a reproducable issue with the hardware or software? "
     [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
-
-[Back to Top](./troubleshooting.md/#inspecting-logs)

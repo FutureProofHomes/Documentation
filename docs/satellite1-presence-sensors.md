@@ -5,27 +5,27 @@ If you have multiple Satellite1's in each room of your home you can track your s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 ## Millimeter-wave presence sensors.
-The Satellite1 HAT has two ports for connecting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Please read below.
+The Satellite1 HAT has two ports for optionally mounting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Please read below.
 
 <br>
 <figure markdown="span">
-  ![LD2410 mmWave](/assets/presence-sensors/sat1_ld2410.jpg){ width="60%" loading=lazy}
+  ![LD2410 mmWave](/assets/presence-sensors/sat1_ld2410.jpg){ width="100%" loading=lazy}
   <figcaption>LD2410 Mounted on Sat1 HAT</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![LD2450 mmWave](/assets/presence-sensors/sat1_ld2450.jpg){ width="60%" loading=lazy}
+  ![LD2450 mmWave](/assets/presence-sensors/sat1_ld2450.jpg){ width="100%" loading=lazy}
   <figcaption>LD2450 Mounted on Sat1 HAT</figcaption>
 </figure>
 
 ### Sensor Positioning
 When the sensor is directly mounted to the HAT it will point in the direction of the microphone and LEDs, which may work for your situation.  However, you can also use the sensors' included JST cable to position the sensor in any orientation you'd like so it is not directly mounted to the HAT.
 
-![Sensor JST cable](/assets/presence-sensors/sensor_jst_cable.jpg){ width="60%" loading=lazy}
+![Sensor JST cable](/assets/presence-sensors/sensor_jst_cable.jpg){ width="100%" loading=lazy}
 
 ### Sensor Firmware
 Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over bluetooth.  Watch this quick video to see how to access the sensor and change the firmware version:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t8-JdVVVH34?si=3HRSFepdfceSfEtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/t8-JdVVVH34?si=3HRSFepdfceSfEtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <a href="https://apps.apple.com/us/app/hlkradartool/id1638651152">
   <img style="width: 150px; height: 50px;" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"/>
@@ -260,5 +260,3 @@ This is physically bigger and even more powerful presence sensor. It can track t
 #### More Information Soon
 - Calibration tips
 - Front-end Dashboard Card
-
-[Back to the top](./presence-sensors.md/#millimeter-wave-presence-sensors)

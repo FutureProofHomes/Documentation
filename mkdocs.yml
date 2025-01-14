@@ -3,31 +3,51 @@ site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
 
 nav:
-  - Home: index.md
-  - Set Up Voice Control: set-up-voice-control.md
-  - Streaming Music: streaming-music.md
-  - Modifying the Firmware: modifying-the-firmware.md
-  - Presence Sensors: presence-sensors.md
-  - Awesome Automations: awesome-automations.md
-  - Recommended Accessories: recommended-accessories.md
-  - Troubleshooting: troubleshooting.md
-  - FAQs: faqs.md
+  - Welcome: index.md
+  - Satellite1 Dev Kit:
+    - Introduction: satellite1-introduction.md
+    - Installation:
+      - Recommended Accessories: satellite1-recommended-accessories.md
+      - Assembly: satellite1-assembly.md
+      - Powering On: satellite1-powering-on.md
+      - Connecting to Home Assistant: satellite1-connecting-to-ha.md
+    - Home Assistant Configuration:
+      - Set Up Voice Control: satellite1-set-up-voice-control.md
+      - Streaming Music: satellite1-streaming-music.md
+      - Awesome Automations: satellite1-awesome-automations.md
+    - Customization:
+      - Modifying the Firmware: satellite1-modifying-the-firmware.md
+      - Presence Sensors: satellite1-presence-sensors.md
+    - Support:
+      - Troubleshooting: satellite1-troubleshooting.md
+      - FAQs: satellite1-faqs.md
+  - Satellite1 Modules:
+    - Mini Speaker: satellite1-mini-speaker-module-overview.md
+    - Amplifier: satellite1-amplifier-module-overview.md
+  - Satellite1 Mount Kits:
+    - In-Ceiling Mount Kit: satellite1-mount-kit-overview.md
+  - AI Base Station:
+    - Introduction: ai-base-station-introduction.md
+
 
 theme:
   logo: assets/square_transparent_black_logo_vector_300x300.svg
   name: material
   custom_dir: docs/overrides
   features:
-    # - navigation.tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
     - navigation.top
     
-    - toc.integrate
+    # - toc.integrate
     
     - search.suggest
     - search.highlight
+    # - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
@@ -80,22 +100,24 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-   - glightbox:
-       touchNavigation: true
-       loop: false
-       effect: zoom
-       slide_effect: slide
-       width: 100%
-       height: auto
-       zoomable: true
-       draggable: true
-       skip_classes:
-         - custom-skip-class-name
-       auto_caption: false
-       caption_position: bottom
-       background: white
-       shadow: true
-       manual: false
+  - search
+  # - optimize
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 
 extra_javascript:
   # - javascript/installer.js
