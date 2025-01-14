@@ -16,10 +16,10 @@
     There are two key things to remember here:
 
     1. This is a "Dev Kit" and the sensors are on the device for development purposes.
-    2. We are working on advanced enclosures which will place sensors in the correct place for your needs. Stay tuned. :)
+    2. We are working on advanced enclosures which will place sensors in the correct location. Stay tuned.
 
 <a id="faq_anchor_wake_words"></a>
-???+ note "What "wake Words" are supported?"
+???+ note "What "wake words" are supported?"
     Satellite1 currently supports "hey Jarvis" and "OK Nabu" wake words. This support is built directly into the Satellite1 firmware, so you do not need to install the "Open Wakeword" Add-On. We will be adding additional wake word options in the future.
 
 <a id="faq_anchor_wake_word_success"></a>

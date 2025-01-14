@@ -22,19 +22,19 @@ After installing Music Assistant you'll want to add a source for your Music:
 ## Add your Sat1 to Music Assistat
 
 1. <b>After adding a music provider you'll want to add your Satellite1 to MA, go to setttings:</b>
-<br>![Music Assistant](/assets/MA0.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA0.png){ width="100%" loading=lazy }</br>
 
 2. <b>Add Home Assistnat as Player Provider</b>
-<br>![Music Assistant](/assets/MA1.png){ width="60%" loading=lazy }</br>
-<br>![Music Assistant](/assets/MA2.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA1.png){ width="100%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA2.png){ width="100%" loading=lazy }</br>
 
 3. <b>Add your Satellite1 to the list of players:</b>
-<br>![Music Assistant](/assets/MA3.png){ width="60%" loading=lazy }</br>
-<br>![Music Assistant](/assets/MA4.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA3.png){ width="100%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA4.png){ width="100%" loading=lazy }</br>
 
 4. <b>That's it!  Select your Sattelite1 as your Player Provider & play some music.</b>
-<br>![Music Assistant](/assets/MA5.png){ width="60%" loading=lazy }</br>
-<br>![Music Assistant](/assets/MA6.png){ width="60%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA5.png){ width="100%" loading=lazy }</br>
+<br>![Music Assistant](/assets/MA6.png){ width="100%" loading=lazy }</br>
 
 ## Controlling Music with Your Voice
 
@@ -55,5 +55,3 @@ There are three ways to control music with your voice:
 ??? abstract "I want to control my music with an AI/LLM and have more capabilities that work often, but not perfectly."
 
     [Use a Local LLM to Control Your Music](https://music-assistant.io/integration/voice/#llm-conversation-agent){ .md-button .md-button--primary }
-
-[Back to top](./streaming-music.md/#set-up-music-assistant)
