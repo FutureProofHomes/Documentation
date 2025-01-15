@@ -18,12 +18,15 @@
     1. This is a "Dev Kit" and the sensors are on the device for development purposes.
     2. We are working on advanced enclosures which will place sensors in the correct location. Stay tuned.
 
+```markdown
 <a id="faq_anchor_wake_words"></a>
-???+ note "What "wake words" are supported?"
-    Satellite1 currently supports "hey Jarvis" and "OK Nabu" wake words. This support is built directly into the Satellite1 firmware, so you do not need to install the "Open Wakeword" Add-On. We will be adding additional wake word options in the future.
+???+ note "What 'wake words' are supported?"
+    
+    Satellite1 currently supports "Hey Jarvis" and "Okay Nabu" wake words. This support is built directly into the Satellite1 firmware, so you do not need to install the "Open Wakeword" Add-On. We will be adding additional wake word options in the future.
 
 <a id="faq_anchor_wake_word_success"></a>
 ???+ note "The wake word isn't always responding!"
+    
     1. Try both "Okay Nabu" and "Hey Jarvis".
     2. "Okay Nabu" is more trained and may have a higher success rate.
     3. Speak normally. Don't scream.
