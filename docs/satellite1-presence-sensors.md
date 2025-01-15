@@ -1,20 +1,15 @@
-<!-- ## Bluetooth Room Presence Detection
-
-If you have multiple Satellite1's in each room of your home you can track your smart watch or phone to determine what room you're in:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=qK_A1XmaSsqYQ9js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 ## Millimeter-wave presence sensors.
 The Satellite1 HAT has two ports for optionally mounting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Please read below.
 
 <br>
 <figure markdown="span">
-  ![LD2410 mmWave](/assets/presence-sensors/sat1_ld2410.jpg){ width="100%" loading=lazy}
+  ![LD2410 mmWave](../assets/presence-sensors/sat1_ld2410.jpg){ width="100%" loading=lazy}
   <figcaption>LD2410 Mounted on Sat1 HAT</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![LD2450 mmWave](/assets/presence-sensors/sat1_ld2450.jpg){ width="100%" loading=lazy}
+  ![LD2450 mmWave](../assets/presence-sensors/sat1_ld2450.jpg){ width="100%" loading=lazy}
   <figcaption>LD2450 Mounted on Sat1 HAT</figcaption>
 </figure>
 

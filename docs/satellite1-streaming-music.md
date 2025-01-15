@@ -1,10 +1,10 @@
 ## Set Up Music Assistant
 
-Your new Satellite1 can control your home now but what about streaming music? The good news is there's a giant 25 Watt amplifier built into Satellite1 and if you have a good speaker or headphones (and the appropriate [power supply](./recommended-accessories.md/) you'll be able to stream high-quality music to it with music assistant from Home Assistant.  Follow this excellent guide to get Music Assistant (MA) installed and configured to stream to your Satellite1.
+Your new Satellite1 can control your home now, but what about streaming music? The good news is there's a giant 25 Watt amplifier built into Satellite1, and if you have a good speaker or headphones (and the appropriate [power supply](satellite1-recommended-accessories.md/)), you'll be able to stream high-quality music to it with Music Assistant from Home Assistant. Follow this excellent guide to get Music Assistant (MA) installed and configured to stream to your Satellite1.
 
-!!! warning "Music Assistant get added to Home Assistant Core!"
+!!! warning "Music Assistant gets added to Home Assistant Core!"
 
-    This is a great thing! It makes MA easier to install.  However, my understanding that this version of Music Assistant does not have "voice control capabilities" (yet).  So, as of December, 2024 we will recommend installing Music Assistant via the old-fashioned way - by using HACS (Home Assistant Community Store).
+    This is a great thing! It makes MA easier to install. However, my understanding is that this version of Music Assistant does not have "voice control capabilities" (yet). So, as of December 2024, we will recommend installing Music Assistant via the old-fashioned way - by using HACS (Home Assistant Community Store).
 
 !!! tip "A Couple Tips:"
 
@@ -19,12 +19,12 @@ After installing Music Assistant you'll want to add a source for your Music:
 
 [Connect a Music Provider to MA](https://music-assistant.io/music-providers/){ .md-button .md-button--primary }
 
-## Add your Sat1 to Music Assistat
+## Add your Sat1 to Music Assistant
 
-1. <b>After adding a music provider you'll want to add your Satellite1 to MA, go to setttings:</b>
+1. <b>After adding a music provider, you'll want to add your Satellite1 to MA. Go to settings:</b>
 <br>![Music Assistant](/assets/MA0.png){ width="100%" loading=lazy }</br>
 
-2. <b>Add Home Assistnat as Player Provider</b>
+2. <b>Add Home Assistant as Player Provider</b>
 <br>![Music Assistant](/assets/MA1.png){ width="100%" loading=lazy }</br>
 <br>![Music Assistant](/assets/MA2.png){ width="100%" loading=lazy }</br>
 
@@ -32,7 +32,7 @@ After installing Music Assistant you'll want to add a source for your Music:
 <br>![Music Assistant](/assets/MA3.png){ width="100%" loading=lazy }</br>
 <br>![Music Assistant](/assets/MA4.png){ width="100%" loading=lazy }</br>
 
-4. <b>That's it!  Select your Sattelite1 as your Player Provider & play some music.</b>
+4. <b>That's it! Select your Satellite1 as your Player Provider & play some music.</b>
 <br>![Music Assistant](/assets/MA5.png){ width="100%" loading=lazy }</br>
 <br>![Music Assistant](/assets/MA6.png){ width="100%" loading=lazy }</br>
 
@@ -44,7 +44,7 @@ After installing Music Assistant you'll want to add a source for your Music:
 
 There are three ways to control music with your voice:
 
-??? abstract "I want to control my music without an AI/LLM and have less capabilites."
+??? abstract "I want to control my music without an AI/LLM and have fewer capabilities."
 
     [Use Custom HA Intents to Control Music](https://music-assistant.io/integration/voice/#ha-assist){ .md-button .md-button--primary }
 

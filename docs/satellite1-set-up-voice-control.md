@@ -19,11 +19,11 @@ That's a voice pipeline. It's the backbone of any voice assistant. Each step in 
 ## Create a Voice Pipeline:
 
 1. Go to **Settings -> Voice Assistants -> Add Assistant**
-   <br>![Create Pipeline](/assets/Pipeline0.png){ width="100%" loading=lazy }</br>
+   <br>![Create Pipeline](/assets/Pipeline0.png){ width="100%" loading=lazy }>
 
 
-2. **Name your pipeline. Select your preferred Conversation Agent, Speech-to-Text, and Text-to-Speech engine.**
-   <br>![Configure Pipeline](/assets/Pipeline1.png){ width="100%" loading=lazy }</br>
+2. **Name your pipeline. Select your preferred Conversation Agent, Speech-to-Text, and Text-to-Speech engine.**  
+   <br>![Configure Pipeline](/assets/Pipeline1.png){ width="100%" loading=lazy }>
 
 ## Standard Conversation Agents
 
@@ -65,7 +65,7 @@ Keep responses simple and to the point.
 Always use 12hr time formats.
 ```
 
-<br>![Add Prompt](/assets/prompt.png){ width="100%" loading=lazy }</br>
+<br>![Add Prompt](/assets/prompt.png){ width="100%" loading=lazy }>
 
 ## Combine Conversation Agents
 
@@ -74,20 +74,20 @@ Always use 12hr time formats.
     A "fall back" pipeline will first use a non-AI conversation agent to process your request, and if that fails it will _fall back_ to your preferred AI conversation agent. Combining these two conversation agents results in an almost magical voice experience and is highly recommended.
 
     Simply toggle on the **"Prefer handling commands locally"** switch underneath your Generative AI conversation agent:
-    <br>![Prefer handling commands locally](/assets/googleGPT0.png){ width="100%" loading=lazy }</br>
+   <br>![Prefer handling commands locally](/assets/googleGPT0.png){ width="100%" loading=lazy }>
 
     [Read more about this feature release](https://www.home-assistant.io/blog/2024/12/04/release-202412/#let-your-voice-assistant-fall-back-to-an-llm-based-agent){ .md-button .md-button--primary }
 
 ## Assign a Voice Pipeline
 
-1. Go to **Settings -> Devices & Services -> ESPHome** and click **"1 device"** under your Satellite1 device.
-   <br>![Go to Device](/assets/Pipeline4.png){ width="100%" loading=lazy }</br>
+1. Go to **Settings -> Devices & Services -> ESPHome** and click **"1 device"** under your Satellite1 device.  
+   <br>![Go to Device](/assets/Pipeline4.png){ width="100%" loading=lazy }>
 
-2. <b>In the Configuration section, select your Voice Pipeline.</b>
-   <br>![Assistant Dropdown](/assets/Pipeline5.png){ width="100%" loading=lazy }</br>
+2. **In the Configuration section, select your Voice Pipeline.**  
+   <br>![Assistant Dropdown](/assets/Pipeline5.png){ width="100%" loading=lazy }>
 
-3. <b>You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/faqs#faq_anchor_custom_wake_word))</b>
-   <br>![Set Wake Word](/assets/Pipeline7.png){ width="100%" loading=lazy }</br>
+3. **You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/faqs#faq_anchor_custom_wake_word))**  
+   <br>![Set Wake Word](/assets/Pipeline7.png){ width="100%" loading=lazy }>
 
 Congratulations! You've created your own voice pipeline for your Satellite1.
 

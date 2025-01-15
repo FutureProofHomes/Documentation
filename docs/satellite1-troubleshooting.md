@@ -12,7 +12,7 @@
 
     <br>![Logs Console](/assets/TroubleshootingLogsConsole.png){ width="100%" loading=lazy }</br>
 
-    If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll backup and take a look.  
+    If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll back up and take a look.  
 
     <br>![Troubleshooting Logs](/assets/TroubleshootingLogs.png){ width="100%" loading=lazy }</br>
 
@@ -30,8 +30,8 @@ Curious why your Sat1 is doing something different than what you'd expect?  Use 
 
 <br>![Debugging a Voice Pipeline](/assets/debug_assist.png){ width="100%" loading=lazy }</br>
 
-1. Determing what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/set-up-voice-control/#assign-a-voice-pipeline)
-3. In Home Assitant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.
+1. Determine what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/set-up-voice-control/#assign-a-voice-pipeline)
+3. In Home Assistant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.
 4. Read here: [Debugging a Voice Pipeline](https://www.home-assistant.io/voice_control/troubleshooting/)
 
 
@@ -52,11 +52,11 @@ assist_pipeline:
 
 ## Resetting to Factory Settings
 
-1. Press and hold the RIGHT (Action) button for approximately 15 seconds until the red LEDs start to make a clockwise circle. Keep holding the action button until all LEDs or extinguished.  The LEDs will glow blue, and you can then release the button. The blue LEDs will count down in a clockwise cirlce to wipe the ESP and XMOS chips.  This may take a few minutes.
+1. Press and hold the RIGHT (Action) button for approximately 22 seconds until the red LEDs complete their clockwise circle.  When the LEDs glow blue you can release the action button and wait as the XMOS chip is erased.  This process may take a few minutes before the Satelllite1 finally reboots to the factory firmware.  Upon first boot you will see the blue LEDs complete another clockwise circle indicating the XMOS is being flashed with the facory embedded firmware.
 
 2. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
 
-3. Follow the steps to [Add your Satellite1 to Home Assistant](/#connecting-to-home-assistant)
+3. Follow the steps to [Add your Satellite1 to Home Assistant](satellite1-connecting-to-ha.md)
 
 
 ## Start the Device in "Boot" mode:
@@ -67,7 +67,7 @@ assist_pipeline:
 
 3. Apply power to the Sat1 and let go of the "Boot" button after 3 seconds.
 
-4. Follow the steps to [Add your Satellite1 to Home Assistant via a USB-C cable](/#connecting-to-home-assistant)
+4. Follow the steps to [Add your Satellite1 to Home Assistant via a USB-C cable](satellite1-connecting-to-ha.md))
 
 ## Need More Help?
 
@@ -83,7 +83,7 @@ While we hope this documentation will answer all your questions, but we realize 
 
 !!! success "Do you have a feature request you'd love to see?"
     Look through our existing Feature Requests first, then open a new request if necessary: <br>
-    [Requst a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
+    [Request a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
 
-!!! bug "Have you found a reproducable issue with the hardware or software? "
+!!! bug "Have you found a reproducible issue with the hardware or software? "
     [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
