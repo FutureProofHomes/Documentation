@@ -122,6 +122,7 @@ plugins:
 extra_javascript:
   # - javascript/installer.js
   - javascript/esp-web-tools/install-button.js
+  - javascript/keyboard_shortcuts_fix.js
   # - https://cdn.jsdelivr.net/npm/esp-web-tools@10/dist/web/install-button.js?module
 
 copyright: |
