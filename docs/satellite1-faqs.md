@@ -1,12 +1,12 @@
 <a id="faq_anchor_factory_reset"></a>
 ???+ note "I messed something up, How do I start over?"
 
-    [Perform a Factory Reset](/troubleshooting/#resetting-to-factory-settings){ .md-button .md-button--primary }
+    [Perform a Factory Reset](/satellite1-troubleshooting/#resetting-to-factory-settings){ .md-button .md-button--primary }
 
 <a id="faq_anchor_inspect_logs"></a>
 ???+ note "How do I access the Sat1 logs?"
 
-    [If you want to look at the logs, click here](/troubleshooting/#inspecting-logs){ .md-button .md-button--primary }
+    [If you want to look at the logs, click here](/satellite1-troubleshooting/#inspecting-sat1-esp32-logs){ .md-button .md-button--primary }
 
 <a id="faq_anchor_temp_sensor"></a>
 ???+ note "Why is the temp sensor incorrect?"
@@ -47,4 +47,4 @@
 ???+ note "How do I get help or report issues?"
     Need further help or have suggestions for the product or documentation? Reach out!
 
-    [There are many ways to contact us, click here](/troubleshooting/#need-more-help){ .md-button .md-button--primary }
+    [There are many ways to contact us, click here](/satellite1-troubleshooting/#need-more-help){ .md-button .md-button--primary }

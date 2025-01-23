@@ -1,17 +1,17 @@
 ## Set Up Music Assistant
 
-Your new Satellite1 can control your home now, but what about streaming music? The good news is there's a giant 25 Watt amplifier built into Satellite1, and if you have a good speaker or headphones (and the appropriate [power supply](satellite1-recommended-accessories.md/)), you'll be able to stream high-quality music to it with Music Assistant from Home Assistant. Follow this excellent guide to get Music Assistant (MA) installed and configured to stream to your Satellite1.
+Your new Satellite1 can now control your home, but what about streaming music? Here’s a guide to help you install and configure Music Assistant (MA) to stream music directly to your Satellite1.
 
 !!! warning "Music Assistant gets added to Home Assistant Core!"
 
-    This is a great thing! It makes MA easier to install. However, my understanding is that this version of Music Assistant does not have "voice control capabilities" (yet). So, as of December 2024, we will recommend installing Music Assistant via the old-fashioned way - by using HACS (Home Assistant Community Store).
+    This is great news—it makes installing Music Assistant (MA) much easier! However, as of December 2024, it’s important to note that this version of Music Assistant does not yet include “voice control capabilities.” We recommend [reviewing Music Assistant’s guidelines on setting up voice control capabilities](https://www.music-assistant.io/integration/voice/) for the most up-to-date information.
 
 !!! tip "A Couple Tips:"
 
     1. Spotify ONLY works if you are a paying subscriber.  This may or may not be addressed in future versions of MA.
     2. Watch your volume!  The 25W amplifier on the Sat1 can blow little speakers.
 
-[Install Music Assistant via HACS](https://music-assistant.io/integration/installation/#installation-of-the-deprecated-hacs-integration){ .md-button .md-button--primary }
+[Install Music Assistant](https://www.music-assistant.io/installation/){ .md-button .md-button--primary }
 
 ## Add a Music Provider
 
@@ -46,12 +46,12 @@ There are three ways to control music with your voice:
 
 ??? abstract "I want to control my music without an AI/LLM and have fewer capabilities."
 
-    [Use Custom HA Intents to Control Music](https://music-assistant.io/integration/voice/#ha-assist){ .md-button .md-button--primary }
+    [Use Custom HA Intents to Control Music](https://github.com/music-assistant/voice-support?tab=readme-ov-file#option-1-local-assistant-blueprint){ .md-button .md-button--primary }
 
-??? abstract "I want to control my music with an AI/LLM and have more capabilities that work often, but not perfectly."
+??? abstract "I want to control my music with a cloud-based AI/LLM and have more capabilities that work often, but not perfectly."
 
-    [Use OpenAI to Control Your Music](https://music-assistant.io/integration/voice/#ma-specific-conversation-agent){ .md-button .md-button--primary }
+    [Use OpenAI to Control Your Music](https://github.com/music-assistant/voice-support?tab=readme-ov-file#option-2-local-assist-enhanced-by-an-llm-integration-like-open-ai-conversation-chatgpt-or-google-generative-ai-gemini){ .md-button .md-button--primary }
 
-??? abstract "I want to control my music with an AI/LLM and have more capabilities that work often, but not perfectly."
+??? abstract "I want to control my music with an AI/LLM that I run locally and have more capabilities that work often, but not perfectly."
 
-    [Use a Local LLM to Control Your Music](https://music-assistant.io/integration/voice/#llm-conversation-agent){ .md-button .md-button--primary }
+    [Use a Local LLM to Control Your Music](https://github.com/music-assistant/voice-support?tab=readme-ov-file#option-3-script-which-can-be-used-as-a-tool-by-an-llm-integration-like-open-ai-conversation-chatgpt-or-google-generative-ai-gemini){ .md-button .md-button--primary }

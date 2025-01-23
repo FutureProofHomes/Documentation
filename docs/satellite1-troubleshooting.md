@@ -2,6 +2,8 @@
 
 ??? abstract "I want to see Sat1 ESP32 logs via a USB-C cable."
 
+    (NOTE: If you need lower level `DEBUG` logs then you're going to need to [adopt the Sat1 to your ESPHome Dashboard](/satellite1-modifying-the-firmware/#import-the-sat1-to-your-esphome-dashboard) and set log level from there.)
+
     1. Connect the Sat1 to your computer using a USB-C cable. 
     2. Click the connect button below and select the correct JTAG device.
     3. Choose Logs & Console:
@@ -30,7 +32,7 @@ Curious why your Sat1 is doing something different than what you'd expect?  Use 
 
 <br>![Debugging a Voice Pipeline](/assets/debug_assist.png){ width="100%" loading=lazy }</br>
 
-1. Determine what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/set-up-voice-control/#assign-a-voice-pipeline)
+1. Determine what pipeline your Sat1 is using by retracing these steps: [Assign a Voice Pipeline & Wake Word to your Satellite1](/satellite1-set-up-voice-control/#assign-a-voice-pipeline)
 3. In Home Assistant, go to Settings -> Voice Assistants and select the 3 dots next to that pipeline.
 4. Read here: [Debugging a Voice Pipeline](https://www.home-assistant.io/voice_control/troubleshooting/)
 
