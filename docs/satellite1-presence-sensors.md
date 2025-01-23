@@ -41,7 +41,7 @@ Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over blu
 ### Firmware Installation
 ???+ tip "The FutureProofHomes team is working on making this process seemless so you do not have to modify the firmware.  Please stay tuned."
 
-1. [Follow these steps to modify the Sat1 Firmware](/modifying-the-firmware)
+1. [Follow these steps to modify the Sat1 Firmware](/satellite1-modifying-the-firmware)
 2. Uncomment the correct lines depending on the mmWave sensor you want to use:
     1. For the LD2410: Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in the `OPTIONAL COMPONENTS` section of [satellite1.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.yaml#L25).
     1. For the LD2450: Uncomment the line `mmwave_ld2450: !include common/mmwave_ld2450.yaml` in `OPTIONAL COMPONENTS` section of [satellite1.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.yaml#L28).
