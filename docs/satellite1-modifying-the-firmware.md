@@ -23,14 +23,11 @@ There are two ways you can modify the firmware running on your Satellite1:
     4. <b>Click "Take Control" and give the device a name:</b>
     <br>![Take Control](/assets/esphome_device_builder/3_take_control.png){ width="100%" loading=lazy }</br>
     <br>![Give device a name](/assets/esphome_device_builder/4_name_device.png){ width="100%" loading=lazy }</br>
-
-    5. <b>Click "Install" to provision the encryption key between the Sat1 and Home Assistant server:</b>
-    <br>![Enable Encryption](/assets/esphome_device_builder/5_accept_encryption.png){ width="100%" loading=lazy }</br>
     
-    6. <b>Wait while the firmware compiles and your Sat1 is flashed over-the-air with your new firmware. This can take a significant amount of time depending on your server's hardware specs. Please be patient:</b>
+    5. <b>Wait while the firmware compiles and your Sat1 is flashed over-the-air with your new firmware. This can take a significant amount of time depending on your server's hardware specs (Recommend 8gb RAM or more to avoid compilation errors). Please be patient:</b>
     <br>![Compile Firmware](/assets/esphome_device_builder/6_firmware_compile.png){ width="100%" loading=lazy }</br>
 
-    7. <b>When the firmware is uploaded to the Sat1, you'll see the boot logs on your screen. You can close the window and return to the ESPHome Device Builder dashboard and click the "EDIT" button and have fun!</b>
+    6. <b>When the firmware is uploaded to the Sat1, you'll see the boot logs on your screen. You can close the window and return to the ESPHome Device Builder dashboard and click the "EDIT" button and have fun!</b>
     <br>![Edit the Firmware](/assets/esphome_device_builder/8_build_cool_stuff.png){ width="100%" loading=lazy }</br>
 
     Congrats.  You're done!
