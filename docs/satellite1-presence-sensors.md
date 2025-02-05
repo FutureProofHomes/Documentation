@@ -39,7 +39,7 @@ Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over blu
 3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
 
 ### Firmware Installation
-???+ tip "The FutureProofHomes team is working on making this process seemless so you do not have to modify the firmware.  Please stay tuned."
+???+ tip "The FutureProofHomes team is working on making this process seemless so you do not have to modify the firmware.  [Please track this ticket](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/236) for updates."
 
 1. [Follow these steps to modify the Sat1 Firmware](/satellite1-modifying-the-firmware)
 2. Uncomment the correct lines depending on the mmWave sensor you want to use:

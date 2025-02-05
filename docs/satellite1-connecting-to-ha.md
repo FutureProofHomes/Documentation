@@ -15,7 +15,8 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
     3. <b>Tap "Add" next to your Sat1 device (contains last 6 of device MAC address):</b>
     <br>![Tap "Add" next to your Sat1 device (contains last 6 of device MAC address):](/assets/ble_improv/3_improv_discovered_device.png){ width="100%" loading=lazy }</br>
 
-    4. <b>Type in your 2.4ghz network credentials:</b>
+    4. <b>Type in your 2.4 Ghz WiFI credentials:</b>
+    ??? tip "5 GHz Wi-Fi is not supported! Use only 2.4 GHz Wi-Fi."
     <br>![Type in your 2.4ghz network credentials:](/assets/ble_improv/4_improv_add_wifi_credentials.png){ width="100%" loading=lazy }</br>
 
     5. <b>On the Sat1 HAT, press the right "Action button" to give authorization:</b>
@@ -52,7 +53,10 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     Plug your Sat1 directly into your computer with a USB-C cable that supports a data connection.
 
-    1. <b>Click <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button> and select the JTAG device in the browser's notification:</b>
+    1. <b>Click the connect button below and select the JTAG device in the browser's notification:</b>
+    <br>
+    <br><esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
+    <br>
     <br>![Select JTAG](/assets/ESPHome-SerialConn.png){ width="100%" loading=lazy }</br>
 
     2. <b>Click "Install":</b>

@@ -6,11 +6,11 @@ nav:
   - Welcome: index.md
   - Satellite1 Dev Kit:
     - Introduction: satellite1-introduction.md
-    - Installation:
+    - Getting Started:
       - Recommended Accessories: satellite1-recommended-accessories.md
-      - Assembly: satellite1-assembly.md
-      - Powering On: satellite1-powering-on.md
+      - PCB Assembly & First Boot: satellite1-assembly.md
       - Connecting to Home Assistant: satellite1-connecting-to-ha.md
+      - Enclosure Printing & Assembly: satellite1-dev-kit-enclosure.md
     - Home Assistant Configuration:
       - Set Up Voice Control: satellite1-set-up-voice-control.md
       - Streaming Music: satellite1-streaming-music.md

@@ -22,7 +22,7 @@ You can read detailed sepecifications about the hardware on their product pages.
 The Satellite1 has a few requirements to get up and running.
 
 1. An active installation of [Home Assistant](https://www.home-assistant.io/installation/)
-2. A 2.4ghz wifi network (internet is not required)
+2. A 2.4 GHz WiFi network (internet is not required)
 3. The recommended Satellite1 accessories (see [Recommended Accessories](satellite1-recommended-accessories.md))
 
 ## Future Modules, Enclosures & AI Server
