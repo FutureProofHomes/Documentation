@@ -52,24 +52,36 @@ assist_pipeline:
 3. Don't leave this on forever, it will clog up your server with audio recordings.
 
 
-## Resetting to Factory Settings
+## Clear WiFi Credentials to Restart BLE Improv
 
 1. Press and hold the RIGHT (Action) button for approximately 22 seconds until the red LEDs complete their clockwise circle.  When the LEDs glow blue you can release the action button and wait as the XMOS chip is erased.  This process may take a few minutes before the Satelllite1 finally reboots to the factory firmware.  Upon first boot you will see the blue LEDs complete another clockwise circle indicating the XMOS is being flashed with the facory embedded firmware.
 
-2. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
-
-3. Follow the steps to [Add your Satellite1 to Home Assistant](satellite1-connecting-to-ha.md)
+2. Follow the steps to [Add your Satellite1 to Home Assistant](satellite1-connecting-to-ha.md)
 
 
-## Start the Device in "Boot" mode:
+## Resetting to Factory Settings
+This process will erase all settings on the Sat1 device and restore the latest production firmware, returning it to factory-new condition. You will need a USB-C cable and a computer with an internet connection (Google Chrome browser recommended).
 
-1. Unplug the Sat1 from power.
+??? abstract "First, remove the Sat1 from ESPHome & Home Assistant"
 
-2. Press and hold the Core board's "Boot" button.  <i>(NOTE: If the HAT is attached you can use the "Action" button.)</i>
+    1. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
+    ![Delete ESPHome ESPHome](/assets/delete_sat1_esp_device.png){ width="100%" }
+    2. If you "Took Control" of the Sat1 in your ESP Home Device Builder then go to Settings -> Add-Ons -> ESPHome Device Builder and open the Web UI to click the 3 dots next to the Satellite1 and select "Delete".
+    ![Remove from ESPHome Builder](/assets/delete_sat1_from_esp_builder.png){ width="100%" }
 
-3. Apply power to the Sat1 and let go of the "Boot" button after 3 seconds.
 
-4. Follow the steps to [Add your Satellite1 to Home Assistant via a USB-C cable](satellite1-connecting-to-ha.md))
+??? abstract "Then Flash your Satellite1 a Computer's USB-C Connection"
+
+    1. Unplug the Sat1 from power.
+
+    2. Press and the HAT's "Action" button OR the CORE's "Boot" button.
+    ![CORE BOOT Button](/assets/boot_reset_button.jpg){ width="100%" }
+    ![HAT BOOT Button](/assets/right_action_button.jpg){ width="100%" }
+
+    3. While holding down the "Boot" button, plug the Sat1's "ESP32/CORE" connection into your computers USB-C port.  Let go of the "Boot" button after 3 seconds.
+    ![ESP32 Power & Data Port](/assets/sat1_inputs_and_outputs.jpg){ width="100%" }
+
+    4. Follow these steps to [Add your Satellite1 to Home Assistant via a USB-C cable](satellite1-connecting-to-ha.md))
 
 ## Need More Help?
 

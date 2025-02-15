@@ -18,11 +18,16 @@
     1. This is a "Dev Kit" and the sensors are on the device for development purposes.
     2. We are working on advanced enclosures which will place sensors in the correct location. Stay tuned.
 
-```markdown
 <a id="faq_anchor_wake_words"></a>
-???+ note "What 'wake words' are supported?"
+???+ note "What wake words are supported?"
     
-    Satellite1 currently supports "Hey Jarvis" and "Okay Nabu" wake words. This support is built directly into the Satellite1 firmware, so you do not need to install the "Open Wakeword" Add-On. We will be adding additional wake word options in the future.
+    The Satellite1 uses ESPHome's [microWakeWord](https://esphome.io/components/micro_wake_word.html) and supports the "Hey Jarvis" and "Okay Nabu" wake words.  If you'd like to add other wake word please read [How do I add other 'wake words'](/satellite1-faqs/#faq_build_custom_wake_word)]
+
+<a id="faq_add_more_wake_words"></a>
+???+ note "How do I add other wake words to the Sat1?"
+
+    If you're a developer you can modify [the Sat1 firmware](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/3c4ff992ce5a7d21c2ff5dd76fc711d3b8321a94/config/common/voice_assistant.yaml#L46-L50) and add other compatible [MicroWakeWord models](https://github.com/esphome/micro-wake-word-models) or even [create your own custom wake word.](https://github.com/kahrendt/microWakeWord/blob/november-update/notebooks/basic_training_notebook.ipynb) 
+    <br><br><b>NOTE:</b> The more wake words you add to the firmware the less resouces your Sat1 has for other tasks.
 
 <a id="faq_anchor_wake_word_success"></a>
 ???+ note "The wake word isn't always responding!"
@@ -37,11 +42,6 @@
     8. If you have loud water running, wind blowing, kids screaming, oven hoods running... you're gonna have a bad time.
 
     Still having issues? This will get better in time. We have lots of ideas to solve these problems.
-
-<a id="faq_anchor_custom_wake_word"></a>
-???+ note "How do I build my own custom wake word?"
-
-    [This will require time and GPU horsepower.](https://github.com/kahrendt/microWakeWord/blob/november-update/notebooks/basic_training_notebook.ipynb){ .md-button .md-button--primary }
 
 <a id="faq_anchor_report_issue"></a>
 ???+ note "How do I get help or report issues?"
