@@ -24,20 +24,21 @@ All the files necessary can be found in the [Satellite1-Enclosures Github Repo](
 
 # Enclosure Limitations
 
-Before we get started let's discuss some of the limitations of this enclosure to set expectations:
+Many of the below enclosure limitations are solved by our upcoming power-over-ethernet SHOE board!  [You can read about the SHOE board in our recent blog post](https://futureproofhomes.net/blogs/news/q1-2025-status-update).
+
+Without the SHOE board here are some current limitations of the enclosure:
 
 1. **The lux sensor will not give accurate readings of the room.**
-<br>We will solve this with a light pipe and modified design.
+<br>We will solve this with a light pipe and updated enclosure designs.  This can also be solved by our upcoming SHOE board and relocating the lux sensor down in the speaker chamber.
+
 2. **The temp/humidity sensor will not give accurate readings of the room.  Also the mmWave sensor is pointed up at the ceiling.**
-<br>Our upcoming "SHOE" PCB will relocate these sensors down into the speaker chamber and expose a PoE port in the speaker.
-3. **The light ring does not fully diffuse the LEDs.**
-<br>We will solve this with a slightly modified diffuser.
-4. **The mic pipes slightly decrease the accuracy of speech-to-text.**
+<br>Our upcoming "SHOE" PCB will relocate these sensors down into the speaker chamber while also giving a PoE port to the enclosure!
+
+3. **The mic pipes very slightly decrease the accuracy of speech-to-text.**
 <br>We will solve this once we get to plastic injection molded enclosures.
-5. **The wake word does not respond when I'm playing music near full volume.**
-<br>We will experiment with modified designs and gaskets to mitigate the vibrations in the enclosure which impact the microphone reference signal.
-6. **The PCBs are hard to add/remove.**
-<br>This is by design, with a little practice things become easier.
+
+4. **The wake word may not respond when playing music at full volume.**
+<br>We will experiment with modified enclosure designs, gaskets, and better audio echo cancellation firmware to mitigate vibrations in the enclosure.
 
 ## Printing the Dev Kit Speaker Enclosure
 
