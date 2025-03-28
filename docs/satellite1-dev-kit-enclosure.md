@@ -2,6 +2,9 @@
 
 The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.
 
+You can modify the enclosure to support any speaker you'd like, but currently the speaker chamber is built for our [two recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors).
+
+
 All the files necessary can be found in the [Satellite1-Enclosures Github Repo](https://github.com/FutureProofHomes/Satellite1-Enclosures).
 
 <figure markdown="span">
@@ -90,7 +93,7 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/7_snap_1.JPG){ width="100%" }
 4. If you need to remove the HAT, pull on the corner of the wall near and lift up from the USB-C ports.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/13_pull_tab_and_board_up.JPG){ width="100%" }
-5. Roll your Loctite into a "snake" that you wrap around the speaker to make a gasket.
+5. Roll your Loctite into a "snake" that you wrap around the speaker to make a gasket. (This isn't required if you're using the Dayton Audio RS75-4 speaker since it has a gaskey seal built-in.)
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/14_seal_speaker.JPG){ width="100%" }
 6. Route the speaker cables up through the speaker chamber and out the top.  You only need 1 inch of cable coming out the top.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/15_route_cable_bottom.JPG){ width="100%" }
