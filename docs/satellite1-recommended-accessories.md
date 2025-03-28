@@ -29,9 +29,14 @@ Here are the supplies to connect a speaker to your Sat1:
 <br>JST XH2.54-2P 2.54mm Pitch 2 Pin Male Connector
 <br>[Get it on Amazon](https://amzn.to/3We92MR){ .md-button .md-button--primary }
 
-<br>![Recommended Speaker](/assets/Accessories-speaker0.png){ width="60%" loading=lazy }</br>
-<br>These little speakers are full range (100hz-20khz) and pack a serious punch and are perfect size to fit into a small enclosure.  The smaller tab is (-) and goes to the BLACK  wire, and the bigger tab is (+)and goes to the RED wire.
+<br>![Recommended Dayton Audio Speaker](/assets/dayton_audio.jpg){ width="60%" loading=lazy }</br>
+<br>These Dayton Audio RS75-4 3" Reference Full-Range speakers are easy to find, sound amazing, and fit perfectly in our enclosure.
+<br>[Order from Amazon](https://amzn.to/42egKsz){ .md-button .md-button--primary }
+
+<br>![Recommended Techtonic Speaker](/assets/Accessories-speaker0.png){ width="60%" loading=lazy }</br>
+<br>These Tectonic TEBM46C20N-4B BMR 3" Full-Range speaker are very hard to find, also sound wonderful and fit perfectly in our enclosure.  The smaller tab is (-) and goes to the BLACK  wire, and the bigger tab is (+)and goes to the RED wire.
 <br>[Order from Parts Express](https://www.parts-express.com/Tectonic-TEBM46C20N-4B-BMR-3-Full-Range-Speaker-4-297-2157?quantity=1){ .md-button .md-button--primary }
+
 
 ## mmWave Human Presence Detectors
 
