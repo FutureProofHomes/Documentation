@@ -51,10 +51,8 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
 ??? abstract "I want to quickly print using the pre-build slicer project file."
 
     ### Pre-Built Slicer Project File
-
-    1. Determine your PCB hardware revision by reading the silkscreen on the PCBs.  i.e. "R2024.12.06"
     
-    2. Determine the speaker model number you're running.  i.e. "Tectonic-TEBM46C20N-4B"
+    1. Determine the speaker model number you're running and select the correct threaded adapter.  i.e. "Dayton Audio RS75-4"
     
     3. Download the correct pre-built `.3mf` project file from the [Satellite1-Enclosures Github repository](https://github.com/FutureProofHomes/Satellite1-Enclosures) and open in your favorite slicer software.
 

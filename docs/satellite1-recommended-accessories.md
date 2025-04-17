@@ -27,7 +27,7 @@ Here are the supplies to connect a speaker to your Sat1:
 
 <br>![JST-XH cables](/assets/Accessories-jst.png){ width="60%" loading=lazy }</br>
 <br>JST XH2.54-2P 2.54mm Pitch 2 Pin Male Connector
-<br>[Get it on Amazon](https://amzn.to/3We92MR){ .md-button .md-button--primary }
+<br>[Get it on Amazon](https://amzn.to/4ly9LDA){ .md-button .md-button--primary }
 
 <br>![Recommended Dayton Audio Speaker](/assets/dayton_audio.jpg){ width="60%" loading=lazy }</br>
 <br>These Dayton Audio RS75-4 3" Reference Full-Range speakers are easy to find, sound amazing, and fit perfectly in our enclosure.

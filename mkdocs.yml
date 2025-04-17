@@ -9,7 +9,7 @@ nav:
     - Getting Started:
       - Recommended Accessories: satellite1-recommended-accessories.md
       - PCB Assembly & First Boot: satellite1-assembly.md
-      - Connecting to Home Assistant: satellite1-connecting-to-ha.md
+      - Flash Firmware & Connect: satellite1-connecting-to-ha.md
       - Enclosure Printing & Assembly: satellite1-dev-kit-enclosure.md
     - Home Assistant Configuration:
       - Set Up Voice Control: satellite1-set-up-voice-control.md
