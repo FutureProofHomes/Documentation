@@ -78,7 +78,7 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
         2. 3 wall loops for strength
         3. 15% infill (increase this to 50% for the speaker enclosure for even better acoustics)
         4. (Optional) Arachne wall generator
-        5. Supports are disabled EXCEPT the speaker chamber has "Build Plate Only Supports" enabled
+        5. Supports are disabled EXCEPT the speaker chamber and speaker adapters have "Build Plate Only Supports" enabled
         6. No-Brim
         ![Satellite1 Slicer Project Settings](/assets/dev_kit_enclosure/5_project_settings.png){ width="100%" }
 
