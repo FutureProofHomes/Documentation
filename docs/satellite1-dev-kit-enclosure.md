@@ -1,9 +1,10 @@
 ## About the Dev Kit Speaker Enclosure
 
-The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.
+The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports [3 recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors):
 
-You can modify the enclosure to support any speaker you'd like, but currently the speaker chamber is built for our [two recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors).
-
+- Dayton Audio RS75-4 3" driver
+- Tectonic TEBM46C20N-4B BMR 3" driver
+- GRS 3RF-4 4" driver (requires a [slighly custom stand](https://github.com/FutureProofHomes/Satellite1-Enclosures/pull/21) since it's a larger speaker)
 
 All the files necessary can be found in the [Satellite1-Enclosures Github Repo](https://github.com/FutureProofHomes/Satellite1-Enclosures).
 
@@ -109,8 +110,9 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
 10. Connect the JST-XH connector to the bottom of the HAT and align then snap the UFO to the speaker chamber.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/23_align_top.JPG){ width="100%" }
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/24_snap_top.JPG){ width="100%" }
-11. Align and snap the speaker stand on.
+11. Align the speaker stand with the lock ring's posts.  Notice the hole at the top of each leg.  Simply cut a piece of filament and slide it into each leg's hole to hold the stand in place.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/25_align_stand.JPG){ width="100%" }
+  ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/25_5_lock_with_small_filament_piece.png){ width="100%" }
 12. Find the "V" icon on the UFO enclosure.  This is where you'll plug the USB-C cable to the HAT/CORE which powers up the device.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/26_ESP_port_close_up.JPG){ width="100%" }
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/27_ESP_port.JPG){ width="100%" }
