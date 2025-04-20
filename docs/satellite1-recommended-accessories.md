@@ -37,6 +37,9 @@ Here are the supplies to connect a speaker to your Sat1:
 <br>These Tectonic TEBM46C20N-4B BMR 3" Full-Range speaker are very hard to find, also sound wonderful and fit perfectly in our enclosure.  The smaller tab is (-) and goes to the BLACK  wire, and the bigger tab is (+)and goes to the RED wire.
 <br>[Order from Parts Express](https://www.parts-express.com/Tectonic-TEBM46C20N-4B-BMR-3-Full-Range-Speaker-4-297-2157?quantity=1){ .md-button .md-button--primary }
 
+<br>![Recommended GRS Speaker](/assets/GRS-speaker.png){ width="60%" loading=lazy }</br>
+<br>The GRS 3RF-4 is a larger 4" Full-Range speaker that requires a [slighly custom & bulky Sat1 enclosure](https://github.com/FutureProofHomes/Satellite1-Enclosures/pull/21).  It is extremely affordable and fairly pretty good for the price.  We do recommend the Dayton Audio speaker if in stock.
+<br>[Order from Parts Express](https://www.parts-express.com/GRS-3FR-4-Full-Range-3-Speaker-4-Ohm-292-436?quantity=1){ .md-button .md-button--primary }
 
 ## mmWave Human Presence Detectors
 
