@@ -23,6 +23,9 @@ All the files necessary can be found in the [Satellite1-Enclosures Github Repo](
   <figcaption>LEDs are protected inside the light ring</figcaption>
 </figure>
 
+# Watch the Instructional Video
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="3D Print the World’s Best AI Voice Assistant (DIY)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Enclosure Limitations
 
 Many of the below enclosure limitations are solved by our upcoming power-over-ethernet SHOE board!  [You can read about the SHOE board in our recent blog post](https://futureproofhomes.net/blogs/news/q1-2025-status-update).
