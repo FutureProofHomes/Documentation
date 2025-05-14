@@ -78,7 +78,7 @@
         const fragment = document.createDocumentFragment();
         config.forEach((_, idx) => {
             const dot = el('div', {
-                className: 'progress-dot',
+                className: 'dot',
                 attr: { 'aria-current': idx === stage ? 'step' : 'false' }
             })
             if (idx === stage) dot.classList.add('active');
@@ -119,7 +119,6 @@
 
         section.append(el('h3', {
             id: 'step-title',
-            className: 'step-title',
             textContent: config[stage].title,
         }));
         
@@ -131,7 +130,6 @@
         }
 
         const choicesDiv = el('div', {
-            id: 'step-title',
             className: 'choices',
             attr: { role: 'radiogroup' },
             dataset: { step: stage }

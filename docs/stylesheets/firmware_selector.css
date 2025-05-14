@@ -15,7 +15,7 @@ nav.progress {
     margin-bottom: var(--margin);
 }
 
-.progress-dot {
+.dot {
     width: var(--dot-size);
     height: var(--dot-size);
     margin: 0 var(--dot-gap);
@@ -24,18 +24,13 @@ nav.progress {
     transition: background-color 200ms;
 }
 
-.progress-dot.active {
+.dot.active {
     background-color: var(--md-primary-fg-color);
 }
 
-.progress-dot.done {
+.dot.done {
     background-color: var(--md-primary-fg-color--light);
 }
-
-/* .step-title {
-    margin-bottom: 2rem;
-    text-align: center;
-} */
 
 .choices {
     display: grid;
