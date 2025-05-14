@@ -49,7 +49,7 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     Congrats.  You're done!
 
-!!! abstract "I want to set up via my computer & USB-C cable. (Advanced)"
+??? abstract "I want to set up via my computer & USB-C cable. (Advanced)"
 
     Plug your Sat1 directly into your computer with a USB-C cable that supports a data connection.
 

@@ -41,7 +41,7 @@ nav.progress {
 }
 
 .choice-btn.selected {
-    background-color: var(--md-code-hl-color);
+    background-color: var(--md-accent-fg-color);
 }
 
 .choice-btn.selected::before {

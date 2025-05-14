@@ -6,46 +6,33 @@
             choices: [
                 {
                     id: "stable",
-                    title: "Stable Firmware",
+                    title: "Stable",
                 },
                 {
                     id: "beta",
-                    title: "Beta Firmware",
+                    title: "Beta",
                 },
             ]
         },
         {
-            title: 'Select mWave Sensor',
+            title: 'Select mmWave Sensor',
             description: 'Which optional mmWave sensor is attached to the Sat1?',
             choices: [
                 {
                     id: "default",
-                    title: "No mmWave",
+                    title: "No sensor",
                 },
                 {
                     id: "ld2410",
-                    title: "LD2410 mmWave",
+                    title: "LD2410",
                 },
                 {
                     id: "ld2450",
-                    title: "LD2450 mmWave",
+                    title: "LD2450",
                 },
             ]
         },
     ];
-
-    const firmware = {
-        beta: {
-            default: 'https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json',
-            ld2410: 'https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json',
-            ld2450: 'https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json'
-        },
-        stable: {
-            default: 'https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json',
-            ld2410: 'https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json',
-            ld2450: 'https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json'
-        }
-    }
 
     let stage = 0;
     const selections = Array(config.length).fill(null);
@@ -53,10 +40,6 @@
     function setAttr(el, obj) {
         Object.entries(obj).forEach(([k, v]) => el[k] = v);
         return el
-    }
-
-    function visible(el) {
-        return el.checkVisibility({ opacityProperty: true, visibilityProperty: true })
     }
 
     function el(tag, {attr = {}, dataset = {}, ...kwargs} = {}) {
@@ -170,14 +153,15 @@
                 el('p', { textContent: `${step.title}: ${selected.title}` })
             );
         });
-        manifest = firmware[selections[0]][selections[1]]
-        if (manifest) {
-            section.append(
-                el('h3', { textContent: 'Summary' }),
-                fragment,
-                navigation(manifest)
-            );
-        }
+        const firmware = selections[0] === 'stable' ? '' : `-${selections[0]}`;
+        const mmwave = selections[1] === 'default' ? '' : `.${selections[1]}`;
+        section.append(
+            el('h3', { textContent: 'Summary' }),
+            fragment,
+            navigation(
+                `https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest${firmware}${mmwave}.json`
+            )
+        );
         return section;
     }
 
@@ -193,7 +177,7 @@
 
     function render() {
         const el = document.getElementById('firmware-selector');
-        if (el && visible(el)) {
+        if (el) {
             el.replaceChildren();
             el.addEventListener('click', handleChoice);
             el.append(dots(), stage < config.length ? step() : summary());
