@@ -1,0 +1,60 @@
+:root {
+    --dot-size: 8px;
+    --dot-gap: 8px;
+    --margin: 24px;
+}
+
+.form-container {
+    padding: 24px;
+    width: 100%;
+}
+
+nav.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--margin);
+}
+
+.progress-dot {
+    width: var(--dot-size);
+    height: var(--dot-size);
+    margin: 0 var(--dot-gap);
+    background-color: var(--md-primary-fg-color--dark);
+    border-radius: 50%;
+    transition: background-color 200ms;
+}
+
+.progress-dot.active {
+    background-color: var(--md-primary-fg-color);
+}
+
+.progress-dot.done {
+    background-color: var(--md-primary-fg-color--light);
+}
+
+/* .step-title {
+    margin-bottom: 2rem;
+    text-align: center;
+} */
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.333%, 1fr));
+    gap: var(--margin);
+    margin-bottom: var(--margin);
+    margin-top: var(--margin);
+}
+
+.choice-btn.selected {
+    background-color: var(--md-code-hl-color);
+}
+
+.choice-btn.selected::before {
+    content: "\2713\00A0\00A0";
+}
+
+.buttons {
+    display: flex;
+    margin-top: var(--margin);
+    justify-content: space-between;
+}

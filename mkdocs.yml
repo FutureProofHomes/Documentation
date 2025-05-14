@@ -42,6 +42,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.top
+    - navigation.expand
     
     # - toc.integrate
     
@@ -67,6 +68,7 @@ theme:
       accent: custom
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/firmware_selector.css
 extra:
   social:
     # - icon: fontawesome/icon/home
@@ -122,8 +124,9 @@ plugins:
 extra_javascript:
   # - javascript/installer.js
   - javascript/esp-web-tools/install-button.js
-  - javascript/keyboard_shortcuts_fix.js
   # - https://cdn.jsdelivr.net/npm/esp-web-tools@10/dist/web/install-button.js?module
+  - javascript/keyboard_shortcuts_fix.js
+  - javascript/firmware_selector.js
 
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProofHomes, Inc</a>

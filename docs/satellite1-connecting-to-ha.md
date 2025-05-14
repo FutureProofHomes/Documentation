@@ -49,13 +49,13 @@ Your Satellite1 arrives pre-flashed with all the necessary firmware to get you u
 
     Congrats.  You're done!
 
-??? abstract "I want to set up via my computer & USB-C cable. (Advanced)"
+!!! abstract "I want to set up via my computer & USB-C cable. (Advanced)"
 
     Plug your Sat1 directly into your computer with a USB-C cable that supports a data connection.
 
     1. <b>Click the connect button below and select the JTAG device in the browser's notification:</b>
     <br>
-    <br><esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
+    <br><div class="form-container" id="firmware-selector" role="form" aria-live="polite"></div>
     <br>
     <br>![Select JTAG](/assets/ESPHome-SerialConn.png){ width="100%" loading=lazy }</br>
 
