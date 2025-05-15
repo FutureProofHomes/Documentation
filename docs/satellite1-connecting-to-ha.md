@@ -90,7 +90,7 @@ Find the USB-C port on your Sat1 labeled "CORE/ESP32".  Plug directly into your 
 
 <div class="next-steps" markdown>
 !!! tip
-    If you do not see a blue "Connect" button, be sure you are using a Google Chrome browser and have disabled any pop-up blockers and security extensions.  You can also try opening this page in an incognito window.
+    If you do not see a "Connect" button, be sure you are using a Google Chrome browser and have disabled any pop-up blockers and security extensions.  You can also try opening this page in an incognito window.
 </div>
 
 <div class="next-steps grid cards" markdown>

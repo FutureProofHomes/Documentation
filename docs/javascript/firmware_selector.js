@@ -72,16 +72,27 @@
         return nav;
     }
 
+    function getBackBtn() {
+        const back = el('button', {
+            className: 'md-button md-button--secondary',
+            textContent: 'Back',
+            disabled: stage <= 0,
+            onclick: (e) => {
+                e.stopPropagation();
+                stage -= 1;
+                render();
+            }
+        });
+
+        if (stage <= 0) {
+            back.classList.add('hidden');
+        }
+        return back
+    }
+
     function navigation(manifestUrl) {
-        const nav = el('div', { className: 'buttons' })
+        const nav = el('div', { className: 'flex-container' })
         if (manifestUrl) {
-            // <esp-web-install-button
-            // manifest="https://firmware.esphome.io/esp-web-tools/manifest.json"
-            // >
-            // <button slot="activate">Custom install button</button>
-            // <span slot="unsupported">Ah snap, your browser doesn't work!</span>
-            // <span slot="not-allowed">Ah snap, you are not allowed to use this on HTTP!</span>
-            // </esp-web-install-button>
             const installBtnWrapper = el('esp-web-install-button', {
                 attr: {
                     manifest: manifestUrl,
@@ -136,21 +147,9 @@
                 className: 'md-button md-button--primary',
             });
 
-            if (stage > 0) {
-                installContainer.append(el('button', {
-                    className: 'md-button md-button--secondary',
-                    textContent: 'Back',
-                    onclick: (e) => {
-                        e.stopPropagation();
-                        stage -= 1;
-                        render();
-                    }
-                }));
-            } else {
-                installContainer.append(el('div'));
-            }
-
             installContainer.append(
+                getBackBtn(),
+                dots(),
                 installBtn
             );
 
@@ -162,11 +161,16 @@
             nav.append(installBtnWrapper);
         } else {
             nav.append(
-                el('div'),
+                getBackBtn(),
+                dots(),
                 el('button', {
                     className: 'md-button md-button--primary',
                     textContent: 'Next',
-                    onclick: () => { stage += 1; render(); }
+                    onclick: (e) => {
+                        e.stopPropagation();
+                        stage += 1;
+                        render();
+                    }
                 })
             );
         }
@@ -175,13 +179,14 @@
 
     function step() {
         const section = el('section', {
+            className: 'md-typeset',
             attr: {
                 role: 'group',
                 'aria-labelledby': 'step-title'
             }
         })
 
-        section.append(el('h3', {
+        section.append(el('h2', {
             id: 'step-title',
             textContent: config[stage].title,
         }));
@@ -225,7 +230,7 @@
     }
 
     function summary() {
-        const section = el('section');
+        const section = el('section', { className: 'md-typeset' });
         const fragment = document.createDocumentFragment();
         config.forEach((step, idx) => {
             const selected = step.choices.find(i => i.id === selections[idx]);
@@ -237,7 +242,7 @@
         const firmware = selections[0] === 'stable' ? '' : `-${selections[0]}`;
         const mmwave = selections[1] === 'default' ? '' : `.${selections[1]}`;
         section.append(
-            el('h3', { textContent: 'Summary' }),
+            el('h2', { textContent: 'Summary' }),
             fragment,
             navigation(
                 `https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest${firmware}${mmwave}.json`
@@ -262,7 +267,7 @@
             const renderStep = stage < config.length;
             el.replaceChildren();
             el.addEventListener('click', handleChoice);
-            el.append(dots(), renderStep ? step() : summary());
+            el.append(renderStep ? step() : summary());
             
             const next = Array.from(document.getElementsByClassName('next-steps'));
             next.forEach(step => {

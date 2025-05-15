@@ -4,13 +4,14 @@
     --margin: 24px;
 }
 
-.form-container {
-    width: 100%;
+#firmware-selector h2, #firmware-selector p.step-description {
+    text-align: center;
 }
 
 nav.progress {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .dot {
@@ -59,6 +60,16 @@ nav.progress {
     display: none;
 }
 
+.md-typeset .md-button {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.md-typeset .md-button.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
 .next-steps.visible {
     display: block;
 }
@@ -67,10 +78,14 @@ nav.progress {
     display: grid;
 }
 
-esp-web-install-button[install-unsupported] {
+esp-web-install-button {
     width: 100%;
 }
 
 esp-web-install-button[install-unsupported] > .admonition {
     margin: 0 !important;
+}
+
+.admonition.example > p:empty:first-of-type {
+    display: none;
 }
