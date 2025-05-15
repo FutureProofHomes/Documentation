@@ -22,8 +22,8 @@ nav:
       - Troubleshooting: satellite1-troubleshooting.md
       - FAQs: satellite1-faqs.md
   - Satellite1 Modules:
-    - Mini Speaker: satellite1-mini-speaker-module-overview.md
-    - Amplifier: satellite1-amplifier-module-overview.md
+    - PoE "SHOE" Module: satellite1-poe-shoe-module-overview.md
+    - Amplifier1 Module: satellite1-amplifier-module-overview.md
   - Satellite1 Mount Kits:
     - In-Ceiling Mount Kit: satellite1-mount-kit-overview.md
   - AI Base Station:
