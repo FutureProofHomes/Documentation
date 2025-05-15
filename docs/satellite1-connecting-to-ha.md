@@ -83,14 +83,15 @@ Your Satellite1 arrives pre-flashed from the factory and will boot into BLE impr
 ## Re-Flashing your Satellite1 via a USB-C Cable
 
 Find the USB-C port on your Sat1 labeled "CORE/ESP32".  Plug directly into your computer with a USB-C cable that supports a data connection. Use the form below to select your preferred Sat1 firmware and then click the blue "Connect" button to begin flashing your chosen firmware:
-<div class="form-container" id="firmware-selector" role="form" aria-live="polite"></div>
 
-<div class="next-steps" markdown>
-!!! tip "NOTE"
-    If you do not see a blue "Connect" button, be sure you are using a Google Chrome browser and have disabled any pop-up blockers and security extensions.  You can also try opening this page in an incognito window.
-</div>
+!!! example ""
+    <div class="form-container" id="firmware-selector" role="form" aria-live="polite"></div>
+    <div class="next-steps" markdown>
+    !!! tip "NOTE"
+        If you do not see a blue "Connect" button, be sure you are using a Google Chrome browser and have disabled any pop-up blockers and security extensions.  You can also try opening this page in an incognito window.
+    </div>
 
-<div class="grid cards next-step" markdown>
+<div class="next-steps grid cards" markdown>
 
 -   :material-numeric-1-circle:{ .lg .middle } __Select the JTAG device__
 
@@ -143,8 +144,10 @@ Find the USB-C port on your Sat1 labeled "CORE/ESP32".  Plug directly into your 
     Inside **Home Assistant**, go to **"Settings -> Devices & Services"** and notice you have a Discovered **`Satellite1 xxxxxx`** device. Click **ADD** and follow the **ESPHome** onboarding steps.
 </div>
 
+<div class="next-steps" markdown>
 !!! success "Congrats!"
     You have re-flashed your **Sat1** and connected it to **Home Assistant**.
+</div>
 
 ## Understanding the ESPHome User Interface
 Once your Sat1 is connected to Home Assistant you should familiarize yourself with all the server-side settings you may want to change:
