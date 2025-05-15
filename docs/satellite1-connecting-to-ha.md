@@ -73,10 +73,10 @@ Your Satellite1 arrives pre-flashed from the factory and will boot into BLE impr
     Stick with the default or change the **Wake word**, **Assistant**, and **Voice**.
 </div>
 
-!!! success "Congrats!"
+!!! success
     You have connected your **Satellite1** to **Home Assistant**!
 
-!!! warning "NOTE"
+!!! warning
     ![After completing the Wizard, do NOT click to add the Sat1 to ESPHome again.  Simply refresh and this will go away.](/assets/ble_improv/17_ignore_device_discovered_cut.png){ width="40%" align=left loading=lazy }
     After completing the **Wizard**, **do NOT click** to add the Sat1 to ESPHome again.  Simply refresh and this will go away.
 
@@ -86,10 +86,12 @@ Find the USB-C port on your Sat1 labeled "CORE/ESP32".  Plug directly into your 
 
 !!! example ""
     <div class="form-container" id="firmware-selector" role="form" aria-live="polite"></div>
-    <div class="next-steps" markdown>
-    !!! tip "NOTE"
-        If you do not see a blue "Connect" button, be sure you are using a Google Chrome browser and have disabled any pop-up blockers and security extensions.  You can also try opening this page in an incognito window.
-    </div>
+
+
+<div class="next-steps" markdown>
+!!! tip
+    If you do not see a blue "Connect" button, be sure you are using a Google Chrome browser and have disabled any pop-up blockers and security extensions.  You can also try opening this page in an incognito window.
+</div>
 
 <div class="next-steps grid cards" markdown>
 
@@ -145,16 +147,27 @@ Find the USB-C port on your Sat1 labeled "CORE/ESP32".  Plug directly into your 
 </div>
 
 <div class="next-steps" markdown>
-!!! success "Congrats!"
+!!! success
     You have re-flashed your **Sat1** and connected it to **Home Assistant**.
 </div>
 
 ## Understanding the ESPHome User Interface
-Once your Sat1 is connected to Home Assistant you should familiarize yourself with all the server-side settings you may want to change:
+Once your **Sat1** is connected to **Home Assistant** you should familiarize yourself with all the server-side settings you may want to change:
 
-1. <b>Inside your Home Assistant, head over to "Settings -> Devices & Services -> ESPHome" and click on your Sat1 device:</b>
-  <br>![esphome device list](/assets/esphome/1_esphome_device_list.png){ loading=lazy }</br>
+<div class="grid cards" markdown>
+-   :material-numeric-1-circle:{ .lg .middle } __Select Sat1 device from list__
 
-  2. <b>Understand all the features of your Sat1 device:</b>
-  <br>![top esphome device](/assets/esphome/2_esphome_top_page.png){ loading=lazy }</br>
-  <br>![top esphome device](/assets/esphome/3_esphome_bottom_page.png){ loading=lazy }</br>
+    ---
+
+    ![esphome device list](/assets/esphome/1_esphome_device_list.png){ loading=lazy }
+    Inside your **Home Assistant**, head over to **"Settings -> Devices & Services -> ESPHome"** and click on your **Sat1** device.
+</div>
+<div class="grid cards" markdown>
+-   :material-numeric-2-circle:{ .lg .middle } __Explore Sat1 settings__
+
+    ---
+
+    ![top esphome device](/assets/esphome/2_esphome_top_page.png){ loading=lazy }
+    ![top esphome device](/assets/esphome/3_esphome_bottom_page.png){ loading=lazy }
+    Understand all the features of your **Sat1** device.
+</div>

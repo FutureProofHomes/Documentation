@@ -60,6 +60,10 @@ nav.progress {
     display: none;
 }
 
-.next-steps.visible, .md-typeset .grid.next-steps.visible {
+.next-steps.visible {
     display: block;
+}
+
+.md-typeset .grid.next-steps.visible {
+    display: grid;
 }
