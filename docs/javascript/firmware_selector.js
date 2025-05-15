@@ -74,29 +74,101 @@
 
     function navigation(manifestUrl) {
         const nav = el('div', { className: 'buttons' })
-        if (stage > 0) {
-            nav.append(el('button', {
-                className: 'md-button md-button--secondary',
-                textContent: 'Back',
-                onclick: () => { stage -= 1; render(); }
-            }));
-        } else {
-            nav.append(el('div'));
-        }
         if (manifestUrl) {
-            nav.append(el('esp-web-install-button', {
-                id: 'install-button',
+            // <esp-web-install-button
+            // manifest="https://firmware.esphome.io/esp-web-tools/manifest.json"
+            // >
+            // <button slot="activate">Custom install button</button>
+            // <span slot="unsupported">Ah snap, your browser doesn't work!</span>
+            // <span slot="not-allowed">Ah snap, you are not allowed to use this on HTTP!</span>
+            // </esp-web-install-button>
+            const installBtnWrapper = el('esp-web-install-button', {
                 attr: {
                     manifest: manifestUrl,
                     'install-supported': true
                 }
-            }));
-        } else {
-            nav.append(el('button', {
+            });
+
+            const unsupported = el('div', {
+                className: 'admonition failure',
+                attr: {
+                    slot: 'unsupported'
+                }
+            });
+
+            unsupported.append(
+                el('p', {
+                    textContent: 'Failure',
+                    className: 'admonition-title',
+                }),
+                el('p', {
+                    textContent: 'Your browser does not support installing things on ESP devices. Use Google Chrome or Microsoft Edge.',
+                })
+            );
+
+            const notAllowed = el('div', {
+                className: 'admonition failure',
+                attr: {
+                    slot: 'not-allowed'
+                }
+            });
+
+            notAllowed.append(
+                el('p', {
+                    textContent: 'Failure',
+                    className: 'admonition-title',
+                }),
+                el('p', {
+                    textContent: 'Ah snap, you are not allowed to use this on HTTP!',
+                })
+            );
+
+            const installContainer = el('div', {
+                className: 'flex-container',
+                attr: {
+                    slot: 'activate'
+                }
+            });
+
+            const installBtn = el('button', {
+                id: 'install-button',
+                textContent: 'Install',
                 className: 'md-button md-button--primary',
-                textContent: 'Next',
-                onclick: () => { stage += 1; render(); }
-            }));
+            });
+
+            if (stage > 0) {
+                installContainer.append(el('button', {
+                    className: 'md-button md-button--secondary',
+                    textContent: 'Back',
+                    onclick: (e) => {
+                        e.stopPropagation();
+                        stage -= 1;
+                        render();
+                    }
+                }));
+            } else {
+                installContainer.append(el('div'));
+            }
+
+            installContainer.append(
+                installBtn
+            );
+
+            installBtnWrapper.append(
+                installContainer,
+                unsupported,
+                notAllowed,
+            );
+            nav.append(installBtnWrapper);
+        } else {
+            nav.append(
+                el('div'),
+                el('button', {
+                    className: 'md-button md-button--primary',
+                    textContent: 'Next',
+                    onclick: () => { stage += 1; render(); }
+                })
+            );
         }
         return nav
     }

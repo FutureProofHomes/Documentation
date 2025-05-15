@@ -5,7 +5,6 @@
 }
 
 .form-container {
-    padding: 1rem .3rem;
     width: 100%;
 }
 
@@ -51,7 +50,7 @@ nav.progress {
     content: "\2713\00A0\00A0";
 }
 
-.buttons {
+.flex-container {
     display: flex;
     justify-content: space-between;
 }
@@ -66,4 +65,12 @@ nav.progress {
 
 .md-typeset .grid.next-steps.visible {
     display: grid;
+}
+
+esp-web-install-button[install-unsupported] {
+    width: 100%;
+}
+
+esp-web-install-button[install-unsupported] > .admonition {
+    margin: 0 !important;
 }
