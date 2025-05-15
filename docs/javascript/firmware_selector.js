@@ -178,9 +178,18 @@
     function render() {
         const el = document.getElementById('firmware-selector');
         if (el) {
+            const renderStep = stage < config.length;
             el.replaceChildren();
             el.addEventListener('click', handleChoice);
-            el.append(dots(), stage < config.length ? step() : summary());
+            el.append(dots(), renderStep ? step() : summary());
+            
+            const instructions = document.getElementById('firmware-flash-steps');
+            const visible = instructions?.classList.contains('visible');
+            if (renderStep && visible) {
+                instructions.classList.remove('visible');
+            } else if (!renderStep && !visible) {
+                instructions.classList.add('visible');
+            }
         }
     }
 
