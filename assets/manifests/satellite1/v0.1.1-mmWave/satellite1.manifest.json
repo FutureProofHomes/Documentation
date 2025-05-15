@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Firmware for Satellite1-Core-Board",
+  "version": "v0.1.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "path": "assets/firmware/esphome/production/satellite1.ota.bin",
+        "md5": "5f596d0684486006a0598f744f786b54",
+        "summary": "ESPHome Firmware for satellite1",
+        "release_url": "https://github.com/futureproofhomes/Satellite1-ESPHome/releases/tag/v0.1.1-mmWave/"
+      },
+      "parts": [
+        {
+          "path": "assets/firmware/esphome/production/satellite1.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

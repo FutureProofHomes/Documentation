@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Firmware for Satellite1-Core-Board",
+  "version": "v0.1.1+ld2450",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "path": "assets/firmware/esphome/production/satellite1.ld2450.ota.bin",
+        "md5": "f5e075bdd8066c58f520fe0d12cfc295",
+        "summary": "ESPHome Firmware for satellite1.ld2450",
+        "release_url": "https://github.com/futureproofhomes/Satellite1-ESPHome/releases/tag/v0.1.1-mmWave/"
+      },
+      "parts": [
+        {
+          "path": "assets/firmware/esphome/production/satellite1.ld2450.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
