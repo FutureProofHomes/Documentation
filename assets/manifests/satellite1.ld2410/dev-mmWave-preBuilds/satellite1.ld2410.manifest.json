@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Beta Firmware for satellite1.ld2410",
+  "version": "dev-mmWave-preBuilds+ld2410",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "path": "assets/firmware/esphome/beta/satellite1.ld2410.ota.bin",
+        "md5": "1429f1d497ff97d07ef7a628ccbb2ed1",
+        "summary": "ESPHome Firmware for satellite1.ld2410",
+        "release_url": "https://github.com/futureproofhomes/Satellite1-ESPHome/releases/tag/dev-mmWave-preBuilds/"
+      },
+      "parts": [
+        {
+          "path": "assets/firmware/esphome/beta/satellite1.ld2410.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
