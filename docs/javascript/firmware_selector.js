@@ -35,7 +35,7 @@
     ];
 
     let stage = 0;
-    const selections = Array(config.length).fill(null);
+    const selections = ['stable', 'default']
 
     function setAttr(el, obj) {
         Object.entries(obj).forEach(([k, v]) => el[k] = v);
@@ -74,12 +74,15 @@
 
     function navigation(manifestUrl) {
         const nav = el('div', { className: 'buttons' })
-        nav.append(el('button', {
-            className: 'md-button md-button--secondary',
-            textContent: 'Back',
-            disabled: stage === 0,
-            onclick: () => { stage--; render(); }
-        }));
+        if (stage > 0) {
+            nav.append(el('button', {
+                className: 'md-button md-button--secondary',
+                textContent: 'Back',
+                onclick: () => { stage -= 1; render(); }
+            }));
+        } else {
+            nav.append(el('div'));
+        }
         if (manifestUrl) {
             nav.append(el('esp-web-install-button', {
                 id: 'install-button',
@@ -87,6 +90,12 @@
                     manifest: manifestUrl,
                     'install-supported': true
                 }
+            }));
+        } else {
+            nav.append(el('button', {
+                className: 'md-button md-button--primary',
+                textContent: 'Next',
+                onclick: () => { stage += 1; render(); }
             }));
         }
         return nav
@@ -139,7 +148,7 @@
 
         choicesDiv.appendChild(fragment);
         section.append(choicesDiv);
-        if (stage > 0) section.append(navigation());
+        section.append(navigation());
         return section;
     }
 
@@ -183,13 +192,14 @@
             el.addEventListener('click', handleChoice);
             el.append(dots(), renderStep ? step() : summary());
             
-            const instructions = document.getElementById('firmware-flash-steps');
-            const visible = instructions?.classList.contains('visible');
-            if (renderStep && visible) {
-                instructions.classList.remove('visible');
-            } else if (!renderStep && !visible) {
-                instructions.classList.add('visible');
-            }
+            const next = Array.from(document.getElementsByClassName('next-steps'));
+            next.forEach(step => {
+                if (renderStep) {
+                  step.classList.remove('visible');
+                } else {
+                  step.classList.add('visible');
+                }
+            })
         }
     }
 
