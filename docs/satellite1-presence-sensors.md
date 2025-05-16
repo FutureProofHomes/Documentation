@@ -30,23 +30,14 @@ Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over blu
   <img style="width: 170px; height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"/>
 </a>
 
-
+### mmWave Firmware Flashing
+After connecting the LD2410 or LD2450 to the HAT, [you must follow these steps to flash the mmWave firmware to the Satellite1 using a USB-C cable.](satellite1-connecting-to-ha.md#re-flashing-your-satellite1-via-a-usb-c-cable)
 
 
 ### mmWave Glossary
 1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
 2. **Distance Resolution**: the "thickness" of one gate. The LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
 3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
-
-### Firmware Installation
-???+ tip "The FutureProofHomes team is working on making this process seemless so you do not have to modify the firmware.  [Please track this ticket](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/236) for updates."
-
-1. [Follow these steps to modify the Sat1 Firmware](/satellite1-modifying-the-firmware)
-2. Uncomment the correct lines depending on the mmWave sensor you want to use:
-    1. For the LD2410: Uncomment the line `mmwave_ld2410: !include common/mmwave_ld2410.yaml` in the `OPTIONAL COMPONENTS` section of [satellite1.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.yaml#L25).
-    1. For the LD2450: Uncomment the line `mmwave_ld2450: !include common/mmwave_ld2450.yaml` in `OPTIONAL COMPONENTS` section of [satellite1.yaml](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/config/satellite1.yaml#L28).
-4. Boot the Sat1 and check it's device page in Home Assistant after device reboot.  You should see a ton more entities in your Sat1 device page.
-
 
 
 ### About the LD2410(B)

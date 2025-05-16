@@ -81,7 +81,7 @@ This process will erase all settings on the Sat1 device and restore the latest p
     3. While holding down the "Boot" button, plug the Sat1's "ESP32/CORE" connection into your computers USB-C port.  Let go of the "Boot" button after 3 seconds.
     ![ESP32 Power & Data Port](/assets/sat1_inputs_and_outputs.jpg){ width="100%" }
 
-    4. Follow these steps to [Add your Satellite1 to Home Assistant via a USB-C cable](satellite1-connecting-to-ha.md))
+    4. Follow these steps to [Add your Satellite1 to Home Assistant via a USB-C cable](satellite1-connecting-to-ha.md#re-flashing-your-satellite1-via-a-usb-c-cable)
 
 ## Need More Help?
 
