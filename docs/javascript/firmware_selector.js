@@ -216,7 +216,7 @@
                     role: 'radio',
                     'aria-checked': checked
                 },
-                onclick: () => { stage++; render(); }
+                onclick: render
             })
 
             if (checked) btn.classList.add('selected');
