@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Beta Firmware for satellite1.ld2410",
+  "version": "v0.1.2-beta.2+ld2410",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "path": "assets/firmware/esphome/beta/satellite1.ld2410.ota.bin",
+        "md5": "28a97e04323908911f691b910b2be7fd",
+        "summary": "ESPHome Firmware for satellite1.ld2410",
+        "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.2-beta.2/"
+      },
+      "parts": [
+        {
+          "path": "assets/firmware/esphome/beta/satellite1.ld2410.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
