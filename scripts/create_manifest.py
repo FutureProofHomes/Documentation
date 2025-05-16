@@ -38,9 +38,11 @@ def process_build(
     OTA_MD5 = ""
     headers = {
             "Accept": "application/octet-stream",
-            "Authorization": f"Bearer {GITHUB_TOKEN}",
             "X-GitHub-Api-Version": "2022-11-28",
         }
+    if not GITHUB_TOKEN is None:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    
     ota_request = urllib.request.Request(OTA_DOWNLOAD_URL, headers=headers)
     if BROWSER_URL_OTA:
         try:
@@ -77,16 +79,15 @@ def main():
     release_tag = sys.argv[1]
     release_repository = sys.argv[2]
 
-    # Ensure GITHUB_TOKEN is set
-    GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-    if not GITHUB_TOKEN:
-        utils.error_exit("GITHUB_TOKEN is not set.")
+    # read GITHUB_TOKEN if provided (needed for private repositories only)
+    GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", None)
+    
     print(f"Fetching release info for {release_tag} from {release_repository}")
     # Determine if the release is a beta release.
     beta = any(keyword in release_tag.lower() for keyword in ["beta", "alpha", "rc"])
-
+    
     data = utils.get_release_info(release_tag, release_repository, GITHUB_TOKEN)
-
+    
     if not data:
         utils.error_exit(f"Failed to fetch release info for {release_tag}")
 
@@ -94,45 +95,34 @@ def main():
     release_info = json.loads(data.decode("utf-8"))
 
     assets = release_info.get("assets", [])
-
-    # Declare dictionaries to hold the URLs
-    factory_urls = {}
-    ota_urls = {}
-
+    
     # Process the assets to build the dictionaries
+    assets_info = {}
     for asset in assets:
-        print(f"Processing asset: {asset.get('name')}")
         name = asset.get("name")
-        asset_id = asset.get("id") # Get the Asset ID
-        # url = asset.get("browser_download_url")
+        asset_id = asset.get("id")
+        browser_download_url = asset.get("browser_download_url")
 
-        assets_info = {}
-
-        for asset in assets:
-            print(f"Processing asset: {asset.get('name')}")
-            name = asset.get("name")
-            asset_id = asset.get("id")
-            browser_download_url = asset.get("browser_download_url")
-
-            if name.endswith(".factory.bin"):
-                build_name = name[: -len(".factory.bin")]
-                if build_name not in assets_info:
-                    assets_info[build_name] = {}
-                assets_info[build_name]['factory'] = {
-                    'browser_download_url': browser_download_url,
-                    'asset_id': asset_id
-                }
-            elif name.endswith(".ota.bin"):
-                build_name = name[: -len(".ota.bin")]
-                if build_name not in assets_info:
-                    assets_info[build_name] = {}
-                assets_info[build_name]['ota'] = {
-                    'browser_download_url': browser_download_url,
-                    'asset_id': asset_id
-                }
+        if name.endswith(".factory.bin"):
+            build_name = name[: -len(".factory.bin")]
+            if build_name not in assets_info:
+                assets_info[build_name] = {}
+            assets_info[build_name]['factory'] = {
+                'browser_download_url': browser_download_url,
+                'asset_id': asset_id
+            }
+        elif name.endswith(".ota.bin"):
+            build_name = name[: -len(".ota.bin")]
+            if build_name not in assets_info:
+                assets_info[build_name] = {}
+            assets_info[build_name]['ota'] = {
+                'browser_download_url': browser_download_url,
+                'asset_id': asset_id
+            }
 
     # Process each build
     for BASE_NAME, build_assets_info in assets_info.items():
+        print( f"Processing build: {BASE_NAME}" )
         process_build(
             BASE_NAME,
             build_assets_info,

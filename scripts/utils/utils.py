@@ -4,6 +4,11 @@ import shutil
 import sys
 import urllib.request
 
+
+def extract_variant(BASE_NAME):
+    parts = BASE_NAME.split(".")
+    return parts[1] if len(parts) > 1 else ""
+
 def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, MANIFEST_FILE_DIR, beta, FIRMWARE_FILE_DIR):
     # Create the manifest file directory if it does not exist
     if not os.path.exists(MANIFEST_FILE_DIR):
@@ -11,10 +16,12 @@ def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, 
 
     MANIFEST_FILE = os.path.join(MANIFEST_FILE_DIR, f"{BASE_NAME}.manifest.json")
     DIR_NAME = os.path.join(FIRMWARE_FILE_DIR, "beta") if beta else os.path.join(FIRMWARE_FILE_DIR, "production")
+    variant = extract_variant(BASE_NAME)
+    
     # Build the manifest data
     manifest_data = {
         "name": f"ESPHome Firmware for Satellite1-Core-Board",
-        "version": release_tag,
+        "version": release_tag + (f"+{variant}" if variant else ""),
         "new_install_prompt_erase": True,
         "builds": [
             {
@@ -42,12 +49,14 @@ def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, 
     # Write the manifest data to a JSON file
     with open(MANIFEST_FILE, 'w') as f:
         json.dump(manifest_data, f, indent=2)
-
+    
     # Copy the manifest file to the appropriate filename
+    if variant != "":
+        variant += "."
     if beta:
-        shutil.copyfile(MANIFEST_FILE, os.path.join("..", 'manifest-beta.json'))
+        shutil.copyfile(MANIFEST_FILE, os.path.join("..", f'manifest-beta.{variant}json'))
     else:
-        shutil.copyfile(MANIFEST_FILE, os.path.join("..", 'manifest.json'))
+        shutil.copyfile(MANIFEST_FILE, os.path.join("..", f'manifest.{variant}json'))
 
 def error_exit(message):
     print(message, file=sys.stderr)
@@ -58,7 +67,8 @@ def get_release_info(release_tag, release_repository, GITHUB_TOKEN):
     api_url = f"https://api.github.com/repos/{release_repository}/releases/tags/{release_tag}"
     request = urllib.request.Request(api_url)
     request.add_header('Accept', 'application/vnd.github+json')
-    request.add_header('Authorization', f'Bearer {GITHUB_TOKEN}')
+    if not GITHUB_TOKEN is None:
+        request.add_header('Authorization', f'Bearer {GITHUB_TOKEN}')
 
     try:
         with urllib.request.urlopen(request) as response:
