@@ -22,8 +22,8 @@ nav:
       - Troubleshooting: satellite1-troubleshooting.md
       - FAQs: satellite1-faqs.md
   - Satellite1 Modules:
-    - Mini Speaker: satellite1-mini-speaker-module-overview.md
-    - Amplifier: satellite1-amplifier-module-overview.md
+    - PoE "SHOE" Module: satellite1-poe-shoe-module-overview.md
+    - Amplifier1 Module: satellite1-amplifier-module-overview.md
   - Satellite1 Mount Kits:
     - In-Ceiling Mount Kit: satellite1-mount-kit-overview.md
   - AI Base Station:
@@ -42,6 +42,9 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.top
+    - navigation.expand
+    - navigation.tracking
+    - navigation.prune
     
     # - toc.integrate
     
@@ -67,6 +70,7 @@ theme:
       accent: custom
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/firmware_selector.css
 extra:
   social:
     # - icon: fontawesome/icon/home
@@ -122,8 +126,9 @@ plugins:
 extra_javascript:
   # - javascript/installer.js
   - javascript/esp-web-tools/install-button.js
-  - javascript/keyboard_shortcuts_fix.js
   # - https://cdn.jsdelivr.net/npm/esp-web-tools@10/dist/web/install-button.js?module
+  - javascript/keyboard_shortcuts_fix.js
+  - javascript/firmware_selector.js
 
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProofHomes, Inc</a>

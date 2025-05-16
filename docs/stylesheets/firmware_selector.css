@@ -1,0 +1,91 @@
+:root {
+    --dot-size: 8px;
+    --dot-gap: 8px;
+    --margin: 24px;
+}
+
+#firmware-selector h2, #firmware-selector p.step-description {
+    text-align: center;
+}
+
+nav.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: var(--dot-size);
+    height: var(--dot-size);
+    margin: 0 var(--dot-gap);
+    background-color: var(--md-primary-fg-color--dark);
+    border-radius: 50%;
+    transition: background-color 200ms;
+}
+
+.dot.active {
+    background-color: var(--md-primary-fg-color);
+}
+
+.dot.done {
+    background-color: var(--md-primary-fg-color--light);
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.333%, 1fr));
+    gap: var(--margin);
+    margin-bottom: var(--margin);
+    margin-top: var(--margin);
+}
+
+.choice-btn {
+    padding: .8em 2em
+}
+
+.choice-btn.selected {
+    background-color: var(--md-accent-fg-color);
+}
+
+.choice-btn.selected::before {
+    content: "\2713\00A0\00A0";
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-steps, .md-typeset .grid.next-steps {
+    display: none;
+}
+
+.md-typeset .md-button {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.md-typeset .md-button.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.next-steps.visible {
+    display: block;
+}
+
+.md-typeset .grid.next-steps.visible {
+    display: grid;
+}
+
+esp-web-install-button {
+    width: 100%;
+}
+
+esp-web-install-button[install-unsupported] > .admonition {
+    margin: 0 !important;
+}
+
+.admonition.example > p:empty:first-of-type {
+    display: none;
+}
