@@ -1,19 +1,25 @@
-:root {
-    --md-primary-fg-color: #C2B7AC;
+:root > * {
+  --md-primary-fg-color: #C2B7AC;
+  /* --md-typeset-a-color: #0000FF;
+  --md-typeset-a-color--dark: #ff0011; */
 }
 
 [data-md-color-scheme="slate"] {
-    --md-primary-fg-color: #C2B7AC;
+  --md-primary-fg-color: #C2B7AC;
 }
 
 /* .md-tabs__link {
-    color: #000000;
-  }
-  
-  .md-tabs__link:hover {
-    color: #ff6400;
-  }
-  
-  .md-tabs__link--active {
-    color: #ff00a2;
-  } */
+  color: #000000;
+}
+
+.md-tabs__link:hover {
+  color: #ff6400;
+}
+
+.md-tabs__link--active {
+  color: #ff00a2;
+} */
+
+/* .md-content {
+  --md-typeset-a-color--light: #0000FF;
+} */

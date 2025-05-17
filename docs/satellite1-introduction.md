@@ -1,4 +1,4 @@
-The Satellite 1 Developer Kit is the first version of our private voice assistant hardware and is the foundation for the larger ecosystem we're building.  The Dev Kit comprises of two components that we call "the HAT" (round board) and "the CORE" (rectangular board).  When you connect these two components together you get the [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit).
+The Satellite 1 Developer Kit is the first version of our private voice assistant hardware and is the foundation for the larger ecosystem we're building.  The Dev Kit comprises of two components that we call ["the HAT" (round board)](https://futureproofhomes.net/products/satellite1-top-microphone-board) and ["the Core" (rectangular board)](https://futureproofhomes.net/products/satellite1-core-board).  When you connect these two components together you get the [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit).
 
 <figure markdown="span">
   <video width="100%" class="video-js" loop="" autoplay="" preload="none" muted="" playsinline="" poster="https://futureproofhomes.net/cdn/shop/files/0001.jpg?v=1732152100">
@@ -15,7 +15,8 @@ When properly set up the Satellite1 can be even more powerful than some of the m
 ## Detailed Specifications & Features
 You can read detailed sepecifications about the hardware on their product pages.
 
-- [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit)
+- [Satellite1 HAT Board](https://futureproofhomes.net/products/satellite1-top-microphone-board)
+- [Satellite1 Core Board](https://futureproofhomes.net/products/satellite1-core-board)
 
 ## Requirements
 The Satellite1 has a few requirements to get up and running.
@@ -25,7 +26,7 @@ The Satellite1 has a few requirements to get up and running.
 3. The recommended Satellite1 accessories (see [Recommended Accessories](satellite1-recommended-accessories.md))
 
 ## Future Modules, Enclosures & AI Server
-In the future we will announce [modules](/satellite1-mini-speaker-module-overview), [enclosures](/satellite1-assembly/#enclosure), and [mount kits](/satellite1-mount-kit-overview) that easily connect your Satellite1 Dev Kit to make a complete product.  We will also be releasing an [AI Base Station]() that will power all the Satellite1's in your home.
+In the future we will announce [expansion modules](satellite1-poe-shoe-module-overview.md), [enclosures](satellite1-dev-kit-enclosure.md), and [mount kits](satellite1-mount-kit-overview.md) that easily connect your Satellite1 Dev Kit to make a complete product.  We will also be releasing an [AI Base Station](ai-base-station-introduction.md) that will power all the Satellite1's in your home.
 
 ## Satellite1 vs. Home Assistant Voice Preview Edition
 

@@ -1,30 +1,12 @@
 ## Inspecting Sat1 ESP32 Logs
 
-??? abstract "I want to see Sat1 ESP32 logs via a USB-C cable."
+1. Connect the Sat1 to your computer using a USB-C cable. 
+2. Click the connect button below and select the correct JTAG device.
+3. Choose Logs & Console:
 
-    (NOTE: If you need lower level `DEBUG` logs then you're going to need to [adopt the Sat1 to your ESPHome Dashboard](/satellite1-modifying-the-firmware/#import-the-sat1-to-your-esphome-dashboard) and set log level from there.)
-
-    1. Connect the Sat1 to your computer using a USB-C cable. 
-    2. Click the connect button below and select the correct JTAG device.
-    3. Choose Logs & Console:
-
-    <div id="firmware-installer" markdown="1">
-    <esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
-    </div>
-
-    <br>![Logs Console](/assets/TroubleshootingLogsConsole.png){ width="100%" loading=lazy }</br>
-
-    If you click on "Reset Device" you should see a whole bunch of useful messages and information.  Scroll back up and take a look.  
-
-    <br>![Troubleshooting Logs](/assets/TroubleshootingLogs.png){ width="100%" loading=lazy }</br>
-
-    Scroll to the bottom and issue a command "Hey Jarvis, what time is it?"
-
-    <br>![Troubleshooting Hey Jarvis](/assets/TroubleshootingHeyJarvis.png){ width="100%" loading=lazy }</br>
-
-??? abstract "I want to see Sat1 ESP32 logs via my Wi-Fi network (Over the Air)"
-
-    These instructions will come soon.  It's complicated depending on your environment.  
+<div id="firmware-installer" markdown="1">
+<esp-web-install-button id="install-button" manifest="https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest.json" install-supported></esp-web-install-button>
+</div>
 
 ## Debugging your Voice Pipeline
 
@@ -59,29 +41,25 @@ assist_pipeline:
 2. Follow the steps to [Add your Satellite1 to Home Assistant](satellite1-connecting-to-ha.md)
 
 
-## Resetting to Factory Settings
-This process will erase all settings on the Sat1 device and restore the latest production firmware, returning it to factory-new condition. You will need a USB-C cable and a computer with an internet connection (Google Chrome browser recommended).
-
-??? abstract "First, remove the Sat1 from ESPHome & Home Assistant"
-
-    1. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
+## Removing the Sat1from ESPHome
+1. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
     ![Delete ESPHome ESPHome](/assets/delete_sat1_esp_device.png){ width="100%" }
-    2. If you "Took Control" of the Sat1 in your ESP Home Device Builder then go to Settings -> Add-Ons -> ESPHome Device Builder and open the Web UI to click the 3 dots next to the Satellite1 and select "Delete".
+2. If you "Took Control" of the Sat1 in your ESP Home Device Builder then go to Settings -> Add-Ons -> ESPHome Device Builder and open the Web UI to click the 3 dots next to the Satellite1 and select "Delete".
     ![Remove from ESPHome Builder](/assets/delete_sat1_from_esp_builder.png){ width="100%" }
 
 
-??? abstract "Then Flash your Satellite1 a Computer's USB-C Connection"
+## Force the CORE Board into Boot Mode:
 
-    1. Unplug the Sat1 from power.
+1. Unplug the Sat1 from power.
 
-    2. Press and the HAT's "Action" button OR the CORE's "Boot" button.
-    ![CORE BOOT Button](/assets/boot_reset_button.jpg){ width="100%" }
-    ![HAT BOOT Button](/assets/right_action_button.jpg){ width="100%" }
+2. If the CORE is mounted to the HAT, press and hold the Right/Action button on the HAT, then apply power to the HAT's "ESP32/CORE" USB-C port.  Let go of the Right/Action button after 3 seconds.
+![HAT BOOT Button](/assets/right_action_button.jpg){ width="100%" }
 
-    3. While holding down the "Boot" button, plug the Sat1's "ESP32/CORE" connection into your computers USB-C port.  Let go of the "Boot" button after 3 seconds.
-    ![ESP32 Power & Data Port](/assets/sat1_inputs_and_outputs.jpg){ width="100%" }
+3. If the CORE is NOT mounted to the HAT, press and hold the "Boot" botton on the CORE, then apply power to the CORE's USB-C port.  Let go of the "Boot" button after 3 seconds.
+![CORE BOOT Button](/assets/boot_reset_button.jpg){ width="100%" }
 
-    4. Follow these steps to [Add your Satellite1 to Home Assistant via a USB-C cable](satellite1-connecting-to-ha.md#re-flashing-your-satellite1-via-a-usb-c-cable)
+4. From here you can [Flash the Sat1 via a USB-C cable](satellite1-flash-via-usb-c.md)
+
 
 ## Need More Help?
 
