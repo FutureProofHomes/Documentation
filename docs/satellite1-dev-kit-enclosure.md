@@ -5,23 +5,17 @@ The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be pri
 All the files necessary can be found in the [Satellite1-Enclosures Github Repo](https://github.com/FutureProofHomes/Satellite1-Enclosures).
 
 <figure markdown="span">
-  ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/30_pose_tall.JPG){ width="100%" }
-  <figcaption>Satellite1 speaker enclosure standing tall</figcaption>
-</figure>
-
-<figure markdown="span">
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/31_pose_speaker.JPG){ width="100%" }
   <figcaption>25 watt BMR speaker fires down towards sound diffuser cone</figcaption>
 </figure>
 
-<figure markdown="span">
-  ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/32_pose_buttons.JPG){ width="100%" }
-  <figcaption>LEDs are protected inside the light ring</figcaption>
-</figure>
+# Watch the Instructional Video
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="3D Print the World’s Best AI Voice Assistant (DIY)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Enclosure Limitations
+## Enclosure Limitations
+Many of the below enclosure limitations are solved by our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md)
 
-Before we get started let's discuss some of the limitations of this enclosure to set expectations:
+Without the SHOE board there are some current limitations of the enclosure:
 
 1. **The lux sensor will not give accurate readings of the room.**
 <br>We will solve this with a light pipe and modified design.

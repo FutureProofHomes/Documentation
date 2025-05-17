@@ -13,10 +13,15 @@ The Satellite1 HAT has two ports for optionally mounting external mmWave presenc
   <figcaption>LD2450 Mounted on Sat1 HAT</figcaption>
 </figure>
 
+### mmWave Firmware Flashing
+After connecting the LD2410 or LD2450 to the HAT, [you must flash the appropriate firmware to the Satellite1 using a USB-C cable.](satellite1-flash-via-usb-c.md#re-flashing-your-satellite1-via-a-usb-c-cable)
+
 ### Sensor Positioning
 When the sensor is directly mounted to the HAT it will point in the direction of the microphone and LEDs, which may work for your situation.  However, you can also use the sensors' included JST cable to position the sensor in any orientation you'd like so it is not directly mounted to the HAT.
 
 ![Sensor JST cable](/assets/presence-sensors/sensor_jst_cable.jpg){ width="100%" loading=lazy}
+
+??? Info "NOTE: We plan to introduce a [PoE Shoe module](satellite1-poe-shoe-module-overview.md) that will allow to relocate the mmWave inside the speaker chamber and position it any angle towards the room."
 
 ### Sensor Firmware
 Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over bluetooth.  Watch this quick video to see how to access the sensor and change the firmware version:
@@ -29,9 +34,6 @@ Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over blu
 <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&hl=en_US&pli=1">
   <img style="width: 170px; height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"/>
 </a>
-
-
-
 
 ### mmWave Glossary
 1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).

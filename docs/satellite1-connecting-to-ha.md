@@ -1,4 +1,5 @@
-Your Satellite1 arrives pre-flashed with all the necessary firmware to get you up and running quickly. You have 2 choices: 
+## Connect to Home Assistant Wirelessly via BLE Improv
+Your Satellite1 arrives pre-flashed from the factory and will boot into BLE improv mode with white sparkling LEDs.  Follow the steps below to connect to Home Assistnat via Bluetooth.
 
 ??? abstract "I want to set up via my iPhone or Android device with Bluetooth. (Recommended)"
 
@@ -87,6 +88,36 @@ Once your Sat1 is connected to Home Assistant you should familiarize yourself wi
 1. <b>Inside your Home Assistant, head over to "Settings -> Devices & Services -> ESPHome" and click on your Sat1 device:</b>
   <br>![esphome device list](/assets/esphome/1_esphome_device_list.png){ width="100%" loading=lazy }</br>
 
-  2. <b>Understand all the features of your Sat1 device:</b>
-  <br>![top esphome device](/assets/esphome/2_esphome_top_page.png){ width="100%" loading=lazy }</br>
-  <br>![top esphome device](/assets/esphome/3_esphome_bottom_page.png){ width="100%" loading=lazy }</br>
+    ---
+
+    ![Stick with the default or change the wake word, conversation agent, and voice:](/assets/ble_improv/16_wizard_quick_pipeline_config.png){ loading=lazy }
+    Stick with the default or change the **Wake word**, **Assistant**, and **Voice**.
+</div>
+
+!!! success
+    You have connected your **Satellite1** to **Home Assistant**!
+
+!!! warning
+    ![After completing the Wizard, do NOT click to add the Sat1 to ESPHome again.  Simply refresh and this will go away.](/assets/ble_improv/17_ignore_device_discovered_cut.png){ width="40%" align=left loading=lazy }
+    After completing the **Wizard**, **do NOT click** to add the Sat1 to ESPHome again.  Simply refresh and this will go away.
+
+## Understanding the ESPHome User Interface
+Once your **Sat1** is connected to **Home Assistant** you should familiarize yourself with all the server-side settings you may want to change:
+
+<div class="grid cards" markdown>
+-   :material-numeric-1-circle:{ .lg .middle } __Select Sat1 device from list__
+
+    ---
+
+    ![esphome device list](/assets/esphome/1_esphome_device_list.png){ loading=lazy }
+    Inside your **Home Assistant**, head over to **"Settings -> Devices & Services -> ESPHome"** and click on your **Sat1** device.
+</div>
+<div class="grid cards" markdown>
+-   :material-numeric-2-circle:{ .lg .middle } __Explore Sat1 settings__
+
+    ---
+
+    ![top esphome device](/assets/esphome/2_esphome_top_page.png){ loading=lazy }
+    ![top esphome device](/assets/esphome/3_esphome_bottom_page.png){ loading=lazy }
+    Understand all the features of your **Sat1** device.
+</div>

@@ -1,5 +1,7 @@
-:root {
+:root > * {
     --md-primary-fg-color: #C2B7AC;
+    /* --md-typeset-a-color: #0000FF;
+    --md-typeset-a-color--dark: #ff0011; */
 }
 
 [data-md-color-scheme="slate"] {
@@ -16,4 +18,8 @@
   
   .md-tabs__link--active {
     color: #ff00a2;
+  } */
+
+  /* .md-content {
+    --md-typeset-a-color--light: #0000FF;
   } */
