@@ -1,6 +1,8 @@
 
 ## Millimeter-wave presence sensors.
-The Satellite1 HAT has two ports for optionally mounting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Please read below.
+The Satellite1 HAT has two ports for optionally mounting external mmWave presence sensors: LD2410 or LD2450.  These sensors have different possibilities, and suit different needs.  Depending on the sensor your choose you must flash the appropriate firmware to the Satellite1 using a USB-C cable.
+
+<br>[Flash your appropriate mmWave firmware](satellite1-flash-via-usb-c.md#re-flashing-your-satellite1-via-a-usb-c-cablef){ .md-button .md-button--primary }
 
 <br>
 <figure markdown="span">
@@ -14,9 +16,11 @@ The Satellite1 HAT has two ports for optionally mounting external mmWave presenc
 </figure>
 
 ### Sensor Positioning
-When the sensor is directly mounted to the HAT it will point in the direction of the microphone and LEDs, which may work for your situation.  However, you can also use the sensors' included JST cable to position the sensor in any orientation you'd like so it is not directly mounted to the HAT.
+When the sensor is directly mounted to the HAT it will point in the direction of the microphone and LEDs, which may work for your situation.  However, you can also make or purchase cables that allow you to position the sensor in any orientation you'd like so it is not directly mounted to the HAT.
 
 ![Sensor JST cable](/assets/presence-sensors/sensor_jst_cable.jpg){ width="100%" loading=lazy}
+
+??? Info "NOTE: We plan to introduce a [PoE Shoe module](satellite1-poe-shoe-module-overview.md) that enables you to relocate the mmWave sensor (and other sensors) inside the enclosure’s speaker chamber and position it at any angle toward the room."
 
 ### Sensor Firmware
 Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over bluetooth.  Watch this quick video to see how to access the sensor and change the firmware version:
@@ -30,12 +34,8 @@ Both the LD2410 & LD2450 can be updated via the HLKRadarTool mobile app over blu
   <img style="width: 170px; height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"/>
 </a>
 
-### mmWave Firmware Flashing
-After connecting the LD2410 or LD2450 to the HAT, [you must follow these steps to flash the mmWave firmware to the Satellite1 using a USB-C cable.](satellite1-connecting-to-ha.md#re-flashing-your-satellite1-via-a-usb-c-cable)
-
-
-### mmWave Glossary
-1. **Gate**: this sensor is using "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
+### Understanding mmWave 
+1. **Gate**: these sensors use a "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
 2. **Distance Resolution**: the "thickness" of one gate. The LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
 3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
 

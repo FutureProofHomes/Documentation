@@ -1,7 +1,13 @@
 <a id="faq_anchor_factory_reset"></a>
-???+ note "I messed something up, How do I start over?"
+???+ note "I messed something up, how do I start over?"
 
-    [Perform a Factory Reset](/satellite1-troubleshooting/#resetting-to-factory-settings){ .md-button .md-button--primary }
+    1. [Remove the Sat1 from ESPHome](satellite1-troubleshooting.md/#removing-the-sat1from-esphome)
+    2. [Flash the device back to factory firmware.](satellite1-flash-via-usb-c.md)
+
+???+ note "Why don't I hear any audio coming out of the speaker I connected?"
+
+    You must have a 9V USB-C power supply with a capacity of 20W-30W. [Here are some recommended options.](satellite1-recommended-accessories.md)  You can check how much power your Sat1 is receiving by checking the ESPHome Diagnostics section.
+    ![Remove from ESPHome Builder](/assets/esphome/4_esphome_diagnostics_section.png){ width="60%" }
 
 <a id="faq_anchor_inspect_logs"></a>
 ???+ note "How do I access the Sat1 logs?"

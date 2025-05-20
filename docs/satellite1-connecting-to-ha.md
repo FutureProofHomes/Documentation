@@ -1,4 +1,4 @@
-## Connecting to Home Assistant
+## Connect to Home Assistant Wirelessly via BLE Improv
 Your Satellite1 arrives pre-flashed from the factory and will boot into BLE improv mode with white sparkling LEDs.  Follow the steps below to connect to Home Assistnat via Bluetooth.
 
 <div class="grid cards" markdown>
@@ -80,70 +80,6 @@ Your Satellite1 arrives pre-flashed from the factory and will boot into BLE impr
     ![After completing the Wizard, do NOT click to add the Sat1 to ESPHome again.  Simply refresh and this will go away.](/assets/ble_improv/17_ignore_device_discovered_cut.png){ width="40%" align=left loading=lazy }
     After completing the **Wizard**, **do NOT click** to add the Sat1 to ESPHome again.  Simply refresh and this will go away.
 
-## Re-Flashing your Satellite1 via a USB-C Cable
-
-Find the USB-C port on your Sat1 labeled "CORE/ESP32".  Plug directly into your computer with a USB-C cable that supports a data connection. Use the form below to select your preferred Sat1 firmware and then click the blue "Connect" button to begin flashing your chosen firmware:
-
-!!! example ""
-    <div class="form-container" id="firmware-selector" role="form" aria-live="polite"></div>
-
-<div class="next-steps grid cards" markdown>
-
--   :material-numeric-1-circle:{ .lg .middle } __Select the JTAG device__
-
-    ---
-
-    ![Select JTAG](/assets/ESPHome-SerialConn.png){ loading=lazy }
-    After clicking the blue **"Connect"** button, a pop-up window will open.  Select the **JTAG device** in the pop-up window.
-
--   :material-numeric-2-circle:{ .lg .middle } __Start Firmware installation__
-
-    ---
-
-    ![Image title](/assets/ESPHome-Install.png){ loading=lazy }
-    Click **"Install"**.
-
--   :material-numeric-3-circle:{ .lg .middle } __Erase the device__
-
-    ---
-
-    ![Image title](/assets/ESPHome-Erase.png){ loading=lazy }
-    ![Image title](/assets/ESPHome-ConfirmInstall.png){ loading=lazy }
-    Select **Erase the device** checkbox, then click **"Next"** and then **"Install"**.
-
--   :material-numeric-4-circle:{ .lg .middle } __Installation completed__
-
-    ---
-
-    ![Image title](/assets/ESPHome-InstallationComplete.png){ loading=lazy }
-    Installation will complete. Click **"Next"**.
-
--   :material-numeric-5-circle:{ .lg .middle } __Configure WiFi__
-
-    ---
-
-    ![Image title](/assets/ConfigureWifi.png){ loading=lazy }
-    Select your **2.4ghz WiFi** network and click **"Connect"**.  Your **Sat1** device will begin sparkling blue while attempting to connect. If you don't see your WiFi network then click the **refresh icon** on the top right to scan for networks again.
-
--   :material-numeric-6-circle:{ .lg .middle } __Connected to WiFi__
-
-    ---
-
-    ![Image title](/assets/ESPHome-WiFiConnected.png){ loading=lazy }
-    Congrats you're now connected to your Wifi! Your device will now begin sparkling red. This means it needs to be connected to **ESPHome** in your **Home Assistant** instance.
-
--   :material-numeric-7-circle:{ .lg .middle } __Start ESP Onboarding__
-
-    ---
-
-    ![Image title](/assets/discovered_sat1.png){ loading=lazy }
-    Inside **Home Assistant**, go to **"Settings -> Devices & Services"** and notice you have a Discovered **`Satellite1 xxxxxx`** device. Click **ADD** and follow the **ESPHome** onboarding steps.
-</div>
-
-<div class="next-steps" markdown>
-!!! success
-    You have re-flashed your **Sat1** and connected it to **Home Assistant**.
-</div>
 
 ## Understanding the ESPHome User Interface
 Once your **Sat1** is connected to **Home Assistant** you should familiarize yourself with all the server-side settings you may want to change:

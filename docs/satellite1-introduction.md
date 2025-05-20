@@ -25,7 +25,7 @@ The Satellite1 has a few requirements to get up and running.
 3. The recommended Satellite1 accessories (see [Recommended Accessories](satellite1-recommended-accessories.md))
 
 ## Future Modules, Enclosures & AI Server
-In the future we will announce [modules](/satellite1-mini-speaker-module-overview), [enclosures](/satellite1-assembly/#enclosure), and [mount kits](/satellite1-mount-kit-overview) that easily connect your Satellite1 Dev Kit to make a complete product.  We will also be releasing an [AI Base Station]() that will power all the Satellite1's in your home.
+In the future we will announce [expansion modules](satellite1-poe-shoe-module-overview.md), [enclosures](satellite1-dev-kit-enclosure.md), and [mount kits](satellite1-mount-kit-overview.md) that easily connect your Satellite1 Dev Kit to make a complete product.  We will also be releasing an [AI Base Station](ai-base-station-introduction.md) that will power all the Satellite1's in your home.
 
 ## Satellite1 vs. Home Assistant Voice Preview Edition
 
