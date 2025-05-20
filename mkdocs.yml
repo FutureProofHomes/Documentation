@@ -1,30 +1,30 @@
 site_name: FutureProofHomes Docs
 site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
-
 nav:
   - Welcome: index.md
   - Satellite1 Dev Kit:
     - Introduction: satellite1-introduction.md
     - Getting Started:
       - Recommended Accessories: satellite1-recommended-accessories.md
-      - PCB Assembly & First Boot: satellite1-assembly.md
-      - Flash Firmware & Connect: satellite1-connecting-to-ha.md
-      - Enclosure Printing & Assembly: satellite1-dev-kit-enclosure.md
+      - CORE & HAT Assembly: satellite1-assembly.md
+      - Connect to Home Assistant: satellite1-connecting-to-ha.md
+      - Adding Presence Sensors: satellite1-presence-sensors.md
     - Home Assistant Configuration:
       - Set Up Voice Control: satellite1-set-up-voice-control.md
       - Streaming Music: satellite1-streaming-music.md
       - Awesome Automations: satellite1-awesome-automations.md
-    - Customization:
+    - Flashing Firmware: 
+      - Flash via USB-C Cable: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
-      - Presence Sensors: satellite1-presence-sensors.md
     - Support:
       - Troubleshooting: satellite1-troubleshooting.md
       - FAQs: satellite1-faqs.md
-  - Satellite1 Modules:
+  - Expansion Modules:
     - PoE "SHOE" Module: satellite1-poe-shoe-module-overview.md
     - Amplifier1 Module: satellite1-amplifier-module-overview.md
-  - Satellite1 Mount Kits:
+  - Enclosures & Mount Kits:
+    - Cylindrical Enclosure: satellite1-dev-kit-enclosure.md
     - In-Ceiling Mount Kit: satellite1-mount-kit-overview.md
   - AI Base Station:
     - Introduction: ai-base-station-introduction.md

@@ -1,6 +1,6 @@
 ## About the Dev Kit Speaker Enclosure
 
-The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports [3 recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors):
+The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports [three recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors):
 
 - Dayton Audio RS75-4 3" driver
 - Tectonic TEBM46C20N-4B BMR 3" driver
@@ -9,28 +9,17 @@ The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be pri
 All the files necessary can be found in the [Satellite1-Enclosures Github Repo](https://github.com/FutureProofHomes/Satellite1-Enclosures).
 
 <figure markdown="span">
-  ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/30_pose_tall.JPG){ width="100%" }
-  <figcaption>Satellite1 speaker enclosure standing tall</figcaption>
-</figure>
-
-<figure markdown="span">
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/31_pose_speaker.JPG){ width="100%" }
   <figcaption>25 watt BMR speaker fires down towards sound diffuser cone</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/32_pose_buttons.JPG){ width="100%" }
-  <figcaption>LEDs are protected inside the light ring</figcaption>
 </figure>
 
 # Watch the Instructional Video
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="3D Print the World’s Best AI Voice Assistant (DIY)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Enclosure Limitations
+## Enclosure Limitations
+Many of the below enclosure limitations are solved by our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md)
 
-Many of the below enclosure limitations are solved by our upcoming power-over-ethernet SHOE board!  [You can read about the SHOE board in our recent blog post](https://futureproofhomes.net/blogs/news/q1-2025-status-update).
-
-Without the SHOE board here are some current limitations of the enclosure:
+Without the SHOE board there are some current limitations of the enclosure:
 
 1. **The lux sensor will not give accurate readings of the room.**
 <br>We will solve this with a light pipe and updated enclosure designs.  This can also be solved by our upcoming SHOE board and relocating the lux sensor down in the speaker chamber.
