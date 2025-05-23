@@ -1,6 +1,6 @@
-## About the Dev Kit Speaker Enclosure
+## Cylindrical Dev Kit Enclosure
 
-The Satellite1 Dev Kit Speaker Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports [three recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors):
+The Satellite1 Cylendrical Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports [three recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors):
 
 - Dayton Audio RS75-4 3" driver
 - Tectonic TEBM46C20N-4B BMR 3" driver
@@ -33,11 +33,11 @@ Without the SHOE board there are some current limitations of the enclosure:
 4. **The wake word may not respond when playing music at full volume.**
 <br>We will experiment with modified enclosure designs, gaskets, and better audio echo cancellation firmware to mitigate vibrations in the enclosure.
 
-## Printing the Dev Kit Speaker Enclosure
+## Printing the Dev Kit Cylindrical Enclosure
 
 The full speaker enclosure consists of 4 major parts.  If you don't have the necessary speaker you can print just the Satellite1 UFO enclosure.
 
-![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/1_full_render_shot.png){ width="100%" }
+![Satellite1 Cylindrical Enclosure](/assets/dev_kit_enclosure/1_full_render_shot.png){ width="100%" }
 
 ??? tip "NOTE: Enclosures and geometry files may be specific to a hardware revision & speaker model number."
 
@@ -75,7 +75,7 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
         6. No-Brim
         ![Satellite1 Slicer Project Settings](/assets/dev_kit_enclosure/5_project_settings.png){ width="100%" }
 
-## Assembling the Dev Kit Speaker Enclosure
+## Assembling the Dev Kit Cylindrical Enclosure
 
 1. Grab some Loctite (aka Blu-Tack) and generic speaker Polyfill.  Attach your chosen mmWave to the HAT.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/6_enclosure_accessories.JPG){ width="100%" }

@@ -1,3 +1,5 @@
+## PoE1 Module (Coming Soon...)
+
 If you're familiar with the Satellite1 Dev Kit, you know it consists of two PCB boards: the "CORE" and the "HAT." The HAT includes an expansion port, which will allow you to connect our upcoming "PoE SHOE" module.
 
 The PoE SHOE Module will unlock the following features:
