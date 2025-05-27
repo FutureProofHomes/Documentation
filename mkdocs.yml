@@ -24,10 +24,8 @@ nav:
     - PoE1 Module: satellite1-poe-shoe-module-overview.md
     - Amplifier1 Module: satellite1-amplifier-module-overview.md
   - Enclosures & Mount Kits:
-    - Original Cylindrical Enclosure: satellite1-dev-kit-enclosure.md
-    - 5-Watt Enclosure: satellite1-5w-enclosure.md
-    - 15-Watt Enclosure: satellite1-15w-enclosure.md
-    - 25-Watt Enclosure: satellite1-25w-enclosure.md
+    - Squircle Enclosures: satellite1-squircle-enclosures.md
+    - Cylindrical Enclosures: satellite1-dev-kit-enclosure.md    
     - In-Ceiling Mount Kit: satellite1-mount-kit-overview.md
   - AI Base Station:
     - Introduction: ai-base-station-introduction.md
