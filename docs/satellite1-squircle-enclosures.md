@@ -84,7 +84,9 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
 
     This is caused by vibrations traveling through the enclosure to the microphones. We're working with experts to address this in the official injection-molded enclosures. Stay tuned.
 
-## Top Plate Assembly
+## Assemble the Enclosure
+
+### Top Plate Assembly
 
 <div class="grid cards" markdown>
 
@@ -141,7 +143,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
 !!! success
     You have built your **Satellite1 Squircle Top Plate**!
 
-## Mid-Plate Assembly
+### Mid-Plate Assembly
 
 <div class="grid cards" markdown>
 
@@ -191,7 +193,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
 !!! success
     You have built your **Satellite1 Squircle Mid-Plate**!
 
-## Speaker Chamber Assembly
+### Speaker Chamber Assembly
 
 <div class="grid cards" markdown>
 
