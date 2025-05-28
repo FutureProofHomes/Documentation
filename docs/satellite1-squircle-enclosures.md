@@ -57,6 +57,11 @@ Without the SHOE board there are some current limitations of the enclosure:
 
 ## How to 3D Print the Enclosures
 
+<figure markdown="span">
+  ![Squircle Enclosure Overview](/assets/squircle-enclosure/slicer_software_screenshot.png){ width="100%" }
+  <figcaption>Remove any plates you don't need, depending on your speaker choice, enclosure type, and whether your printer supports multi-material or multi-part printing.</figcaption>
+</figure>
+
 ### Pre-Built Slicer Project File
     
 1. Download the appropriate pre-built `.3mf` project file from our Github repository and open in your favorite slicer software:
@@ -96,7 +101,7 @@ If you cannot or do not want to use our pre-built slicer project file then you c
 
     ---
 
-    ![Line-Up Parts](/assets/squircle-enclosure/IMG_6748-min.jpg){ loading=lazy }
+    ![Line-Up Parts](/assets/squircle-enclosure/IMG_6748-min.6747){ loading=lazy }
     Find the two FPH logos on the top plate and lock ring. Line up the logos and the I/O ports.
 
 -   :material-numeric-3-circle:{ .lg .middle } Snap Parts Together
