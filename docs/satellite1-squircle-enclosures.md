@@ -16,7 +16,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
 
 <div class="grid cards" markdown>
 
--  :material-numeric-1-circle:{ .lg .middle } Large (3-Inch) Speaker Speakers
+-  :material-numeric-1-circle:{ .lg .middle } Large (3-Inch) Speaker Enclosure
 
     ---
 
@@ -29,7 +29,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
     * [Tectonic TEBM46C20N-4B BMR](https://www.parts-express.com/Tectonic-TEBM46C20N-4B-BMR-3-Full-Range-Speaker-4-297-2157)
     * [FaitalPRO 3FE25](https://amzn.to/4jsB3Jp)
 
--   :material-numeric-2-circle:{ .lg .middle } Medium (2-Inch) Speaker Speakers
+-   :material-numeric-2-circle:{ .lg .middle } Medium (2-Inch) Speaker Enclosure
 
     ---
 
@@ -39,7 +39,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
     * [Dayton Audio ND64-4](https://amzn.to/3H7MN6G)
     * [Dayton Audio PC68-4](https://amzn.to/3HeSoIn)
 
--   :material-numeric-3-circle:{ .lg .middle } Small (1-Inch) Speaker Speakers
+-   :material-numeric-3-circle:{ .lg .middle } Small (1-Inch) Speaker Enclosure
 
     ---
 
