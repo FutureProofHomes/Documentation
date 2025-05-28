@@ -22,6 +22,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
 
     ![Large 3-Inch Speakers](/assets/squircle-enclosure/IMG_6841_min.jpg){ loading=lazy }
 
+    * [Dayton Audio PC83-4](https://amzn.to/43eHaw2)
     * [Dayton Audio RS75-4](https://amzn.to/42egKsz)
     * [GRS 3FR-4](https://amzn.to/4kII61D)
     * [Visaton FRS8-4](https://amzn.to/43FgNOP)
