@@ -55,7 +55,7 @@ Download the appropriate pre-built `.3mf` project file and open in your favorite
 
 <div class="grid cards" markdown>
 - [Download OrcaSlicer Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/OrcaSlicer%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
-- [Download Bambu Studio Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/OrcaSlicer%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
+- [Download Bambu Studio Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/Bambu%20Studio%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
 </div>
 
 Remove unnecssary plates, depending on your speaker selection, enclosure type, and whether your printer supports multi-material or multi-part printing.
