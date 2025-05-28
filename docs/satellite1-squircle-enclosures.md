@@ -2,89 +2,87 @@
 The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 12mm screws.
 
 ## Understanding the Design
+
+The "Top Plate", "Diffuser Ring", "PCB Spacer" & "Lock Ring" are common parts that are shared across all sizes of the squircle enclosure family.
+
 <figure markdown="span">
   ![Squircle Enclosure Overview](/assets/squircle-enclosure/part_overview.png){ width="100%" }
-  <figcaption>Common parts of all squircle enclosures are the Top Plate, Diffuser Ring, PCB Spacer & Lock Ring</figcaption>
+  <figcaption>Cross-section of the Squircle Enclosure</figcaption>
 </figure>
 
-## Choose an Enclosure & Speaker Model
+You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/Squircle%20Enclosures/Geometry%20Files) repository.  We cannot release CAD project files due to commercial licensing restrictions.
+
+## Choose a Speaker and Enclosure Size
 
 <div class="grid cards" markdown>
 
--   :material-numeric-3-circle:{ .lg .middle } Large (3-Inch) Speaker Enclosure
+-  :material-numeric-1-circle:{ .lg .middle } Large (3-Inch) Speaker Speakers
 
     ---
 
-    ![Large 3-Inch Squircle Enclosure](/assets/squircle-enclosure/IMG_6841_min.jpg){ loading=lazy }
-    <br> [Dayton Audio PC83-4](https://amzn.to/43AgLry)
-    <br> [Dayton Audio RS75-4](https://amzn.to/42egKsz)
-    <br> [GRS 3FR-4](https://amzn.to/4kII61D)
-    <br> [Visaton FRS8-4](https://amzn.to/43FgNOP)
-    <br> [Tectonic TEBM46C20N-4B BMR](https://www.parts-express.com/Tectonic-TEBM46C20N-4B-BMR-3-Full-Range-Speaker-4-297-2157)
-    <br> [FaitalPRO 3FE25](https://amzn.to/4jsB3Jp)
+    ![Large 3-Inch Speakers](/assets/squircle-enclosure/IMG_6841_min.jpg){ loading=lazy }
 
--   :material-numeric-2-circle:{ .lg .middle } Medium (2-Inch) Speaker Enclosure
+    * [Dayton Audio RS75-4](https://amzn.to/42egKsz)
+    * [GRS 3FR-4](https://amzn.to/4kII61D)
+    * [Visaton FRS8-4](https://amzn.to/43FgNOP)
+    * [Tectonic TEBM46C20N-4B BMR](https://www.parts-express.com/Tectonic-TEBM46C20N-4B-BMR-3-Full-Range-Speaker-4-297-2157)
+    * [FaitalPRO 3FE25](https://amzn.to/4jsB3Jp)
 
-    ---
-
-    ![Medium 2-Inch Squircle Enclosure](/assets/squircle-enclosure/coming_soon.jpg){ loading=lazy }
-    <br> [Dayton Audio ND65-4](https://amzn.to/43N5PrD)
-    <br> [Dayton Audio ND64-4](https://amzn.to/3H7MN6G)
-    <br> [Dayton Audio PC68-4](https://amzn.to/3HeSoIn)
-
--   :material-numeric-1-circle:{ .lg .middle } Small (1-Inch) Speaker Enclosure
+-   :material-numeric-2-circle:{ .lg .middle } Medium (2-Inch) Speaker Speakers
 
     ---
 
-    ![Small 1-Inch Squircle Enclosure](/assets/squircle-enclosure/coming_soon.jpg){ loading=lazy }
-    <br> [DWEII 4pcs Mini Speaker Dupont Connectors](https://amzn.to/3HqLnEc)
-    <br> [AOICRIE 2pcs 3 Watt Mini Dupont Connectors](https://amzn.to/3SSDtG6)
+    ![Medium 2-Inch Speakers](/assets/squircle-enclosure/coming_soon.jpg){ loading=lazy }
+
+    * [Dayton Audio ND65-4](https://amzn.to/43N5PrD)
+    * [Dayton Audio ND64-4](https://amzn.to/3H7MN6G)
+    * [Dayton Audio PC68-4](https://amzn.to/3HeSoIn)
+
+-   :material-numeric-3-circle:{ .lg .middle } Small (1-Inch) Speaker Speakers
+
+    ---
+
+    ![Small 1-Inch Speakers](/assets/squircle-enclosure/coming_soon.jpg){ loading=lazy }
+
+    * [DWEII 4pcs Mini Speaker Dupont Connectors](https://amzn.to/3HqLnEc)
+    * [AOICRIE 2pcs 3 Watt Mini Dupont Connectors](https://amzn.to/3SSDtG6)
 </div>
-
-## Enclosure Limitations
-Many of the below enclosure limitations are solved by our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md)
-
-Without the SHOE board there are some current limitations of the enclosure:
-
-1. **The lux sensor will not give accurate readings of the room.**
-<br>We will solve this with a light pipe and updated enclosure designs.  This can also be solved by our upcoming SHOE board and relocating the lux sensor down in the speaker chamber.
-
-2. **The temp/humidity sensor will not give accurate readings of the room.  Also the mmWave sensor is pointed up at the ceiling.**
-<br>Our upcoming "SHOE" PCB will relocate these sensors down into the speaker chamber while also giving a PoE port to the enclosure!
-
-3. **The wake word may not respond when playing music at full volume.**
-<br>We will experiment with modified enclosure designs, gaskets, and better audio echo cancellation firmware to mitigate vibrations in the enclosure.
 
 ## How to 3D Print the Enclosures
 
+Download the appropriate pre-built `.3mf` project file and open in your favorite slicer software:
+
+<div class="grid cards" markdown>
+- [Download OrcaSlicer Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/OrcaSlicer%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
+- [Download Bambu Studio Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/OrcaSlicer%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
+</div>
+
+Remove unnecssary plates, depending on your speaker selection, enclosure type, and whether your printer supports multi-material or multi-part printing.
+
 <figure markdown="span">
   ![Squircle Enclosure Overview](/assets/squircle-enclosure/slicer_software_screenshot.png){ width="100%" }
-  <figcaption>Remove any plates you don't need, depending on your speaker choice, enclosure type, and whether your printer supports multi-material or multi-part printing.</figcaption>
+  <figcaption></figcaption>
 </figure>
 
-### Pre-Built Slicer Project File
-    
-1. Download the appropriate pre-built `.3mf` project file from our Github repository and open in your favorite slicer software:
-    1. [Get OrcaSlicer Project File](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/Squircle%20Enclosures/Project%20Files){ .md-button .md-button--primary }
-    2. [Get Bambu Studio Project File](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/Squircle%20Enclosures/Project%20Files){ .md-button .md-button--primary }
+!!! info "Recommend PETG-HF"
 
-2. Right-click on each part in your slicer software and select your desired filament.
-    1. **NOTE #1:** PETG-HF is better for acoustics, but PLA will work too.
-    2. **NOTE #2:** Set Diffuser Ring to transparent or white filament so you can see the LEDs.
+    We recommend PETG-HF with 30% infill for ideal for acoustics. PLA with 15% infill will work as well.
 
-3. No supports are needed.
+!!! info "No Supports Required"
 
-### Custom-Built Slicer Project
+    Study the screenshot above and you'll see how to print each part such that no supports are needed.
 
-If you cannot or do not want to use our pre-built slicer project file then you can build your own plate from scratch:
+!!! info "Screws Are Required"
 
-1. Add the necessary `.stl` geometry files to your slicer software from the [Satellite1-Enclosures Github repository](https://github.com/FutureProofHomes/Satellite1-Enclosures).
-2. Set your project to use the recommended settings.
-    1. 0.2mm layer height
-    2. 3-6 wall loops for strength
-    3. Minimum 15% infill (increase this to 50% for the speaker enclosure for even better acoustics)
-    4. (Optional) Arachne or Gyroid wall generator
-    6. No-Brim
+    M3 x 12mm screws are required for assembly. To maintain thread integrity, minimize repeated installation and removal of screws.
+
+!!! warning "Sensors are not supported, yet"
+
+    Enclosing a "Dev Kit" affects sensor accuracy—lux, temperature, and humidity readings won’t reflect the room, and the top plate is not designed to support mmWave sensors.  Our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md) and an PoE mid-plate will relocate the sensors into the speaker chamber and add a PoE port to the enclosure.
+
+!!! warning "When playing music at full volume the wake word may not respond"
+
+    This is caused by vibrations traveling through the enclosure to the microphones. We're working with experts to address this in the official injection-molded enclosures. Stay tuned.
 
 ## Top Plate Assembly
 
@@ -101,7 +99,7 @@ If you cannot or do not want to use our pre-built slicer project file then you c
 
     ---
 
-    ![Line-Up Parts](/assets/squircle-enclosure/IMG_6748-min.6747){ loading=lazy }
+    ![Line-Up Parts](/assets/squircle-enclosure/IMG_6748-min.jpg){ loading=lazy }
     Find the two FPH logos on the top plate and lock ring. Line up the logos and the I/O ports.
 
 -   :material-numeric-3-circle:{ .lg .middle } Snap Parts Together
