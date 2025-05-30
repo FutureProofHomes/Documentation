@@ -13,7 +13,7 @@ nav:
     - Home Assistant Configuration:
       - Set Up Voice Control: satellite1-set-up-voice-control.md
       - Streaming Music: satellite1-streaming-music.md
-      - Awesome Automations: satellite1-awesome-automations.md
+      - Helpful Automations: satellite1-helpful-automations.md
     - Flashing Firmware: 
       - Flash via USB-C Cable: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
