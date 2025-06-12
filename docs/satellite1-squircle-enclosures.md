@@ -1,6 +1,11 @@
 ## Overview
 The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 10mm screws.
 
+<figure markdown="span">
+  ![Squircle Enclosure Family](/assets/squircle-enclosure/family.jpg){ width="100%" }
+  <figcaption>Large, Medium, and Small Squircle Enclosures</figcaption>
+</figure>
+
 ## Understanding the Design
 
 The "Top Plate", "Diffuser Ring", "PCB Spacer" & "Lock Ring" are common parts that are shared across all sizes of the squircle enclosure family.
@@ -33,7 +38,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
 
     ---
 
-    ![Medium 2-Inch Speakers](/assets/squircle-enclosure/coming_soon.jpg){ loading=lazy }
+    ![Medium 2-Inch Speakers](/assets/squircle-enclosure/IMG_6983.jpg){ loading=lazy }
 
     * [Dayton Audio ND65-4](https://amzn.to/43N5PrD)
     * [Dayton Audio ND64-4](https://amzn.to/3H7MN6G)
@@ -43,7 +48,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
 
     ---
 
-    ![Small 1-Inch Speakers](/assets/squircle-enclosure/coming_soon.jpg){ loading=lazy }
+    ![Small 1-Inch Speakers](/assets/squircle-enclosure/IMG_6985.jpg){ loading=lazy }
 
     * [DWEII 4pcs Mini Speaker Dupont Connectors](https://amzn.to/3HqLnEc)
     * [AOICRIE 2pcs 3 Watt Mini Dupont Connectors](https://amzn.to/3SSDtG6)
