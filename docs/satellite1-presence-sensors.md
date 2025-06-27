@@ -86,7 +86,7 @@ We built UI card, to make calibration process more intuitive.
 
 Here's how to use it:
 
-1. Install [Mushroom cards](https://github.com/piitaya/lovelace-mushroom), [Auto-entities card](https://github.com/thomasloven/lovelace-auto-entities) and [Decluttering card](https://github.com/custom-cards/decluttering-card) and [Bar card](https://github.com/custom-cards/bar-card) from HACS.
+1. Install [Mushroom cards](https://github.com/piitaya/lovelace-mushroom), [Auto-entities card](https://github.com/thomasloven/lovelace-auto-entities), [Decluttering card](https://github.com/custom-cards/decluttering-card), [Vertical Stack In Card](https://github.com/ofekashery/vertical-stack-in-card), and [Bar card](https://github.com/custom-cards/bar-card) from HACS.
 2. Put this to the very bottom of dashboard YAML in raw edit mode (this should be done once per dashboard):
 ```
 decluttering_templates:
