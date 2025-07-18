@@ -20,7 +20,6 @@ jobs:
     - name: Create manifest files for each hardware revision
       run: |
         chmod +x ./scripts/create_manifest.sh
-        export GITHUB_TOKEN=${{ secrets.PAT_TOKEN }}
         ./scripts/create_manifest.sh ${{ github.event.inputs.esphome_release_tag }} ${{ env.esphome_repo }}
 
     - name: Add and commit release assets to the current repository
