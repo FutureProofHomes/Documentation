@@ -31,7 +31,6 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
     * [Dayton Audio RS75-4](https://amzn.to/42egKsz)
     * [GRS 3FR-4](https://amzn.to/4kII61D)
     * [Visaton FRS8-4](https://amzn.to/43FgNOP)
-    * [Tectonic TEBM46C20N-4B BMR](https://www.parts-express.com/Tectonic-TEBM46C20N-4B-BMR-3-Full-Range-Speaker-4-297-2157)
     * [FaitalPRO 3FE25](https://amzn.to/4jsB3Jp)
 
 -   :material-numeric-2-circle:{ .lg .middle } Medium (2-Inch) Speaker Enclosure
