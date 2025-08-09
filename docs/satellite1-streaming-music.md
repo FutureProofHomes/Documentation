@@ -2,8 +2,6 @@
 
 Your new Satellite1 can now control your home, but what about streaming music? Here’s a guide to help you install and configure Music Assistant (MA) to stream music directly to your Satellite1.
 
-[Install Music Assistant](https://www.music-assistant.io/installation/){ .md-button .md-button--primary }
-
 !!! warning "Music Assistant gets added to Home Assistant Core!"
 
     This is great news—it makes installing Music Assistant (MA) much easier! However, as of December 2024, it’s important to note that this version of Music Assistant does not yet include “voice control capabilities.” We recommend [reviewing Music Assistant’s guidelines on setting up voice control capabilities](https://www.music-assistant.io/integration/voice/) for the most up-to-date information.
