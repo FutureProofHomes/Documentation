@@ -1,5 +1,5 @@
 ## Connect to Home Assistant Wirelessly via BLE Improv
-Your Satellite1 arrives pre-flashed from the factory and will boot into BLE improv mode with white sparkling LEDs.  Follow the steps below to connect to Home Assistnat via Bluetooth.
+Your Satellite1 arrives pre-flashed from the factory and will boot into BLE improv mode with white sparkling LEDs.  Follow the steps below to connect to Home Assistant via Bluetooth.
 
 <div class="grid cards" markdown>
 -   :material-numeric-1-circle:{ .lg .middle } __Open Home Assistant App__
