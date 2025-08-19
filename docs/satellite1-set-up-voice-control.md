@@ -86,7 +86,7 @@ Always use 12hr time formats.
 2. **In the Configuration section, select your Voice Pipeline.**  
    <br>![Assistant Dropdown](/assets/Pipeline5.png){ width="100%" loading=lazy }>
 
-3. **You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/faqs#faq_add_more_wake_words))**  
+3. **You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/satellite1-faqs/#faq_build_custom_wake_word))**  
    <br>![Set Wake Word](/assets/Pipeline7.png){ width="100%" loading=lazy }>
 
 Congratulations! You've created your own voice pipeline for your Satellite1.
