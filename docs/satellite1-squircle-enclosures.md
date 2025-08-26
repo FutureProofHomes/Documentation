@@ -1,5 +1,5 @@
 ## Overview
-The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 10mm screws.
+The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 8mm screws.
 
 <figure markdown="span">
   ![Squircle Enclosure Family](/assets/squircle-enclosure/family.jpg){ width="100%" }
@@ -80,7 +80,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
 
 !!! info "Screws Are Required"
 
-    M3 x 10mm screws are required for assembly. To maintain thread integrity, minimize repeated installation and removal of screws.
+    M3 x 8mm screws are required for assembly. To maintain thread integrity, minimize repeated installation and removal of screws.
 
 !!! warning "Sensors are not supported, yet"
 
@@ -143,7 +143,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
     ---
 
     ![Rotate Parts to Unlock](/assets/squircle-enclosure/IMG_6781-min.jpg){ loading=lazy }
-    By hand, secure the Dev Kit to the top piece with four M3 x 10mm screws. Do not overtighten the screws.
+    By hand, secure the Dev Kit to the top piece with four M3 x 8mm screws. Do not overtighten the screws.
 </div>
 
 !!! success
@@ -172,7 +172,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
     ---
 
     ![Snap Together](/assets/squircle-enclosure/IMG_6757-min.jpg){ loading=lazy }
-    Flip the mid-plate over and screw the two parts together with four M3 x 10mm screws.
+    Flip the mid-plate over and screw the two parts together with four M3 x 8mm screws.
 
 -   :material-numeric-4-circle:{ .lg .middle } Unlock Top Piece
 
@@ -215,7 +215,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
     ---
 
     ![Line-Up Parts](/assets/squircle-enclosure/IMG_6773-min.jpg){ loading=lazy }
-    Secure the mid-plate with four M3 x 10mm screws.
+    Secure the mid-plate with four M3 x 8mm screws.
 
 -   :material-numeric-3-circle:{ .lg .middle } Connect Speaker Cable
 
@@ -250,14 +250,14 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
     ---
 
     ![Rotate Parts to Unlock](/assets/squircle-enclosure/IMG_6814-min.jpg){ loading=lazy }
-    Screw your chosen speaker to its corresponding faceplate with four M3 x 10mm screws. Connect the speaker cable to the speaker. (NOTE: You can solder or wrap the speaker cables if absolutely necessary.)
+    Screw your chosen speaker to its corresponding faceplate with four M3 x 8mm screws. Connect the speaker cable to the speaker. (NOTE: You can solder or wrap the speaker cables if absolutely necessary.)
 
 -   :material-numeric-8-circle:{ .lg .middle } Screw Down Faceplate
 
     ---
 
     ![Rotate Parts to Unlock](/assets/squircle-enclosure/IMG_6816-min.jpg){ loading=lazy }
-    Screw down the faceplate with six M3 x 10mm screws. Optionally use Blu-Tack reusable adhesive behind the faceplate to create an airtight seal.
+    Screw down the faceplate with six M3 x 8mm screws. Optionally use Blu-Tack reusable adhesive behind the faceplate to create an airtight seal.
 
 -   :material-numeric-9-circle:{ .lg .middle } Push in Anti-Slip Ring
 
