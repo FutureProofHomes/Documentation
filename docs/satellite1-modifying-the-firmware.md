@@ -1,14 +1,25 @@
-## Import the Sat1 to your ESPHome Dashboard
 The firmware running on the Satellite1 is [open source](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/LICENSE).  This means you can modify the firmware to build all kinds of amazing things with it!  All we ask contribute back the FutureProofHomes community by submitting pull requests to the [Satellite1-ESPHome](https://github.com/FutureProofHomes/Satellite1-ESPHome) repository.
 
-??? Warning "After taking control of your device's firmware you will no longer receive firmware updates from the community. If you'd like to get back in sync with the community you'll need to [restore factory firmware back to the Sat1](/satellite1-faqs#faq_anchor_factory_reset)."
+??? Warning "After taking control of your device's firmware you will no longer receive officail firmware updates. If you'd like to get back in sync with the official Sat1 firmware you'll need to [restore factory firmware back to the Sat1](/satellite1-faqs#faq_anchor_factory_reset)."
 
 ??? Warning "Please also be aware that flashing custom firmware can potentially damage the Sat1 device. These instructions are provided with the understanding that you have the necessary expertise to proceed. We will assume a certain level of familiarity with the process. Proceed with caution, and enjoy the journey!"
 
+## ESPHome Compatibility Matrix
+Specific Sat1 firmware releases can only be compiled with specific ESPHome versions.
+
+| Sat1 Release      | ESPHome Version                          |
+| ----------- | ------------------------------------ |
+| [v0.1.3](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.3-beta.2)    | [2025.5.2 - 2025.7.5](https://github.com/esphome/esphome/releases/tag/2025.7.5) |
+| [v0.1.2](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.2)    | [2025.5.2](https://github.com/esphome/esphome/releases/tag/2025.5.2) |
+| [v0.1.1](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.1)    | [2025.4.2](https://github.com/esphome/esphome/releases/tag/2025.4.2)  |
+
+
+## Import the Sat1 to your ESPHome Dashboard
+
 NOTE: Your Home Assistant instance must have the ability to run "Add-Ons". If you cannot run add-ons, see alternate ways to run this software by [reading ESPHome's official documentation](https://esphome.io/guides/getting_started_hassio#installing-esphome-device-compiler).
 
-1. <b>Install the ESPHome Device Builder Add-on by clicking below:</b>
-<br>[Install ESPHome Device Builder](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon){ .md-button .md-button--primary }
+1. <b>Ensure you're running the correct ESPHome Device Builder version that follows the above ESPHome compatibility matrix:</b>
+<br>[Install ESPHome Device Builder](https://github.com/khenderick/esphome-legacy-addons){ .md-button .md-button--primary }
 
 2. <b>After the install is complete click "Open Web UI":</b>
 <br>![Open WebUI](/assets/esphome_device_builder/1_open_ui.png){ width="100%" loading=lazy }</br>

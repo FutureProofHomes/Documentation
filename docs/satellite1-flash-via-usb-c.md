@@ -1,3 +1,5 @@
+!!! warning "Flashing your Satellite1 will erase all data on the device, and optionally your WiFi credentials setting it back to factory settings.  I will not remove the Satellite1 from your Home Assistant server instance."
+
 ## Flash your Satellite1 via USB-C Cable
 
 1. Use a data-capable USB-C cable and connect it directly to your computer.

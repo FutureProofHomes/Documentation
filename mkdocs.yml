@@ -5,15 +5,13 @@ nav:
   - Welcome: index.md
   - Satellite1 Dev Kit:
     - Introduction: satellite1-introduction.md
-    - Getting Started:
-      - Recommended Accessories: satellite1-recommended-accessories.md
-      - CORE & HAT Assembly: satellite1-assembly.md
-      - Connect to Home Assistant: satellite1-connecting-to-ha.md
-      - Adding Presence Sensors: satellite1-presence-sensors.md
-    - Home Assistant Configuration:
-      - Set Up Voice Control: satellite1-set-up-voice-control.md
-      - Streaming Music: satellite1-streaming-music.md
-      - Helpful Automations: satellite1-helpful-automations.md
+    - Recommended Accessories: satellite1-recommended-accessories.md
+    - PCB Assembly: satellite1-assembly.md
+    - Connect to Home Assistant: satellite1-connecting-to-ha.md
+    - Set Up Voice Control: satellite1-set-up-voice-control.md
+    - Adding Presence Sensors: satellite1-presence-sensors.md
+    - Streaming Music: satellite1-streaming-music.md
+    - Helpful Automations: satellite1-helpful-automations.md
     - Flashing Firmware: 
       - Flash via USB-C Cable: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md

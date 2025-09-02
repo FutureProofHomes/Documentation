@@ -1,10 +1,14 @@
 ## Connect the PCBs
 The Satellite1 comes in 2 pieces: 
 
-- The "Hat" (round board) 
-- The "Core" (rectangular board)
+1. The "Hat" (round board)
+2. The "Core" (rectangular board)
 
-You'll notice a standard Raspberry Pi 40-pin connector on the Hat board (marked in red). Carefully align the Core board's 2 rows of pins with the Hat's 40 pin connector and press them together.
+You'll notice a standard Raspberry Pi 40-pin header on the Hat board (marked in red). Carefully align the Core board's 2 rows of pins with the Hat's 40 pin connector and press them together.
+
+!!! note "Press Firmly!"
+
+    The 40-pin should poke through the top of the HAT so that it feels like reading braille with your fingers.
 
 ![Mount Core to Hat](/assets/mount_core_to_hat.png){ width="100%" }
 
