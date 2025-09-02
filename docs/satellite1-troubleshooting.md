@@ -63,10 +63,6 @@ While we hope this documentation will answer all your questions, but we realize 
 
     [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.gg/BeBjWEPzMV){ .md-button }
 
-!!! tip "Discord too chatty and you want a record of your general question?"
-
-    [Start a Discussion on Github :fontawesome-solid-comments:](https://github.com/orgs/FutureProofHomes/discussions){ .md-button }
-
 !!! success "Do you have a feature request you'd love to see?"
     Look through our existing Feature Requests first, then open a new request if necessary: <br>
     [Request a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
