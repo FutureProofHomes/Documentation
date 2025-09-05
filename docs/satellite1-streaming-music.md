@@ -80,10 +80,11 @@ If you have multiple Satellite1 devices, you can use our Snapcast implementation
     ![Name Sat1 Snapcast Speaker](/assets/MA_user_friendly_name.png){ loading=lazy }  
     Go to MA **"Settings -> :material-speaker: icon"** and select **"Configure"**. Name your Sat1 and keep the Snapclient settings at default.
 
-    !!! info "Sat1 Snapcast Speaker Missing?"
-        - Power cycle the Sat1
-        - Check that the correct ports are open
-        - Manually add your Snapserver's IP address to the Sat1's firmware
+    !!! info "Sat1 Snapcast Speaker(s) Missing?"
+        - Power cycle the Sat1.
+        - Play music on any visible Snapcast speaker to view the hidden speakers grouped with it.  This can happen after snapserver restarts.
+        - Check that the correct ports are open.
+        - Manually add your Snapserver's IP address to the Sat1's firmware.  [Read more here.](/satellite1-modifying-the-firmware)
 
 </div>
 
@@ -115,6 +116,10 @@ Using Music Assistant's DSP equalizer can significantly improve the sound qualit
 
 </div>
 
+!!! Warning "DSP & Snapcast Speaker Grouping"
+
+    All speakers in a Snapcast group will adopt the main speaker's DSP equalizer settings.  In the future we will have individual equilizers built-in to the Sat1.
+
 ---
 
 ## Snapcast Multi-Room Music Playback & Dynamic Grouping
@@ -144,9 +149,11 @@ This will enable you to dynamically add or remove speakers to a group for synchr
     ![Add or Remove Speakers from group](/assets/MA_select_speaker_groupings.png){ loading=lazy }  
     Click in the blank area next to the song tile to expand and view all Snapcast speakers. Select or deselect speakers to add or remove them from the group.
 
-    !!! Info "Sat1 Snapcast Speaker Drifting Out of Sync or Stuttering?"
-        - Restart Music Assistant (this restarts the Snapserver)
-        - Restart Sat1 (ensure your Sat1 is running the latest firmware)
+    !!! Info "Sat1 Snapcast Speaker(s) Drifting Out of Sync or Stuttering?"
+        - Restart Music Assistant (this restarts the Snapserver).
+        - Restart Sat1
+        - Turn off Music Assistant DSP Equalizer on all speakers
+        - Run your own Snapserver instead of the one built-in to Music Assistant 
         - Make sure your Sat1 has a good Wi-Fi connection
 
 </div>
