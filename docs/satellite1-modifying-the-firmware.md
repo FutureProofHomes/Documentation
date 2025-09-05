@@ -1,6 +1,12 @@
-The firmware running on the Satellite1 is [open source](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/LICENSE).  This means you can modify the firmware to build all kinds of amazing things with it!  All we ask contribute back the FutureProofHomes community by submitting pull requests to the [Satellite1-ESPHome](https://github.com/FutureProofHomes/Satellite1-ESPHome) repository.
+The firmware running on the Satellite1 is [open source](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/LICENSE).  All we ask contribute back the FutureProofHomes community by submitting pull requests to the [Satellite1-ESPHome](https://github.com/FutureProofHomes/Satellite1-ESPHome) repository.  You may want to modify and flash your custom firmware on the Sat1 to do the following:
 
-??? Warning "After taking control of your device's firmware you will no longer receive officail firmware updates. If you'd like to get back in sync with the official Sat1 firmware you'll need to [restore factory firmware back to the Sat1](/satellite1-faqs#faq_anchor_factory_reset)."
+- Hardcode your Wifi SSID & Password
+- Hardcode the Snapserver's IP address
+- Add custom wake words
+- Hide or show more logs for deep troubleshooting
+- Change or extend the core functionality in any way you desire.
+
+??? Warning "After taking control of your device's firmware you will no longer receive official firmware updates. If you'd like to get back in sync with the official Sat1 firmware you'll need to [restore factory firmware back to the Sat1](/satellite1-faqs#faq_anchor_factory_reset)."
 
 ??? Warning "Please also be aware that flashing custom firmware can potentially damage the Sat1 device. These instructions are provided with the understanding that you have the necessary expertise to proceed. We will assume a certain level of familiarity with the process. Proceed with caution, and enjoy the journey!"
 
@@ -14,7 +20,7 @@ Specific Sat1 firmware releases can only be compiled with specific ESPHome versi
 | [v0.1.1](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.1)    | [2025.4.2](https://github.com/esphome/esphome/releases/tag/2025.4.2)  |
 
 
-## Import the Sat1 to your ESPHome Dashboard
+## Import the Sat1 to your ESPHome Dashboard and Take Control 
 
 NOTE: Your Home Assistant instance must have the ability to run "Add-Ons". If you cannot run add-ons, see alternate ways to run this software by [reading ESPHome's official documentation](https://esphome.io/guides/getting_started_hassio#installing-esphome-device-compiler).
 
