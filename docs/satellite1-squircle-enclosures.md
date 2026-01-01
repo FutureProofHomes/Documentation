@@ -15,7 +15,7 @@ The "Top Plate", "Diffuser Ring", "PCB Spacer" & "Lock Ring" are common parts th
   <figcaption>Cross-section of the Squircle Enclosure</figcaption>
 </figure>
 
-You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/Squircle%20Enclosures/Geometry%20Files) repository.  We cannot release CAD project files due to commercial licensing restrictions.
+You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/DIY%20Enclosures/Squircle%20Enclosures/Geometry%20Files) repository.  We cannot release CAD project files due to commercial licensing restrictions.
 
 ## Choose a Speaker and Enclosure Size
 
@@ -59,8 +59,8 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
 Download the appropriate pre-built `.3mf` project file and open in your favorite slicer software:
 
 <div class="grid cards" markdown>
-- [Download OrcaSlicer Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/OrcaSlicer%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
-- [Download Bambu Studio Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/Squircle%20Enclosures/Project%20Files/Bambu%20Studio%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
+- [Download OrcaSlicer Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/DIY%20Enclosures/Squircle%20Enclosures/OrcaSlicer%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
+- [Download Bambu Studio Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/DIY%20Enclosures/Squircle%20Enclosures/Bambu%20Studio%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
 </div>
 
 Remove unnecssary plates, depending on your speaker selection, enclosure type, and whether your printer supports multi-material or multi-part printing.
