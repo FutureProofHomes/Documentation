@@ -1,5 +1,4 @@
-## Overview
-The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 8mm screws.
+The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 8mm screws.  You 3D print the enclosure at home and separately purchase and install one of our recommended speakers based on your preference.
 
 <figure markdown="span">
   ![Squircle Enclosure Family](/assets/squircle-enclosure/family.jpg){ width="100%" }
@@ -52,6 +51,29 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
 
     * [DWEII 4pcs Mini Speaker Dupont Connectors](https://amzn.to/3HqLnEc)
     * [AOICRIE 2pcs 3 Watt Mini Dupont Connectors](https://amzn.to/3SSDtG6)
+</div>
+
+## Recommended Accessories
+
+<div class="grid cards" markdown>
+
+-  :material-numeric-1-circle:{ .lg .middle } 
+
+    ---
+
+    ![JST-XH cables](/assets/Accessories-jst.png){ loading=lazy }
+    The 2.54mm JST-XH 2-Pin Male Connector goes in-between the Satellite1's built-in amplifier and your selected speaker.
+
+    [Get it on Amazon](https://amzn.to/4ly9LDA){ .md-button .md-button--primary }
+
+-   :material-numeric-2-circle:{ .lg .middle } Spade connectors and a crimper tool
+
+    ---
+
+    ![Recommended Spade Connectors](/assets/Accessories-spade-connector.jpg){loading=lazy }
+    For the cleanest connection between the speaker and the JST-XH cable, we recommend using . If you prefer, you can solder the cable to the speaker terminals, or simply wrap the cable around the terminals—it’s entirely up to you.
+    [Get it on Amazon](https://amzn.to/47YbzBo){ .md-button .md-button--primary }
+
 </div>
 
 ## How to 3D Print the Enclosures

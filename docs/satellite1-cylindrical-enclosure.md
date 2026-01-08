@@ -1,6 +1,6 @@
 ## Cylindrical Dev Kit Enclosure
 
-The Satellite1 Cylendrical Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports [three recommended speakers](/satellite1-recommended-accessories/#speaker-and-connectors):
+The Satellite1 Cylindrical Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports three recommended speakers that you can purchase online:
 
 - Dayton Audio RS75-4 3" driver
 - Tectonic TEBM46C20N-4B BMR 3" driver
@@ -109,4 +109,5 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/26_ESP_port_close_up.JPG){ width="100%" }
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/27_ESP_port.JPG){ width="100%" }
 
-Congrats on building your own Satellite1 Dev Kit Speaker Enclosure!
+!!! success 
+    Congrats on building your own Satellite1 Dev Kit Cylindirical Speaker Enclosure!

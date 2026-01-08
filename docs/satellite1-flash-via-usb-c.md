@@ -1,7 +1,3 @@
-!!! warning "Flashing your Satellite1 will erase all data on the device, and optionally your WiFi credentials setting it back to factory settings.  I will not remove the Satellite1 from your Home Assistant server instance."
-
-## Flash your Satellite1 via USB-C Cable
-
 1. Use a data-capable USB-C cable and connect it directly to your computer.
 2. If the CORE is mounted to the HAT, plug into the HAT’s “CORE/ESP32” USB-C port. Otherwise, use the CORE’s USB-C port.
 3. Use the form below to flash Production or Beta firmware, with or without mmWave.

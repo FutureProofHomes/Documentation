@@ -1,6 +1,4 @@
-Sure, your new Satellite1 can control smart devices in your home, but what about streaming music?  
-
-This guide will show you how to stream music to one or many Sat1 devices around your home using Music Assistant, an open-source music player for Home Assistant that supports a wide range of providers, including Spotify, Apple Music, YouTube Music, and more.
+This guide will show you how to stream syncronized music to one or many Sat1 devices around your home using Music Assistant, an open-source music player for Home Assistant that supports a wide range of providers, including Spotify, Apple Music, YouTube Music, and more.
 
 ## Install Music Assistant
 There are a few ways to install Music Assistant. Please read more here:
@@ -47,6 +45,9 @@ If you don't care about synchronized multi-room music playback, this is a great 
     Go to MA **"Settings -> :material-speaker: icon"** and select **"Configure"**. Name your Sat1 and keep the HA settings at default.
 
 </div>
+
+!!! INFO "Sendspin Support Coming Soon"
+    Please stay tuned to future firmware updates.
 
 ---
 
@@ -118,7 +119,7 @@ Using Music Assistant's DSP equalizer can significantly improve the sound qualit
 
 !!! Warning "DSP & Snapcast Speaker Grouping"
 
-    All speakers in a Snapcast group will adopt the main speaker's DSP equalizer settings.  In the future we will have individual equilizers built-in to the Sat1.
+    When multiple speakers are added to a Snapcast group your Music Assistant DSP settings are not rendered.  We've opened a PR with Music Assistant to temporarily workaround this issue and in the future we will introduce Gain and EQ control directly within the Satellite1.
 
 ---
 
@@ -150,11 +151,11 @@ This will enable you to dynamically add or remove speakers to a group for synchr
     Click in the blank area next to the song tile to expand and view all Snapcast speakers. Select or deselect speakers to add or remove them from the group.
 
     !!! Info "Sat1 Snapcast Speaker(s) Drifting Out of Sync or Stuttering?"
-        - Restart Music Assistant (this restarts the Snapserver).
+        - Restart the Snapcast Server from Music Assistant's Music Provider settings
         - Restart Sat1
         - Turn off Music Assistant DSP Equalizer on all speakers
         - Run your own Snapserver instead of the one built-in to Music Assistant 
-        - Make sure your Sat1 has a good Wi-Fi connection
+        - Make sure your Sat1 has a reliable Wi-Fi connection
 
 </div>
 

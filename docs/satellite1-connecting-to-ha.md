@@ -1,4 +1,3 @@
-## Connect to Home Assistant Wirelessly via BLE Improv
 Your Satellite1 arrives pre-flashed from the factory and will boot into BLE improv mode with white sparkling LEDs.  Follow the steps below to connect to Home Assistant via Bluetooth.
 
 <div class="grid cards" markdown>
@@ -93,7 +92,7 @@ Once your **Sat1** is connected to **Home Assistant** you should familiarize you
     Inside your **Home Assistant**, head over to **"Settings -> Devices & Services -> ESPHome"** and click on your **Sat1** device.
 </div>
 <div class="grid cards" markdown>
--   :material-numeric-2-circle:{ .lg .middle } __Explore Sat1 settings__
+-   :material-numeric-2-circle:{ .lg .middle } __Explore Satellite1 settings__
 
     ---
 
