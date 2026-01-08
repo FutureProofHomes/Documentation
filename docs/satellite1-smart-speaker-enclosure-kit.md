@@ -1,16 +1,11 @@
 ## Smart Speaker Enclosure Kit
 
-The upcoming [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/products/satellite1-smart-speaker-enclosure-kit) converts your Satellite1 Dev Kit into a 2-way smart speaker. This guide explains how to assemble the kit are enjoy a powerful 2-way speaker and voice assistant.
+The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/products/satellite1-smart-speaker-enclosure-kit) is a complete kit that includes all the parts necessary to upgrade your existing [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit) into a two-way smart speaker. This guide explains how to assemble the kit and even print the enclsoure at home.
 
 <figure markdown="span">
   ![Smart Speaker Enclosure Kit Photoshoot](/assets/smart-speaker-enclosure-kit/white_gray_enclosure.jpg){ width="100%" }
   <figcaption>Optional "Charcoal Gray" or "Bone White" color choices</figcaption>
 </figure>
-
-## Assembly Requirements
-1. [Satellite1 Dev Kit](https://futureproofhomes.ai/products/satellite1-pcb-dev-kit)
-2. [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/products/satellite1-smart-speaker-enclosure-kit) (Coming very soon!)
-    
 
 ## Parts Included in Kit
 <figure markdown="span">
@@ -18,29 +13,31 @@ The upcoming [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.n
   <figcaption>Parts inside the Smart Speaker Enclosure Kit</figcaption>
 </figure>
 - 3D printed speaker enclosure
-    - Front & back piece
-    - Top plate & LED diffuser
-    - Screw-guide tool
-- 3" Full-range, bass heavy woofer (20W, 4Ω)
-- 1.2" Neodymium dome tweeter (20W, 4Ω)
+    - Front & back chamber piece (PETG 30% infill)
+    - Top plate, LED diffuser & screw-guide tool (PETG 15% infill)
+- 3" Full-range, bass heavy woofer (~20W, 4Ω)
+- 1.2" Neodymium dome tweeter (~20W, 4Ω)
 - 2-Way passive crossover
 - JST-XH cable
-- 2 Red 5.3mm speaker cables
-- 2 Black 2.8mm speaker cables
-- Adhesive sealing foam
-- M3 x 10mm mounting screws
-- Hex wrench
+- 2 pcs red 5.3mm speaker cables
+- 2 pcs black 2.8mm speaker cables
+- 1.3M Adhesive sealing foam
+- 24 pcs M3 x 10mm mounting screws
+- Long-handle Hex wrench
 
-## Tools not Included in Kit
+## Household Tools Required
 - Scissors
 - Small phillips head screwdriver
 - Needle nose pliers
 
-!!! warning "Dev Kit Enclosure Limitations"
+!!! warning "Dev Kit + Enclosure Limitations"
 
-    1. Please use the firmware's temperature & humidity offset capabilities to assist in more accurate readings from Hat's built-in sensors.
-    2. This enclosure does not support the Dev Kit’s top-mounted mmWave connectors. It also does not support the luminosity sensors, as installing the Dev Kit inside the enclosure significantly reduces light reaching the sensors.
-    3. When playing music at full volume the wake word may have difficulty hearing the room.  That said, this is our best performing enclosoure yet.
+    Dev Kits are designed for use on your electronics bench, but this enclosure kit pushes the dev kit to it's full potential, though a few limitations apply.
+
+    1. Use the firmware’s temperature & humidity offsets for the most accurate sensor readings.
+    2. The enclosure doesn’t support top-mounted mmWave connectors or the luminosity sensor.
+    3. At full volume, the wake word may not hear the room well, but this remains our best-performing enclosure yet!
+    4. Future expansion boards connecting to the hat's FX23L connectors aren’t supported with this enclosure design.
 
 <!-- # Watch the Instructional Video
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
@@ -143,7 +140,7 @@ The upcoming [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.n
 
 !!! success "Congratuations on Assembling your Satellite1 Smart Speaker!"
 
-    Plug-in with the Dev Kit's supplied 30W power USB-C power adapter and follow the necessary steps to [connect to Home Assistant](satellite1-connecting-to-ha.md), and then [stream some music](satellite1-streaming-music.md)!
+    Power up the speaker with the Dev Kit's supplied 30W power USB-C power adapter and follow the necessary steps to [connect to Home Assistant](satellite1-connecting-to-ha.md), and then [stream some music](satellite1-streaming-music.md)!
 
 ## Print-at-Home
 The 3D-printable 3MF project files, STL and STEP files are published online for anyone who wants to print or remix the enclosure at home.
