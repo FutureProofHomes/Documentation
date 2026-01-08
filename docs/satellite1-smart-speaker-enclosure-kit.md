@@ -1,4 +1,6 @@
-The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/products/satellite1-smart-speaker-enclosure-kit) converts your Satellite1 Dev Kit into a 2-way smart speaker. This guide explains how to assemble the kit are enjoy a powerful 2-way speaker and voice assistant.
+## Smart Speaker Enclosure Kit
+
+The upcoming [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/products/satellite1-smart-speaker-enclosure-kit) converts your Satellite1 Dev Kit into a 2-way smart speaker. This guide explains how to assemble the kit are enjoy a powerful 2-way speaker and voice assistant.
 
 <figure markdown="span">
   ![Smart Speaker Enclosure Kit Photoshoot](/assets/smart-speaker-enclosure-kit/white_gray_enclosure.jpg){ width="100%" }
@@ -7,7 +9,7 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/product
 
 ## Assembly Requirements
 1. [Satellite1 Dev Kit](https://futureproofhomes.ai/products/satellite1-pcb-dev-kit)
-2. [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/products/satellite1-smart-speaker-enclosure-kit)
+2. [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/products/satellite1-smart-speaker-enclosure-kit) (Coming very soon!)
     
 
 ## Parts Included in Kit
@@ -40,8 +42,8 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/product
     2. This enclosure does not support the Dev Kit's mmWave or luminosity sensors.
     3. When playing music at full volume the wake word may have difficulty hearing the room.  That said, this is our best performing enclosoure yet.
 
-# Watch the Instructional Video
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- # Watch the Instructional Video
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 ## Assemble the Kit
 <div class="grid cards" markdown>
@@ -147,7 +149,7 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.ai/product
 The 3D-printable STL and STEP files are published online for anyone who wants to print or remix the enclosure at home.  
 
 - [FutureProofHomes GitHub](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/OEM%20Enclosures/Satellite1%20Smart%20Speaker%20Enclosure%20Kit)
-- [MakerWorld](https://makerworld.com/de/models/2195101-futureproofhomes-oem-satellite1-smart-speaker) 
+- [MakerWorld](https://makerworld.com/de/models/2195101-futureproofhomes-oem-satellite1-smart-speaker) (Coming Soon!)
 
 !!! info "Parts not sold seperately outside of kit"
 
