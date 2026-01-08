@@ -36,10 +36,10 @@ The upcoming [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.n
 - Small phillips head screwdriver
 - Needle nose pliers
 
-!!! warning "Dev Kit Limitations"
+!!! warning "Dev Kit Enclosure Limitations"
 
-    1. Please use the software temperature & humidity offset capabilities when mounting the Dev Kit inside the enclosure.
-    2. This enclosure does not support the Dev Kit's mmWave or luminosity sensors.
+    1. Please use the firmware's temperature & humidity offset capabilities to assist in more accurate readings from Hat's built-in sensors.
+    2. This enclosure does not support the Dev Kit’s top-mounted mmWave connectors. It also does not support the luminosity sensors, as installing the Dev Kit inside the enclosure significantly reduces light reaching the sensors.
     3. When playing music at full volume the wake word may have difficulty hearing the room.  That said, this is our best performing enclosoure yet.
 
 <!-- # Watch the Instructional Video
@@ -146,15 +146,31 @@ The upcoming [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.n
     Plug-in with the Dev Kit's supplied 30W power USB-C power adapter and follow the necessary steps to [connect to Home Assistant](satellite1-connecting-to-ha.md), and then [stream some music](satellite1-streaming-music.md)!
 
 ## Print-at-Home
-The 3D-printable STL and STEP files are published online for anyone who wants to print or remix the enclosure at home.  
+The 3D-printable 3MF project files, STL and STEP files are published online for anyone who wants to print or remix the enclosure at home.
+
+#### Links
 
 - [FutureProofHomes GitHub](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/OEM%20Enclosures/Satellite1%20Smart%20Speaker%20Enclosure%20Kit)
 - [MakerWorld](https://makerworld.com/de/models/2195101-futureproofhomes-oem-satellite1-smart-speaker) (Coming Soon!)
 
-!!! info "Parts not sold seperately outside of kit"
+#### Printing Parameters
 
-    Due to supply chain complexities, we do not sell the enclosure, drivers, or other components separately if you choose to print the enclosure yourself.
+- We recommend using 0.4mm nozzle diameter and dry Bambu-grade PETG filament.
+- Use 3 wall perimeter and 30% cubicle infill for the front and back speaker chamber parts
+- Use 3 wall perimeter and 15% cubicle infill for the top, screw guide and diffuser
+- Print the diffuser in transparent PETG or even white PLA for the best results.
+- No supports required!
 
-!!! info "Finding Compatible Speakers"
+!!! info "Compatible Speaker Drivers"
 
-    The Satellite1 Smart Speaker Enclosure Kit uses high-quality drivers from LG.  If purchasing from online suppliers please watch out for counterfits and clones.  Because of this problem we don't have reliable links to purchase the exact drivers.  Please feel free to modify the enclsoure to fit your preferred speakers.  Enjoy!
+    The Satellite1 Smart Speaker Enclosure Kit is acoustically and mechanically engineered to work with a specific set of high-quality LG speaker drivers. These drivers were selected for their excellent sound quality, compatibility with the Satellite1 amplifier and crossover, and reliable availability in bulk from trusted suppliers.
+
+    Due to packaging and supply-chain complexities during launch, which can result in mismatches between available enclosures and speakers, we do not currently sell the speaker drivers or other electronic components separately. We may offer an “electronics-only” kit after launch.
+
+    If you choose to purchase the recommended speaker drivers from third-party online retailers, please be aware that counterfeit or cloned products do exist. Additionally, modifying the enclosure to accommodate alternative speaker drivers may affect sound quality and wake-word performance.
+
+    Have fun hacking!
+
+    - Tweeter MLT20-F4-S4830 (Sorry, no reliable supplier links we can confidently recommend.)
+    - Woofer MLW78-F4-R6015 (Sorry, no reliable supplier links we can confidently recommend.)
+    - [Crossover](https://amzn.to/49xXidZ) (Sorry, no reliable model number.)
