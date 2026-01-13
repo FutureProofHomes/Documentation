@@ -39,8 +39,8 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
     3. At full volume, the wake word may not hear the room well, but this remains our best-performing enclosure yet!
     4. Future expansion boards connecting to the hat's FX23L connectors aren’t supported with this enclosure design.
 
-<!-- # Watch the Instructional Video
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/WeOEl3jho1k?start=205" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+# Watch the Instructional Video
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=hVoAjQg8z2vWpCfw" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Assemble the Kit
 <div class="grid cards" markdown>
@@ -148,7 +148,7 @@ The 3D-printable 3MF project files, STL and STEP files are published online for 
 #### Links
 
 - [FutureProofHomes GitHub](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/OEM%20Enclosures/Satellite1%20Smart%20Speaker%20Enclosure%20Kit)
-- [MakerWorld](https://makerworld.com/de/models/2195101-futureproofhomes-oem-satellite1-smart-speaker) (Coming Soon!)
+- [MakerWorld](https://makerworld.com/de/models/2195101-futureproofhomes-oem-satellite1-smart-speaker)
 
 #### Printing Parameters
 
