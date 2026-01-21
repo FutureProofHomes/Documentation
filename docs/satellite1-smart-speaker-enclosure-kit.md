@@ -15,8 +15,8 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
 - 3D printed speaker enclosure
     - Front & back chamber piece (PETG 30% infill)
     - Top plate, LED diffuser & screw-guide tool (PETG 15% infill)
-- 3" Full-range, bass heavy woofer (~20W, 4Ω)
-- 1.2" Neodymium dome tweeter (~20W, 4Ω)
+- 3" Full-range, bass heavy woofer (15W RMS, 20W Peak @ 4Ω)
+- 1.2" Neodymium dome tweeter (15W RMS, 20W Peak @ 4Ω)
 - 2-Way passive crossover
 - JST-XH cable
 - 2 pcs red 5.3mm speaker cables
@@ -77,8 +77,8 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
     ![Image title](/assets/smart-speaker-enclosure-kit/crossover_wiring.jpg){ loading=lazy }
     1. Orient the crossover so no blue terminal faces south. 
 
-    2. Use a small phillips head screwdriver to connect the supplied JST-XH cable to the east-facing terminal. 
-    3. On the north and west terminals, secure the 5.3 mm red wires to positive (+) and the 2.8 mm black wires to negative (–). 
+    2. Use a small phillips head screwdriver to connect the supplied JST-XH cable to the west-facing terminal. 
+    3. On the north and east terminals, secure the 5.3 mm red wires to positive (+) and the 2.8 mm black wires to negative (–). 
     4. Optionally use the supplied jumpers to boost bass and/or treble.
 
 -   :material-numeric-5-circle:{ .lg .middle } __Install Crossover & Connect Speakers__
@@ -120,7 +120,7 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
 
     ---
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/connect_JST_cable_3.jpg){ loading=lazy }
+    ![Image title](/assets/smart-speaker-enclosure-kit/connect_JST_cable.jpg){ loading=lazy }
     ![Image title](/assets/smart-speaker-enclosure-kit/mounted_dev_kit.jpg){ loading=lazy }
     1. Press the Core and Hat PCBs firmly together ([see details here](satellite1-assembly.md)) and connect the JST-XH cable.
     
@@ -162,7 +162,7 @@ The 3D-printable 3MF project files, STL and STEP files are published online for 
 
     The Satellite1 Smart Speaker Enclosure Kit is acoustically and mechanically engineered to work with a specific set of high-quality LG speaker drivers. These drivers were selected for their excellent sound quality, compatibility with the Satellite1 amplifier and crossover, and reliable availability in bulk from trusted suppliers.
 
-    Due to packaging and supply-chain complexities during launch, which can result in mismatches between available enclosures and speakers, we do not currently sell the speaker drivers or other electronic components separately. We may offer an “electronics-only” kit after launch.
+    Due to packaging and supply-chain complexities during launch, we do not currently sell the speaker drivers or other electronic components separately. We do plan to offer an “electronics-only” kit after launch.
 
     If you choose to purchase the recommended speaker drivers from third-party online retailers, please be aware that counterfeit or cloned products do exist. Additionally, modifying the enclosure to accommodate alternative speaker drivers may affect sound quality and wake-word performance.
 
