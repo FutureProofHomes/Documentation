@@ -11,10 +11,11 @@ The firmware running on the Satellite1 is [open source](https://github.com/Futur
 ??? Warning "Please also be aware that flashing custom firmware can potentially damage the Sat1 device. These instructions are provided with the understanding that you have the necessary expertise to proceed. We will assume a certain level of familiarity with the process. Proceed with caution, and enjoy the journey!"
 
 ## ESPHome Compatibility Matrix
-Specific Sat1 firmware releases can only be compiled with specific ESPHome versions.
+Specific Sat1 firmware are compatible with specific ESPHome versions.  If you need to install an older/legacy version of ESPHome Device Builder we recommend the [Legacy ESPHome add-on](https://github.com/khenderick/esphome-legacy-addons?tab=readme-ov-file#how-to-install).
 
-| Sat1 Release      | ESPHome Version                          |
+| Sat1 Release      | Official ESPHome Release      |
 | ----------- | ------------------------------------ |
+| [v0.1.5](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.5-beta.1)    | [2025.12.7](https://github.com/esphome/esphome/releases/tag/2025.12.7) |
 | [v0.1.4](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.4-beta.0)    | [2025.10.5](https://github.com/esphome/esphome/releases/tag/2025.10.5) |
 | [v0.1.3](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.3)    | [2025.5.2 - 2025.7.5](https://github.com/esphome/esphome/releases/tag/2025.7.5) |
 | [v0.1.2](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.2)    | [2025.5.2](https://github.com/esphome/esphome/releases/tag/2025.5.2) |
@@ -25,8 +26,8 @@ Specific Sat1 firmware releases can only be compiled with specific ESPHome versi
 
 NOTE: Your Home Assistant instance must have the ability to run "Add-Ons". If you cannot run add-ons, see alternate ways to run this software by [reading ESPHome's official documentation](https://esphome.io/guides/getting_started_hassio#installing-esphome-device-compiler).
 
-1. <b>Ensure you're running the correct ESPHome Device Builder version that follows the above ESPHome compatibility matrix:</b>
-<br>[Install ESPHome Device Builder](https://github.com/khenderick/esphome-legacy-addons){ .md-button .md-button--primary }
+1. <b>Install the appropriate ESPHome Device Builder version using the compatibility matrix above:</b>
+<br>[Install Legacy ESPHome Device Builder](https://github.com/khenderick/esphome-legacy-addons?tab=readme-ov-file#how-to-install){ .md-button .md-button--primary }
 
 2. <b>After the install is complete click "Open Web UI":</b>
 <br>![Open WebUI](/assets/esphome_device_builder/1_open_ui.png){ width="100%" loading=lazy }</br>
