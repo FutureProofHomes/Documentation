@@ -35,11 +35,16 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
     Dev Kits are designed for use on your electronics bench, but this enclosure kit pushes the dev kit to it's full potential, though a few limitations apply.
 
     1. Use the firmware’s temperature & humidity offsets for the most accurate sensor readings.
-    2. The enclosure doesn’t support top-mounted mmWave connectors or the luminosity sensor.
-    3. At full volume, the wake word may not hear the room well, but this remains our best-performing enclosure yet!
+    2. The enclosure does not yet support top-mounted mmWave connectors or the luminosity sensor.
+    3. At full volume, the wake word may not hear the perfectly.  Still the wake word should respond if the enclosure is airtight and not on a vibrating strucutre.
     4. Future expansion boards connecting to the hat's FX23L connectors aren’t supported with this enclosure design.
 
 # Watch the Instructional Video
+
+!!! danger "Important Correction to Video Tutorial"
+
+    The crossover is incorrectly oriented in the video.  Rotate it 180° before installing.  [Follow photos and documentation below.](#assemble-the-kit)
+
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=hVoAjQg8z2vWpCfw" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Assemble the Kit

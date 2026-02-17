@@ -274,6 +274,11 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
     ![Rotate Parts to Unlock](/assets/squircle-enclosure/IMG_6814-min.jpg){ loading=lazy }
     Screw your chosen speaker to its corresponding faceplate with four M3 x 8mm screws. Connect the speaker cable to the speaker. (NOTE: You can solder or wrap the speaker cables if absolutely necessary.)
 
+    !!! info "Rotate Speaker to Fit"
+
+        If you are building the medium-size speaker enclosure with the "Triple Plate", rotate the speaker 10° clockwise or counterclockwise until the mounting holes align.
+
+
 -   :material-numeric-8-circle:{ .lg .middle } Screw Down Faceplate
 
     ---
