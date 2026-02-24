@@ -19,11 +19,12 @@ While we hope this documentation will answer all your questions, we realize supp
 
 !!! question "Have a general question and need quick help from the community?"
 
-    [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.gg/BeBjWEPzMV){ .md-button }
+    [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.futureproofhomes.net){ .md-button }
 
-!!! success "Do you have a feature request you'd love to see?"
-    Look through our existing Feature Requests first, then open a new request if necessary: <br>
-    [Request a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
+!!! success "Do you have a feature request or reproducable bug?"
+    Look through our existing tickets first, then open a new request if necessary: <br>
+    [Request a feature on GitHub :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
+    [Report a bug :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
 
-!!! bug "Have you found a reproducible issue with the hardware or software?"
-    [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
+!!! failure "Hardware issue or need direct support?"
+    [Email Support@futureproofhomes.net :material-email:](mailto:Support@FutureProofHomes.net){ .md-button }

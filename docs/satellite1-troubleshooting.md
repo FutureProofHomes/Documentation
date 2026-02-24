@@ -59,13 +59,14 @@ assist_pipeline:
 
 While we hope this documentation will answer all your questions, but we realize support is sometimes needed.  The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
 
-!!! question "Have a general question and need quick help from the community?"
+!!! question "Have a question and need quick help from the community?"
 
-    [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.gg/BeBjWEPzMV){ .md-button }
+    [:fontawesome-brands-discord: Chat with the Community on Discord](https://discord.futureproofhomes.net){ .md-button }
 
-!!! success "Do you have a feature request you'd love to see?"
-    Look through our existing Feature Requests first, then open a new request if necessary: <br>
-    [Request a New Feature on Github :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
+!!! success "See something to can change in the code"
+    [:fontawesome-solid-rocket: Request a New Feature on Github](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button } <br><br>
+    [:fontawesome-solid-bug: Report a Bug on Github](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
 
-!!! bug "Have you found a reproducible issue with the hardware or software? "
-    [Report a Bug on Github :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
+!!! bug "Community can't help or believe you have defective hardware?"
+    [:material-email: E-mail Support@futureproofhomes.net](mailto:Support@FutureProofHomes.net){ .md-button }
+    

@@ -9,16 +9,6 @@
 
     [If you want to look at the logs, click here](/satellite1-troubleshooting/#inspecting-sat1-esp32-logs){ .md-button .md-button--primary }
 
-<a id="faq_anchor_temp_sensor"></a>
-???+ note "Why is the temp sensor incorrect?"
-
-    The temperature/humidity sensor is placed on the HAT near other warm components which cause the sensor to run hot. Look at the Sat1 settings and set a negative offset to compensate for this issue. Logically, if you put the Sat1 in the ceiling you're going to be getting the temperature for your attic, and if you place Sat1 in an enclosure you'll be getting the internal temperature.
-
-    There are two key things to remember here:
-
-    1. This is a "Dev Kit" and the sensors are on the device for development purposes.
-    2. We are working on advanced enclosures which will place sensors in the correct location. Stay tuned.
-
 <a id="faq_anchor_wake_words"></a>
 ???+ note "What wake words are supported?"
     
@@ -27,22 +17,48 @@
 <a id="faq_add_more_wake_words"></a>
 ???+ note "How do I add other wake words to the Sat1?"
 
-    If you're a developer you can modify [the Sat1 firmware](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/3c4ff992ce5a7d21c2ff5dd76fc711d3b8321a94/config/common/voice_assistant.yaml#L46-L50) and add other compatible [MicroWakeWord models](https://github.com/esphome/micro-wake-word-models) or even [create your own custom wake word.](https://github.com/kahrendt/microWakeWord/blob/november-update/notebooks/basic_training_notebook.ipynb) 
-    <br><br><b>NOTE:</b> The more wake words you add to the firmware the less resouces your Sat1 has for other tasks.
+    You'll need to [modify and compile your own Satellite1 firmware](/satellite1-modifying-the-firmware/) to add alternate compatible MicroWakeWords.  We recommend TaterTotterson's collection: 
+    
+    1. https://github.com/TaterTotterson/microWakeWords
+
+<a id="faq_create_custom_wake_word"></a>
+???+ note "How do create my own wake word?"
+
+    You will need a GPU, knowledge, and sample data to train your own wake word.  Enjoy the journey and share what you create.  We recommend TaterTotterson's work: 
+    
+    1. https://github.com/TaterTotterson/microWakeWord-Trainer-Nvidia-Docker
+    2. https://github.com/TaterTotterson/microWakeWord-Trainer-AppleSilicon
 
 <a id="faq_anchor_wake_word_success"></a>
 ???+ note "The wake word isn't always responding!"
     
-    1. Try both "Okay Nabu" and "Hey Jarvis".
-    2. "Okay Nabu" is more trained and may have a higher success rate.
-    3. Speak normally. Don't scream.
-    4. Also. Don't. Speak. Like. a Robot. Just be normal.
-    5. Don't lean into the speaker. Stand a normal 2+ feet away.
-    6. Make sure the microphones are not obstructed and that the device is not tucked in a shelf or something similar which causes sound reflection. Same goes with marble floors that cause echoes in the room.
-    7. If you have an accent it's going to be harder, but not impossible.
-    8. If you have loud water running, wind blowing, kids screaming, oven hoods running... you're gonna have a bad time.
+    1. Try both "Okay Nabu" and "Hey Jarvis" wake word.
+    2. Increase the "Wake Word Sensitity" setting in the Sat1 ESPHome Device settings.
+    3. Speak normally. Project your voice in the direction of the microphones. Don't scream.
+    4. Ensure the microphones are unobstructed and the device isn’t placed in an enclosed space (like a shelf) or in a room with highly reflective surfaces (such as marble floors) that can cause echoes.
+    5. Wake word detection may be more challenging for non-English speakers with accents or for higher-pitched voices (such as some women and children), as the wake words are not specifically trained for these voice profiles.  Read above to consider training your own wake word.
+    6. Loud background noise—such as running water, wind, children shouting, oven hoods, or a TV—can significantly interfere with wake word detection, though XMOS firmware updates will continue to improve performance in these challenging conditions over time.
+    7. Try creating your own wake word (See FAQ above)
 
     Still having issues? This will get better in time. We have lots of ideas to solve these problems.
+
+<a id="faq_anchor_no_sound"></a>
+???+ note "Why don’t I hear any audio through the speaker?"
+
+    Ensure you're powering your Satellite1 using the USB-C port on the HAT labeled "CORE/ESP32".
+    
+    The other USB-C port on the HAT labeled "XMOS/SNDCARD" is intended for XMOS development only and will not enable the amplifier.
+
+<a id="faq_anchor_distorted_sound"></a>
+???+ note "Why does my speaker sound crackly, distored and possibly blown?"
+
+    Your Sat1 is likely under-powered.  Check your "USB-C Power Draw" Sensor in the Sat1's ESPHome UI.  You should see approx. 30W of power.
+
+<a id="faq_anchor_speaker_too_quiet"></a>
+???+ note "My Sat1 speaker is too quiet.  I want moar boom in my music!"
+
+    1. Ensure your Sat1 is receiving at least 30W or more of power by checking the "USB-C Power Draw" sensor in its ESPHome UI.
+    2. In Music Assistant, open the Sat1 speaker’s Player Settings, disable both "Enable volume normalization (EBU-R128 based)" and "Enable limiting to prevent clipping" checkboxes, then increase the gain in Music Assistant’s DSP [(read more here)](/satellite1-streaming-music/#start-the-snapcast-server).
 
 <a id="faq_anchor_report_issue"></a>
 ???+ note "How do I get help or report issues?"
