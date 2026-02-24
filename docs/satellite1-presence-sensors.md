@@ -1,4 +1,4 @@
-The Satellite1 HAT has two ports for optionally mounting either the LD2410 or LD2450 mmWave human presence detecting radar sensors.  These sensors have different possibilities, and suit different needs.  Depending on the sensor your choose you must flash the appropriate firmware to the Satellite1 using a USB-C cable.
+The Satellite1 HAT has two ports for optionally mounting either the LD2410 or LD2450 mmWave human presence detecting radar sensors.  These sensors have different possibilities, and suit different needs.  Depending on the sensor you choose you must flash the appropriate firmware to the Satellite1 using a USB-C cable.
 
 [Flash your appropriate mmWave firmware](satellite1-flash-via-usb-c.md#re-flashing-your-satellite1-via-a-usb-c-cablef){ .md-button .md-button--primary }
 
@@ -34,21 +34,21 @@ When the sensor is directly mounted to the Dev Kit it will point in the directio
 We're working on better solutions for mmWave mounting in the future, one of which is our upcoming [PoE Shoe module](satellite1-poe-shoe-module-overview.md).
 
 !!! info "Cylindrical Enclosure Fits mmWave"
-    Currently only our [Cylendrical Enclosure](satellite1-cylindrical-enclosure.md) fits mmWave sensors mounted directly to the Hat.
+    Currently only our [Cylindrical Enclosure](satellite1-cylindrical-enclosure.md) fits mmWave sensors mounted directly to the Hat.
 
 ### Understanding mmWave 
-1. **Gate**: these sensors use a "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as of "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
+1. **Gate**: these sensors use a "gate" as definition of distance range. This is some range of distance, which can be tuned separately from others. Think of it as an "onion" layer, with center on sensor. There are 8 gates on LD2410 (plus gate 0, but it's effectively useless).
 2. **Distance Resolution**: the "thickness" of one gate. The LD2410 can have resolution of 75cm or 20cm per gate. With resolution of 75cm per gate, maximum distance is `0.75 * 8 =` 6 meters (sorry my Imperial-units-friends), while with 20cm it's 1.6 meters. But with latter you can achieve much better precision.
-3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving - the more will energy there will be.
+3. **Energy**: basically "amount of presence" in the gate. The more actively you're moving—the more energy there will be.
 
 
 #### Configuration
-Don't be overwhelmed with several dozens new entities that appeared after installation. They all are useful, and after fine-tuning the sensor you can disable those you not need.
-Let's familarize ourselves with some useful entities:
+Don't be overwhelmed with several dozen new entities that appeared after installation. They all are useful, and after fine-tuning the sensor you can disable those you not need.
+Let's familiarize ourselves with some useful entities:
 
 1.  Binary sensors:
     1. **Moving target** - sensor of moving target presence.
-    2. **Still target** - still presemce sensor. Mostly off, when moving target is present.
+    2. **Still target** - still presence sensor. Mostly off, when moving target is present.
     3. **Presence** - main presence sensor. Populated by other two, with cooldown (see **Timeout** below).
 2. Sensors:
     1. **Moving/still distance** - sensors of the distance to corresponding target.
@@ -60,8 +60,8 @@ Let's familarize ourselves with some useful entities:
     1. **Distance resolution** - you can choose gate length 0.75m or 0.2m
 5. Numbers:
     1. **Timeout** - will set the cooldown period for sensor (time from last presence detected to main presence sensor switching into "off" state).
-    2. **Max moving/still distance gate** - will restrict sensor to certail distance. E.g. if it's set to 6, and distance resolution is 0.75 - max sensor triggering distance will be 4.5 meters.
-    3. **G(1-8) moving/still threshold**  - this setting will set the threshold for presence detection for each gate (movement or still presence respectively). If amoung of energy for corresponding gate will be greater than this threshold - sensor will feel presence in that gate.
+    2. **Max moving/still distance gate** - will restrict sensor to a certain distance. E.g. if it's set to 6, and distance resolution is 0.75 - max sensor triggering distance will be 4.5 meters.
+    3. **G(1-8) moving/still threshold**  - this setting will set the threshold for presence detection for each gate (movement or still presence respectively). If the amount of energy for the corresponding gate is greater than this threshold—the sensor will detect presence in that gate.
   
 #### Calibration
 The idea is simple: 
@@ -74,7 +74,7 @@ The idea is simple:
     - It won't work in rooms with fans, or when it has dishwasher, or even running water in sight.
 
 - Set the maximum gate based on room length. If you struggle with correct number, just wave hands or jump in opposite corner, see which gate detects movement, and set that number to **Max moving/still distance gate**. (Don't hesitate, set threshold a bit higher - that energy values can jump!)
-- And finally, calibrate it for no presence: step out, let it set down for a bit (like a minute), and adjust moving and still thresholds, so they would be higher than energy levels for corresponding gates.
+- And finally, calibrate it for no presence: step out, let it settle for a bit (like a minute), and adjust moving and still thresholds, so they would be higher than energy levels for corresponding gates.
 
 #### Helpful Calibration Card
 We built UI card, to make calibration process more intuitive.

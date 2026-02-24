@@ -8,4 +8,4 @@ Set up helpful [blueprint automations](https://www.home-assistant.io/docs/automa
 
 
 ### Contribute Your Blueprints
-Want to contribute? Submit a PR to Blueprints to the [GitHub repository](https://github.com/FutureProofHomes/Satellite1-HA-Automations) and we'll add it to the list!
+Want to contribute? Submit a PR with your blueprints to the [GitHub repository](https://github.com/FutureProofHomes/Satellite1-HA-Automations) and we'll add it to the list!

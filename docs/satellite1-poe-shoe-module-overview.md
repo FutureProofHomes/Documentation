@@ -5,8 +5,8 @@ If you're familiar with the Satellite1 Dev Kit, you know it consists of two PCB 
 The PoE SHOE Module will unlock the following features:
 
 - Provides Power-over-Ethernet (PoE) to the Satellite1 that will power on the product and supply wired networking.
-- Allows to relocate the mmWave inside the speaker chamber and position it any angle towards the room.
-- Allows to relocate the temperature/humidity sensor inside the speaker chamber.
+- Allows you to relocate the mmWave inside the speaker chamber and position it any angle towards the room.
+- Allows you to relocate the temperature/humidity sensor inside the speaker chamber.
 - Includes a QWIIC connector to support tons of external sensors from Sparkfun
  
 <figure markdown="span">

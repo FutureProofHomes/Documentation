@@ -1,6 +1,6 @@
 ## Smart Speaker Enclosure Kit
 
-The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/products/satellite1-smart-speaker-enclosure-kit) is a complete kit that includes all the parts necessary to upgrade your existing [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit) into a two-way smart speaker. This guide explains how to assemble the kit and even print the enclsoure at home.
+The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/products/satellite1-smart-speaker-enclosure-kit) is a complete kit that includes all the parts necessary to upgrade your existing [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit) into a two-way smart speaker. This guide explains how to assemble the kit and even print the enclosure at home.
 
 <figure markdown="span">
   ![Smart Speaker Enclosure Kit Photoshoot](/assets/smart-speaker-enclosure-kit/white_gray_enclosure.jpg){ width="100%" }
@@ -32,11 +32,11 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
 
 !!! warning "Dev Kit + Enclosure Limitations"
 
-    Dev Kits are designed for use on your electronics bench, but this enclosure kit pushes the dev kit to it's full potential, though a few limitations apply.
+    Dev Kits are designed for use on your electronics bench, but this enclosure kit pushes the dev kit to its full potential, though a few limitations apply.
 
     1. Use the firmware’s temperature & humidity offsets for the most accurate sensor readings.
     2. The enclosure does not yet support top-mounted mmWave connectors or the luminosity sensor.
-    3. At full volume, the wake word may not hear the perfectly.  Still the wake word should respond if the enclosure is airtight and not on a vibrating strucutre.
+    3. At full volume, the wake word may not be heard perfectly.  Still the wake word should respond if the enclosure is airtight and not on a vibrating structure.
     4. Future expansion boards connecting to the hat's FX23L connectors aren’t supported with this enclosure design.
 
 # Watch the Instructional Video
@@ -45,7 +45,7 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
 
     The crossover is incorrectly oriented in the video.  Rotate it 180° before installing.  [Follow photos and documentation below.](#assemble-the-kit)
 
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=hVoAjQg8z2vWpCfw" title="Satellite1 Smart Speaker Enclsoure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=hVoAjQg8z2vWpCfw" title="Satellite1 Smart Speaker Enclosure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Assemble the Kit
 <div class="grid cards" markdown>
@@ -62,7 +62,7 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
     ---
 
     ![Image title](/assets/smart-speaker-enclosure-kit/apply_sealing_foam.jpg){ loading=lazy }
-    Adhere the sealing foam around the parameter of the front enclosure piece, tweeter and woofer.  Cut any excess foam with scissors and keep for later.
+    Adhere the sealing foam around the perimeter of the front enclosure piece, tweeter and woofer.  Cut any excess foam with scissors and keep for later.
     
 
 -   :material-numeric-3-circle:{ .lg .middle } __Install Speaker Drivers__
@@ -140,10 +140,10 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
     ![Image title](/assets/smart-speaker-enclosure-kit/mount_top_piece.jpg){ loading=lazy }
     1. Snap the LED diffuser into the top piece.
 
-    2. Lightly push the top piece assembly down on the enclsoures 4 ball joints making sure the headphone jack opening is facing the rear.
+    2. Lightly push the top piece assembly down on the enclosure's 4 ball joints making sure the headphone jack opening is facing the rear.
 </div>
 
-!!! success "Congratuations on Assembling your Satellite1 Smart Speaker!"
+!!! success "Congratulations on Assembling your Satellite1 Smart Speaker!"
 
     Power up the speaker with the Dev Kit's supplied 30W power USB-C power adapter and follow the necessary steps to [connect to Home Assistant](satellite1-connecting-to-ha.md), and then [stream some music](satellite1-streaming-music.md)!
 

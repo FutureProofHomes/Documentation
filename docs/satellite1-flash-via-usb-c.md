@@ -41,7 +41,7 @@
     ---
 
     ![Image title](/assets/ConfigureWifi.png){ loading=lazy }
-    Select your **2.4ghz WiFi** network and click **"Connect"**.  Your **Sat1** device will begin sparkling blue while attempting to connect. If you don't see your WiFi network then click the **refresh icon** on the top right to scan for networks again.
+    Select your **2.4 GHz WiFi** network and click **"Connect"**.  Your **Sat1** device will begin sparkling blue while attempting to connect. If you don't see your WiFi network then click the **refresh icon** on the top right to scan for networks again.
 
 -   :material-numeric-6-circle:{ .lg .middle } __Connected to WiFi__
 

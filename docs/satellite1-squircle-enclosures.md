@@ -14,7 +14,7 @@ The "Top Plate", "Diffuser Ring", "PCB Spacer" & "Lock Ring" are common parts th
   <figcaption>Cross-section of the Squircle Enclosure</figcaption>
 </figure>
 
-You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/DIY%20Enclosures/Squircle%20Enclosures/Geometry%20Files) repository.  We cannot release CAD project files due to commercial licensing restrictions.
+You can inspect individual .STEP and .STL files in the [Satellite1-Enclosures](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/DIY%20Enclosures/Squircle%20Enclosures/Geometry%20Files) repository.  We cannot release CAD project files due to commercial licensing restrictions.
 
 ## Choose a Speaker and Enclosure Size
 
@@ -71,7 +71,7 @@ You can inpect individual .STEP and .STL files in the [Satellite1-Enclosures](ht
     ---
 
     ![Recommended Spade Connectors](/assets/Accessories-spade-connector.jpg){loading=lazy }
-    For the cleanest connection between the speaker and the JST-XH cable, we recommend using . If you prefer, you can solder the cable to the speaker terminals, or simply wrap the cable around the terminals—it’s entirely up to you.
+    For the cleanest connection between the speaker and the JST-XH cable, we recommend using spade connectors. If you prefer, you can solder the cable to the speaker terminals, or simply wrap the cable around the terminals—it’s entirely up to you.
     [Get it on Amazon](https://amzn.to/47YbzBo){ .md-button .md-button--primary }
 
 </div>
@@ -85,7 +85,7 @@ Download the appropriate pre-built `.3mf` project file and open in your favorite
 - [Download Bambu Studio Project](https://github.com/FutureProofHomes/Satellite1-Enclosures/raw/refs/heads/main/DIY%20Enclosures/Squircle%20Enclosures/Bambu%20Studio%20-%20Squircle%20Enclosure.3mf){ .md-button .md-button--primary }
 </div>
 
-Remove unnecssary plates, depending on your speaker selection, enclosure type, and whether your printer supports multi-material or multi-part printing.
+Remove unnecessary plates, depending on your speaker selection, enclosure type, and whether your printer supports multi-material or multi-part printing.
 
 <figure markdown="span">
   ![Squircle Enclosure Overview](/assets/squircle-enclosure/slicer_software_screenshot.png){ width="100%" }
@@ -94,7 +94,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
 
 !!! info "Recommend PETG-HF"
 
-    We recommend PETG-HF with 30% infill for ideal for acoustics. PLA with 15% infill will work as well.
+    We recommend PETG-HF with 30% infill for ideal acoustics. PLA with 15% infill will work as well.
 
 !!! info "No Supports Required"
 
@@ -106,7 +106,7 @@ Remove unnecssary plates, depending on your speaker selection, enclosure type, a
 
 !!! warning "Sensors are not supported, yet"
 
-    Enclosing a "Dev Kit" affects sensor accuracy—lux, temperature, and humidity readings won’t reflect the room, and the top plate is not designed to support mmWave sensors.  Our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md) and an PoE mid-plate will relocate the sensors into the speaker chamber and add a PoE port to the enclosure.
+    Enclosing a "Dev Kit" affects sensor accuracy—lux, temperature, and humidity readings won’t reflect the room, and the top plate is not designed to support mmWave sensors.  Our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md) and a PoE mid-plate will relocate the sensors into the speaker chamber and add a PoE port to the enclosure.
 
 !!! warning "When playing music at full volume the wake word may not respond"
 

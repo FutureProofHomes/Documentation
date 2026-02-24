@@ -73,7 +73,7 @@ Common questions and step-by-step fixes in one place.
 ??? note "How do I inspect audio recordings?"
     Store a copy of your audio recordings on the Home Assistant server for inspection:
 
-    1. Add to `configuration.yaml`:
+    1. In Home Assistant, add to your `configuration.yaml`:
 
     ```yaml
     assist_pipeline:
@@ -87,7 +87,7 @@ Common questions and step-by-step fixes in one place.
 
 ## Hardware & Recovery
 
-### How do I completely remove the Sat1 from Home Assistnat & ESPHome? { .faq-question }
+### How do I completely remove the Sat1 from Home Assistant & ESPHome? { .faq-question }
 ??? note "How do I completely remove the Sat1 from Home Assistant & ESPHome?"
     1. In Home Assistant: **Settings → Devices and Services → ESPHome** → 3 dots next to the Satellite1 → **Delete**.
         ![Delete ESPHome device](/assets/delete_sat1_esp_device.png){ width="100%" }
@@ -119,7 +119,7 @@ While we hope this documentation will answer all your questions, we realize supp
 
     [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.futureproofhomes.net){ .md-button }
 
-!!! success "Do you have a feature request or reproducable bug?"
+!!! success "Do you have a feature request or reproducible bug?"
     Look through our existing tickets first, then open a new request if necessary: <br>
     [Request a feature on GitHub :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
     [Report a bug :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }

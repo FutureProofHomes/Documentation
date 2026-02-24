@@ -1,7 +1,7 @@
-This guide will show you how to stream multi-room syncronized music to one or many Sat1 devices around your home using [Music-Assistant.io](https://www.music-assistant.io/).  You can stream from Spotify, Apple Music, Tidal etc.  And your Sat1 speaker can operate as a Spotify Connect speaker or Airplay speaker so you can stream music directly from your phone.
+This guide will show you how to stream multi-room synchronized music to one or many Sat1 devices around your home using [Music-Assistant.io](https://www.music-assistant.io/).  You can stream from Spotify, Apple Music, Tidal etc.  And your Sat1 speaker can operate as a Spotify Connect speaker or Airplay speaker so you can stream music directly from your phone.
 
 ## Install Music Assistant
-There are a many ways to install Music Assistant in your home.  Read their documentation to get started.
+There are many ways to install Music Assistant in your home.  Read their documentation to get started.
 
 [Install Music Assistant](https://www.music-assistant.io/installation/){ .md-button .md-button--primary }
 
@@ -25,7 +25,7 @@ We recommend connecting your Sat1 to Music Assistant using the built-in Snapcast
 - **Stereo Pair** – Connect two Satellite1 speakers as a left/right stereo pair.
 - **Multi-Room Audio** – Sync two or more Satellite1 speakers for synchronized playback across multiple rooms (similar to Sonos).
 
-_NOTE: Yes we plan to support Nabu Casa's Sendspin protocol after futher development.  However, as of Feb 2026 we find Snapcast to be more reliable._
+_NOTE: Yes we plan to support Nabu Casa's Sendspin protocol after further development.  However, as of Feb 2026 we find Snapcast to be more reliable._
 
 <div class="grid cards" markdown>
 

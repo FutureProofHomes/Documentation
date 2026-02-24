@@ -68,7 +68,7 @@ Keep in mind that running fully local Generative AI LLMs is not for the faint of
 
 If you’re ready to take on the challenge, [here are some tutorial videos to help you get started](https://www.youtube.com/results?search_query=ollama+llama+home+assistant). Good luck!
 
-???+ abstract "Ollama AI Powered Conversation Agent (Free, requires a GPU, and can be hard to set up with simi-reliable function calling.)"
+???+ abstract "Ollama AI Powered Conversation Agent (Free, requires a GPU, and can be hard to set up with semi-reliable function calling.)"
     [Set up Ollama Conversation Agent](https://www.home-assistant.io/integrations/ollama/){ .md-button .md-button--primary }
 
 
@@ -82,7 +82,7 @@ If you’re ready to take on the challenge, [here are some tutorial videos to he
 ???+ abstract "OpenAI ChatGPT Conversation Agent (Expensive, and not open at all, despite the marketing name, and will collect your data.)"
     [Set up OpenAI ChatGPT Conversation Agent](https://www.home-assistant.io/integrations/openai_conversation/){ .md-button .md-button--primary }
 
-NOTE: The following prompt has perfomed well with both OpenAI and Google's conversation agents.
+NOTE: The following prompt has performed well with both OpenAI and Google's conversation agents.
 
 ```
 Your name is Jarvis and you are a voice assistant for Home Assistant.

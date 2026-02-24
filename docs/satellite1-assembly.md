@@ -24,4 +24,4 @@ You'll notice a standard Raspberry Pi 40-pin header on the Hat board (marked in 
 
 2. Upon first boot, you will see a blue LEDs count down clockwise as the device flashes the XMOS audio processor.
 
-3. Finally, the LEDs will begin to sparkle a warm white color. Congrations! [Click here to connect your Satellite1 to Home Assistant.](satellite1-connecting-to-ha.md)
+3. Finally, the LEDs will begin to sparkle a warm white color. Congratulations! [Click here to connect your Satellite1 to Home Assistant.](satellite1-connecting-to-ha.md)

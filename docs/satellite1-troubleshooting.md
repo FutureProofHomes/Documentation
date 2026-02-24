@@ -36,34 +36,34 @@ assist_pipeline:
 
 ## Clear WiFi Credentials to Restart BLE Improv
 
-1. Press and hold the RIGHT (Action) button for approximately 22 seconds until the red LEDs complete their clockwise circle.  When the LEDs glow blue you can release the action button and wait as the XMOS chip is erased.  This process may take a few minutes before the Satelllite1 finally reboots to the factory firmware.  Upon first boot you will see the blue LEDs complete another clockwise circle indicating the XMOS is being flashed with the facory embedded firmware.
+1. Press and hold the RIGHT (Action) button for approximately 22 seconds until the red LEDs complete their clockwise circle.  When the LEDs glow blue you can release the action button and wait as the XMOS chip is erased.  This process may take a few minutes before the Satellite1 finally reboots to the factory firmware.  Upon first boot you will see the blue LEDs complete another clockwise circle indicating the XMOS is being flashed with the factory embedded firmware.
 
 2. Follow the steps to [Add your Satellite1 to Home Assistant](satellite1-connecting-to-ha.md)
 
 
-## Removing the Sat1from ESPHome
+## Removing the Sat1 from ESPHome
 1. In your Home Assistant, go to Settings -> Devices and Services -> ESPHome and click the 3 dots next to the Satellite1 and select "Delete".
-    ![Delete ESPHome ESPHome](/assets/delete_sat1_esp_device.png){ width="100%" }
-2. If you "Took Control" of the Sat1 in your ESP Home Device Builder then go to Settings -> Add-Ons -> ESPHome Device Builder and open the Web UI to click the 3 dots next to the Satellite1 and select "Delete".
+    ![Delete ESPHome device](/assets/delete_sat1_esp_device.png){ width="100%" }
+2. If you "Took Control" of the Sat1 in your ESPHome Device Builder then go to Settings -> Add-Ons -> ESPHome Device Builder and open the Web UI to click the 3 dots next to the Satellite1 and select "Delete".
     ![Remove from ESPHome Builder](/assets/delete_sat1_from_esp_builder.png){ width="100%" }
     
 ## Force the CORE Board into Boot Mode:
 1. Unplug the Sat1 from power.
 2. If the CORE is mounted to the HAT, press and hold the Right/Action button on the HAT, then apply power to the HAT's "ESP32/CORE" USB-C port.  Let go of the Right/Action button after 3 seconds.
 ![HAT BOOT Button](/assets/right_action_button.jpg){ width="100%" }
-3. If the CORE is NOT mounted to the HAT, press and hold the "Boot" botton on the CORE, then apply power to the CORE's USB-C port.  Let go of the "Boot" button after 3 seconds.
+3. If the CORE is NOT mounted to the HAT, press and hold the "Boot" button on the CORE, then apply power to the CORE's USB-C port.  Let go of the "Boot" button after 3 seconds.
 ![CORE BOOT Button](/assets/boot_reset_button.jpg){ width="100%" }
 4. From here you can [Flash the Sat1 via a USB-C cable](satellite1-flash-via-usb-c.md)
 
 ## Need More Help?
 
-While we hope this documentation will answer all your questions, but we realize support is sometimes needed.  The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
+While we hope this documentation will answer all your questions, we realize support is sometimes needed.  The FutureProofHomes team will do their best to keep up with support requests, but we also lean on our community to help all of us.  See the links below and decide which method of support is best for your needs.
 
 !!! question "Have a question and need quick help from the community?"
 
     [:fontawesome-brands-discord: Chat with the Community on Discord](https://discord.futureproofhomes.net){ .md-button }
 
-!!! success "See something to can change in the code"
+!!! success "See something you can change in the code"
     [:fontawesome-solid-rocket: Request a New Feature on Github](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button } <br><br>
     [:fontawesome-solid-bug: Report a Bug on Github](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }
 

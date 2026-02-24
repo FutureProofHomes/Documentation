@@ -6,7 +6,7 @@ Welcome to the FutureProofHomes Documentation page. Our goal is to help you get 
 
 
 ## A Quick Note About Modular Hardware Design
-Most customers think in terms of complete "products”.  So, at FutureProofHomes **we will sell complete pre-assembled products**.  However, unlike most hardware companies, our products will comprise of "modules", and each module is made up of "components”.  In simple terms, we like to think of FutureProofHomes as the “Ikea of hardware”.
+Most customers think in terms of complete "products”.  So, at FutureProofHomes **we will sell complete pre-assembled products**.  However, unlike most hardware companies, our products will comprise "modules", and each module is made up of "components”.  In simple terms, we like to think of FutureProofHomes as the “Ikea of hardware”.
 
 Good modular hardware design allows us to quickly iterate our products and innovate faster than monolithic hardware companies. It also allows our customers to easily repair and upgrade their products. And finally, it also helps us assure our customers that we will avoid the pitfalls of [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence) which many hardware companies fall into.
 
@@ -21,7 +21,7 @@ While we hope this documentation will answer all your questions, we realize supp
 
     [Chat with the Community on Discord :fontawesome-brands-discord:](https://discord.futureproofhomes.net){ .md-button }
 
-!!! success "Do you have a feature request or reproducable bug?"
+!!! success "Do you have a feature request or reproducible bug?"
     Look through our existing tickets first, then open a new request if necessary: <br>
     [Request a feature on GitHub :fontawesome-solid-rocket:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=feature-request--.md){ .md-button }
     [Report a bug :fontawesome-solid-bug:](https://github.com/FutureProofHomes/Satellite1-ESPHome/issues/new?template=bug-report--.md){ .md-button }

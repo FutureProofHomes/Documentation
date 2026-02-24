@@ -4,7 +4,7 @@ The Satellite1 Cylindrical Enclosure is a snap-fit enclosure that can be printed
 
 - Dayton Audio RS75-4 3" driver
 - Tectonic TEBM46C20N-4B BMR 3" driver
-- GRS 3RF-4 4" driver (requires a [slighly custom stand](https://github.com/FutureProofHomes/Satellite1-Enclosures/pull/21) since it's a larger speaker)
+- GRS 3RF-4 4" driver (requires a [slightly custom stand](https://github.com/FutureProofHomes/Satellite1-Enclosures/pull/21) since it's a larger speaker)
 
 All the files necessary can be found in the [Satellite1-Enclosures Github Repo](https://github.com/FutureProofHomes/Satellite1-Enclosures).
 
@@ -79,13 +79,13 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
 
 1. Grab some Loctite (aka Blu-Tack) and generic speaker Polyfill.  Attach your chosen mmWave to the HAT.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/6_enclosure_accessories.JPG){ width="100%" }
-2. There are three locations where you'll see 2 mounting lips on the UFO enclosure. The goal is to get the Sat1 HAT sloted underneath the smaller bottom lip in all three locations, such that the LEDs are peaking through the square cutouts and into the light ring.
+2. There are three locations where you'll see 2 mounting lips on the UFO enclosure. The goal is to get the Sat1 HAT slotted underneath the smaller bottom lip in all three locations, such that the LEDs are peeking through the square cutouts and into the light ring.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/7_plastic_lips.JPG){ width="100%" }
-3. Align the bottom (south) part of the Sat1 HAT under the bottom lip and press firmly at the top (north) of the Sat1 HAT near and around the USB-C ports and headphone jack.  Press around the parameter of the Sat1 HAT to snap in under all the bottom lips.  You'll know when you're done when the 4 buttons click perfectly.
+3. Align the bottom (south) part of the Sat1 HAT under the bottom lip and press firmly at the top (north) of the Sat1 HAT near and around the USB-C ports and headphone jack.  Press around the perimeter of the Sat1 HAT to snap in under all the bottom lips.  You'll know when you're done when the 4 buttons click perfectly.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/7_snap_1.JPG){ width="100%" }
 4. If you need to remove the HAT, pull on the corner of the wall near and lift up from the USB-C ports.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/13_pull_tab_and_board_up.JPG){ width="100%" }
-5. Roll your Loctite into a "snake" that you wrap around the speaker to make a gasket. (This isn't required if you're using the Dayton Audio RS75-4 speaker since it has a gaskey seal built-in.)
+5. Roll your Loctite into a "snake" that you wrap around the speaker to make a gasket. (This isn't required if you're using the Dayton Audio RS75-4 speaker since it has a gasket seal built-in.)
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/14_seal_speaker.JPG){ width="100%" }
 6. Route the speaker cables up through the speaker chamber and out the top.  You only need 1 inch of cable coming out the top.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/15_route_cable_bottom.JPG){ width="100%" }
@@ -96,7 +96,7 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/18_mount_speaker.JPG){ width="100%" }
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/19_place_lock_ring.JPG){ width="100%" }
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/20_tighten_lock_ring.JPG){ width="100%" }
-9. Choose the right speaker chamber plug based on the guage of your speaker cables and wedge it in as best as possible, leaving about 1 in of cable sticking out.  Cover the plug with Loctite.
+9. Choose the right speaker chamber plug based on the gauge of your speaker cables and wedge it in as best as possible, leaving about 1 in of cable sticking out.  Cover the plug with Loctite.
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/21_enclosure_plug.JPG){ width="100%" }
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/22_plug_puddy.JPG){ width="100%" }
 10. Connect the JST-XH connector to the bottom of the HAT and align then snap the UFO to the speaker chamber.
@@ -110,4 +110,4 @@ The full speaker enclosure consists of 4 major parts.  If you don't have the nec
   ![Satellite1 Speaker Enclosure](/assets/dev_kit_enclosure/27_ESP_port.JPG){ width="100%" }
 
 !!! success 
-    Congrats on building your own Satellite1 Dev Kit Cylindirical Speaker Enclosure!
+    Congrats on building your own Satellite1 Dev Kit Cylindrical Speaker Enclosure!
