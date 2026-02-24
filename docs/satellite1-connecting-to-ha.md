@@ -12,8 +12,8 @@ Your Satellite1 arrives pre-flashed from the factory and will boot into BLE impr
 
     ---
 
-    ![Type in your 2.4ghz network credentials:](/assets/ble_improv/4_improv_add_wifi_credentials.png){ loading=lazy }
-    Type in your **2.4 Ghz WiFI** credentials and click **"Connect"**.
+    ![Type in your 2.4 GHz network credentials:](/assets/ble_improv/4_improv_add_wifi_credentials.png){ loading=lazy }
+    Type in your **2.4 GHz WiFi** credentials and click **"Connect"**.
 
 -   :material-numeric-3-circle:{ .lg .middle } __Authorize the WiFi connection__
 
@@ -26,7 +26,7 @@ Your Satellite1 arrives pre-flashed from the factory and will boot into BLE impr
 
     ---
 
-    ![Tap "Continue" after successfull Wifi connection:](/assets/ble_improv/8_improv_successful_wifi_connection.png){ loading=lazy }
+    ![Tap "Continue" after successful WiFi connection:](/assets/ble_improv/8_improv_successful_wifi_connection.png){ loading=lazy }
     Tap **"Continue"** after successful Wifi connection.
 
 -   :material-numeric-5-circle:{ .lg .middle } __Add the Sat1 to ESPHome__
@@ -40,7 +40,7 @@ Your Satellite1 arrives pre-flashed from the factory and will boot into BLE impr
 
     ---
 
-    ![Tap the name if your Sat1 device and then tap the "Submit" button:](/assets/ble_improv/10_esphome_select_device.png){ loading=lazy }
+    ![Tap the name of your Sat1 device and then tap the "Submit" button:](/assets/ble_improv/10_esphome_select_device.png){ loading=lazy }
     Tap the name of your **Sat1** device and then tap the **"Submit"** button.
 
 -   :material-numeric-7-circle:{ .lg .middle } __Checking updates__

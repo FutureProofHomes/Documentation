@@ -1,2 +1,2 @@
-At it's core, the Satellite1 is a Dev Kit which 
+At its core, the Satellite1 is a Dev Kit which 
 
