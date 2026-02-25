@@ -33,7 +33,7 @@ That's a voice pipeline. It's the backbone of any voice assistant. Each step in 
 2. **In the Configuration section, select your Voice Pipeline.**  
    <br>![Assistant Dropdown](/assets/Pipeline5.png){ width="100%" loading=lazy }
 
-3. **You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/satellite1-faqs/#faq_add_more_wake_words))**  
+3. **You can also set your preferred wake word. (NOTE: If you want to build your own custom wake word, then [read here](/satellite1-faqs/#how-do-i-add-other-wake-words))**  
    <br>![Set Wake Word](/assets/Pipeline7.png){ width="100%" loading=lazy }
 
 Congratulations! You've created your own voice pipeline for your Satellite1.  Read below to expose the device you want to control to your voice assistant and build even more advanced voice pipelines.
