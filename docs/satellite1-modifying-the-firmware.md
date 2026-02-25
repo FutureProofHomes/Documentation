@@ -6,7 +6,7 @@ The firmware running on the Satellite1 is [open source](https://github.com/Futur
 - Hide or show more logs for deep troubleshooting
 - Change or extend the core functionality in any way you desire.
 
-??? warning "After taking control of your device's firmware you will no longer receive official firmware updates. If you'd like to get back in sync with the official Sat1 firmware you'll need to [restore factory firmware back to the Sat1](/satellite1-faqs#faq_anchor_factory_reset)."
+??? warning "After taking control of your device's firmware you will no longer receive official firmware updates. If you'd like to get back in sync with the official Sat1 firmware you'll need to [restore factory firmware back to the Sat1](satellite1-flash-via-usb-c.md)."
 
 ??? warning "Please also be aware that flashing custom firmware can potentially damage the Sat1 device. These instructions are provided with the understanding that you have the necessary expertise to proceed. We will assume a certain level of familiarity with the process. Proceed with caution, and enjoy the journey!"
 

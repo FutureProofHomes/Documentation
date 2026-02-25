@@ -24,7 +24,7 @@ nav:
     - Expansion Modules:
       - PoE1 Module: satellite1-poe-shoe-module-overview.md
       - Amplifier1 Module: satellite1-amplifier-module-overview.md
-    - FAQs & Troubleshooting: satellite1-support.md
+    - FAQs & Troubleshooting: satellite1-faqs.md
   - Nexus1 AI Base Station:
     - Introduction: ai-base-station-introduction.md
 
