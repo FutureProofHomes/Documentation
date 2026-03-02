@@ -43,6 +43,38 @@
     return href.slice(i + 1).split('?')[0].trim() || null;
   }
 
+  /* Get the id of the heading that precedes this details (for URL fragment) */
+  function getHeadingIdForDetails(details) {
+    if (!details || details.tagName !== 'DETAILS') return null;
+    var el = details.previousElementSibling;
+    while (el) {
+      if (el.id) return el.id;
+      el = el.previousElementSibling;
+    }
+    var parent = details.parentElement;
+    if (parent && parent.previousElementSibling && parent.previousElementSibling.id) {
+      return parent.previousElementSibling.id;
+    }
+    return null;
+  }
+
+  function isFaqPage() {
+    return document.querySelector('.faq-question') !== null;
+  }
+
+  function updateFragmentOnDetailsToggle(e) {
+    if (!isFaqPage()) return;
+    var details = e.target;
+    if (details.tagName !== 'DETAILS') return;
+    var path = window.location.pathname + (window.location.search || '');
+    if (details.open) {
+      var id = getHeadingIdForDetails(details);
+      if (id) history.replaceState(null, '', path + '#' + id);
+    } else {
+      history.replaceState(null, '', path);
+    }
+  }
+
   window.addEventListener('load', function () {
     expandFaqFromHash();
   });
@@ -59,4 +91,7 @@
       expandFaqForId(id);
     }, 50);
   }, true);
+
+  /* Update URL fragment when user expands/collapses an FAQ section */
+  document.addEventListener('toggle', updateFragmentOnDetailsToggle, true);
 })();
