@@ -103,9 +103,12 @@ The [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/produc
     Insert seven (7) M3x10mm hex screws into the front chamber, use the screw guide tool to not drive them in too far. Do not add a screw at the bottom.
     
 
--   :material-numeric-7-circle:{ .lg .middle } __Mount Back Chamber__
+-   :material-numeric-7-circle:{ .lg .middle } __Mount Antenna & Back Chamber__
 
     ---
+
+    ![Image title](/assets/smart-speaker-enclosure-kit/antenna_placement.png){ loading=lazy }
+    If your Sat1 includes an external antenna, remove the release liner and adhere the antenna to the back speaker chamber's interior side wall, as close to the cable exit as possible.
 
     ![Image title](/assets/smart-speaker-enclosure-kit/mount_back_chamber.jpg){ loading=lazy }
     Align the two chamber parts together, making sure the JST wire is not pinched and that the foam forms an airtight seal. Slide the parts together with the front piece moving downward and the back piece moving upward.
