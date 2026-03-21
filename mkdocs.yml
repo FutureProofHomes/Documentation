@@ -25,6 +25,7 @@ nav:
       - PoE1 Module: satellite1-poe-shoe-module-overview.md
       - Amplifier1 Module: satellite1-amplifier-module-overview.md
     - FAQs & Troubleshooting: satellite1-faqs.md
+    - Firewall & VLAN Configuration: satellite1-firewall-vlan-configuration.md
   - Nexus1 AI Base Station:
     - Introduction: ai-base-station-introduction.md
 
