@@ -91,8 +91,8 @@ Don't forget to give the project a star! Thanks again!
 1. Ensure Python and pip are installed on your machine (`python --version`) and (`pip --version`)
 2. Create a Python Virtual Environment (`python -m venv venv`)
 3. Start the Python Environment (`source venv/bin/activate`)
-4. Install Material for MkDocs (`pip install mkdocs-material`)
-5. Serve MkDocs Locally (`mkdocs serve`)
+4. Install the documentation dependencies (`pip install -r requirements.txt`)
+5. Serve MkDocs locally (`mkdocs serve --livereload`)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,5 +137,4 @@ FutureProofHomes  - [Website](https://futureproofhomes.net/) - hello@futureproof
 [license-url]: https://github.com/FutureProofHomes/Documentation/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-
 
