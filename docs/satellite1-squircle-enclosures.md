@@ -1,3 +1,5 @@
+??? warning "As of February 17, 2026, this enclosure is no longer compatible with latest generation Satellite1.1 Dev Kits, which features an external WiFi antenna. We welcome pull request updates to this open-source enclosure, or recommend printing or purchasing [our latest enclosures](satellite1-smart-speaker-enclosure-kit.md)."
+
 The "Squircle Enclosure Family" for the Satellite1 Dev Kit includes three optional speaker chamber sizes—small (1-inch), medium (2.5-inch), and large (3-inch)—with the top components of the design remaining identical across all sizes. The entire enclosure is designed to be assembled using M3 x 8mm screws.  You 3D print the enclosure at home and separately purchase and install one of our recommended speakers based on your preference.
 
 <figure markdown="span">
