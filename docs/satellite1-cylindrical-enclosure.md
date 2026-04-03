@@ -1,5 +1,7 @@
 ## Cylindrical Dev Kit Enclosure
 
+??? warning "As of February 17, 2026, this enclosure is no longer compatible with latest generation Satellite1.1 Dev Kits, which features an external WiFi antenna. We welcome pull request updates to this open-source enclosure, or recommend printing or purchasing [our latest enclosures](satellite1-smart-speaker-enclosure-kit.md)."
+
 The Satellite1 Cylindrical Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports three recommended speakers that you can purchase online:
 
 - Dayton Audio RS75-4 3" driver
