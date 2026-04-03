@@ -1,0 +1,46 @@
+/* Visually hide FAQ headings while keeping them in the DOM for TOC and anchor links */
+.faq-question {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:root {
+    --md-primary-fg-color: #C2B7AC;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #C2B7AC;
+}
+
+/* Content links: high contrast in light and dark mode */
+.md-content {
+    --md-typeset-a-color: #1565c0;
+}
+
+[data-md-color-scheme="slate"] .md-content {
+    --md-typeset-a-color: #82b1ff;
+}
+
+.md-typeset a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+/* .md-tabs__link {
+    color: #000000;
+  }
+  
+  .md-tabs__link:hover {
+    color: #ff6400;
+  }
+  
+  .md-tabs__link--active {
+    color: #ff00a2;
+  } */
