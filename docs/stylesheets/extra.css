@@ -80,8 +80,8 @@ li.toc-tab-hidden {
 
 /* ── Sidebar firmware toggle (segmented control) ── */
 .fw-toggle-li {
-    padding: 0.75rem 0.8rem 0.2rem;
-    margin-top: 0.6rem;
+    padding: 0.45rem 0.8rem 0.1rem;
+    margin-top: 0.35rem;
 }
 
 .fw-toggle {
@@ -89,9 +89,9 @@ li.toc-tab-hidden {
     align-items: center;
     justify-content: center;
     border: 1.5px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.3rem;
+    border-radius: 0.25rem;
     overflow: hidden;
-    max-width: 10rem;
+    max-width: 7.5rem;
 }
 
 [data-md-color-scheme="slate"] .fw-toggle {
@@ -100,13 +100,13 @@ li.toc-tab-hidden {
 
 .fw-toggle__btn {
     font-family: inherit;
-    font-size: 0.64rem;
+    font-size: 0.54rem;
     font-weight: 600;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    padding: 0.3rem 0;
+    padding: 0.22rem 0;
     line-height: 1;
     background: transparent;
     color: var(--md-default-fg-color--light);
