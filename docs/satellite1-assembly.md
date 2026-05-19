@@ -4,7 +4,7 @@ The Satellite1 Dev Kit comes in three pieces:
 
 1. The "Hat" (round board)
 2. The "Core" (rectangular board)
-3. The Satellite1.1 external WiFi antenna
+3. The external WiFi antenna
 
 ## Hardware Assembly
 
