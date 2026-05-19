@@ -55,6 +55,15 @@
     <button class="beta-banner__stable-btn" id="beta-to-stable" type="button">Switch to Stable</button>
   </div>
   <script>
+    window.fphFirmwareVersions = {
+      stable: "{{ config.extra.fw_stable_version }}",
+      beta: "{{ config.extra.fw_beta_version }}"
+    };
+    window.fphFirmwareReleaseUrls = {
+      stable: "{{ config.extra.fw_stable_release_url }}",
+      beta: "{{ config.extra.fw_beta_release_url }}"
+    };
+
     (function() {
       function checkBeta() {
         var banner = document.getElementById('beta-banner');

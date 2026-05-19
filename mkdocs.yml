@@ -55,16 +55,16 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: slate
-      toggle:
-        icon: material/brightness-7
-        name: Switch to light mode
-      primary: custom
-      accent: custom
     - scheme: default
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
+      primary: custom
+      accent: custom
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
       primary: custom
       accent: custom
 extra_css:
