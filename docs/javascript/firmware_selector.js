@@ -2,7 +2,7 @@
     const config = [
         {
             title: 'Select Satellite1 Firmware',
-            description: 'Choose which firmware you\'ll be using with your Satellite1.',
+            description: 'Which firmware should we flash to your Satellite1?',
             choices: [
                 {
                     id: "stable",

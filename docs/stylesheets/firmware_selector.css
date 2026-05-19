@@ -18,17 +18,17 @@ nav.progress {
     width: var(--dot-size);
     height: var(--dot-size);
     margin: 0 var(--dot-gap);
-    background-color: var(--md-primary-fg-color--dark);
+    background-color: var(--md-default-fg-color--lighter);
     border-radius: 50%;
     transition: background-color 200ms;
 }
 
 .dot.active {
-    background-color: var(--md-primary-fg-color);
+    background-color: #1f2933;
 }
 
 .dot.done {
-    background-color: var(--md-primary-fg-color--light);
+    background-color: var(--md-default-fg-color--light);
 }
 
 .choices {
@@ -189,6 +189,18 @@ nav.progress {
     color: var(--md-default-fg-color);
 }
 
+[data-md-color-scheme="slate"] #firmware-selector .dot {
+    background-color: rgba(255, 255, 255, .32);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .dot.active {
+    background-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .dot.done {
+    background-color: rgba(255, 255, 255, .58);
+}
+
 [data-md-color-scheme="slate"] #firmware-selector .choice-btn:hover {
     border-color: #fff;
     background-color: rgba(255, 255, 255, .08);
@@ -260,6 +272,12 @@ esp-web-install-button {
 
 esp-web-install-button[install-unsupported] > .admonition {
     margin: 0 !important;
+}
+
+.admonition.example:has(#firmware-selector) {
+    border: .05rem solid var(--md-default-fg-color--lightest);
+    border-radius: .1rem;
+    box-shadow: none;
 }
 
 .admonition.example > p:empty:first-of-type {
