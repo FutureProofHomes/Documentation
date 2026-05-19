@@ -21,6 +21,7 @@ def process_build(
     beta,
     release_repository,
     GITHUB_TOKEN,
+    release_summary,
 ):
     # Get the Asset ID for the OTA binaries
     # Sample URL: https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210089213
@@ -40,9 +41,8 @@ def process_build(
             "Accept": "application/octet-stream",
             "X-GitHub-Api-Version": "2022-11-28",
         }
-    if not GITHUB_TOKEN is None:
+    if GITHUB_TOKEN:
         headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
-    
     ota_request = urllib.request.Request(OTA_DOWNLOAD_URL, headers=headers)
     if BROWSER_URL_OTA:
         try:
@@ -64,6 +64,7 @@ def process_build(
         MANIFEST_FILE_DIR=MANIFEST_FILE_DIR,
         beta=beta,
         FIRMWARE_FILE_DIR=FIRMWARE_FILE_DIR.split("../")[-1],
+        summary=release_summary,
     )
     utils.download_release(BROWSER_URL_OTA, beta, FIRMWARE_FILE_DIR)
     utils.download_release(BROWSER_URL_FACTORY, beta, FIRMWARE_FILE_DIR)
@@ -79,9 +80,10 @@ def main():
     release_tag = sys.argv[1]
     release_repository = sys.argv[2]
 
-    # read GITHUB_TOKEN if provided (needed for private repositories only)
-    GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", None)
-    
+    # GITHUB_TOKEN is optional for public repos; use it when present.
+    GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
+    if not GITHUB_TOKEN:
+        print("GITHUB_TOKEN is not set. Proceeding without authentication.")
     print(f"Fetching release info for {release_tag} from {release_repository}")
     # Determine if the release is a beta release.
     beta = any(keyword in release_tag.lower() for keyword in ["beta", "alpha", "rc"])
@@ -93,6 +95,7 @@ def main():
 
     # Parse the JSON data
     release_info = json.loads(data.decode("utf-8"))
+    release_summary = utils.extract_summary_section(release_info.get("body", ""))
 
     assets = release_info.get("assets", [])
     
@@ -130,6 +133,7 @@ def main():
             beta,
             release_repository,
             GITHUB_TOKEN,
+            release_summary,
         )
 
 
