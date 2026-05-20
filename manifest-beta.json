@@ -8,7 +8,7 @@
       "ota": {
         "path": "assets/firmware/esphome/beta/satellite1.ota.bin",
         "md5": "98759947e2c84c2875f949f4406c4a0f",
-        "summary": "ESPHome Firmware for satellite1",
+        "summary": "Breaking Changes:\r\n- Removes Snapcast in exchange for Sendspin\r\n- Changes mmWave sensors exposed in ESPHome UI\r\n\r\nThis release adds support for Nabu Casa\u2019s Sendspin music streaming protocol. As part of this transition, Snapcast has been removed from the firmware.\r\n\r\nThis release also introduces a new mmWave \"Radar Tuner WebUI\" for configuring zones and gates on LD2450 and LD2410 radar sensors.\r\n\r\nFor setup guidance and additional details, please visit docs.futureproofhomes.ai.\r\n\r\nBuilt on ESPHome 2026.4.5.",
         "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.2.0-beta.0/"
       },
       "parts": [
