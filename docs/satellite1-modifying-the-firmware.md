@@ -13,13 +13,7 @@ The firmware running on the Satellite1 is [open source](https://github.com/Futur
 ## ESPHome Compatibility Matrix
 Specific Sat1 firmware versions are compatible with specific ESPHome versions.  If you need to install an older/legacy version of ESPHome Device Builder we recommend the [Legacy ESPHome add-on](https://github.com/khenderick/esphome-legacy-addons?tab=readme-ov-file#how-to-install).
 
-| Sat1 Release      | Official ESPHome Release      |
-| ----------- | ------------------------------------ |
-| [v0.1.5](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.5-beta.1)    | [2025.12.7](https://github.com/esphome/esphome/releases/tag/2025.12.7) |
-| [v0.1.4](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.4-beta.0)    | [2025.10.5](https://github.com/esphome/esphome/releases/tag/2025.10.5) |
-| [v0.1.3](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.3)    | [2025.5.2 - 2025.7.5](https://github.com/esphome/esphome/releases/tag/2025.7.5) |
-| [v0.1.2](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.2)    | [2025.5.2](https://github.com/esphome/esphome/releases/tag/2025.5.2) |
-| [v0.1.1](https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.1.1)    | [2025.4.2](https://github.com/esphome/esphome/releases/tag/2025.4.2)  |
+<!-- ESPHOME_COMPAT_MATRIX -->
 
 
 ## Import the Sat1 to your ESPHome Dashboard and Take Control 

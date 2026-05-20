@@ -7,21 +7,22 @@ The Satellite 1 Developer Kit is the first version of our private voice assistan
   <figcaption>Animation shows how to attach the rectangular Core Board to the round Hat Board, with an optional mmWave presence sensor.</figcaption>
 </figure>
 
-Your Satellite1 Dev Kit can also be installed in one of our many enclosures and speaker kits to become a more complete product.  [Read more here](satellite1-smart-speaker-enclosure-kit.md).
+Your Satellite1 Dev Kit can also be installed in one of our many enclosures and speaker kits to become a more complete product.  You can even purchase the pre-assembled smart speaker too!  [Read more here](satellite1-smart-speaker.md).
 <figure markdown="span">
   ![Smart Speaker Enclosure Kit Photoshoot](/assets/smart-speaker-enclosure-kit/white_gray_enclosure.jpg){ width="100%" }
-  <figcaption>Purchase all the parts from us or build your own creation at home</figcaption>
+  <figcaption>Purchase the pre-assembled speaker. Or get all the individual parts from us and build it yourself.</figcaption>
 </figure>
 
 ## Quick Live Demo
 When properly set up the Satellite1 can be even more powerful than some of the mainstream voice assistants out there.  Watch the live demo section of our launch video to get a sense of the Satellite1 capabilities:
 
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/RoGTLnAQEOY?si=KzaQY0I-9bBqWJge&amp;start=258" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=mcycJb4gBk4zbLtX&amp;start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Detailed Specifications & Features
 You can read detailed specifications about the hardware on their product pages.
 
 - [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit)
+- [Satellite1 Pre-assembled Smart Speaker](https://futureproofhomes.net/products/satellite1-smart-speaker)
 
 ## Requirements
 The Satellite1 has a few requirements to get up and running.
@@ -38,8 +39,8 @@ The following table compares the main features of the Sat1 and Home Assistant Vo
 | **Microphones**       | Four high-performance microphones (XMOS firmware uses two microphones currently.  Future firmware upgrade will utilize all 4 microphones). | Two microphones designed to hear voice commands in most environments.                 |
 | **Speaker Output**    | 25W speaker amplifier capable of 48 kHz audio streaming. Also allows 3.5mm jack for external speakers. | Built-in 3W speaker for 48 kHz playback; includes a 3.5mm stereo jack for external speakers. |
 | **Environmental Sensors** | Includes room temperature, humidity, and luminosity sensors; supports adding mmWave presence detection (LD2410 or LD2450). | Primarily focused on voice assistance; does not include additional environmental sensors. |
-| **Form Factor**       | Available as a development kit with 4 built-in buttons and components for assembly; official enclosure planned for future release. | Comes in a ready-to-use injection-molded case with physical controls, including a mute switch and volume dial. |                                   |
+| **Form Factor**       | Available as a development kit or pre-assembled speaker. | Comes in a ready-to-use injection-molded case with physical controls, including a mute switch and volume dial. |                                   |
 | **Power**             | Powered by USB-C PD (Power Delivery), enabling the extra power needed for the 25W amplifier.       | Powered by USB-C.                                                                      |
-| **Expansion**         | Includes two 40-pin expansion connectors for powerful future accessories.                                   | Grove port for limited expansion.                                                               |
+| **Expansion**         | Includes FX23L expansion connectors for powerful future accessories.                                   | Grove port for limited expansion.                                                               |
 | **LED Ring**          | 24 LEDs for visual feedback.                                                                       | 12 LEDs for visual feedback.                                                           |
 | **Software**          | [ESPHome Firmware very similar to Home Assistant Voice](https://github.com/FutureProofHomes/Satellite1-ESPHome)  | [ESPhome firmware for Home Assistant Voice](https://github.com/esphome/home-assistant-voice-pe)                                                           |

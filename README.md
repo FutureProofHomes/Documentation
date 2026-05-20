@@ -96,6 +96,35 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Stable / Beta Documentation
+
+Some pages have content that differs between the **Stable** and **Beta** firmware. We use [content tabs](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/) to let viewers toggle between the two. Because `content.tabs.link` is enabled, selecting "Stable" or "Beta" on any page syncs the choice across the entire site.
+
+### Writing version-specific content
+
+For sections that differ between firmware versions, wrap them in content tabs:
+
+```markdown
+=== "Stable"
+
+    Stable-specific content here...
+
+=== "Beta"
+
+    Beta-specific content here...
+```
+
+Pages where content is identical across versions should **not** use tabs.
+
+### Graduating beta to stable
+
+When a beta version ships as stable:
+
+1. Replace the "Stable" tab content with the "Beta" tab content.
+2. Remove the tab wrappers (or start a new "Beta" tab for the next cycle).
+3. Search for any remaining `=== "Beta"` / `=== "Stable"` blocks across all docs to ensure nothing is missed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License

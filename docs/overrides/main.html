@@ -5,3 +5,81 @@
      This documentation is under heavy construction. Please be patient. :)
   {% endblock %}
 #}
+
+{% block announce %}
+  <style>
+    .beta-banner {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4em;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: auto;
+      background: #90caf9;
+      color: #1a1a1a;
+      padding: 0.5em 0;
+    }
+    .beta-banner .beta-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      display: inline-block;
+    }
+    .beta-banner__stable-btn {
+      margin-left: 0.6em;
+      padding: 0.15em 0.7em;
+      font-size: 0.65rem;
+      font-weight: 600;
+      border: 1.5px solid #1a1a1a;
+      border-radius: 0.25rem;
+      background: transparent;
+      color: #1a1a1a;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+      transition: background 150ms, color 150ms;
+    }
+    .beta-banner__stable-btn:hover {
+      background: #1a1a1a;
+      color: #90caf9;
+    }
+  </style>
+  <div class="beta-banner" id="beta-banner">
+    <span class="beta-dot"></span>
+    These docs reflect <strong>Sat1 {{ config.extra.fw_beta_version }}</strong> firmware
+    <button class="beta-banner__stable-btn" id="beta-to-stable" type="button">Switch to Stable</button>
+  </div>
+  <script>
+    window.fphFirmwareVersions = {
+      stable: "{{ config.extra.fw_stable_version }}",
+      beta: "{{ config.extra.fw_beta_version }}"
+    };
+    window.fphFirmwareReleaseUrls = {
+      stable: "{{ config.extra.fw_stable_release_url }}",
+      beta: "{{ config.extra.fw_beta_release_url }}"
+    };
+
+    (function() {
+      function checkBeta() {
+        var banner = document.getElementById('beta-banner');
+        if (!banner) return;
+        var mode = localStorage.getItem('fph-firmware-mode') || 'stable';
+        banner.style.display = mode === 'beta' ? 'flex' : 'none';
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        checkBeta();
+        window.addEventListener('storage', checkBeta);
+        var btn = document.getElementById('beta-to-stable');
+        if (btn) btn.addEventListener('click', function() {
+          localStorage.setItem('fph-firmware-mode', 'stable');
+          location.reload();
+        });
+      });
+    })();
+  </script>
+{% endblock %}

@@ -30,6 +30,7 @@
   }
 
   function expandFaqFromHash() {
+    if (!isFaqPage()) return;
     var hash = window.location.hash;
     if (!hash || hash === '#') return;
     var id = hash.slice(1).split('?')[0];
@@ -82,6 +83,7 @@
 
   /* Click: use capture so we run before Material; handle any link that has a hash */
   document.addEventListener('click', function (e) {
+    if (!isFaqPage()) return;
     var a = e.target.closest('a[href*="#"]');
     if (!a) return;
     var id = getIdFromHref(a.getAttribute('href'));

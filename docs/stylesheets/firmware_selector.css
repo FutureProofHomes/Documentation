@@ -18,17 +18,17 @@ nav.progress {
     width: var(--dot-size);
     height: var(--dot-size);
     margin: 0 var(--dot-gap);
-    background-color: var(--md-primary-fg-color--dark);
+    background-color: var(--md-default-fg-color--lighter);
     border-radius: 50%;
     transition: background-color 200ms;
 }
 
 .dot.active {
-    background-color: var(--md-primary-fg-color);
+    background-color: #1f2933;
 }
 
 .dot.done {
-    background-color: var(--md-primary-fg-color--light);
+    background-color: var(--md-default-fg-color--light);
 }
 
 .choices {
@@ -39,16 +39,93 @@ nav.progress {
     margin-top: var(--margin);
 }
 
-.choice-btn {
-    padding: .8em 2em
+#firmware-selector .choice-btn {
+    position: relative;
+    display: flex;
+    min-height: 2.9rem;
+    align-items: center;
+    justify-content: center;
+    padding: .45em 2.75em;
+    border: 1.5px solid #1a1a1a;
+    border-radius: .65rem;
+    background-color: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+    box-shadow: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 160ms, border-color 160ms, box-shadow 160ms, color 160ms, transform 160ms;
 }
 
-.choice-btn.selected {
-    background-color: var(--md-accent-fg-color);
+#firmware-selector .choice-option .choice-btn {
+    width: 100%;
 }
 
-.choice-btn.selected::before {
-    content: "\2713\00A0\00A0";
+#firmware-selector .choice-btn:hover {
+    border-color: #1a1a1a;
+    background-color: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+    transform: translateY(-1px);
+}
+
+#firmware-selector .choice-btn:focus-visible {
+    outline: 2px solid var(--md-typeset-a-color);
+    outline-offset: 3px;
+}
+
+#firmware-selector .choice-check {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    width: 1rem;
+    color: currentColor;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+#firmware-selector .choice-label {
+    display: block;
+    width: 100%;
+}
+
+.firmware-release-link {
+    display: block;
+    margin-top: .45rem;
+    color: var(--md-typeset-a-color);
+    font-size: .7em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: .12em;
+    opacity: .9;
+}
+
+.firmware-release-link:hover {
+    color: var(--md-accent-fg-color);
+    opacity: 1;
+}
+
+#firmware-selector .choice-btn.selected {
+    border-color: #1f2933;
+    background-color: #1f2933;
+    color: #fff;
+}
+
+#firmware-selector .choice-btn.selected:hover {
+    border-color: #2d3742;
+    background-color: #2d3742;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .18);
+}
+
+#firmware-selector .choice-btn.selected .choice-check {
+    opacity: 1;
 }
 
 .flex-container {
@@ -63,6 +140,117 @@ nav.progress {
 .md-typeset .md-button {
     opacity: 1;
     transition: opacity 200ms;
+}
+
+#firmware-selector .flex-container > .md-button,
+#firmware-selector esp-web-install-button .md-button {
+    border: 1.5px solid #1a1a1a;
+    border-radius: .65rem;
+    box-shadow: none;
+    font-weight: 700;
+    transition: background-color 160ms, border-color 160ms, color 160ms, opacity 200ms;
+}
+
+#firmware-selector .flex-container > .md-button--primary,
+#firmware-selector esp-web-install-button .md-button--primary {
+    background-color: #1f2933;
+    color: #fff;
+}
+
+#firmware-selector .flex-container > .md-button--primary:hover,
+#firmware-selector esp-web-install-button .md-button--primary:hover {
+    border-color: #2d3742;
+    background-color: #2d3742;
+    color: #fff;
+}
+
+#firmware-selector .flex-container > .md-button--secondary,
+#firmware-selector esp-web-install-button .md-button--secondary {
+    background-color: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+}
+
+#firmware-selector .flex-container > .md-button--secondary:hover,
+#firmware-selector esp-web-install-button .md-button--secondary:hover {
+    border-color: #1a1a1a;
+    background-color: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+}
+
+#firmware-selector .flex-container > .md-button:focus-visible,
+#firmware-selector esp-web-install-button .md-button:focus-visible {
+    outline: 2px solid var(--md-typeset-a-color);
+    outline-offset: 3px;
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .choice-btn {
+    border-color: rgba(255, 255, 255, .78);
+    background-color: rgba(255, 255, 255, .04);
+    color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .dot {
+    background-color: rgba(255, 255, 255, .32);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .dot.active {
+    background-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .dot.done {
+    background-color: rgba(255, 255, 255, .58);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .choice-btn:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, .08);
+    color: var(--md-default-fg-color);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .choice-btn.selected {
+    border-color: var(--md-primary-fg-color);
+    background-color: var(--md-primary-fg-color);
+    color: #1a1a1a;
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .choice-btn.selected:hover {
+    border-color: var(--md-primary-fg-color);
+    background-color: var(--md-primary-fg-color);
+    color: #1a1a1a;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .32);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .flex-container > .md-button,
+[data-md-color-scheme="slate"] #firmware-selector esp-web-install-button .md-button {
+    border-color: rgba(255, 255, 255, .78);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .flex-container > .md-button--primary,
+[data-md-color-scheme="slate"] #firmware-selector esp-web-install-button .md-button--primary {
+    border-color: var(--md-primary-fg-color);
+    background-color: var(--md-primary-fg-color);
+    color: #1a1a1a;
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .flex-container > .md-button--primary:hover,
+[data-md-color-scheme="slate"] #firmware-selector esp-web-install-button .md-button--primary:hover {
+    border-color: var(--md-primary-fg-color);
+    background-color: var(--md-primary-fg-color);
+    color: #1a1a1a;
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .flex-container > .md-button--secondary,
+[data-md-color-scheme="slate"] #firmware-selector esp-web-install-button .md-button--secondary {
+    background-color: rgba(255, 255, 255, .04);
+    color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] #firmware-selector .flex-container > .md-button--secondary:hover,
+[data-md-color-scheme="slate"] #firmware-selector esp-web-install-button .md-button--secondary:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, .08);
+    color: var(--md-default-fg-color);
 }
 
 .md-typeset .md-button.hidden {
@@ -84,6 +272,12 @@ esp-web-install-button {
 
 esp-web-install-button[install-unsupported] > .admonition {
     margin: 0 !important;
+}
+
+.admonition.example:has(#firmware-selector) {
+    border: .05rem solid var(--md-default-fg-color--lightest);
+    border-radius: .1rem;
+    box-shadow: none;
 }
 
 .admonition.example > p:empty:first-of-type {

@@ -1,1 +1,0 @@
-## In-Ceiling Mount Kit (Coming Soon...)

@@ -1,8 +1,8 @@
 (() => {
     const config = [
         {
-            title: 'Select Firmware',
-            description: 'Choose which firmware you\'ll be using with your device.',
+            title: 'Select Satellite1 Firmware',
+            description: 'Which firmware should we flash to your Satellite1?',
             choices: [
                 {
                     id: "stable",
@@ -37,6 +37,110 @@
     let stage = 0;
     const selections = ['stable', 'default']
 
+    function isBetaSelected() {
+        return selections[0] === 'beta';
+    }
+
+    function activeStepIndexes() {
+        return isBetaSelected() ? [0] : config.map((_, idx) => idx);
+    }
+
+    function isSummaryStage() {
+        return !activeStepIndexes().includes(stage);
+    }
+
+    function getPreviousStage() {
+        const steps = activeStepIndexes();
+        if (isSummaryStage()) return steps[steps.length - 1];
+
+        const idx = steps.indexOf(stage);
+        return idx > 0 ? steps[idx - 1] : stage;
+    }
+
+    function getNextStage() {
+        const steps = activeStepIndexes();
+        const idx = steps.indexOf(stage);
+        return idx >= 0 && idx < steps.length - 1 ? steps[idx + 1] : config.length;
+    }
+
+    function selectedLabel(idx) {
+        return idx === 1 ? 'Selected mmWave' : config[idx].title.replace(/^Select\b/, 'Selected');
+    }
+
+    function selectedValue(selected, idx) {
+        if (idx !== 0) return selected.title;
+
+        const version = firmwareVersion(selected);
+        return `${selected.title}${version ? ` (${version})` : ''}`;
+    }
+
+    function choiceTitle(choice, idx) {
+        if (idx !== 0) return choice.title;
+
+        const version = firmwareVersion(choice);
+        return `${choice.title}${version ? ` (${version})` : ''}`;
+    }
+
+    function firmwareVersion(choice) {
+        return window.fphFirmwareVersions?.[choice.id] || '';
+    }
+
+    function firmwareReleaseUrl(choice) {
+        const version = firmwareVersion(choice);
+        return window.fphFirmwareReleaseUrls?.[choice.id]
+            || (version ? `https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/${version}/` : '');
+    }
+
+    function releaseLink(choice, className = 'firmware-release-link') {
+        const releaseUrl = firmwareReleaseUrl(choice);
+        if (!releaseUrl) return null;
+
+        return el('a', {
+            className,
+            href: releaseUrl,
+            textContent: 'Read release notes',
+            attr: {
+                target: '_blank',
+                rel: 'noopener',
+            },
+        });
+    }
+
+    function summaryRow(label, value) {
+        const row = el('p');
+        row.append(
+            el('strong', { textContent: label }),
+            document.createTextNode(`: ${value}`)
+        );
+        return row;
+    }
+
+    function firmwareSummaryRow(selected) {
+        const version = firmwareVersion(selected);
+        const releaseUrl = firmwareReleaseUrl(selected);
+        const row = el('p');
+        row.append(
+            el('strong', { textContent: selectedLabel(0) }),
+            document.createTextNode(': ')
+        );
+
+        if (releaseUrl) {
+            row.append(el('a', {
+                href: releaseUrl,
+                textContent: selectedValue(selected, 0),
+                attr: {
+                    target: '_blank',
+                    rel: 'noopener',
+                    'aria-label': `Read release notes for ${selected.title} ${version}`,
+                },
+            }));
+        } else {
+            row.append(document.createTextNode(selectedValue(selected, 0)));
+        }
+
+        return row;
+    }
+
     function setAttr(el, obj) {
         Object.entries(obj).forEach(([k, v]) => el[k] = v);
         return el
@@ -59,13 +163,16 @@
             attr: { 'aria-label': 'Progress' }
         })
         const fragment = document.createDocumentFragment();
-        config.forEach((_, idx) => {
+        const steps = activeStepIndexes();
+        const currentPosition = steps.indexOf(stage);
+        const completedPosition = isSummaryStage() ? steps.length : currentPosition;
+        steps.forEach((_, idx) => {
             const dot = el('div', {
                 className: 'dot',
-                attr: { 'aria-current': idx === stage ? 'step' : 'false' }
+                attr: { 'aria-current': idx === currentPosition ? 'step' : 'false' }
             })
-            if (idx === stage) dot.classList.add('active');
-            else if (idx < stage) dot.classList.add('done');
+            if (idx === currentPosition) dot.classList.add('active');
+            else if (idx < completedPosition) dot.classList.add('done');
             fragment.appendChild(dot);
         });
         nav.appendChild(fragment);
@@ -73,18 +180,19 @@
     }
 
     function getBackBtn() {
+        const hasPrevious = isSummaryStage() || activeStepIndexes().indexOf(stage) > 0;
         const back = el('button', {
             className: 'md-button md-button--secondary',
-            textContent: 'Back',
-            disabled: stage <= 0,
+            textContent: '← Back',
+            disabled: !hasPrevious,
             onclick: (e) => {
                 e.stopPropagation();
-                stage -= 1;
+                stage = getPreviousStage();
                 render();
             }
         });
 
-        if (stage <= 0) {
+        if (!hasPrevious) {
             back.classList.add('hidden');
         }
         return back
@@ -168,7 +276,7 @@
                     textContent: 'Next',
                     onclick: (e) => {
                         e.stopPropagation();
-                        stage += 1;
+                        stage = getNextStage();
                         render();
                     }
                 })
@@ -207,20 +315,45 @@
         const fragment = document.createDocumentFragment();
         config[stage].choices.forEach((choice, i) => {
             const checked = selections[stage] === choice.id;
-            const btn = el('button', {
-                className: 'md-button md-button--primary choice-btn',
-                textContent: choice.title,
+            const isFirmwareStep = stage === 0;
+            const btn = el(isFirmwareStep ? 'div' : 'button', {
+                className: 'choice-btn',
                 dataset: { id: choice.id },
                 tabIndex: 0,
                 attr: {
                     role: 'radio',
                     'aria-checked': checked
                 },
-                onclick: render
+                onclick: render,
+                onkeydown: (e) => {
+                    if (!isFirmwareStep || !['Enter', ' '].includes(e.key)) return;
+                    e.preventDefault();
+                    btn.click();
+                }
             })
 
+            btn.append(
+                el('span', {
+                    className: 'choice-check',
+                    textContent: '✓',
+                    attr: { 'aria-hidden': 'true' },
+                }),
+                el('span', {
+                    className: 'choice-label',
+                    textContent: choiceTitle(choice, stage),
+                })
+            );
+
             if (checked) btn.classList.add('selected');
-            fragment.appendChild(btn);
+
+            const link = isFirmwareStep ? releaseLink(choice) : null;
+            if (link) {
+                const choiceWrapper = el('div', { className: 'choice-option' });
+                choiceWrapper.append(btn, link);
+                fragment.appendChild(choiceWrapper);
+            } else {
+                fragment.appendChild(btn);
+            }
         });
 
         choicesDiv.appendChild(fragment);
@@ -232,15 +365,24 @@
     function summary() {
         const section = el('section', { className: 'md-typeset' });
         const fragment = document.createDocumentFragment();
-        config.forEach((step, idx) => {
+        activeStepIndexes().forEach((idx) => {
+            const step = config[idx];
             const selected = step.choices.find(i => i.id === selections[idx]);
             if (!selected) return;
             fragment.appendChild(
-                el('p', { textContent: `${step.title}: ${selected.title}` })
+                idx === 0 ? firmwareSummaryRow(selected) : summaryRow(selectedLabel(idx), selectedValue(selected, idx))
             );
         });
+        if (isBetaSelected()) {
+            fragment.appendChild(
+                summaryRow(
+                    'Selected mmWave',
+                    'Automatically supports both LD2410 and LD2450 if/when a sensor is attached.'
+                )
+            );
+        }
         const firmware = selections[0] === 'stable' ? '' : `-${selections[0]}`;
-        const mmwave = selections[1] === 'default' ? '' : `.${selections[1]}`;
+        const mmwave = selections[0] === 'stable' && selections[1] !== 'default' ? `.${selections[1]}` : '';
         section.append(
             el('h2', { textContent: 'Summary' }),
             fragment,
@@ -254,9 +396,13 @@
     function handleChoice(e) {
         const btn = e.target.closest('.choice-btn');
         if (!btn) return;
-        const group = btn.parentElement;
+        const group = btn.closest('.choices');
         if (group && group.dataset.step) {
-            selections[Number(group.dataset.step)] = btn.dataset.id;
+            const step = Number(group.dataset.step);
+            selections[step] = btn.dataset.id;
+            if (step === 0 && isBetaSelected()) {
+                selections[1] = 'default';
+            }
             render();
         }
     }
@@ -264,7 +410,7 @@
     function render() {
         const el = document.getElementById('firmware-selector');
         if (el) {
-            const renderStep = stage < config.length;
+            const renderStep = !isSummaryStage();
             el.replaceChildren();
             el.addEventListener('click', handleChoice);
             el.append(renderStep ? step() : summary());

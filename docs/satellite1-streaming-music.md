@@ -17,52 +17,118 @@ Add a music source provider like Spotify, Apple Music, YouTube Music, or many ot
 
 ---
 
-## Start the Snapcast Server
+## Connect Your Sat1 to Music Assistant
 
-We recommend connecting your Sat1 to Music Assistant using the built-in Snapcast server. This enables flexible audio streaming in the following configurations:
+=== "Stable"
 
-- **Single Speaker** – Stream audio to one Satellite1 speaker.
-- **Stereo Pair** – Connect two Satellite1 speakers as a left/right stereo pair.
-- **Multi-Room Audio** – Sync two or more Satellite1 speakers for synchronized playback across multiple rooms (similar to Sonos).
+    ### Start the Snapcast Server
 
-_NOTE: Yes we plan to support Nabu Casa's Sendspin protocol after further development.  However, as of Feb 2026 we find Snapcast to be more reliable._
+    We recommend connecting your Sat1 to Music Assistant using the built-in Snapcast server. This enables flexible audio streaming in the following configurations:
+
+    - **Single Speaker** – Stream audio to one Satellite1 speaker.
+    - **Stereo Pair** – Connect two Satellite1 speakers as a left/right stereo pair.
+    - **Multi-Room Audio** – Sync two or more Satellite1 speakers for synchronized playback across multiple rooms (similar to Sonos).
+
+    <div class="grid cards" markdown>
+
+    -   :material-numeric-1-circle:{ .lg .middle } __Start your Snapcast Server__
+
+        ---
+
+        ![Install Snapserver](/assets/MA_add_snapserver.png){ loading=lazy }  
+        In Music Assistant navigate to **"Settings -> Providers -> Add a new provider"** and select **"Snapcast"** to install the Snapserver. Leave all the server settings at default.  Your Satellite1 speakers will automatically appear in Music Assistant.
+
+    -   :material-numeric-2-circle:{ .lg .middle } __Configure Your Speakers__
+
+        ---
+
+        ![Name Sat1 Snapcast Speaker](/assets/MA_user_friendly_name.png){ loading=lazy }  
+        In Music Assistant, edit each speaker's settings by navigating to **"Settings -> Players"** then click **"Configure"** next to each speaker.  Assign a clear, recognizable name to every device.
+
+        We also strongly recommend disabling the **"Enable volume normalization"** setting in each speaker's configuration.  Alternatively you could leave volume normalization enabled and change the target level in the speakers **Advanced Settings** section at the bottom of the page.  
+        
+        This ensures your Sat1 speaker can reach its full output level and perform at maximum volume.  
+
+    </div>
+
+    !!! INFO "Snapcast Network Requirements"
+        - Ports 1704 & 1705 must be open for the Snapserver to communicate with the Sat1 Snapclient.
+        - Ports 4953 through 5153 must be open per [Music Assistant's Snapcast requirements](https://www.music-assistant.io/player-support/snapcast/).
+        - mDNS is recommended for the Snapserver to autodetect the Sat1 Snapclient.
+
+    !!! info "Sat1 Snapcast Speaker(s) Missing?"
+        - Check that the correct ports are open and mDNS is operational.
+        - Toggle Snapcast off/on in the Sat1 ESPHome device settings.
+        - Manually add your Snapserver's IP address to the Sat1's firmware.  [Read more here.](/satellite1-modifying-the-firmware)
+        - Avoid running Music Assistant and Snapcast Server inside a VM
+
+=== "Beta"
+
+    ### Sendspin Streaming
+
+    Our latest firmwares uses **Sendspin** (Nabu Casa's streaming protocol) instead of Snapcast for music playback.  In our testing, Sendspin delivers better performance with improved synchronization and lower latency.  We are formally migrating to Sendspin-only support going forward.
+
+    Sendspin works **out of the box** with Music Assistant — no additional provider setup, port configuration, or server installation is required.  Your Sat1 speakers will automatically appear as available players in Music Assistant once connected.
+
+    Sendspin supports the same flexible configurations as before:
+
+    - **Single Speaker** – Stream audio to one Satellite1 speaker.
+    - **Stereo Pair** – Connect two Satellite1 speakers as a left/right stereo pair.
+    - **Multi-Room Audio** – Sync two or more Satellite1 speakers for synchronized playback across multiple rooms (similar to Sonos).
+
+### Adjust DSP/Speaker Settings to Achieve Best Sound
+
+Using Music Assistant's DSP equalizer can significantly improve the sound quality of your Sat1.
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-circle:{ .lg .middle } __Start your Snapcast Server__
+-   :material-numeric-1-circle:{ .lg .middle } __Open Speaker Settings__
 
     ---
 
-    ![Install Snapserver](/assets/MA_add_snapserver.png){ loading=lazy }  
-    In Music Assistant navigate to **"Settings -> Providers -> Add a new provider"** and select **"Snapcast"** to install the Snapserver. Leave all the server settings at default.  Your Satellite1 speakers will automatically appear in Music Assistant.
+    ![Open Speaker Settings](/assets/MA_speaker_settings.png){ loading=lazy }  
+    Go to MA **":material-speaker: icon"** and select **"Open Settings"**.
 
--   :material-numeric-2-circle:{ .lg .middle } __Configure Your Speakers__
+-   :material-numeric-2-circle:{ .lg .middle } __Disable Volume Normalization__
 
     ---
 
-    ![Name Sat1 Snapcast Speaker](/assets/MA_user_friendly_name.png){ loading=lazy }  
-    In Music Assistant, edit each speaker’s settings by navigating to **"Settings -> Players"** then click **"Configure"** next to each speaker.  Assign a clear, recognizable name to every device.
+    ![Disable Volume Normalization](/assets/MA_disable_volume_normalization.png){ loading=lazy }  
+    **Disable "Volume Normalization"** and be sure to **click "Save"** at the bottom of the page.
 
-    We also strongly recommend disabling the **“Enable volume normalization”** setting in each speaker’s configuration.  Alternatively you could leave volume normalization enabled and change the target level in the speakers **Advanced Settings** section at the bottom of the page.  
-    
-    This ensures your Sat1 speaker can reach its full output level and perform at maximum volume.  
+-   :material-numeric-3-circle:{ .lg .middle } __Open DSP Settings__
+
+    ---
+
+    ![Open DSP Settings](/assets/MA_open_DSP_settings.png){ loading=lazy }  
+    Then go to **":material-speaker: icon"** and select **"Open DSP Settings"**.
+
+-   :material-numeric-4-circle:{ .lg .middle } __Adjust DSP__
+
+    ---
+
+    ![Equalize Audio](/assets/MA_DSP_settings.png){ loading=lazy }  
+    Adjust the DSP settings to your liking, or if you have our [Sat1.1 Smart Speaker](/satellite1-smart-speaker) we highly recommend downloading and importing our parametric EQ preset using the **"Import APO/REW Preset"** button.
+
+    [Download Recommended EQ :material-download:](/assets/satellite1_eq_preset.txt){ .md-button .md-button--primary download }
+
+    !!! info "Read about DSP"
+        - [DSP Parametric EQ](https://www.music-assistant.io/dsp/parametriceq/)
+        - [DSP Tone Controls](https://www.music-assistant.io/dsp/tonecontrols/)
 
 </div>
 
-!!! INFO "Snapcast Network Requirements"
-    - Ports 1704 & 1705 must be open for the Snapserver to communicate with the Sat1 Snapclient.
-    - Ports 4953 through 5153 must be open per [Music Assistant's Snapcast requirements](https://www.music-assistant.io/player-support/snapcast/).
-    - mDNS is recommended for the Snapserver to autodetect the Sat1 Snapclient.
+<div class="stable-only" markdown>
 
-!!! info "Sat1 Snapcast Speaker(s) Missing?"
-    - Check that the correct ports are open and mDNS is operational.
-    - Toggle Snapcast off/on in the Sat1 ESPHome device settings.
-    - Manually add your Snapserver's IP address to the Sat1's firmware.  [Read more here.](/satellite1-modifying-the-firmware)
+!!! Warning "DSP & Snapcast Speaker Grouping"
 
+    When multiple speakers are added to a Snapcast group your Music Assistant DSP settings are not rendered.  We've opened a PR with Music Assistant to temporarily workaround this issue and in the future we plan to introduce Gain and EQ control directly within the Satellite1.
 
-## Controlling Snapcast Speaker Groups
+</div>
 
-This is how you dynamically add/remove Sat1 speakers to a group for synchronized multi-room music playback.
+### Controlling Speaker Groups
+
+Dynamically add/remove Sat1 speakers to a group for synchronized multi-room music playback.
 
 <div class="grid cards" markdown>
 
@@ -85,19 +151,16 @@ This is how you dynamically add/remove Sat1 speakers to a group for synchronized
     ---
 
     ![Add or Remove Speakers from group](/assets/MA_select_speaker_groupings.png){ loading=lazy }  
-    Click in the blank area next to the song tile to expand and view all Snapcast speakers. Select or deselect speakers to add or remove them from the group.
+    Click in the blank area next to the song tile to expand and view all speakers. Select or deselect speakers to add or remove them from the group.
 
-    !!! Info "Sat1 Snapcast Speaker(s) Drifting Out of Sync or Stuttering?"
+    !!! Info "Sat1 Drifting Out of Sync or Stuttering?"
         - Inspect Sat1 ESPHome Device settings to make sure it has a strong WiFi connection
-        - Restart the Snapcast Server from Music Assistant's Music Provider settings
-        - Toggle Snapcast off/on in the Sat1 ESPHome device settings
         - Turn off Music Assistant DSP Equalizer
-        - Run your own Snapserver instead of the one built-in to Music Assistant
+        - Avoid running Music Assistant inside a virtual machine
+
 </div>
 
----
-
-## Setup Snapcast Stereo Playback & Static Grouping
+### Setup Stereo Playback & Static Grouping
 
 This feature lets you semi-permanently group Sat1 speakers, such as combining all your upstairs speakers into one group or pairing two Sat1 speakers for stereo sound.
 
@@ -115,7 +178,7 @@ This feature lets you semi-permanently group Sat1 speakers, such as combining al
     ---
 
     ![Name the Stereo Pair](/assets/MA_stereo_pair.png){ loading=lazy }  
-    Select **"Snapcast Group Type"**. Keep **"Dynamic Group"** off. Give the group a name and add the two Sat1 speakers you want in the stereo pair.
+    Give the group a name and add the two Sat1 speakers you want in the stereo pair.
 
 -   :material-numeric-3-circle:{ .lg .middle } __Set Channel Output__
 
@@ -126,41 +189,8 @@ This feature lets you semi-permanently group Sat1 speakers, such as combining al
 
     !!! Info "Tips:"
         - Channel selection only relates to the built-in speaker and not audio coming out of the headphone jack.
-        - If Music Assistant's volume control is not controlling all speakers in the group, then restart things.
 
 </div>
-
----
-
-## DSP to Achieve Better Sound
-
-Using Music Assistant's DSP equalizer can significantly improve the sound quality of your Sat1.
-
-<div class="grid cards" markdown>
-
--   :material-numeric-1-circle:{ .lg .middle } __Open Speaker DSP Settings__
-
-    ---
-
-    ![Open Speaker DSP Settings](/assets/MA_open_DSP_settings.png){ loading=lazy }  
-    Go to MA **"Settings -> :material-speaker: icon"** and select **"Open DSP Settings"**.
-
--   :material-numeric-2-circle:{ .lg .middle } __Adjust DSP__
-
-    ---
-
-    ![Equalize Audio](/assets/MA_DSP_settings.png){ loading=lazy }  
-    Adjust the DSP settings to your liking.
-
-    !!! info "Read about DSP"
-        - [DSP Parametric EQ](https://www.music-assistant.io/dsp/parametriceq/)
-        - [DSP Tone Controls](https://www.music-assistant.io/dsp/tonecontrols/)
-
-</div>
-
-!!! Warning "DSP & Snapcast Speaker Grouping"
-
-    When multiple speakers are added to a Snapcast group your Music Assistant DSP settings are not rendered.  We've opened a PR with Music Assistant to temporarily workaround this issue and in the future we plan to introduce Gain and EQ control directly within the Satellite1.
 
 ---
 
@@ -170,9 +200,9 @@ Using Music Assistant's DSP equalizer can significantly improve the sound qualit
 
     These capabilities are still rough around the edges. Please be patient. :)
 
-Not only do we want to say, *"Hey Jarvis, turn down the volume"* or *"Hey Jarvis, play the next song"*, but we also want to say, *“Hey Jarvis, play the Beatles,”* and have it play on that speaker (or at least ask which speaker to use). Currently, this is hard to do, but not impossible.
+Not only do we want to say, *"Hey Jarvis, turn down the volume"* or *"Hey Jarvis, play the next song"*, but we also want to say, *"Hey Jarvis, play the Beatles,"* and have it play on that speaker (or at least ask which speaker to use). Currently, this is hard to do, but not impossible.
 
-To achieve all this, I highly recommend reading [Music Assistant’s Voice Support Repository](https://github.com/music-assistant/voice-support). However, I have personally found these implementations to be cumbersome and unreliable and instead have been using a different solution I'll share here (although it does currently require cloud AI).
+To achieve all this, I highly recommend reading [Music Assistant's Voice Support Repository](https://github.com/music-assistant/voice-support). However, I have personally found these implementations to be cumbersome and unreliable and instead have been using a different solution I'll share here (although it does currently require cloud AI).
 
 <div class="grid cards" markdown>
 
@@ -215,6 +245,6 @@ To achieve all this, I highly recommend reading [Music Assistant’s Voice Suppo
 
 !!! Info "My Results:"
     - Playing a song by **artist** or **track name** works fairly well.  
-    - If you don’t specify a speaker, it *sometimes* chooses the right one automatically; therefore it is best to **explicitly specify which speaker** you want to control.  
-    - You **can’t control multiple speakers** in an area (yet).  
-    - You **can’t group or ungroup Snapcast speakers** (yet).  
+    - If you don't specify a speaker, it *sometimes* chooses the right one automatically; therefore it is best to **explicitly specify which speaker** you want to control.  
+    - You **can't control multiple speakers** in an area (yet).  
+    - You **can't group or ungroup Snapcast speakers** (yet).  

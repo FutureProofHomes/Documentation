@@ -1,6 +1,5 @@
-1. Use a data-capable USB-C cable and connect it directly to your computer.
-2. If the CORE is mounted to the HAT, plug into the HAT’s “CORE/ESP32” USB-C port. Otherwise, use the CORE’s USB-C port.
-3. Use the form below to flash Production or Beta firmware, with or without mmWave.
+1. Use a **data-capable USB-C cable** and connect the Satellite's **CORE/ESP32** port to a computer running a **Chrome-based browser**.
+2. Follow the steps below to install your preferred firmware.
 
 !!! example ""
     <div class="form-container" id="firmware-selector" role="form" aria-live="polite"></div>
@@ -27,7 +26,7 @@
 
     ![Image title](/assets/ESPHome-Erase.png){ loading=lazy }
     ![Image title](/assets/ESPHome-ConfirmInstall.png){ loading=lazy }
-    Check **Erase the device** if you want to remove saved WiFi credentials, then click **"Next"** and **"Install"**.
+    Check **Erase the device** only if you want to remove saved WiFi credentials, then click **"Next"** and **"Install"**.
 
 -   :material-numeric-4-circle:{ .lg .middle } __Installation completed__
 

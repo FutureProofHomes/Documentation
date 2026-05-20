@@ -10,8 +10,8 @@ nav:
     - Set Up Voice Pipeline: satellite1-set-up-voice-control.md
     - Enclosures & Speaker Kits:
       - OEM Kits:
-        - Smart Speaker Kit: satellite1-smart-speaker-enclosure-kit.md
-        - In-Ceiling Mount Kit: satellite1-mount-kit-overview.md
+        - Smart Speaker: satellite1-smart-speaker.md
+        - In-Ceiling: satellite1-in-ceiling.md
       - DIY Enclosures:
         - Squircle Enclosures: satellite1-squircle-enclosures.md
         - Cylindrical Enclosure: satellite1-cylindrical-enclosure.md
@@ -20,7 +20,7 @@ nav:
     - Flashing Firmware: 
       - Flash via USB-C Cable: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
-    - Adding Presence Sensors: satellite1-presence-sensors.md
+    - Presence Sensors: satellite1-presence-sensors.md
     - Expansion Modules:
       - PoE1 Module: satellite1-poe-shoe-module-overview.md
       - Amplifier1 Module: satellite1-amplifier-module-overview.md
@@ -55,16 +55,16 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
-      primary: custom
-      accent: custom
     - scheme: default
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to dark mode
+      primary: custom
+      accent: custom
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
       primary: custom
       accent: custom
 extra_css:
@@ -98,12 +98,25 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.magiclink
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+hooks:
+  - hooks/version_hook.py
+  - hooks/compat_matrix_hook.py
+
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        'satellite1-smart-speaker-enclosure-kit.md': 'satellite1-smart-speaker.md'
+        'satellite1-mount-kit-overview.md': 'satellite1-in-ceiling.md'
   # - optimize
   - glightbox:
       touchNavigation: true
@@ -129,6 +142,8 @@ extra_javascript:
   - javascript/keyboard_shortcuts_fix.js
   - javascript/firmware_selector.js
   - javascript/faq-expand-on-hash.js
+  - javascript/toc_tab_sync.js
+  - javascript/firmware_toggle.js
 
 copyright: |
   &copy; 2024 <a href="https://futureproofhomes.net" target="_blank" rel="noopener">FutureProofHomes, Inc</a>
