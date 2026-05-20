@@ -11,8 +11,6 @@ There are many ways to install Music Assistant in your home.  Read their documen
 
 Add a music source provider like Spotify, Apple Music, YouTube Music, or many other sources by following the instructions below.
 
-!!! INFO "Some of the music providers require a paid subscription to use within Music Assistant."
-
 [Connect a Music Provider to MA](https://music-assistant.io/music-providers/){ .md-button .md-button--primary }
 
 ---
@@ -69,6 +67,10 @@ Add a music source provider like Spotify, Apple Music, YouTube Music, or many ot
     Our latest firmwares uses **Sendspin** (Nabu Casa's streaming protocol) instead of Snapcast for music playback.  In our testing, Sendspin delivers better performance with improved synchronization and lower latency.  We are formally migrating to Sendspin-only support going forward.
 
     Sendspin works **out of the box** with Music Assistant — no additional provider setup, port configuration, or server installation is required.  Your Sat1 speakers will automatically appear as available players in Music Assistant once connected.
+
+    !!! WARNING "BREAKING CHANGE: Remove old Sat1 Snapcast Speakers"
+
+        If your Sat1 was previously connected to Music Assistant via Snapcast we recommend removing the Snap Server entirely or deleting the Sat1 Snapcast speaker(s) and rebooting MA to make sure the new Sat1 Sendspin speaker does not conflict.
 
     Sendspin supports the same flexible configurations as before:
 

@@ -324,21 +324,35 @@ The latest Satellite1.1 HAT also includes an LD2450 connector on the underside o
 
     ### mmWave Sensors Are Automatically Detected
 
-    The latest firmware automatically detects which mmWave sensor is connected to your Sat1. To confirm detection, open your Sat1's **Diagnostics** section and scroll to the bottom to see which radar is listed.
+    The latest firmware automatically detects if/which mmWave sensor is connected to your Sat1. To confirm detection, open your Sat1's **Diagnostics** section and scroll to the bottom to see which radar is listed.
+
+    !!! WARNING "BREAKING CHANGE: Sat1 mmWave Entites Have Changed "
+
+        Your previous Sat1 mmWave automations may break due to new/different radar entities being exposed to the Sat1 ESPHome UI.
 
     ### Radar Tuner WebUI
 
     The built-in **Radar Tuner WebUI** lets you visually calibrate your mmWave sensor from a web browser. You do not need Home Assistant dashboard cards or manual entity tuning.
 
-    1. Open your Sat1's **ESPHome Device UI** in Home Assistant.
-    2. Scroll down to the **Diagnostics** section.
-    3. Toggle on **"Radar Tuner WebUI"**.
-    4. Open a web browser and navigate to your **Sat1's IP address** (for example, `http://192.168.1.xxx`), or click the **Visit** button in the Device Info section.
+    <div class="grid cards" markdown>
 
-    <figure markdown="span">
-      ![mmWave radar tuner visit button](../assets/presence-sensors/visit_radar_tuner_webUI.png){ loading=lazy}
-      <figcaption>Toggle on the Radar WebUI, then click the visit button</figcaption>
-    </figure>
+    -   :material-numeric-1-circle:{ .lg .middle } __Open Sat1 ESPHome Device UI__
+
+        ---
+
+        ![Image title](../assets/presence-sensors/mmwave_radar_tuner_toggle.png){ loading=lazy }
+        With a mmWave attached your Satellite1, go to **"Settings -> Devices & Services -> ESPHome"** and find your Sat1 device 
+        
+        Toggle on **"Radar Tuner WebUI"** within the "Diagnostics" section.
+
+    -   :material-numeric-2-circle:{ .lg .middle } __Open the Radar Tuner WebUI__
+
+        ---
+
+        ![Image title](../assets/presence-sensors/visit_radar_tuner_webUI.png){ loading=lazy }
+        Open a web browser and navigate to your **Sat1's IP address** (for example, `http://192.168.1.xxx`), or click the **Visit** button in the Device Info section.
+
+    </div>
 
     #### Tuning LD2450 Zones
 
@@ -346,12 +360,14 @@ The latest Satellite1.1 HAT also includes an LD2450 connector on the underside o
 
     ![Satellite1 Radar Tuner — LD2450](/assets/presence-sensors/radar_tuner_ld2450.png){ width="100%" loading=lazy }
 
-    - **Zone 1 / Zone 2 / Zone 3**: Define areas where you want presence detection active.
+    - **Zone 1 / Zone 2 / Zone 3**: Define areas where you want presence detection active.  Left click to add points, right click to remove them.  Click to move the shape around the screen.
     - **Exclusion Zone**: Mark areas to ignore, such as a fan or a window with moving curtains.
-    - Adjust **Max Detection Range**, **Timeout**, **Stability**, and **Multi-Target Tracking** from the right-hand panel.
-    - Click **"Save Zone"** after defining each zone, then **"Save All Zones"** to write the configuration to the sensor.
+    - Adjust **Max Detection Range**, **Timeout**, **Stability**, and **Multi-Target Tracking** from the right-hand panel.  Read the info popups.
+    - Click **"Save Zone"** after defining each zone, or **"Save All Zones"** to write the configuration to the sensor.  This will require to you reboot your Sat1.
 
     After tuning, the relevant presence sensors and states will appear in your Sat1's ESPHome Device UI, ready for use in Home Assistant automations.
+
+    ![Satellite1 Radar Tuner — LD2450](/assets/presence-sensors/mmwave_esphome_sensors.png){ width="100%" loading=lazy }
 
     #### Tuning LD2410 Gates
 
