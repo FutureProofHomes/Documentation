@@ -3,13 +3,34 @@ import json
 import shutil
 import sys
 import urllib.request
+import re
 
+
+def extract_summary_section(release_body):
+    if not release_body:
+        return None
+
+    header_match = re.search(r"(?im)^\s{0,3}#{1,6}\s+summary\s*$", release_body)
+    if not header_match:
+        return None
+
+    section_start = header_match.end()
+    remaining_body = release_body[section_start:]
+    next_header_match = re.search(r"(?im)^\s{0,3}#{1,6}\s+.+$", remaining_body)
+
+    if next_header_match:
+        section_content = remaining_body[:next_header_match.start()]
+    else:
+        section_content = remaining_body
+
+    summary = section_content.strip()
+    return summary if summary else None
 
 def extract_variant(BASE_NAME):
     parts = BASE_NAME.split(".")
     return parts[1] if len(parts) > 1 else ""
 
-def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, MANIFEST_FILE_DIR, beta, FIRMWARE_FILE_DIR):
+def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, MANIFEST_FILE_DIR, beta, FIRMWARE_FILE_DIR, summary=None):
     # Create the manifest file directory if it does not exist
     if not os.path.exists(MANIFEST_FILE_DIR):
         os.makedirs(MANIFEST_FILE_DIR)
@@ -29,7 +50,7 @@ def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, 
                 "ota": {
                     "path": f"{DIR_NAME}/{BASE_NAME}.ota.bin",
                     "md5": OTA_MD5,
-                    "summary": f"ESPHome Firmware for {BASE_NAME}",
+                    "summary": summary or f"ESPHome Firmware for {BASE_NAME}",
                     "release_url": f"https://github.com/{esphome_firmware_repository}/releases/tag/{release_tag}/"
                 },
                 "parts": [
@@ -62,12 +83,12 @@ def error_exit(message):
     print(message, file=sys.stderr)
     sys.exit(1)
 
-def get_release_info(release_tag, release_repository, GITHUB_TOKEN):
+def get_release_info(release_tag, release_repository, GITHUB_TOKEN=None):
     # Fetch the assets from the GitHub API
     api_url = f"https://api.github.com/repos/{release_repository}/releases/tags/{release_tag}"
     request = urllib.request.Request(api_url)
     request.add_header('Accept', 'application/vnd.github+json')
-    if not GITHUB_TOKEN is None:
+    if GITHUB_TOKEN:
         request.add_header('Authorization', f'Bearer {GITHUB_TOKEN}')
 
     try:
