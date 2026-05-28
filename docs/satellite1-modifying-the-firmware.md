@@ -1,7 +1,7 @@
 The firmware running on the Satellite1 is [open source](https://github.com/FutureProofHomes/Satellite1-ESPHome/blob/develop/LICENSE).  All we ask is that you contribute back to the FutureProofHomes community by submitting pull requests to the [Satellite1-ESPHome](https://github.com/FutureProofHomes/Satellite1-ESPHome) repository.  You may want to modify and flash your custom firmware on the Sat1 to do the following:
 
 - Hardcode your Wifi SSID & Password
-- Hardcode the Snapserver's IP address
+- Add custom network or audio settings for your environment
 - Add custom wake words
 - Hide or show more logs for deep troubleshooting
 - Change or extend the core functionality in any way you desire.
