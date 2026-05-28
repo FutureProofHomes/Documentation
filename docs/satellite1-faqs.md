@@ -45,7 +45,7 @@ Common questions and step-by-step fixes in one place.
 ### Why is my speaker too quiet? { .faq-question }
 ??? note "Why is my speaker too quiet?"
     1. We recommend 30W of power.  Check the **USB-C Power Draw** sensor in the Sat1 ESPHome UI.
-    2. In Music Assistant: open the Sat1 speaker's Player Settings, disable **Enable volume normalization (EBU-R128 based)** and **Enable limiting to prevent clipping**, then increase gain in Music Assistant's DSP. [Details here](satellite1-streaming-music.md#start-the-snapcast-server).
+    2. In Music Assistant: open the Sat1 speaker's Player Settings, disable **Enable volume normalization (EBU-R128 based)** and **Enable limiting to prevent clipping**, then increase gain in Music Assistant's DSP. [Details here](satellite1-streaming-music.md#adjust-dspspeaker-settings-to-achieve-best-sound).
     ![usbc power draw](/assets/usb-c_power_draw.png){ width="100%" }
 
 ### Why is music or TTS stuttering? { .faq-question }

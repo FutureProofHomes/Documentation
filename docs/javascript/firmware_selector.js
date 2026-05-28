@@ -14,35 +14,13 @@
                 },
             ]
         },
-        {
-            title: 'Select mmWave Sensor',
-            description: 'Which optional mmWave sensor is attached to the Sat1?',
-            choices: [
-                {
-                    id: "default",
-                    title: "No sensor",
-                },
-                {
-                    id: "ld2410",
-                    title: "LD2410",
-                },
-                {
-                    id: "ld2450",
-                    title: "LD2450",
-                },
-            ]
-        },
     ];
 
     let stage = 0;
-    const selections = ['stable', 'default']
-
-    function isBetaSelected() {
-        return selections[0] === 'beta';
-    }
+    const selections = ['stable']
 
     function activeStepIndexes() {
-        return isBetaSelected() ? [0] : config.map((_, idx) => idx);
+        return config.map((_, idx) => idx);
     }
 
     function isSummaryStage() {
@@ -64,7 +42,7 @@
     }
 
     function selectedLabel(idx) {
-        return idx === 1 ? 'Selected mmWave' : config[idx].title.replace(/^Select\b/, 'Selected');
+        return config[idx].title.replace(/^Select\b/, 'Selected');
     }
 
     function selectedValue(selected, idx) {
@@ -373,21 +351,18 @@
                 idx === 0 ? firmwareSummaryRow(selected) : summaryRow(selectedLabel(idx), selectedValue(selected, idx))
             );
         });
-        if (isBetaSelected()) {
-            fragment.appendChild(
-                summaryRow(
-                    'Selected mmWave',
-                    'Automatically supports both LD2410 and LD2450 if/when a sensor is attached.'
-                )
-            );
-        }
+        fragment.appendChild(
+            summaryRow(
+                'Selected mmWave',
+                'Automatically supports both LD2410 and LD2450 if/when a sensor is attached.'
+            )
+        );
         const firmware = selections[0] === 'stable' ? '' : `-${selections[0]}`;
-        const mmwave = selections[0] === 'stable' && selections[1] !== 'default' ? `.${selections[1]}` : '';
         section.append(
             el('h2', { textContent: 'Summary' }),
             fragment,
             navigation(
-                `https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest${firmware}${mmwave}.json`
+                `https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/manifest${firmware}.json`
             )
         );
         return section;
@@ -400,9 +375,6 @@
         if (group && group.dataset.step) {
             const step = Number(group.dataset.step);
             selections[step] = btn.dataset.id;
-            if (step === 0 && isBetaSelected()) {
-                selections[1] = 'default';
-            }
             render();
         }
     }
