@@ -36,6 +36,81 @@
     updateModeVisibility(mode);
   }
 
+  function getHashId() {
+    if (!window.location.hash || window.location.hash === "#") return "";
+    var id = window.location.hash.slice(1).split("?")[0];
+    try {
+      return decodeURIComponent(id);
+    } catch (e) {
+      return id;
+    }
+  }
+
+  function getHashTargets() {
+    var id = getHashId();
+    if (!id) return [];
+    return Array.from(document.querySelectorAll("[id]")).filter(function (el) {
+      return el.id === id;
+    });
+  }
+
+  function getFirmwareModeForElement(el) {
+    var block = el && el.closest(".tabbed-block");
+    if (!block) return null;
+
+    var set = block.closest(".tabbed-set");
+    if (!set) return null;
+
+    var blocks = Array.from(
+      set.querySelectorAll(":scope > .tabbed-content > .tabbed-block")
+    );
+    var idx = blocks.indexOf(block);
+    if (idx === -1) return null;
+
+    var labels = set.querySelectorAll(":scope > .tabbed-labels > label");
+    var label = labels[idx];
+    if (!label) return null;
+
+    var mode = label.textContent.trim().toLowerCase();
+    return MODES.indexOf(mode) !== -1 ? mode : null;
+  }
+
+  function getModeFromHashTarget() {
+    var modes = getHashTargets()
+      .map(getFirmwareModeForElement)
+      .filter(function (mode, idx, arr) {
+        return mode && arr.indexOf(mode) === idx;
+      });
+
+    return modes.length === 1 ? modes[0] : null;
+  }
+
+  function getPageMode() {
+    return getModeFromHashTarget() || getMode();
+  }
+
+  function scrollToHashTarget() {
+    var targets = getHashTargets();
+    var visibleTargets = targets.filter(function (target) {
+      var block = target.closest(".tabbed-block");
+      return !block || window.getComputedStyle(block).display !== "none";
+    });
+    if (visibleTargets.length !== 1) return;
+
+    visibleTargets[0].scrollIntoView();
+  }
+
+  function scheduleHashScroll() {
+    if (!getHashId()) return;
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        scrollToHashTarget();
+        setTimeout(scrollToHashTarget, 120);
+      });
+    });
+  }
+
   function activateTabs(mode) {
     var label = mode === "beta" ? "Beta" : "Stable";
     document.querySelectorAll(".tabbed-set").forEach(function (set) {
@@ -111,7 +186,7 @@
     wrapper.setAttribute("role", "radiogroup");
     wrapper.setAttribute("aria-label", "Firmware documentation version");
 
-    var mode = getMode();
+    var mode = getPageMode();
     wrapper.dataset.active = mode;
 
     MODES.forEach(function (m) {
@@ -215,21 +290,22 @@
 
   function syncOnPageLoad() {
     createFirmwareToggle();
-    var mode = getMode();
+    var mode = getPageMode();
+    localStorage.setItem(STORAGE_KEY, mode);
     _syncing = true;
-    setTimeout(function () {
-      activateTabs(mode);
-      updateToggleUI(mode);
-      updateBanner(mode);
-      updateModeVisibility(mode);
-      _syncing = false;
-    }, 60);
+    activateTabs(mode);
+    updateToggleUI(mode);
+    updateBanner(mode);
+    updateModeVisibility(mode);
+    _syncing = false;
+    scheduleHashScroll();
   }
 
   function init() {
     createFirmwareToggle();
     createThemeToggle();
     document.addEventListener("change", onContentTabChange);
+    window.addEventListener("hashchange", syncOnPageLoad);
     syncOnPageLoad();
   }
 
