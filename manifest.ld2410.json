@@ -1,19 +1,19 @@
 {
   "name": "ESPHome Firmware for Satellite1-Core-Board",
-  "version": "v0.2.0+ld2410",
+  "version": "v0.2.0",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "ota": {
-        "path": "assets/firmware/esphome/production/satellite1.ld2410.ota.bin",
-        "md5": "666f400e00cb1d669cad9eefed0efeb7",
+        "path": "assets/firmware/esphome/production/satellite1.ota.bin",
+        "md5": "8e2d993de1f1ed29c5690d55eb50ae6d",
         "summary": "**Breaking Changes:**\r\n- Updates mmWave sensors exposed in ESPHome and introduces a new Radar Tuner WebUI. [Learn more](https://docs.futureproofhomes.net/satellite1-presence-sensors/#mmwave-setup)  \r\n- Removes Snapcast in exchange for Sendspin music streaming protocol. [Learn more](https://docs.futureproofhomes.net/satellite1-streaming-music/#connect-your-sat1-to-music-assistant)\r\n\r\n**!! If your Sat1 was previously connected to Music Assistant via Snapcast please follow these steps:**\r\n\r\n    1. !!BACKUP Music Assistant!!\r\n    2. Update Sat1 to this firmware\r\n    3. Delete Old Sat1 Snapcast Speakers from MA -> Settings -> Players (use the 3 dots menu)\r\n    4. Restart Music Assistant (possibly restart Sat1 if necessary)\r\n\r\nThis release adds support for Nabu Casa\u2019s Sendspin music streaming protocol. As part of this transition, Snapcast has been removed from the firmware.\r\n\r\nThis release also introduces a new mmWave \"Radar Tuner WebUI\" for configuring zones and gates on LD2450 and LD2410 radar sensors.\r\n\r\nFor setup guidance and additional details, please visit [docs.FutureProofHomes.ai](https://docs.futureproofhomes.net/satellite1-introduction/).\r\n\r\nBuilt on ESPHome 2026.4.5.",
         "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.2.0/"
       },
       "parts": [
         {
-          "path": "assets/firmware/esphome/production/satellite1.ld2410.factory.bin",
+          "path": "assets/firmware/esphome/production/satellite1.factory.bin",
           "offset": 0
         }
       ]
