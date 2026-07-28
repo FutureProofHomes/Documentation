@@ -162,8 +162,8 @@ The 3D-printable 3MF project files, STL and STEP files are published online for 
 
 #### Links
 
-- [FutureProofHomes GitHub](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/OEM%20Enclosures/Satellite1%20Smart%20Speaker%20Enclosure%20Kit)
-- [MakerWorld](https://makerworld.com/de/models/2195101-futureproofhomes-oem-satellite1-smart-speaker)
+- [FutureProofHomes GitHub](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/OEM%20Enclosures/Satellite1.1%20Smart%20Speaker%20Enclosure%20Kit)
+- [MakerWorld](https://makerworld.com/models/2615819-futureproofhomes-oem-satellite1-1-smart-speaker)
 
 #### Printing Parameters
 
