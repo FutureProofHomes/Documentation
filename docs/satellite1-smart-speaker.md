@@ -43,7 +43,7 @@ Alternatively, you can purchase the [Satellite1 Smart Speaker Enclosure Kit](htt
 
     Dev Kits are designed for use on your electronics bench, but this enclosure kit pushes the dev kit to its full potential, though a few limitations apply.
 
-    1. Use the firmware’s temperature, humidity, luminosity sensor offsets for the most accurate sensor readings.
+    1. Temp, hum, lux  [Read more here.](/satellite1-faqs/#why-is-the-temp-or-lux-sensor-incorrect)
     2. At full volume, the wake word may not be heard perfectly.  Still the wake word should respond if the enclosure is airtight and not on a vibrating surface.
 
 # Watch the Instructional Video
@@ -114,8 +114,8 @@ Alternatively, you can purchase the [Satellite1 Smart Speaker Enclosure Kit](htt
 
     ---
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/antenna_placement.png){ loading=lazy }
-    If your Sat1 includes an external antenna, remove the release liner and adhere the antenna to the back speaker chamber's interior side wall, as close to the cable exit as possible.
+    ![Image title](/assets/smart-speaker-enclosure-kit/antenna_mount_annotated_cropped_new.JPG){ loading=lazy }
+    Depending on your enclosure and satellite version, you can slide the WiFi antenna into the dedicated “Stealth Pocket” or adhere it to the back of the speaker chamber.  If you have an original Satellite1 then the antenna is built-in and you can skip this step.
 
     ![Image title](/assets/smart-speaker-enclosure-kit/mount_back_chamber.jpg){ loading=lazy }
     Align the two chamber parts together, making sure the JST wire is not pinched and that the foam forms an airtight seal. Slide the parts together with the front piece moving downward and the back piece moving upward.
@@ -134,13 +134,15 @@ Alternatively, you can purchase the [Satellite1 Smart Speaker Enclosure Kit](htt
 -   :material-numeric-9-circle:{ .lg .middle } __Mount the PCB Dev Kit__
 
     ---
-
+    ![Image title](/assets/smart-speaker-enclosure-kit/stealth_pocket_ annotated_cropped.JPG){ loading=lazy }
+    1. Gently press the WiFi antenna's gold IPEX connector to the Core board ([see details here](satellite1-assembly.md)).  
+    
+    2. Firmly press the Core/Hat boards together via the 40-pin header.
+    3. Connect the optional LD2450 mmWave 4-pin cable to to the bottom of the Hat.
+    4. Route the cables through their respective 3D printed raceways.
+    5. Ensuring the headphone jack is facing the rear, rest the Sat1 Hat on the enclosure's four mounting posts and hand-tighten four hex screws to secure the PCBs to the enclosure.
     ![Image title](/assets/smart-speaker-enclosure-kit/connect_JST_cable.jpg){ loading=lazy }
     ![Image title](/assets/smart-speaker-enclosure-kit/mounted_dev_kit.jpg){ loading=lazy }
-    1. Press the Core and Hat PCBs firmly together ([see details here](satellite1-assembly.md)) and connect the JST-XH cable.
-    
-    2. Rest the Sat1 on the enclosure's four mounting posts while ensuring the headphone jack is facing the rear. Hand-tighten four (4) hex screws to secure the PCBs to the enclosure.
-    
 
 -   :material-numeric-10-circle:{ .lg .middle } __Assemble Top Piece & LED Diffuser__
 

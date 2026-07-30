@@ -35,7 +35,7 @@ The latest Satellite1.1 HAT also includes an LD2450 connector on the underside o
     </figure>
     <figure markdown="span">
       ![LD2450 4-pin mmWave](../assets/presence-sensors/sat1.1_ld2450_square.png){ loading=lazy}
-      <figcaption>Latest Sat1.1 supports LD2450 connected with the included cable</figcaption>
+      <figcaption>Latest Sat1.1 supports LD2450 connected with the 4-pin harness cable</figcaption>
     </figure>
 
     ???+ warning "The LD2450 must be running firmware version greater than V2.02.23090617 to work with ESPHome. Learn how to [update the firmware](#updating-mmwave-radar-sensor)."

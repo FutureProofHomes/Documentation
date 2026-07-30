@@ -108,7 +108,7 @@ Remove unnecessary plates, depending on your speaker selection, enclosure type, 
 
 !!! warning "Sensors are not supported, yet"
 
-    Enclosing a "Dev Kit" affects sensor accuracy—lux, temperature, and humidity readings won’t reflect the room, and the top plate is not designed to support mmWave sensors.  Our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md) and a PoE mid-plate will relocate the sensors into the speaker chamber and add a PoE port to the enclosure.
+    Enclosing a "Dev Kit" affects sensor accuracy—lux, temperature, and humidity readings won’t reflect the room ([Read more here.](/satellite1-faqs/#why-is-the-temp-or-lux-sensor-incorrect)), and the top plate is not designed to support mmWave sensors.  Our upcoming [power-over-ethernet SHOE board](satellite1-poe-shoe-module-overview.md) and a PoE mid-plate will relocate the sensors into the speaker chamber and add a PoE port to the enclosure.
 
 !!! warning "When playing music at full volume the wake word may not respond"
 

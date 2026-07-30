@@ -75,6 +75,23 @@ Common questions and step-by-step fixes in one place.
 
 ---
 
+## Sensors
+
+### Why is the temp or lux sensor incorrect? { .faq-question }
+??? note "Why is the temp or lux sensor incorrect?"
+     The Sat1 is designed as a "Dev Kit" intended to run as a bare PCB on your electronics or hobby bench. We're now pushing that design further by using it in a fully enclosed smart speaker, where the sensor placement isn't ideal for accurate readings.
+
+     Ultimately, fully resolving this will require a hardware revision that moves the temperature, lux, and humidity sensors off the Hat board and into a more suitable location within the speaker. We've taken a similar approach with the external Wi-Fi antenna and mmWave sensor and will continue embracing modular, repairable hardware.
+
+     As a quick workaround, you can use the offset sensors in the firmware.
+
+     ![Offset sensor settings](/assets/smart-speaker-enclosure-kit/offset_sensors.png){ loading=lazy }
+
+### How do I setup mmWave human presence detection? { .faq-question }
+??? note "How do I setup mmWave human presence detection?"
+     Satellite1 supports connecting a LD2450 or LD2410 presence sensor.  [Read more here.](satellite1-presence-sensors.md)
+---
+
 ## Networking
 
 ### How do I check WiFi connection? { .faq-question }
