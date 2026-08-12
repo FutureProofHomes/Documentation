@@ -16,6 +16,9 @@ jobs:
     steps:
     - name: Checkout current repository
       uses: actions/checkout@v4
+      with:
+        # PAT so the push below can trigger ci.yaml (GITHUB_TOKEN pushes cannot)
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: Authenticate with GitHub CLI
       run: |
@@ -42,7 +45,9 @@ jobs:
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
         git add ./assets/*
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
         git commit -m "Add XMOS Firmware: ${{ github.event.inputs.xmos_release_tag }}"
         git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
