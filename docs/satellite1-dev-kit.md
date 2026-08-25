@@ -23,7 +23,7 @@ Every other kit builds on this one. If you are assembling a smart speaker at hom
 |------|-----------------|
 | Speaker drivers, crossover, and speaker cables | [Electronics Kit](satellite1-electronics-kit.md) |
 | Enclosure parts, screws, and sealing foam | [Enclosure Kit](satellite1-enclosure-kit.md) |
-| mmWave human presence sensor | [LD2450 sensor and harness](https://futureproofhomes.net/products/ld2450-mmwave-human-presence-sensor) — see [Presence Sensors](satellite1-presence-sensors.md) |
+| mmWave human presence sensor | [LD2450 sensor and harness](https://futureproofhomes.net/products/ld2450-mmwave-human-presence-sensor) — see [mmWave Sensors](satellite1-mmwave-overview.md) |
 
 The Dev Kit runs perfectly well as a bare board on your bench. You only need the other kits if you want to build it into a finished speaker.
 

@@ -54,4 +54,4 @@ All three ship together in the [Electronics Kit](satellite1-electronics-kit.md).
 |------|-------|
 | [LD2450 mmWave Human Presence Sensor](https://futureproofhomes.net/products/ld2450-mmwave-human-presence-sensor) | Tracks up to 3 people to 8 metres. Ships with the 4-pin harness cable for the Satellite1.1 Hat. |
 
-See [Presence Sensors](satellite1-presence-sensors.md) for mounting options and how to tune detection zones.
+See the [mmWave Overview](satellite1-mmwave-overview.md) to choose a sensor, then [Installation](satellite1-mmwave-installation.md) and [Tuning](satellite1-mmwave-tuning.md).

@@ -29,7 +29,10 @@ nav:
     - In-Ceiling Kit: satellite1-in-ceiling.md
   - Accessories:
     - Individual Parts: satellite1-accessories.md
-    - mmWave Presence Sensors: satellite1-presence-sensors.md
+    - mmWave Sensors:
+      - Overview: satellite1-mmwave-overview.md
+      - Installation: satellite1-mmwave-installation.md
+      - Tuning: satellite1-mmwave-tuning.md
   - Modules:
     - PoE1 Module: satellite1-poe-shoe-module-overview.md
     - Amplifier1 Module: satellite1-amplifier-module-overview.md
@@ -124,6 +127,7 @@ plugins:
         'satellite1-smart-speaker-enclosure-kit.md': 'satellite1-smart-speaker.md'
         'satellite1-mount-kit-overview.md': 'satellite1-in-ceiling.md'
         'satellite1-recommended-accessories.md': 'satellite1-accessories.md'
+        'satellite1-presence-sensors.md': 'satellite1-mmwave-overview.md'
   # - optimize
   - glightbox:
       touchNavigation: true

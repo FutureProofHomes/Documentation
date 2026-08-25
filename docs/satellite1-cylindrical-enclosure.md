@@ -27,7 +27,7 @@ Without the SHOE board there are some current limitations of the enclosure:
 <br>[Read more here.](/satellite1-faqs/#why-is-the-temp-or-lux-sensor-incorrect)
 
 2. **The mmWave sensor is pointed up at the ceiling.**
-<br>See our updated [Sat1.1 Hat board](/satellite1-presence-sensors/#connecting-mmwave-sensors) and [Smart Speaker Enclosure](satellite1-smart-speaker.md) that supports forward facing mmWave.
+<br>See our updated [Sat1.1 Hat board](satellite1-mmwave-installation.md#connection-methods) and [Smart Speaker Enclosure](satellite1-smart-speaker.md) that supports forward facing mmWave.
 
 3. **The mic pipes very slightly decrease the accuracy of speech-to-text.**
 <br>We will solve this once we get to plastic injection molded enclosures.

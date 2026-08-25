@@ -36,7 +36,7 @@ Locate the Raspberry Pi standard 40-pin header on the Hat board. Carefully align
 
 ### Step 3: Attach mmWave (Optional)
 
-There are 3 ways to connect a mmWave human presence sensor to Satellite1. [Read more here.](satellite1-presence-sensors.md)
+There are 3 ways to connect a mmWave human presence sensor to Satellite1. [Read more here.](satellite1-mmwave-installation.md)
 
 <div class="grid cards" markdown>
 
@@ -45,7 +45,7 @@ There are 3 ways to connect a mmWave human presence sensor to Satellite1. [Read 
     ---
 
     <figure markdown="span">
-      ![LD2450 4-pin mmWave](../assets/presence-sensors/sat1.1_ld2450_square.png){ loading=lazy}
+      ![LD2450 4-pin mmWave](/assets/presence-sensors/sat1.1_ld2450_square.png){ loading=lazy}
       <figcaption>Latest Sat1.1 Hat board offers a 4-pin JST cable.</figcaption>
     </figure>
     [Get LD2450 and Harness Cable](https://futureproofhomes.net/products/ld2450-mmwave-human-presence-sensor){ .md-button .md-button--primary }
@@ -55,7 +55,7 @@ There are 3 ways to connect a mmWave human presence sensor to Satellite1. [Read 
     ---
 
     <figure markdown="span">
-      ![LD2450 mmWave](../assets/presence-sensors/sat1_ld2450.jpg){ loading=lazy}
+      ![LD2450 mmWave](/assets/presence-sensors/sat1_ld2450.jpg){ loading=lazy}
       <figcaption>Original Sat1 with direct-mounted LD2450</figcaption>
     </figure>
 
@@ -64,7 +64,7 @@ There are 3 ways to connect a mmWave human presence sensor to Satellite1. [Read 
     ---
 
     <figure markdown="span">
-      ![LD2410 mmWave](../assets/presence-sensors/sat1_ld2410.jpg){ loading=lazy}
+      ![LD2410 mmWave](/assets/presence-sensors/sat1_ld2410.jpg){ loading=lazy}
       <figcaption>Original Sat1 with direct-mounted LD2410</figcaption>
     </figure>
 </div>

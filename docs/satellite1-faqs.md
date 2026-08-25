@@ -89,7 +89,7 @@ Common questions and step-by-step fixes in one place.
 
 ### How do I setup mmWave human presence detection? { .faq-question }
 ??? note "How do I setup mmWave human presence detection?"
-     Satellite1 supports connecting a LD2450 or LD2410 presence sensor.  [Read more here.](satellite1-presence-sensors.md)
+     Satellite1 supports connecting a LD2450 or LD2410 presence sensor.  [Read more here.](satellite1-mmwave-overview.md)
 ---
 
 ## Networking
