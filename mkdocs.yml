@@ -27,6 +27,7 @@ nav:
     - Enclosure Kit: satellite1-enclosure-kit.md
     - Electronics Kit: satellite1-electronics-kit.md
     - Building the Smart Speaker: satellite1-smart-speaker.md
+    - Accessories: satellite1-accessories.md
     - Expansion Modules:
       - PoE1 Module: satellite1-poe-shoe-module-overview.md
       - Amplifier1 Module: satellite1-amplifier-module-overview.md
@@ -121,6 +122,7 @@ plugins:
       redirect_maps:
         'satellite1-smart-speaker-enclosure-kit.md': 'satellite1-smart-speaker.md'
         'satellite1-mount-kit-overview.md': 'satellite1-in-ceiling.md'
+        'satellite1-recommended-accessories.md': 'satellite1-accessories.md'
   # - optimize
   - glightbox:
       touchNavigation: true
