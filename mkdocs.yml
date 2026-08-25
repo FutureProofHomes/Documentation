@@ -13,7 +13,6 @@ nav:
       - 3. Set Up Your Voice Assistant: satellite1-set-up-voice-control.md
     - Using Your Satellite1:
       - Streaming Music: satellite1-streaming-music.md
-      - Presence Sensors: satellite1-presence-sensors.md
       - Helpful Automations: satellite1-helpful-automations.md
     - Firmware:
       - Flash via USB-C: satellite1-flash-via-usb-c.md
@@ -27,11 +26,13 @@ nav:
     - Enclosure Kit: satellite1-enclosure-kit.md
     - Electronics Kit: satellite1-electronics-kit.md
     - Building the Smart Speaker: satellite1-smart-speaker.md
-    - Accessories: satellite1-accessories.md
-    - Expansion Modules:
-      - PoE1 Module: satellite1-poe-shoe-module-overview.md
-      - Amplifier1 Module: satellite1-amplifier-module-overview.md
-      - In-Ceiling Kit: satellite1-in-ceiling.md
+    - In-Ceiling Kit: satellite1-in-ceiling.md
+  - Accessories:
+    - Individual Parts: satellite1-accessories.md
+    - mmWave Presence Sensors: satellite1-presence-sensors.md
+  - Modules:
+    - PoE1 Module: satellite1-poe-shoe-module-overview.md
+    - Amplifier1 Module: satellite1-amplifier-module-overview.md
   - Troubleshooting: satellite1-faqs.md
 
 theme:
