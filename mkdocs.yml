@@ -2,32 +2,32 @@ site_name: FutureProofHomes Docs
 site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
 nav:
-  - Welcome: index.md
-  - Satellite1 Dev Kit:
-    - Introduction: satellite1-introduction.md
-    - PCB Assembly & First Boot: satellite1-assembly.md
-    - Connect to Home Assistant: satellite1-connecting-to-ha.md
-    - Set Up Voice Pipeline: satellite1-set-up-voice-control.md
-    - Enclosures & Speaker Kits:
-      - OEM Kits:
-        - Smart Speaker: satellite1-smart-speaker.md
-        - In-Ceiling: satellite1-in-ceiling.md
-      - DIY Enclosures:
-        - Squircle Enclosures: satellite1-squircle-enclosures.md
-        - Cylindrical Enclosure: satellite1-cylindrical-enclosure.md
-    - Streaming Music: satellite1-streaming-music.md
-    - Helpful Automations: satellite1-helpful-automations.md
-    - Flashing Firmware: 
-      - Flash via USB-C Cable: satellite1-flash-via-usb-c.md
+  - Welcome:
+    - index.md
+    - Nexus1 AI Base Station: ai-base-station-introduction.md
+  - Satellite1:
+    - Overview: satellite1-introduction.md
+    - Getting Started:
+      - 1. Assembly & First Boot: satellite1-assembly.md
+      - 2. Connect to Home Assistant: satellite1-connecting-to-ha.md
+      - 3. Set Up Your Voice Assistant: satellite1-set-up-voice-control.md
+    - Using Your Satellite1:
+      - Streaming Music: satellite1-streaming-music.md
+      - Presence Sensors: satellite1-presence-sensors.md
+      - Helpful Automations: satellite1-helpful-automations.md
+    - Firmware:
+      - Flash via USB-C: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
-    - Presence Sensors: satellite1-presence-sensors.md
+  - Enclosures & Kits:
+    - Smart Speaker: satellite1-smart-speaker.md
+    - In-Ceiling: satellite1-in-ceiling.md
+    - DIY Enclosures:
+      - Squircle Enclosures: satellite1-squircle-enclosures.md
+      - Cylindrical Enclosure: satellite1-cylindrical-enclosure.md
     - Expansion Modules:
       - PoE1 Module: satellite1-poe-shoe-module-overview.md
       - Amplifier1 Module: satellite1-amplifier-module-overview.md
-    - FAQs & Troubleshooting: satellite1-faqs.md
-  - Nexus1 AI Base Station:
-    - Introduction: ai-base-station-introduction.md
-
+  - Troubleshooting: satellite1-faqs.md
 
 theme:
   logo: assets/square_transparent_black_logo_vector_300x300.svg
