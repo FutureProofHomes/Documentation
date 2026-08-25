@@ -146,14 +146,14 @@ The 3D-printable 3MF project files, STL and STEP files are published online for 
 
 !!! info "Compatible Speaker Drivers"
 
-    The Satellite1 Smart Speaker Enclosure Kit is acoustically and mechanically engineered to work with a specific set of high-quality LG speaker drivers. These drivers were selected for their excellent sound quality, compatibility with the Satellite1 amplifier and crossover, and reliable availability in bulk from trusted suppliers.
+    The enclosure is acoustically and mechanically engineered around a specific set of drivers, chosen for sound quality and for how they pair with the Satellite1's amplifier and crossover.
 
-    Due to packaging and supply-chain complexities during launch, we do not currently sell the speaker drivers or other electronic components separately. We do plan to offer an “electronics-only” kit after launch.
+    We sell all of them. The [Electronics Kit](satellite1-electronics-kit.md) bundles the woofer, tweeter, crossover, and cables, or you can buy each part on its own:
 
-    If you choose to purchase the recommended speaker drivers from third-party online retailers, please be aware that counterfeit or cloned products do exist. Additionally, modifying the enclosure to accommodate alternative speaker drivers may affect sound quality and wake-word performance.
+    - [3" Mid-Range Woofer, 4Ω 20W](https://futureproofhomes.net/products/3-inch-woofer-4ohm-20w)
+    - [Tweeter, 4Ω 20W](https://futureproofhomes.net/products/tweeter-4ohm-20w)
+    - [Two-Way Speaker Crossover](https://futureproofhomes.net/products/two-way-speaker-crossover)
+
+    Substituting other drivers, or modifying the enclosure to fit them, may affect both sound quality and wake-word performance.
 
     Have fun hacking!
-
-    - Tweeter MLT20-F4-S4830 (Sorry, no reliable supplier links we can confidently recommend.)
-    - Woofer MLW78-F4-R6015 (Sorry, no reliable supplier links we can confidently recommend.)
-    - [Crossover](https://amzn.to/49xXidZ) (Sorry, no reliable model number.)

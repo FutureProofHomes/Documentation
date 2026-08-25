@@ -66,15 +66,17 @@ You can inspect individual .STEP and .STL files in the [Satellite1-Enclosures](h
     ![JST-XH cables](/assets/Accessories-jst.png){ loading=lazy }
     The 2.54mm JST-XH 2-Pin Male Connector goes in-between the Satellite1's built-in amplifier and your selected speaker.
 
-    [Get it on Amazon](https://amzn.to/4ly9LDA){ .md-button .md-button--primary }
+    [Get the JST-XH connector](https://futureproofhomes.net/products/jst-xh-2-54mm-2-pin-male-connector){ .md-button .md-button--primary }
 
--   :material-numeric-2-circle:{ .lg .middle } Spade connectors and a crimper tool
+-   :material-numeric-2-circle:{ .lg .middle } Spade cables
 
     ---
 
     ![Recommended Spade Connectors](/assets/Accessories-spade-connector.jpg){loading=lazy }
-    For the cleanest connection between the speaker and the JST-XH cable, we recommend using spade connectors. If you prefer, you can solder the cable to the speaker terminals, or simply wrap the cable around the terminals—it’s entirely up to you.
-    [Get it on Amazon](https://amzn.to/47YbzBo){ .md-button .md-button--primary }
+    For the cleanest connection between the speaker and the JST-XH cable, we recommend spade connectors. Our cables come pre-crimped, so you don't need a crimper tool. If you prefer, you can solder the cable to the speaker terminals or simply wrap it around them — entirely up to you.
+
+    [Red 5.3mm (positive)](https://futureproofhomes.net/products/4-8mm-spade-cable-red){ .md-button .md-button--primary }
+    [Black 2.8mm (negative)](https://futureproofhomes.net/products/2-8mm-spade-cable-black){ .md-button }
 
 </div>
 
