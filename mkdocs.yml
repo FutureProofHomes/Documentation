@@ -18,15 +18,19 @@ nav:
     - Firmware:
       - Flash via USB-C: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
-  - Enclosures & Kits:
-    - Smart Speaker: satellite1-smart-speaker.md
-    - In-Ceiling: satellite1-in-ceiling.md
-    - DIY Enclosures:
-      - Squircle Enclosures: satellite1-squircle-enclosures.md
-      - Cylindrical Enclosure: satellite1-cylindrical-enclosure.md
+    - Hardware Reference:
+      - DIY Enclosures:
+        - Squircle Enclosures: satellite1-squircle-enclosures.md
+        - Cylindrical Enclosure: satellite1-cylindrical-enclosure.md
+  - Kits:
+    - Dev Kit: satellite1-dev-kit.md
+    - Enclosure Kit: satellite1-enclosure-kit.md
+    - Electronics Kit: satellite1-electronics-kit.md
+    - Building the Smart Speaker: satellite1-smart-speaker.md
     - Expansion Modules:
       - PoE1 Module: satellite1-poe-shoe-module-overview.md
       - Amplifier1 Module: satellite1-amplifier-module-overview.md
+      - In-Ceiling Kit: satellite1-in-ceiling.md
   - Troubleshooting: satellite1-faqs.md
 
 theme:
