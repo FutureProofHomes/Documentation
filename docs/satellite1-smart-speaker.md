@@ -1,40 +1,9 @@
-## Smart Speaker Pre-Assembled
-The Satellite1 Smart Speaker can now be purchased as a pre-assembled and professionally boxed product.  Checkout the [product page for more details](https://futureproofhomes.net/products/satellite1-smart-speaker).
+Build a Satellite1 Smart Speaker at home from three kits: the [Dev Kit](satellite1-dev-kit.md) for the boards, the [Enclosure Kit](satellite1-enclosure-kit.md) for the cabinet, and the [Electronics Kit](satellite1-electronics-kit.md) for the drivers and crossover.
 
-<figure markdown="span">
-  ![Smart Speaker Pre-Assembled](/assets/sat.1.1_pre-assembled_unboxed_gray.jpeg){ width="100%" }
-  <figcaption>Optional "Charcoal Gray" or "Bone White" color choices</figcaption>
-</figure>
+## Before You Begin
 
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/LcluZzciARU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+You'll need a few household tools that aren't included in any kit:
 
-## Smart Speaker Enclosure Kit
-
-Alternatively, you can purchase the [Satellite1 Smart Speaker Enclosure Kit](https://futureproofhomes.net/products/satellite1-smart-speaker-enclosure-kit) which includes all the individual parts necessary to upgrade your existing [Satellite1 Dev Kit](https://futureproofhomes.net/products/satellite1-pcb-dev-kit) to the smart speaker product which you build at home. This guide explains how to assemble the kit and even print the enclosure at home.
-
-<figure markdown="span">
-  ![Smart Speaker Enclosure Kit Photoshoot](/assets/smart-speaker-enclosure-kit/white_gray_enclosure.jpg){ width="100%" }
-  <figcaption>Optional "Charcoal Gray" or "Bone White" color choices</figcaption>
-</figure>
-
-## Parts Included in Kit
-<figure markdown="span">
-  ![Smart Speaker Enclosure Kit Parts](/assets/smart-speaker-enclosure-kit/all_parts.jpg){ width="100%" }
-  <figcaption>Parts inside the Smart Speaker Enclosure Kit</figcaption>
-</figure>
-- 3D printed speaker enclosure
-- 3" Full-range, bass heavy woofer (15W RMS, 20W Peak @ 4Ω)
-- 1.2" Neodymium dome tweeter (15W RMS, 20W Peak @ 4Ω)
-- 2-Way passive crossover
-- JST-XH cable
-- 2 pcs red 5.3mm speaker cables
-- 2 pcs black 2.8mm speaker cables
-- 1.3M Adhesive sealing foam
-- 24 pcs M3 x 10mm mounting screws
-- Long-handle Hex wrench
-- Optional LD2450 mmWave Sensor
-
-## Household Tools Required
 - Scissors
 - Small phillips head screwdriver
 - Needle nose pliers
@@ -46,13 +15,13 @@ Alternatively, you can purchase the [Satellite1 Smart Speaker Enclosure Kit](htt
     1. Temp, hum, lux  [Read more here.](/satellite1-faqs/#why-is-the-temp-or-lux-sensor-incorrect)
     2. At full volume, the wake word may not be heard perfectly.  Still the wake word should respond if the enclosure is airtight and not on a vibrating surface.
 
-# Watch the Instructional Video
-
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=QPOJhOR9q13SHaoC&amp;start=189" title="Satellite1 Smart Speaker Enclosure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Watch the Instructional Video
 
 !!! danger "Important Correction to Video Tutorial"
 
     The crossover is incorrectly oriented in the video.  Rotate it 180° before installing.  [Follow photos and documentation below.](#assemble-the-kit)
+
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=QPOJhOR9q13SHaoC&amp;start=189" title="Satellite1 Smart Speaker Enclosure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Assemble the Kit
 <div class="grid cards" markdown>

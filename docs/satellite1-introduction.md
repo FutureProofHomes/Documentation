@@ -7,11 +7,20 @@ The Satellite 1 Developer Kit is the first version of our private voice assistan
   <figcaption>Animation shows how to attach the rectangular Core Board to the round Hat Board, with an optional mmWave presence sensor.</figcaption>
 </figure>
 
-Your Satellite1 Dev Kit can also be installed in one of our many enclosures and speaker kits to become a more complete product.  You can even purchase the pre-assembled smart speaker too!  [Read more here](satellite1-smart-speaker.md).
+## Satellite1 Smart Speaker
+
+If you'd rather not build anything, the Satellite1 Smart Speaker ships pre-assembled and professionally boxed, in Charcoal Gray or Bone White.
+
 <figure markdown="span">
-  ![Smart Speaker Enclosure Kit Photoshoot](/assets/smart-speaker-enclosure-kit/white_gray_enclosure.jpg){ width="100%" }
-  <figcaption>Purchase the pre-assembled speaker. Or get all the individual parts from us and build it yourself.</figcaption>
+  ![Smart Speaker Pre-Assembled](/assets/sat.1.1_pre-assembled_unboxed_gray.jpeg){ width="100%" }
+  <figcaption>Optional "Charcoal Gray" or "Bone White" color choices</figcaption>
 </figure>
+
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/LcluZzciARU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[View the Smart Speaker on our store :material-cart:](https://futureproofhomes.net/products/satellite1-smart-speaker){ .md-button .md-button--primary }
+
+Prefer to build it yourself? Combine the [Dev Kit](satellite1-dev-kit.md), [Enclosure Kit](satellite1-enclosure-kit.md), and [Electronics Kit](satellite1-electronics-kit.md) — see [Building the Smart Speaker](satellite1-smart-speaker.md).
 
 ## Quick Live Demo
 When properly set up the Satellite1 can be even more powerful than some of the mainstream voice assistants out there.  Watch the live demo section of our launch video to get a sense of the Satellite1 capabilities:
