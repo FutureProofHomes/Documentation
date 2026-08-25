@@ -153,24 +153,36 @@
 
   // ── Firmware toggle (segmented control in sidebar) ──
 
+  /* Pages that only ever live under the Satellite1 nav section. We locate the
+     section by the pages it contains rather than by its label, so renaming the
+     nav entry can't silently drop the toggle. */
+  var SAT1_MARKER_LINKS =
+    'a[href*="satellite1-flash-via-usb-c"], a[href*="satellite1-modifying-the-firmware"]';
+
   function findSatelliteNav() {
     var sidebar = document.querySelector(".md-sidebar--primary");
     if (!sidebar) return null;
 
-    var els = sidebar.querySelectorAll(".md-nav__link, .md-nav__title");
-    for (var i = 0; i < els.length; i++) {
-      if (els[i].textContent.trim() === "Satellite1 Dev Kit") {
-        var item = els[i].closest(".md-nav__item");
-        if (item) {
-          return item.querySelector(":scope > .md-nav > ul");
-        }
-        var nav = els[i].closest(".md-nav");
-        if (nav) {
-          return nav.querySelector(":scope > ul");
-        }
-      }
+    var marker = sidebar.querySelector(SAT1_MARKER_LINKS);
+    if (!marker) return null;
+
+    /* Walk up to the outermost nested nav item so the toggle is mounted on the
+       top-level section, not on the "Firmware" subsection that holds the link. */
+    var outermost = null;
+    var item = marker.closest(".md-nav__item--nested");
+    while (item) {
+      outermost = item;
+      item = item.parentElement
+        ? item.parentElement.closest(".md-nav__item--nested")
+        : null;
     }
-    return null;
+
+    if (outermost) {
+      return outermost.querySelector(":scope > .md-nav > ul");
+    }
+
+    var nav = marker.closest(".md-nav");
+    return nav ? nav.querySelector(":scope > ul") : null;
   }
 
   function createFirmwareToggle() {
