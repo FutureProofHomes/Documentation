@@ -1,0 +1,22 @@
+{
+  "name": "ESPHome Firmware for Satellite1-Core-Board",
+  "version": "v0.2.1+ld2450",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "path": "assets/firmware/esphome/production/satellite1.ld2450.ota.bin",
+        "md5": "de0b17ca2f769b01f2af7e258687573c",
+        "summary": "v0.2.1 updates Satellite1 to ESPHome 2026.7.3, adopting newly upstreamed audio, Sendspin, and PCM5122 support while improving compatibility with the latest ESP-IDF toolchain.",
+        "release_url": "https://github.com/FutureProofHomes/Satellite1-ESPHome/releases/tag/v0.2.1/"
+      },
+      "parts": [
+        {
+          "path": "assets/firmware/esphome/production/satellite1.ld2450.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
