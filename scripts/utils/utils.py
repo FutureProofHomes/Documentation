@@ -30,7 +30,7 @@ def extract_variant(BASE_NAME):
     parts = BASE_NAME.split(".")
     return parts[1] if len(parts) > 1 else ""
 
-def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, MANIFEST_FILE_DIR, beta, FIRMWARE_FILE_DIR, summary=None):
+def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, MANIFEST_FILE_DIR, beta, FIRMWARE_FILE_DIR, summary=None, aliases=()):
     # Create the manifest file directory if it does not exist
     if not os.path.exists(MANIFEST_FILE_DIR):
         os.makedirs(MANIFEST_FILE_DIR)
@@ -78,6 +78,14 @@ def make_manifest(BASE_NAME, release_tag, esphome_firmware_repository, OTA_MD5, 
         shutil.copyfile(MANIFEST_FILE, os.path.join("..", f'manifest-beta.{variant}json'))
     else:
         shutil.copyfile(MANIFEST_FILE, os.path.join("..", f'manifest.{variant}json'))
+
+    # Also publish this manifest under legacy variant filenames so devices
+    # still polling retired variant manifests migrate to this build.
+    for alias in aliases:
+        if beta:
+            shutil.copyfile(MANIFEST_FILE, os.path.join("..", f'manifest-beta.{alias}.json'))
+        else:
+            shutil.copyfile(MANIFEST_FILE, os.path.join("..", f'manifest.{alias}.json'))
 
 def error_exit(message):
     print(message, file=sys.stderr)
