@@ -13,6 +13,12 @@ sys.path.append(SCRIPT_DIR)
 
 from utils import utils
 
+# Firmware variants that are no longer built separately. The universal
+# "satellite1" build auto-detects both radars, so when a release no longer
+# ships satellite1.<variant> binaries, the legacy variant manifests are
+# aliased to the universal build to migrate devices still polling them.
+LEGACY_RADAR_VARIANTS = ("ld2410", "ld2450")
+
 
 def process_build(
     BASE_NAME,
@@ -22,6 +28,7 @@ def process_build(
     release_repository,
     GITHUB_TOKEN,
     release_summary,
+    aliases=(),
 ):
     # Get the Asset ID for the OTA binaries
     # Sample URL: https://api.github.com/repos/FutureProofHomes/Satellite1-ESPHome/releases/assets/210089213
@@ -65,6 +72,7 @@ def process_build(
         beta=beta,
         FIRMWARE_FILE_DIR=FIRMWARE_FILE_DIR.split("../")[-1],
         summary=release_summary,
+        aliases=aliases,
     )
     utils.download_release(BROWSER_URL_OTA, beta, FIRMWARE_FILE_DIR)
     utils.download_release(BROWSER_URL_FACTORY, beta, FIRMWARE_FILE_DIR)
@@ -126,6 +134,19 @@ def main():
     # Process each build
     for BASE_NAME, build_assets_info in assets_info.items():
         print( f"Processing build: {BASE_NAME}" )
+
+        # Alias retired variant manifests to the universal build when the
+        # release no longer contains the variant binaries.
+        aliases = ()
+        if BASE_NAME == "satellite1":
+            aliases = tuple(
+                variant
+                for variant in LEGACY_RADAR_VARIANTS
+                if f"satellite1.{variant}" not in assets_info
+            )
+            if aliases:
+                print(f"Aliasing legacy variant manifests to universal build: {', '.join(aliases)}")
+
         process_build(
             BASE_NAME,
             build_assets_info,
@@ -134,6 +155,7 @@ def main():
             release_repository,
             GITHUB_TOKEN,
             release_summary,
+            aliases=aliases,
         )
 
 
