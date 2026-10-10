@@ -49,3 +49,9 @@ An LD2450 mmWave sensor is the one part that is genuinely optional, and the encl
 ![Two Smart Speakers with their top plates removed, showing the Hat board](/assets/products/satellite1-desktop/pair-hat.jpg){ width="100%" }
 
 *The top plate lifts off to reach the Hat board, which is how the mmWave sensor gets fitted.*
+
+## Set it up
+
+Firmware is installed at the factory, so there is nothing to flash and nothing to assemble. Power it from the supplied USB-C adapter and it comes up ready to pair.
+
+[Getting Started :material-arrow-right:](satellite1-connecting-to-ha.md){ .md-button .md-button--primary }
