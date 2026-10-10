@@ -18,6 +18,21 @@ This is the part that separates the Smart Speaker from the other form factors. A
 
 So it plays music properly rather than just acknowledging commands, which is why the firmware carries Sendspin and works with Music Assistant out of the box.
 
+### How that compares
+
+The two other local voice speakers people weigh this against are both built around a single small driver. That is the right call for speech, and it is also the ceiling on what they can do with music.
+
+| | Satellite1 Smart Speaker | Home Assistant Voice PE | Third Reality Voice/Music Assistant |
+|---|---|---|---|
+| **Drivers** | 3 inch woofer and 1.2 inch tweeter | One internal speaker | One 3 W, 4 ohm speaker |
+| **Crossover** | Two-way passive | None | None |
+| **Amplifier** | 25 W mono, TAS2780 | Not published | Not published |
+| **Line out** | 3.5 mm jack | 3.5 mm jack | Not listed |
+
+Specifications are as each vendor publishes them, and neither one lists an amplifier.
+
+Both are good at what they are for, and neither is trying to be a music speaker. The difference is that a Satellite1 does both jobs, so a room does not need a voice puck next to a separate speaker.
+
 ## Two colors, printed not molded
 
 The enclosure is 3D printed in Bambu Lab PETG-HF, in Charcoal Gray or Bone White, with a multi-material top plate and a transparent LED diffuser so the 24-LED ring reads clearly through it.
