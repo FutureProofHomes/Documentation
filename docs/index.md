@@ -15,7 +15,7 @@ hide:
 <p class="fph-hero__lead">A private voice assistant you own, can repair and can rebuild yourself. Everything here is about getting the most out of the Satellite1.</p>
 
 [Set up a Satellite1](satellite1-connecting-to-ha.md){ .md-button .md-button--primary }
-[Browse the firmware](satellite1-modifying-the-firmware.md){ .md-button }
+[What is a Satellite1?](satellite1.md){ .md-button }
 
 </div>
 

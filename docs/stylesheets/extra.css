@@ -263,18 +263,45 @@ li.toc-tab-hidden {
    frontmatter, so it gets the full content width and reads as a landing
    page rather than as another doc. */
 .fph-hero {
+  position: relative;
   text-align: center;
-  margin: 1rem auto 3.5rem;
-  max-width: 46rem;
+  margin: 0 auto 3.5rem;
+  padding: 3rem 1.5rem 3.25rem;
+  border-radius: 0.6rem;
+  /* A wash of the brand taupe fading down into the page, so the hero reads
+     as a band rather than as text floating on a blank screen. Low alpha on
+     a variable-free rgba, because the value has to work against both the
+     near-white default scheme and the slate one. */
+  background: radial-gradient(
+    120% 130% at 50% 0%,
+    rgba(194, 183, 172, 0.38) 0%,
+    rgba(194, 183, 172, 0.10) 45%,
+    rgba(194, 183, 172, 0) 75%
+  );
+}
+[data-md-color-scheme="slate"] .fph-hero {
+  background: radial-gradient(
+    120% 130% at 50% 0%,
+    rgba(194, 183, 172, 0.17) 0%,
+    rgba(194, 183, 172, 0.06) 45%,
+    rgba(194, 183, 172, 0) 75%
+  );
 }
 .md-typeset .fph-hero img.fph-hero__slogan {
   max-width: min(420px, 80%);
   height: auto;
   margin: 0 auto 1.4rem;
+  /* Both slogan PNGs are opaque, white behind the light one and black behind
+     the dark one, so over the hero wash they show as a hard rectangle.
+     Blending drops the background and leaves the line art. */
+  mix-blend-mode: multiply;
+}
+[data-md-color-scheme="slate"] .md-typeset .fph-hero img.fph-hero__slogan {
+  mix-blend-mode: screen;
 }
 .md-typeset .fph-hero h1 {
-  margin: 0 0 0.6rem;
-  font-size: 2rem;
+  margin: 0 0 0.7rem;
+  font-size: 2.4rem;
   line-height: 1.2;
   font-weight: 700;
   color: var(--md-default-fg-color);
