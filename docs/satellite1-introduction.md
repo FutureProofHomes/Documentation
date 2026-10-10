@@ -44,11 +44,11 @@ Printing rather than molding is what makes the enclosure revisable. It is also w
 
 ## Room for the options
 
-The enclosure is designed with the add-ons in mind rather than retrofitted for them. The front chamber has a pocket for an LD2450 mmWave sensor, and the back chamber has a dedicated pocket for the external Wi-Fi antenna.
+An LD2450 mmWave sensor is the one part that is genuinely optional, and the enclosure is designed for it rather than retrofitted. The front chamber has a pocket printed for it.
 
 ![Two Smart Speakers with their top plates removed, showing the Hat board](/assets/products/satellite1-desktop/pair-hat.jpg){ width="100%" }
 
-*The top plate lifts off to reach the Hat board, which is how the mmWave sensor and antenna get fitted.*
+*The top plate lifts off to reach the Hat board, which is how the mmWave sensor gets fitted.*
 
 ## Or build one yourself
 
