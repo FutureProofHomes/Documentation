@@ -2,9 +2,7 @@ site_name: FutureProofHomes Docs
 site_url: https://docs.futureproofhomes.net
 repo_url: https://github.com/FutureProofHomes/Documentation
 nav:
-  - Welcome:
-    - index.md
-    - Nexus1 AI Base Station: ai-base-station-introduction.md
+  - Home: index.md
   - Satellite1:
     - Platform Overview: satellite1.md
     - Getting Started: satellite1-connecting-to-ha.md
@@ -16,27 +14,6 @@ nav:
     - Firmware:
       - Flash via USB-C: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
-    - Using Your Satellite1:
-      - Set Up Your Voice Assistant: satellite1-set-up-voice-control.md
-      - Streaming Music: satellite1-streaming-music.md
-      - Helpful Automations: satellite1-helpful-automations.md
-    - Hardware Reference:
-      - DIY Enclosures:
-        - Squircle Enclosures: satellite1-squircle-enclosures.md
-        - Cylindrical Enclosure: satellite1-cylindrical-enclosure.md
-  - Kits:
-    - Enclosure Kit: satellite1-enclosure-kit.md
-    - Electronics Kit: satellite1-electronics-kit.md
-    - In-Ceiling Kit: satellite1-in-ceiling.md
-  - Accessories:
-    - Individual Parts: satellite1-accessories.md
-    - mmWave Sensors:
-      - Overview: satellite1-mmwave-overview.md
-      - Installation: satellite1-mmwave-installation.md
-      - Tuning: satellite1-mmwave-tuning.md
-  - Modules:
-    - PoE1 Module: satellite1-poe-shoe-module-overview.md
-    - Amplifier1 Module: satellite1-amplifier-module-overview.md
   - Troubleshooting: satellite1-faqs.md
 
 theme:

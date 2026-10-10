@@ -257,3 +257,72 @@ li.toc-tab-hidden {
   height: auto;
   border-radius: 0.2rem;
 }
+
+/* Welcome page hero.
+   The Welcome page hides its sidebar and table of contents through page
+   frontmatter, so it gets the full content width and reads as a landing
+   page rather than as another doc. */
+.fph-hero {
+  text-align: center;
+  margin: 1rem auto 3.5rem;
+  max-width: 46rem;
+}
+.md-typeset .fph-hero img.fph-hero__slogan {
+  max-width: min(420px, 80%);
+  height: auto;
+  margin: 0 auto 1.4rem;
+}
+.md-typeset .fph-hero h1 {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+.fph-hero__accent {
+  color: var(--md-typeset-a-color);
+}
+.md-typeset .fph-hero__lead {
+  margin: 0 auto 1.8rem;
+  max-width: 34em;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .fph-hero .md-button {
+  margin: 0.2rem 0.3rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .fph-hero h1 { font-size: 1.6rem; }
+}
+
+/* The Welcome page hides its sidebar and table of contents, which leaves the
+   content free to run the whole window width. Prose is unreadable at that
+   measure, so pull it back to a landing page width and centre it. */
+.md-content__inner:has(.fph-hero) {
+  max-width: 920px;
+  margin-inline: auto;
+  /* Hiding both sidebars also drops the gutter the other pages get from
+     .md-main__inner, so put it back or the content sits on the screen edge. */
+  padding-inline: 0.8rem;
+}
+
+/* Two across for both card grids. Material puts the grid on the wrapping
+   div rather than on the list, and left to itself auto-fits three across
+   here, which orphans the fourth principle on a row of its own. */
+.fph-products .grid.cards,
+.fph-principles .grid.cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.md-typeset .fph-products .grid.cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .fph-products .grid.cards,
+  .fph-principles .grid.cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

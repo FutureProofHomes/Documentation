@@ -1,10 +1,27 @@
-Welcome to the FutureProofHomes documentation. Everything here is about getting the most out of the Satellite1, a private voice assistant you own, can repair and can rebuild yourself.
+---
+title: Home
+hide:
+  - navigation
+  - toc
+---
 
-![Your Home. Your Voice. Your AI.](/assets/slogan_black_and_white.png#only-dark)
-![Your Home. Your Voice. Your AI.](/assets/slogan_white_and_black.png#only-light)
+<div class="fph-hero" markdown>
+
+![Your Home. Your Voice. Your AI.](/assets/slogan_black_and_white.png#only-dark){ .fph-hero__slogan .off-glb }
+![Your Home. Your Voice. Your AI.](/assets/slogan_white_and_black.png#only-light){ .fph-hero__slogan .off-glb }
+
+# FutureProofHomes <span class="fph-hero__accent">Docs</span>
+
+<p class="fph-hero__lead">A private voice assistant you own, can repair and can rebuild yourself. Everything here is about getting the most out of the Satellite1.</p>
+
+[Set up a Satellite1](satellite1-connecting-to-ha.md){ .md-button .md-button--primary }
+[Browse the firmware](satellite1-modifying-the-firmware.md){ .md-button }
+
+</div>
 
 ## Pick your Satellite1
 
+<div class="fph-products" markdown>
 <div class="grid cards" markdown>
 
 -   ![Charcoal Gray and Bone White Smart Speakers](/assets/products/satellite1-desktop/hero.jpg){ width="100%" }
@@ -24,9 +41,7 @@ Welcome to the FutureProofHomes documentation. Everything here is about getting 
     [:octicons-arrow-right-24: Dev Kit](satellite1-dev-kit.md)
 
 </div>
-
-[Platform Overview :material-arrow-right:](satellite1.md){ .md-button .md-button--primary }
-[Getting Started :material-arrow-right:](satellite1-connecting-to-ha.md){ .md-button }
+</div>
 
 ## Why we build it this way
 
@@ -36,6 +51,7 @@ We think that is the wrong arrangement. The slogan is the whole argument: your h
 
 Hardware outlives the companies that make it, so we design for the day we are not here. The boards are modular, the firmware is open, the enclosure models are published, and the documentation is detailed enough to rebuild from. If we disappeared tomorrow, you could keep yours running.
 
+<div class="fph-principles" markdown>
 <div class="grid cards" markdown>
 
 -   __Trust through verification__
@@ -62,6 +78,7 @@ Hardware outlives the companies that make it, so we design for the day we are no
 
     The hardware should work across a wide range of platforms and protocols rather than locking you into one ecosystem, ours included.
 
+</div>
 </div>
 
 Documentation is one of those principles rather than an afterthought. Every piece of work is supposed to ship with enough detail for someone else to replicate it, modify it and contribute to it, which is what this site is for.
