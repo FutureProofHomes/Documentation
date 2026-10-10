@@ -113,6 +113,27 @@ USB-C PD is doing real work here rather than just charging. The 25 W amplifier n
 
 Having a dedicated 800 MHz audio processor next to the ESP32 is why wake word detection and echo cancellation keep working while music is playing. The ESP32 never has to choose between listening and getting on with its job.
 
+## How it compares
+
+The other two local voice devices people weigh a Satellite1 against are the Home Assistant Voice Preview Edition and the Third Reality Voice/Music Assistant. Both are finished voice devices. The difference is less about any single specification and more about what happens after you buy one.
+
+| | Satellite1 | Home Assistant Voice PE | Third Reality Voice/Music Assistant |
+|---|---|---|---|
+| **Microphones** | Four, two in use | Two | Two |
+| **Audio processor** | XMOS XU316 | XMOS XU316 | No dedicated processor published |
+| **Environmental sensors** | Temperature, humidity, ambient light | None | None listed |
+| **Presence** | LD2410 or LD2450 mmWave | None | None listed |
+| **Expansion** | FX23L connector | Grove port | None listed |
+| **Network** | 2.4 GHz Wi-Fi, optional PoE1 | 2.4 GHz Wi-Fi | 2.4 GHz Wi-Fi |
+| **Firmware** | ESPHome | ESPHome | Custom Linux on an ARM A53 |
+
+Two honest notes on that table. The audio processor row is a tie, because Voice PE runs the same XMOS part we do, and our firmwares are deliberately similar so the community moves together. And the Third Reality unit is a Linux satellite rather than an ESPHome device, which makes it a different kind of thing rather than a worse one.
+
+What the table does show is the extension story. The sensors, the mmWave headers, the expansion connector and the PoE option are all there because a Satellite1 is meant to be the thing in the room that does several jobs, not only the thing you talk to.
+
+Audio output is a separate question, and it is compared on the
+[Smart Speaker overview](satellite1-introduction.md#how-that-compares).
+
 ## Pick a form factor
 
 <div class="grid cards" markdown>
