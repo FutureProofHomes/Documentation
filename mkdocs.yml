@@ -9,8 +9,8 @@ nav:
     - Smart Speaker: satellite1-introduction.md
     - Dev Kit: satellite1-dev-kit.md
     - DIY:
-      - Print the Smart Speaker Enclosure: satellite1-print-enclosure.md
-      - Build a Smart Speaker: satellite1-smart-speaker.md
+      - Print: satellite1-print.md
+      - Build: satellite1-build.md
     - Firmware:
       - Flash via USB-C: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md
@@ -102,7 +102,8 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        'satellite1-smart-speaker-enclosure-kit.md': 'satellite1-smart-speaker.md'
+        'satellite1-smart-speaker-enclosure-kit.md': 'satellite1-build.md'
+        'satellite1-smart-speaker.md': 'satellite1-build.md'
         'satellite1-mount-kit-overview.md': 'satellite1-in-ceiling.md'
         'satellite1-recommended-accessories.md': 'satellite1-accessories.md'
         'satellite1-assembly.md': 'satellite1-dev-kit.md'

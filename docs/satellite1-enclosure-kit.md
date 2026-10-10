@@ -70,4 +70,4 @@ You don't have to buy the parts — the 3MF project files, STL, and STEP geometr
 
 ## Next Steps
 
-[Build the Smart Speaker :material-arrow-right:](satellite1-smart-speaker.md){ .md-button .md-button--primary }
+[Build the Smart Speaker :material-arrow-right:](satellite1-build.md){ .md-button .md-button--primary }

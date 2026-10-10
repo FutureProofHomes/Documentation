@@ -1,6 +1,9 @@
-A Smart Speaker is three kits assembled. Buy them separately and put it together yourself, or print the enclosure and buy only the parts that go in it.
+Every Satellite1 is the same two boards in a different box, so building one yourself comes down to what goes around them.
 
-## What you need
+## Smart Speaker
+
+Three kits assembled. Buy them separately and put it together yourself, or print the enclosure and buy only the parts that go in it.
+### What you need
 
 | | |
 |---|---|
@@ -14,7 +17,7 @@ Plus three household tools that are in none of the kits: scissors, a small Phill
 
     A Dev Kit is designed to run on a bench. Putting one inside an airtight enclosure pushes it further than that, and two things change. The temperature, humidity and light sensors read the inside of the box rather than the room. At full volume the wake word can be harder to hear if the enclosure is not sealed properly or is sitting on a surface that resonates.
 
-## Assembly
+### Assembly
 
 1.  **Remove the speaker hole tab**
 
@@ -96,8 +99,8 @@ Plus three household tools that are in none of the kits: scissors, a small Phill
 
     Power it from the Dev Kit's 30 W USB-C adapter, into the Hat's USB-C port labelled CORE/ESP32. The LEDs count down in blue while it flashes the XMOS processor, then sparkle warm white when it is ready to pair.
 
-## Printing it yourself
+### Printing it yourself
 
 The enclosure files are published, so you can print it rather than buying the Enclosure Kit and buy only the parts that go inside.
 
-[Print the enclosure :material-arrow-right:](satellite1-print-enclosure.md){ .md-button }
+[Print the enclosure :material-arrow-right:](satellite1-print.md){ .md-button }

@@ -67,7 +67,7 @@ You only need those if you are building the Dev Kit into a finished speaker. For
 
 ## Building it into something
 
-The Dev Kit is step one of every self-build. The [Smart Speaker build guide](satellite1-smart-speaker.md) picks up from here, or you can [print the enclosure](satellite1-print-enclosure.md) first and buy only the parts that go inside it.
+The Dev Kit is step one of every self-build. The [Smart Speaker build guide](satellite1-build.md) picks up from here, or you can [print the enclosure](satellite1-print.md) first and buy only the parts that go inside it.
 
 !!! note "The Hat also fits a Raspberry Pi, unofficially"
 

@@ -1,6 +1,6 @@
 ## Cylindrical Dev Kit Enclosure
 
-??? warning "As of February 17, 2026, this enclosure is no longer compatible with latest generation Satellite1.1 Dev Kits, which features an external WiFi antenna. We welcome pull request updates to this open-source enclosure, or recommend printing or purchasing [our latest enclosures](satellite1-smart-speaker.md)."
+??? warning "As of February 17, 2026, this enclosure is no longer compatible with latest generation Satellite1.1 Dev Kits, which features an external WiFi antenna. We welcome pull request updates to this open-source enclosure, or recommend printing or purchasing [our latest enclosures](satellite1-build.md)."
 
 The Satellite1 Cylindrical Enclosure is a snap-fit enclosure that can be printed on a single plate. We highly recommend PETG filament, plus some Loctite (Blu-Tack) and speaker polyfill for the best acoustic results. This is our first-generation enclosure, and many revisions will come out as we iterate the product and receive feedback.  Currently the enclosure supports three recommended speakers that you can purchase online:
 
@@ -27,7 +27,7 @@ Without the SHOE board there are some current limitations of the enclosure:
 <br>[Read more here.](/satellite1-faqs/#why-is-the-temp-or-lux-sensor-incorrect)
 
 2. **The mmWave sensor is pointed up at the ceiling.**
-<br>See our updated [Sat1.1 Hat board](satellite1-mmwave-installation.md#connection-methods) and [Smart Speaker Enclosure](satellite1-smart-speaker.md) that supports forward facing mmWave.
+<br>See our updated [Sat1.1 Hat board](satellite1-mmwave-installation.md#connection-methods) and [Smart Speaker Enclosure](satellite1-build.md) that supports forward facing mmWave.
 
 3. **The mic pipes very slightly decrease the accuracy of speech-to-text.**
 <br>We will solve this once we get to plastic injection molded enclosures.

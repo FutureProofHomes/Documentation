@@ -40,7 +40,7 @@ Both of the others are good at what they are for, and neither is trying to be a 
 
 The enclosure is 3D printed in Bambu Lab PETG-HF, in Charcoal Gray or Bone White, with a multi-material top plate and a transparent LED diffuser so the 24-LED ring reads clearly through it.
 
-Printing rather than molding is what makes the enclosure revisable. It is also why the models are published for anyone to print, and why you can [build one yourself](satellite1-smart-speaker.md) from the Dev Kit, Enclosure Kit and Electronics Kit, or [print the enclosure](satellite1-print-enclosure.md) and buy only the parts that go inside it.
+Printing rather than molding is what makes the enclosure revisable. It is also why the models are published for anyone to print, and why you can [build one yourself](satellite1-build.md) from the Dev Kit, Enclosure Kit and Electronics Kit, or [print the enclosure](satellite1-print.md) and buy only the parts that go inside it.
 
 ## Room for the options
 

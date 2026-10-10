@@ -57,4 +57,4 @@ Individual components are also sold separately if you only need to replace one p
 
 ## Next Steps
 
-[Build the Smart Speaker :material-arrow-right:](satellite1-smart-speaker.md){ .md-button .md-button--primary }
+[Build the Smart Speaker :material-arrow-right:](satellite1-build.md){ .md-button .md-button--primary }
