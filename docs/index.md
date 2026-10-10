@@ -7,8 +7,8 @@ hide:
 
 <div class="fph-hero" markdown>
 
-![Your Home. Your Voice. Your AI.](/assets/slogan_black_and_white.png#only-dark){ .fph-hero__slogan .off-glb }
-![Your Home. Your Voice. Your AI.](/assets/slogan_white_and_black.png#only-light){ .fph-hero__slogan .off-glb }
+![Your Home. Your Voice. Your AI.](/assets/slogan-white.png#only-dark){ .fph-hero__slogan .off-glb }
+![Your Home. Your Voice. Your AI.](/assets/slogan-black.png#only-light){ .fph-hero__slogan .off-glb }
 
 # FutureProofHomes <span class="fph-hero__accent">Docs</span>
 

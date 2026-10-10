@@ -291,13 +291,6 @@ li.toc-tab-hidden {
   max-width: min(420px, 80%);
   height: auto;
   margin: 0 auto 1.4rem;
-  /* Both slogan PNGs are opaque, white behind the light one and black behind
-     the dark one, so over the hero wash they show as a hard rectangle.
-     Blending drops the background and leaves the line art. */
-  mix-blend-mode: multiply;
-}
-[data-md-color-scheme="slate"] .md-typeset .fph-hero img.fph-hero__slogan {
-  mix-blend-mode: screen;
 }
 .md-typeset .fph-hero h1 {
   margin: 0 0 0.7rem;
