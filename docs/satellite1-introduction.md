@@ -40,7 +40,7 @@ Both of the others are good at what they are for, and neither is trying to be a 
 
 The enclosure is 3D printed in Bambu Lab PETG-HF, in Charcoal Gray or Bone White, with a multi-material top plate and a transparent LED diffuser so the 24-LED ring reads clearly through it.
 
-Printing rather than molding is what makes the enclosure revisable. It is also why the models are published for anyone to print.
+Printing rather than molding is what makes the enclosure revisable. It is also why the models are published for anyone to print, and why you can [build one yourself](satellite1-smart-speaker.md) from the Dev Kit, Enclosure Kit and Electronics Kit, or [print the enclosure](satellite1-print-enclosure.md) and buy only the parts that go inside it.
 
 ## Room for the options
 
@@ -49,10 +49,3 @@ An LD2450 mmWave sensor is the one part that is genuinely optional, and the encl
 ![Two Smart Speakers with their top plates removed, showing the Hat board](/assets/products/satellite1-desktop/pair-hat.jpg){ width="100%" }
 
 *The top plate lifts off to reach the Hat board, which is how the mmWave sensor gets fitted.*
-
-## Or build one yourself
-
-A Smart Speaker is three kits assembled: the Dev Kit for the boards, the Enclosure Kit for the printed parts, and the Electronics Kit for the drivers and crossover. You can also print the enclosure at home and buy only the parts that go inside it.
-
-[Build it yourself :material-arrow-right:](satellite1-smart-speaker.md){ .md-button .md-button--primary }
-[Print the enclosure :material-arrow-right:](satellite1-print-enclosure.md){ .md-button }
