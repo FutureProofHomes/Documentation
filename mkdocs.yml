@@ -9,8 +9,8 @@ nav:
     - Smart Speaker: satellite1-introduction.md
     - Dev Kit: satellite1-dev-kit.md
     - DIY:
-      - Print the Enclosure: satellite1-print-enclosure.md
-      - Build it yourself: satellite1-smart-speaker.md
+      - Print the Smart Speaker Enclosure: satellite1-print-enclosure.md
+      - Build a Smart Speaker: satellite1-smart-speaker.md
     - Firmware:
       - Flash via USB-C: satellite1-flash-via-usb-c.md
       - Modifying the Firmware: satellite1-modifying-the-firmware.md

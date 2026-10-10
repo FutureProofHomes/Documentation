@@ -1,4 +1,4 @@
-The enclosure is published for anyone to print or remix. Printing it yourself replaces the Enclosure Kit, so you buy only the boards and the audio parts that go inside.
+The Smart Speaker enclosure is published for anyone to print or remix. Printing it yourself replaces the Enclosure Kit, so you buy only the boards and the audio parts that go inside.
 
 ## Get the files
 
