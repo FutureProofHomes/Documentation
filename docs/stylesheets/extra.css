@@ -244,3 +244,16 @@ li.toc-tab-hidden {
         height: 10px;
     }
 }
+/* Step lists.
+   Build and setup guides are plain numbered lists with a photo under each
+   step. Unconstrained, a 3024px source fills the whole content column and a
+   ten step guide turns into a very long scroll, so cap the photo at a width
+   that still reads and let it shrink on narrow screens.
+   glightbox wraps each image in an <a>, so match the image itself rather
+   than a fixed parent chain, and size in px because Material's rem is 20px
+   rather than 16px. */
+.md-typeset ol > li img {
+  max-width: min(520px, 100%);
+  height: auto;
+  border-radius: 0.2rem;
+}

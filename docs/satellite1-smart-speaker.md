@@ -1,159 +1,113 @@
-Build a Satellite1 Smart Speaker at home from three kits: the [Dev Kit](satellite1-dev-kit.md) for the boards, the [Enclosure Kit](satellite1-enclosure-kit.md) for the cabinet, and the [Electronics Kit](satellite1-electronics-kit.md) for the drivers and crossover.
+A Smart Speaker is three kits assembled. Buy them separately and put it together yourself, or print the enclosure and buy only the parts that go in it.
 
-## Before You Begin
+## What you need
 
-You'll need a few household tools that aren't included in any kit:
+| | |
+|---|---|
+| **[Dev Kit](satellite1-dev-kit.md)** | Core and Hat boards, antenna, power supply |
+| **[Enclosure Kit](satellite1-enclosure-kit.md)** | Printed enclosure, 22 M3x10mm screws, hex wrench, screw guide, sealing foam |
+| **[Electronics Kit](satellite1-electronics-kit.md)** | Woofer, tweeter, two-way crossover, audio cabling |
 
-- Scissors
-- Small phillips head screwdriver
-- Needle nose pliers
+Plus three household tools that are in none of the kits: scissors, a small Phillips screwdriver, and needle-nose pliers.
 
-!!! warning "Dev Kit + Enclosure Limitations"
+!!! warning "A Dev Kit in a sealed box behaves differently"
 
-    Dev Kits are designed for use on your electronics bench, but this enclosure kit pushes the dev kit to its full potential, though a few limitations apply.
+    A Dev Kit is designed to run on a bench. Putting one inside an airtight enclosure pushes it further than that, and two things change. The temperature, humidity and light sensors read the inside of the box rather than the room. At full volume the wake word can be harder to hear if the enclosure is not sealed properly or is sitting on a surface that resonates.
 
-    1. Temp, hum, lux  [Read more here.](/satellite1-faqs/#why-is-the-temp-or-lux-sensor-incorrect)
-    2. At full volume, the wake word may not be heard perfectly.  Still the wake word should respond if the enclosure is airtight and not on a vibrating surface.
+## Watch the instructional video
 
-## Watch the Instructional Video
+!!! danger "Important correction to the video tutorial"
 
-!!! danger "Important Correction to Video Tutorial"
-
-    The crossover is incorrectly oriented in the video.  Rotate it 180° before installing.  [Follow photos and documentation below.](#assemble-the-kit)
+    The crossover is incorrectly oriented in the video. Rotate it 180° before installing. Follow the photos and documentation [below](#assembly).
 
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=QPOJhOR9q13SHaoC&amp;start=189" title="Satellite1 Smart Speaker Enclosure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Assemble the Kit
-<div class="grid cards" markdown>
+## Assembly
 
--   :material-numeric-1-circle:{ .lg .middle } __Remove Speaker Hole Tab__
+1.  **Remove the speaker hole tab**
 
-    ---
+    ![Removing the speaker hole tab with pliers](/assets/smart-speaker-enclosure-kit/remove_tab.jpg){ loading=lazy }
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/remove_tab.jpg){ loading=lazy }
-    Remove the speaker hole tab with a pair of pliers.
+    Take the tab out of the speaker hole with a pair of pliers.
 
--   :material-numeric-2-circle:{ .lg .middle } __Apply Sealing Foam__
+2.  **Apply the sealing foam**
 
-    ---
+    ![Sealing foam applied around the front enclosure](/assets/smart-speaker-enclosure-kit/apply_sealing_foam.jpg){ loading=lazy }
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/apply_sealing_foam.jpg){ loading=lazy }
-    Adhere the sealing foam around the perimeter of the front enclosure piece, tweeter and woofer.  Cut any excess foam with scissors and keep for later.
-    
+    Run the foam around the perimeter of the front enclosure piece, the tweeter and the woofer. Trim the excess with scissors and keep the offcuts, you need them again in step 5.
 
--   :material-numeric-3-circle:{ .lg .middle } __Install Speaker Drivers__
+3.  **Install the speaker drivers**
 
-    ---
+    ![Woofer and tweeter installed in the front chamber](/assets/smart-speaker-enclosure-kit/install_speaker_drivers_edited.jpg){ loading=lazy }
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/install_speaker_drivers_edited.jpg){ loading=lazy }
-    1. Use four (4) M3x10mm hex screws to install the tweeter with the terminals facing north and south.
+    Fit the tweeter with four M3x10mm hex screws, terminals facing north and south. Fit the woofer with another four, both terminals facing north.
 
-    2. Use another four (4) M3x10mm hex screws to install the woofer with both speaker terminals facing north.
+4.  **Wire the crossover**
 
--   :material-numeric-4-circle:{ .lg .middle } __Prepare Crossover Wiring__
+    ![Crossover cable mapping](/assets/smart-speaker-enclosure-kit/crossover_cable_mapping.jpg){ loading=lazy }
 
-    ---
+    ![Crossover wiring detail](/assets/smart-speaker-enclosure-kit/crossover_wiring.jpg){ loading=lazy }
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/crossover_cable_mapping.jpg){ loading=lazy }
-    ![Image title](/assets/smart-speaker-enclosure-kit/crossover_wiring.jpg){ loading=lazy }
-    1. Orient the crossover so no blue terminal faces south. 
+    Orient the crossover so that no blue terminal faces south. Connect the supplied JST-XH cable to the west-facing terminal with a small Phillips screwdriver. On the north and east terminals, the 5.3 mm red wires go to positive and the 2.8 mm black wires to negative. The supplied jumpers optionally boost bass or treble.
 
-    2. Use a small phillips head screwdriver to connect the supplied JST-XH cable to the west-facing terminal. 
-    3. On the north and east terminals, secure the 5.3 mm red wires to positive (+) and the 2.8 mm black wires to negative (–). 
-    4. Optionally use the supplied jumpers to boost bass and/or treble.
+5.  **Mount the crossover and connect the speakers**
 
--   :material-numeric-5-circle:{ .lg .middle } __Install Crossover & Connect Speakers__
+    ![Crossover mounted and speaker cables connected](/assets/smart-speaker-enclosure-kit/crossover_speaker_cables_edited.jpg){ loading=lazy }
 
-    ---
+    Two M3x10mm screws hold the crossover to the front piece. Connect the cables to the drivers, then pack sealing foam around the JST-XH cable where it passes through the speaker hole, so the chamber stays airtight.
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/crossover_speaker_cables_edited.jpg){ loading=lazy }
-    1. Use two (2) M3x10mm hex screws to securely mount the crossover to the front piece.  Connect cables to speakers.  
+6.  **Insert the screws**
 
-    2. We recommend applying sealing foam around the JST-XH cable to ensure an airtight seal at the speaker hole.
+    ![Seven screws inserted using the screw guide tool](/assets/smart-speaker-enclosure-kit/all_screws_with_screw_guide_edited.jpg){ loading=lazy }
 
--   :material-numeric-6-circle:{ .lg .middle } __Insert Screws__
+    Seven M3x10mm screws into the front chamber, using the screw guide tool so none go in too far. Leave the bottom one out for now.
 
-    ---
+7.  **Fit the antenna and close the chambers**
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/all_screws_with_screw_guide_edited.jpg){ loading=lazy }
-    Insert seven (7) M3x10mm hex screws into the front chamber, use the screw guide tool to not drive them in too far. Do not add a screw at the bottom.
-    
+    ![Wi-Fi antenna in the stealth pocket](/assets/smart-speaker-enclosure-kit/antenna_mount_annotated_cropped_new.JPG){ loading=lazy }
 
--   :material-numeric-7-circle:{ .lg .middle } __Mount Antenna & Back Chamber__
+    Slide the Wi-Fi antenna into the stealth pocket, or adhere it to the back of the speaker chamber, depending on your enclosure. This applies to the Satellite1.1 Core, which needs the external antenna to reach Wi-Fi at all. A previous generation Core has the antenna built in, so skip this step.
 
-    ---
+    ![Aligning the back chamber with the front](/assets/smart-speaker-enclosure-kit/mount_back_chamber.jpg){ loading=lazy }
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/antenna_mount_annotated_cropped_new.JPG){ loading=lazy }
-    Depending on your enclosure and satellite version, you can slide the WiFi antenna into the dedicated “Stealth Pocket” or adhere it to the back of the speaker chamber.  If you have an original Satellite1 then the antenna is built-in and you can skip this step.
+    Align the two chamber halves with the JST wire clear and the foam forming a seal, then slide them together, front piece moving down and back piece moving up.
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/mount_back_chamber.jpg){ loading=lazy }
-    Align the two chamber parts together, making sure the JST wire is not pinched and that the foam forms an airtight seal. Slide the parts together with the front piece moving downward and the back piece moving upward.
+8.  **Fasten everything**
 
+    ![Dropping in the bottom screw](/assets/smart-speaker-enclosure-kit/add_bottom_screw.jpg){ loading=lazy }
 
--   :material-numeric-8-circle:{ .lg .middle } __Fasten All Screws__
+    ![Tightening the screws in an alternating pattern](/assets/smart-speaker-enclosure-kit/fasten_all_screws.jpg){ loading=lazy }
 
-    ---
+    Drop in the bottom screw and start it loosely. Then tighten all of them evenly in an alternating pattern until you feel resistance, roughly four or five turns. Do not overtighten.
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/add_bottom_screw.jpg){ loading=lazy }
-    Drop the bottom screw into place and use the hex wrench to loosely fasten.
+9.  **Mount the boards**
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/fasten_all_screws.jpg){ loading=lazy }
-    Evenly tighten all the screws in an alternating pattern until you feel resistance (approx 4-5 turns), be careful to not overtighten the screws.
+    ![IPEX antenna connector on the Core board](/assets/smart-speaker-enclosure-kit/stealth_pocket_%20annotated_cropped.JPG){ loading=lazy }
 
--   :material-numeric-9-circle:{ .lg .middle } __Mount the PCB Dev Kit__
+    Press the antenna's gold IPEX connector onto the Core board, then press the Core and Hat together through the 40-pin header. Connect the optional LD2450 mmWave 4-pin cable to the underside of the Hat.
 
-    ---
-    ![Image title](/assets/smart-speaker-enclosure-kit/stealth_pocket_ annotated_cropped.JPG){ loading=lazy }
-    1. Gently press the WiFi antenna's gold IPEX connector to the Core board ([see details here](satellite1-assembly.md)).  
-    
-    2. Firmly press the Core/Hat boards together via the 40-pin header.
-    3. Connect the optional LD2450 mmWave 4-pin cable to to the bottom of the Hat.
-    4. Route the cables through their respective 3D printed raceways.
-    5. Ensuring the headphone jack is facing the rear, rest the Sat1 Hat on the enclosure's four mounting posts and hand-tighten four hex screws to secure the PCBs to the enclosure.
-    ![Image title](/assets/smart-speaker-enclosure-kit/connect_JST_cable.jpg){ loading=lazy }
-    ![Image title](/assets/smart-speaker-enclosure-kit/mounted_dev_kit.jpg){ loading=lazy }
+    ![Connecting the JST cable](/assets/smart-speaker-enclosure-kit/connect_JST_cable.jpg){ loading=lazy }
 
--   :material-numeric-10-circle:{ .lg .middle } __Assemble Top Piece & LED Diffuser__
+    ![Boards mounted on the enclosure posts](/assets/smart-speaker-enclosure-kit/mounted_dev_kit.jpg){ loading=lazy }
 
-    ---
+    Route the cables through their printed raceways. With the headphone jack facing the rear, rest the Hat on the four mounting posts and hand-tighten four hex screws.
 
-    ![Image title](/assets/smart-speaker-enclosure-kit/push_in_diffuser.jpg){ loading=lazy }
-    ![Image title](/assets/smart-speaker-enclosure-kit/mount_top_piece.jpg){ loading=lazy }
-    1. Snap the LED diffuser into the top piece.
+10. **Fit the top piece**
 
-    2. Lightly push the top piece assembly down on the enclosure's 4 ball joints making sure the headphone jack opening is facing the rear.
-</div>
+    ![Snapping the LED diffuser into the top piece](/assets/smart-speaker-enclosure-kit/push_in_diffuser.jpg){ loading=lazy }
 
-!!! success "Congratulations on Assembling your Satellite1 Smart Speaker!"
+    ![Pressing the top piece onto the enclosure](/assets/smart-speaker-enclosure-kit/mount_top_piece.jpg){ loading=lazy }
 
-    Power up the speaker with the Dev Kit's supplied 30W power USB-C power adapter and follow the necessary steps to [connect to Home Assistant](satellite1-connecting-to-ha.md), and then [stream some music](satellite1-streaming-music.md)!
+    Snap the LED diffuser into the top piece, then press the assembly down onto the enclosure's four ball joints, headphone jack opening to the rear. If you printed the multi-material top, the diffuser is already part of it, so there is nothing to snap in.
 
-## Print-at-Home
-The 3D-printable 3MF project files, STL and STEP files are published online for anyone who wants to print or remix the enclosure at home.
+!!! success "That is a Satellite1"
 
-#### Links
+    Power it from the Dev Kit's 30 W USB-C adapter, into the Hat's USB-C port labelled CORE/ESP32. The LEDs count down in blue while it flashes the XMOS processor, then sparkle warm white when it is ready to pair.
 
-- [FutureProofHomes GitHub](https://github.com/FutureProofHomes/Satellite1-Enclosures/tree/main/OEM%20Enclosures/Satellite1.1%20Smart%20Speaker%20Enclosure%20Kit)
-- [MakerWorld](https://makerworld.com/models/2615819-futureproofhomes-oem-satellite1-1-smart-speaker)
+    Next, [connect it to Home Assistant](satellite1-connecting-to-ha.md) and then [stream some music](satellite1-streaming-music.md).
 
-#### Printing Parameters
+## Printing it yourself
 
-- We recommend using 0.4mm nozzle diameter and dry Bambu-grade PETG filament.
-- Use 3 wall perimeter and 30% cubicle infill for the front and back speaker chamber parts
-- Use 3 wall perimeter and 15% cubicle infill for the top, screw guide and diffuser
-- Print the diffuser in transparent PETG or even white PLA for the best results.
-- No supports required!
+The enclosure files are published, so you can print it rather than buying the Enclosure Kit and buy only the parts that go inside.
 
-!!! info "Compatible Speaker Drivers"
-
-    The enclosure is acoustically and mechanically engineered around a specific set of drivers, chosen for sound quality and for how they pair with the Satellite1's amplifier and crossover.
-
-    We sell all of them. The [Electronics Kit](satellite1-electronics-kit.md) bundles the woofer, tweeter, crossover, and cables, or you can buy each part on its own:
-
-    - [3" Mid-Range Woofer, 4Ω 20W](https://futureproofhomes.net/products/3-inch-woofer-4ohm-20w)
-    - [Tweeter, 4Ω 20W](https://futureproofhomes.net/products/tweeter-4ohm-20w)
-    - [Two-Way Speaker Crossover](https://futureproofhomes.net/products/two-way-speaker-crossover)
-
-    Substituting other drivers, or modifying the enclosure to fit them, may affect both sound quality and wake-word performance.
-
-    Have fun hacking!
+[Print the enclosure :material-arrow-right:](satellite1-print-enclosure.md){ .md-button }
