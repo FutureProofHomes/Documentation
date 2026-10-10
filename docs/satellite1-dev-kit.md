@@ -21,8 +21,8 @@ Full specifications are on the Platform Overview, for the [Core board](satellite
 
 | | Where it comes from |
 |---|---|
-| Speaker drivers, crossover, audio cabling | [Electronics Kit](satellite1-electronics-kit.md) |
-| Enclosure parts, screws, sealing foam | [Enclosure Kit](satellite1-enclosure-kit.md), or [print your own](satellite1-print-enclosure.md) |
+| Speaker drivers, crossover, audio cabling | Electronics Kit |
+| Enclosure parts, screws, sealing foam | Enclosure Kit, or print your own |
 | mmWave presence sensor | Sold separately, see [Getting Started](satellite1-connecting-to-ha.md#add-an-mmwave-sensor) |
 
 You only need those if you are building the Dev Kit into a finished speaker. For bench use, the box has everything.
@@ -47,9 +47,7 @@ You only need those if you are building the Dev Kit into a finished speaker. For
 
 3.  **Attach an mmWave sensor**
 
-    Optional. The Satellite1.1 Hat has a 4-pin JST connector on its underside for an LD2450, so the sensor connects by cable rather than being mounted on the board. Fitting and tuning are covered in [Getting Started](satellite1-connecting-to-ha.md#add-an-mmwave-sensor), and the other ways to connect one are in [mmWave Installation](satellite1-mmwave-installation.md).
-
-    [Get an LD2450 and harness cable :material-cart:](https://futureproofhomes.net/products/ld2450-mmwave-human-presence-sensor){ .md-button }
+    Optional. The Satellite1.1 Hat has a 4-pin JST connector on its underside for an LD2450, so the sensor connects by cable rather than being mounted on the board. Fitting and tuning are covered in [Getting Started](satellite1-connecting-to-ha.md#add-an-mmwave-sensor).
 
 4.  **Connect a speaker**
 

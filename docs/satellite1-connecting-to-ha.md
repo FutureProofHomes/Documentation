@@ -104,43 +104,11 @@ Turn on **Radar Tuner WebUI** in that same Diagnostics section, then open the Sa
 
 ![The Radar Tuner WebUI showing LD2450 zones](/assets/presence-sensors/radar_tuner_ld2450.png){ width="100%" }
 
-Full installation and tuning detail is on the dedicated pages.
-
-[mmWave Overview :material-arrow-right:](satellite1-mmwave-overview.md){ .md-button }
-[Installation :material-arrow-right:](satellite1-mmwave-installation.md){ .md-button }
-[Tuning :material-arrow-right:](satellite1-mmwave-tuning.md){ .md-button }
-
-## Explore the ESPHome device page
-
-Once the Satellite1 is connected, the device page under Settings, Devices & Services, ESPHome is where every setting lives.
-
-<div class="grid cards" markdown>
-
--   __Find it in the list__
-
-    ---
-
-    ![The ESPHome device list](/assets/esphome/1_esphome_device_list.png){ loading=lazy }
-
-    Settings, Devices & Services, ESPHome, then click your Satellite1.
-
--   __Everything it exposes__
-
-    ---
-
-    ![The top of the ESPHome device page](/assets/esphome/2_esphome_top_page.png){ loading=lazy }
-
-    ![The bottom of the ESPHome device page](/assets/esphome/3_esphome_bottom_page.png){ loading=lazy }
-
-    Every sensor, button and control appears as its own entity.
-
-</div>
-
 ## What to do next
 
 Everything from here is optional.
 
-- **Change the wake word, assistant or voice** from the device's page under Settings, Devices & Services, ESPHome. [Set Up Your Voice Assistant](satellite1-set-up-voice-control.md) covers pipelines and conversation agents in full.
-- **Play music through it** with Music Assistant, which finds it over Sendspin with no extra setup. See [Streaming Music](satellite1-streaming-music.md).
+- **Change the wake word, assistant or voice** from the device's page under Settings, Devices & Services, ESPHome.
+- **Play music through it** with Music Assistant, which finds it over Sendspin with no extra setup.
 
 [Troubleshooting :material-arrow-right:](satellite1-faqs.md){ .md-button }

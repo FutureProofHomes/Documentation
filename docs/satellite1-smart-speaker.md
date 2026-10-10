@@ -4,23 +4,15 @@ A Smart Speaker is three kits assembled. Buy them separately and put it together
 
 | | |
 |---|---|
-| **[Dev Kit](satellite1-dev-kit.md)** | Core and Hat boards, antenna, power supply |
-| **[Enclosure Kit](satellite1-enclosure-kit.md)** | Printed enclosure, 22 M3x10mm screws, hex wrench, screw guide, sealing foam |
-| **[Electronics Kit](satellite1-electronics-kit.md)** | Woofer, tweeter, two-way crossover, audio cabling |
+| **Dev Kit** | Core and Hat boards, antenna, power supply |
+| **Enclosure Kit** | Printed enclosure, 22 M3x10mm screws, hex wrench, screw guide, sealing foam |
+| **Electronics Kit** | Woofer, tweeter, two-way crossover, audio cabling |
 
 Plus three household tools that are in none of the kits: scissors, a small Phillips screwdriver, and needle-nose pliers.
 
 !!! warning "A Dev Kit in a sealed box behaves differently"
 
     A Dev Kit is designed to run on a bench. Putting one inside an airtight enclosure pushes it further than that, and two things change. The temperature, humidity and light sensors read the inside of the box rather than the room. At full volume the wake word can be harder to hear if the enclosure is not sealed properly or is sitting on a surface that resonates.
-
-## Watch the instructional video
-
-!!! danger "Important correction to the video tutorial"
-
-    The crossover is incorrectly oriented in the video. Rotate it 180° before installing. Follow the photos and documentation [below](#assembly).
-
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=QPOJhOR9q13SHaoC&amp;start=189" title="Satellite1 Smart Speaker Enclosure Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Assembly
 
@@ -103,8 +95,6 @@ Plus three household tools that are in none of the kits: scissors, a small Phill
 !!! success "That is a Satellite1"
 
     Power it from the Dev Kit's 30 W USB-C adapter, into the Hat's USB-C port labelled CORE/ESP32. The LEDs count down in blue while it flashes the XMOS processor, then sparkle warm white when it is ready to pair.
-
-    Next, [connect it to Home Assistant](satellite1-connecting-to-ha.md) and then [stream some music](satellite1-streaming-music.md).
 
 ## Printing it yourself
 

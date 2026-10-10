@@ -38,18 +38,3 @@ A Smart Speaker is three kits assembled: the Dev Kit for the boards, the Enclosu
 
 [Build it yourself :material-arrow-right:](satellite1-smart-speaker.md){ .md-button .md-button--primary }
 [Print the enclosure :material-arrow-right:](satellite1-print-enclosure.md){ .md-button }
-
-## Satellite1 vs. Home Assistant Voice Preview Edition
-
-The following table compares the main features of the Sat1 and Home Assistant Voice PE products. Both products run the same ESP32-S3 and XMOS chip. Our firmwares are also extremely similar (by design, to increase engagement and keep the community moving together). We think it is fair to say that the Sat1 is more feature rich and produces better sound. Read below:
-
-| Feature               | Satellite1                                                                                          | Home Assistant Voice PE                                                                 |
-|-----------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Microphones**       | Four high-performance microphones (XMOS firmware uses two microphones currently.  Future firmware upgrade will utilize all 4 microphones). | Two microphones designed to hear voice commands in most environments.                 |
-| **Speaker Output**    | 25W speaker amplifier capable of 48 kHz audio streaming. Also allows 3.5mm jack for external speakers. | Built-in 3W speaker for 48 kHz playback; includes a 3.5mm stereo jack for external speakers. |
-| **Environmental Sensors** | Includes room temperature, humidity, and luminosity sensors; supports adding mmWave presence detection (LD2410 or LD2450). | Primarily focused on voice assistance; does not include additional environmental sensors. |
-| **Form Factor**       | Available as a development kit or pre-assembled speaker. | Comes in a ready-to-use injection-molded case with physical controls, including a mute switch and volume dial. |                                   |
-| **Power**             | Powered by USB-C PD (Power Delivery), enabling the extra power needed for the 25W amplifier.       | Powered by USB-C.                                                                      |
-| **Expansion**         | Includes FX23L expansion connectors for powerful future accessories.                                   | Grove port for limited expansion.                                                               |
-| **LED Ring**          | 24 LEDs for visual feedback.                                                                       | 12 LEDs for visual feedback.                                                           |
-| **Software**          | [ESPHome Firmware very similar to Home Assistant Voice](https://github.com/FutureProofHomes/Satellite1-ESPHome)  | [ESPhome firmware for Home Assistant Voice](https://github.com/esphome/home-assistant-voice-pe)                                                           |

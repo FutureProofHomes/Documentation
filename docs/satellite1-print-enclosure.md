@@ -45,17 +45,11 @@ Print the diffuser in transparent PETG, or white PLA, so the LED ring reads clea
 
 ## What you still have to buy
 
-Printing replaces the Enclosure Kit, not the parts inside it. You still need the [Dev Kit](satellite1-dev-kit.md) for the boards and the [Electronics Kit](satellite1-electronics-kit.md) for the audio components, along with the screws, hex wrench and sealing foam the Enclosure Kit would otherwise have supplied.
+Printing replaces the Enclosure Kit, not the parts inside it. You still need the Dev Kit for the boards and the Electronics Kit for the audio components, along with the screws, hex wrench and sealing foam the Enclosure Kit would otherwise have supplied.
 
 !!! note "The drivers are not arbitrary"
 
-    The enclosure is acoustically and mechanically designed around a specific woofer, tweeter and crossover, chosen for how they pair with the Hat's amplifier. Substituting other drivers, or reshaping the enclosure to fit them, affects both sound quality and wake word performance.
-
-    The [Electronics Kit](satellite1-electronics-kit.md) bundles the matched set, or the parts are sold individually:
-
-    - [3" Mid-Range Woofer, 4Ω 20W](https://futureproofhomes.net/products/3-inch-woofer-4ohm-20w)
-    - [Tweeter, 4Ω 20W](https://futureproofhomes.net/products/tweeter-4ohm-20w)
-    - [Two-Way Speaker Crossover](https://futureproofhomes.net/products/two-way-speaker-crossover)
+    The enclosure is acoustically and mechanically designed around a specific woofer, tweeter and crossover, chosen for how they pair with the Hat's amplifier. Substituting other drivers, or reshaping the enclosure to fit them, affects both sound quality and wake word performance. The Electronics Kit bundles the matched set, or the parts are sold individually.
 
 ## Then build it
 

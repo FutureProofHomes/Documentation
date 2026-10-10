@@ -149,15 +149,11 @@ Form factor is one choice. These are separate ones, and they work on any Satelli
 
     Power and network over a single Ethernet run instead of USB-C power plus Wi-Fi. Handy anywhere that pulling a cable is easier than finding an outlet, which covers most ceilings.
 
-    [:octicons-arrow-right-24: PoE1 Module](satellite1-poe-shoe-module-overview.md)
-
 -   :material-radar:{ .lg .middle } __mmWave presence__
 
     ---
 
     An LD2410 or LD2450 radar, so a Satellite1 can tell whether someone is in the room rather than just whether something moved. The firmware detects which model is attached and exposes the right entities on its own.
-
-    [:octicons-arrow-right-24: mmWave Sensors](satellite1-mmwave-overview.md)
 
 </div>
 
