@@ -26,12 +26,15 @@ The two other local voice speakers people weigh this against are both built arou
 |---|---|---|---|
 | **Drivers** | 3 inch woofer and 1.2 inch tweeter | One internal speaker | One 3 W, 4 ohm speaker |
 | **Crossover** | Two-way passive | None | None |
-| **Amplifier** | 25 W mono, TAS2780 | Not published | Not published |
+| **Amplifier** | 25 W mono Class-D, TAS2780 | 3.1 W mono Class-AB, TPA6211A1 | Not published |
+| **Power input** | USB-C PD, up to 20 V at 5 A | USB-C, 5 V at 2 A | USB-C |
 | **Line out** | 3.5 mm jack | 3.5 mm jack | Not listed |
 
-Specifications are as each vendor publishes them, and neither one lists an amplifier.
+Specifications are as each vendor publishes them. Nabu Casa does not list the Voice PE amplifier in its specifications, but it does publish the full KiCad schematic, which names the part. Third Reality publishes firmware rather than hardware design files, so their amplifier is not documented anywhere we can find.
 
-Both are good at what they are for, and neither is trying to be a music speaker. The difference is that a Satellite1 does both jobs, so a room does not need a voice puck next to a separate speaker.
+The power row is the one that explains the rest. A 5 V, 2 A supply is 10 W for the entire device, which sets a ceiling on the amplifier no matter which part you choose. USB-C Power Delivery is what gives the Satellite1 the headroom to drive two drivers properly, and it is the reason an underpowered supply shows up as quiet or distorted audio.
+
+Both of the others are good at what they are for, and neither is trying to be a music speaker. The difference is that a Satellite1 does both jobs, so a room does not need a voice puck next to a separate speaker.
 
 ## Two colors, printed not molded
 
