@@ -136,6 +136,7 @@ Audio output is a separate question, and it is compared on the
 
 ## Pick a form factor
 
+<div class="fph-tiles" markdown>
 <div class="grid cards" markdown>
 
 -   ![Charcoal Gray and Bone White Smart Speakers](/assets/products/satellite1-desktop/hero.jpg){ width="100%" }
@@ -157,25 +158,12 @@ Audio output is a separate question, and it is compared on the
     [Docs](satellite1-dev-kit.md){ .md-button }
 
 </div>
+</div>
 
 ## Options
 
-Form factor is one choice. These are separate ones, and they work on any Satellite1 whichever box it came in, so you can pick any combination.
+Form factor is one choice. Adding presence detection is a separate one, and it works on any Satellite1 whichever box it came in.
 
-<div class="grid cards" markdown>
+An LD2450 mmWave radar lets a Satellite1 tell whether someone is in the room rather than just whether something moved. The firmware works out which sensor is attached and exposes the right entities on its own, so an LD2410 from an earlier build still works.
 
--   :material-ethernet:{ .lg .middle } __PoE1__
-
-    ---
-
-    Power and network over a single Ethernet run instead of USB-C power plus Wi-Fi. Handy anywhere that pulling a cable is easier than finding an outlet, which covers most ceilings.
-
--   :material-radar:{ .lg .middle } __mmWave presence__
-
-    ---
-
-    An LD2450 radar, so a Satellite1 can tell whether someone is in the room rather than just whether something moved. The firmware works out which sensor is attached and exposes the right entities on its own, so an LD2410 from an earlier build still works.
-
-</div>
-
-Neither one changes the voice assistant. They change how a unit is powered and what it can sense, which is why we treat them as options rather than as different versions.
+It does not change the voice assistant. It changes what a unit can sense, which is why we treat it as an option rather than as a different version.

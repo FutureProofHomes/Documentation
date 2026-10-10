@@ -313,11 +313,36 @@ li.toc-tab-hidden {
 .fph-principles .grid.cards {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+/* Product photos are a mix of landscape and portrait, so a tile grid left to
+   itself ends up with cards of wildly different heights. Crop every tile
+   photo to the same ratio instead. */
 .md-typeset .fph-products .grid.cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 0.2rem;
+}
+
+/* Square here rather than 4:3, because this grid pairs a landscape photo
+   with a portrait one. A 4:3 crop of the portrait shot loses the bottom of
+   the mmWave board; a square keeps the middle 75% of each, which both
+   subjects sit inside. */
+.md-typeset .fph-tiles .grid.cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+/* Keep the cards themselves level, so the buttons line up rather than
+   floating at whatever height the blurb ends. */
+.md-typeset .fph-tiles .grid.cards > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+.md-typeset .fph-tiles .grid.cards > ul > li > :last-child {
+  margin-top: auto;
+  padding-top: 0.4rem;
 }
 
 @media screen and (max-width: 44.9375em) {
