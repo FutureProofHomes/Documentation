@@ -122,7 +122,7 @@ The other two local voice devices people weigh a Satellite1 against are the Home
 | **Microphones** | Four, two in use | Two | Two |
 | **Audio processor** | XMOS XU316 | XMOS XU316 | No dedicated processor published |
 | **Environmental sensors** | Temperature, humidity, ambient light | None | None listed |
-| **Presence** | LD2410 or LD2450 mmWave | None | None listed |
+| **Presence** | LD2450 mmWave | None | None listed |
 | **Expansion** | FX23L connector | Grove port | None listed |
 | **Network** | 2.4 GHz Wi-Fi, optional PoE1 | 2.4 GHz Wi-Fi | 2.4 GHz Wi-Fi |
 | **Firmware** | ESPHome | ESPHome | Custom Linux on an ARM A53 |
@@ -174,7 +174,7 @@ Form factor is one choice. These are separate ones, and they work on any Satelli
 
     ---
 
-    An LD2410 or LD2450 radar, so a Satellite1 can tell whether someone is in the room rather than just whether something moved. The firmware detects which model is attached and exposes the right entities on its own.
+    An LD2450 radar, so a Satellite1 can tell whether someone is in the room rather than just whether something moved. The firmware works out which sensor is attached and exposes the right entities on its own, so an LD2410 from an earlier build still works.
 
 </div>
 
