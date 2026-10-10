@@ -39,12 +39,6 @@ A Smart Speaker is three kits assembled: the Dev Kit for the boards, the Enclosu
 [Build it yourself :material-arrow-right:](satellite1-smart-speaker.md){ .md-button .md-button--primary }
 [Print the enclosure :material-arrow-right:](satellite1-print-enclosure.md){ .md-button }
 
-## Quick live demo
-
-When properly set up the Satellite1 can be even more powerful than some of the mainstream voice assistants out there. Watch the live demo section of our launch video to get a sense of what it can do:
-
-<iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/n5yNEhcAjWU?si=mcycJb4gBk4zbLtX&amp;start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Satellite1 vs. Home Assistant Voice Preview Edition
 
 The following table compares the main features of the Sat1 and Home Assistant Voice PE products. Both products run the same ESP32-S3 and XMOS chip. Our firmwares are also extremely similar (by design, to increase engagement and keep the community moving together). We think it is fair to say that the Sat1 is more feature rich and produces better sound. Read below:
